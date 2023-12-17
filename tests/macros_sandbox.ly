@@ -8,9 +8,41 @@ cSixFourBar = {
 r16 \cSixFour \transpose c c' { \cSixFour } \transpose c c'' { \cSixFour } \transpose c c''' { \cSixFourPreface }
 }
 
+% An example using scheme
+
+runUp =
+#(define-music-function (note1 note2 note3 note4 lastnote)
+  (ly:music? ly:music? ly:music? ly:music? ly:music?)
+  #{
+    r16 $note1 $note2 $note3 $note4 
+    \transpose c c' { $note1 $note2 $note3 $note4 } 
+    \transpose c c'' { $note1 $note2 $note3 \ottava #1 $note4 } 
+    \transpose c c''' { $note1 $note2 $lastnote } 
+  #})
+
+runDown = 
+#(define-music-function (note1 note2 note3 note4 lastbeatnote)
+  (ly:music? ly:music? ly:music? ly:music? ly:music?)
+  #{
+    \transpose c c''' { $note1 $note2 $note3 $note4 } 
+    \ottava #0
+    \transpose c c'' { $note1 $note2 $note3 $note4 } 
+    \transpose c c' { $note1 $note2 $note3 $note4 } 
+    $lastbeatnote $note2 $note3 $note4
+  #})
+
+runUpAndDown =
+#(define-music-function (note1 note2 note3 note4)
+  (ly:music? ly:music? ly:music? ly:music?) 
+  #{
+    \runUp $note1 $note2 $note3 $note4 $note3 | 
+    \runDown $note4 $note3 $note2 $note1 $note4
+  #})
+
 upper = {
-\cSixFourBar 
+  \runUpAndDown c16 g c' e' 
 }
+% \runUp c16 g c' e' c' | \runDown e' c' g c e'
 
 lower = { 
   c1-1~ | c | f,-1 | fis,-1 |
@@ -22,7 +54,6 @@ lower = {
 
 \score {
   \new PianoStaff 
-%  \set Staff.ottavationMarkups = #ottavation-ordinals
   <<
     \new Staff = "up" {
   \clef treble

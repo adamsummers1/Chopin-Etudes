@@ -1,47 +1,28 @@
 \version "2.24.3"
 
+\include "libraries/internalMacros.ly"
+
 upper = {
-  r16 c g c' e' c' g' c'' e'' c'' g'' c''' e''' \ottava #1 c''' g''' c''''|
-  e'''' c'''' g''' c''' \ottava #0 e''' c''' g'' c'' e'' c'' g' c' e' c' g c |
-  r c a c' f' c' a' c'' f'' c'' a''  c''' \ottava #1 f''' c''' a''' c'''' | 
-  e'''' c'''' a''' c''' \ottava #0 e''' c''' a'' c'' e'' c'' a' c' d' c' a c |
-  % Bar 5
-  r b, g b d' b g' b' d'' b' g'' b'' \ottava #1 d''' b'' g''' a''' |
-  d'''' a''' fis''' c''' \ottava #0 d''' a'' fis'' c'' d'' a' fis' c' d' a fis c|
-  r c f gis d' c' f' gis' d'' c'' f'' gis'' \ottava #1 d''' c''' f''' gis''' |
-  d'''' g''' f''' b'' d''' \ottava #0  g'' f'' b' d'' g' f' b dis' g f b, |
+  \runUpAndDown c16 g c' e' | \runUp c a c' f' c' | \runDown e' c' a c d' |
+  \runUp b, g b d' a | \runDown d' a fis  c d' | \runUp c f aes d' aes | \runDown d' g f b, dis' |
   % Bar 9
-  r c g c' e' c' g' c'' e'' c'' g'' c''' e''' \ottava #1 c''' g''' c'''' |
-  e'''' c'''' g''' c''' \ottava #0 e''' c''' g'' c'' e'' c'' g' c' e' c' g c |
-  r c f c' f' c' f' c'' f'' c'' f'' c''' \ottava #1 f''' c''' f''' c'''' |
-%   e'''' c'''' fis''' c''' e''' c''' fis'' c'' e'' c'' fis' c' fis c  r|
-%  r c g c' d' c' g' c'' d'' c'' g'' c''' d''' c''' g''' c'''' d'''' b''' g''' b'' d''' b'' g'' b' d'' b' g' b d' b g b, |
-%  r4 d g d' e' d' g' d'' e'' d'' g'' d''' e''' d''' g''' d'''' e'''' c'''' g''' c''' e''' c''' g'' c'' e'' c'' g' c' e' c' g c |
-%  r4 e c' e' f' e' c'' e'' f'' e'' c''' e''' f''' e''' c'''' e'''' f'''' d'''' b''' d''' f''' d''' b'' d'' f'' d'' b' d' f' d' b d |
-%  r4 d b d' e' d' b' d'' e'' d'' b'' d''' e''' d''' b''' d'''' e'''' c'''' a''' c''' e''' c''' a'' c'' e'' c'' a' c' e' c' a c |
-%  r4 c a c' e' c' a' c'' e'' c'' a'' c''' e''' c''' a''' c'''' cis'''' dis'''' b''' a''' b'' dis''' b'' a'' a'' b' dis'' b' a' b dis' b a b, |
-%  r4 b, a b e' b a' b' e'' b' a'' b'' e''' b'' a''' b''' e'''' b''' gis''' b'' e''' b'' gis'' b' e'' b' gis' b e' b gis b, |
-%  r4 e a cis' g' e' a' cis'' g'' e'' a'' cis''' g''' cis''' a'' e'' g''' c''' a'' e'' g'' c'' a' e' g' c' a e fis' c' a d |
-%  r4 d g c' f' d' g' c'' f'' d'' g'' c''' f''' d''' g''' c'''' f'''' b''' g''' d''' f''' b'' g'' d'' f'' b' g' d' f' b g d |
-%  r4 c g ais e' c' g' ais' e'' c'' g'' ais'' e''' c''' g''' ais''' dis'''' ais''' dis''' c''' dis''' ais'' dis'' c'' dis'' ais' dis' c' dis' ais dis c |
-%  r4 c dis a dis' c' dis' a' dis'' c'' dis'' a'' dis''' c''' dis''' a''' dis'''' gis''' dis''' b'' dis''' gis'' dis'' b' dis'' gis' dis' b dis' gis dis b, |
-%  r4 ais, f gis d' ais f' gis' d'' ais' f'' gis'' d''' ais'' f''' gis''' d'''' gis''' e''' ais'' d''' gis'' e'' ais' d'' gis' e' ais d' gis e ais, |
-%  r4 a, e a cis' a e' a' cis'' a' e'' a'' cis''' a'' e''' a''' cis'''' a''' e''' a'' cis''' a'' e'' a' cis'' a' e' a cis' a e a,  |
-%  r4 a, d fis c' a d' fis' c'' a' d'' fis'' c''' a'' d''' fis''' c'''' f''' d''' g'' c''' f'' d'' g' c'' f' d' g b f d g, |
-%  r4 g, c e b g c' e' b' g' c'' e'' b'' g'' c''' e''' b''' e''' c''' f'' b'' e'' c'' f' b' e' c' f a e c f, |
-%  r4 f, b, d a f b d' a' f' b' d'' a'' f'' b'' d''' |
-%  g''' d''' b'' e'' g'' d'' b' e' a' c'' g'' e'' a'' c''' g''' e''' f''' c''' a'' d'' f'' c'' a' d' g' b' f'' d'' g'' b'' f''' d''' e''' b'' g'' c'' e'' b' g' c' f' a' e'' c'' f'' a'' e''' c''' |
-%  d''' a'' f'' b' d'' a' f' b d' a f b, r4|
-%  dis''' a'' fis'' b' dis'' a' fis' b dis' a fis b, r4 |
-%  r4 b, e gis e' b e' gis' e'' b' e'' gis'' e''' b'' e''' gis''' e'''' gis''' e''' b'' e''' gis'' e'' b' e'' gis' e' b f' b g d |
+  \runUpAndDown c g c' e' | \runUp c f c' f' c' | \runDown e' c' fis c e' |
+  \runUp c g c' d' c' | \runDown d' b g b, g | \runUp d g d'e' d' | \runDown e' c' g c e'|
+  % Bar 17
+  \runUp e c' e' f' e' | \runDown f' d' b d f' | \runUp d b d' e' d' | \runDown e' c' a c e' |
+  \runUp c a c' e' c' | \runDown dis' b a b, dis' | \runUp b, a b e' b | \runDown e' b gis b, e'|
+  % Bar 25 Note that this bar is special - a new macro was needed
+  \runUpVariant e a cis' g' | \runDownVariant g' c' a e fis' | 
 }
 
 lower = { 
-  c1-1~ | c | f,-1 | fis,-1 |
-  % Bar 5
-  g,2  fis,4 e, | d,1| g,~ | g, |
+  c1-1~ | c | f,-1 | fis,-1 | g,2  fis,4 e, | d,1| g,~ | g, |
   % Bar 9
-  c1~ | c | a,~ | a, |
+  c1~ | c | a,~ | a, | g,~ | g, | c~ | c |
+  % Bar 17
+  a, | b,2 a, | gis,1 | a,2 g, | f,1~ | f, | e,~ | e, |
+  % Bar 25
+  a, | d | g,~ | g, | c | ges, | f, | ces | bes,,~ | bes,,| a,~ | a, |
 }
 
 \score {
