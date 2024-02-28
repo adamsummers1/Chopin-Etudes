@@ -40,16 +40,16 @@ rh = {
  r c g c' d' c' g' c'' d'' c'' g'' c''' d''' c''' g''' c'''' d'''' b''' g''' b'' d''' b'' g'' b' d'' b' g' b d' b g b,|
  r c a c' d' c' a' c'' d'' c'' a'' c''' d''' c''' a''' c'''' | ees'''' c'''' a''' c''' ees''' c''' a'' c'' dis'' b' a' b dis' b a b,|
  
+r b, gis b e' b gis' b' e'' b' gis'' b'' e''' b'' gis''' b''' e'''' b''' gis''' b'' e''' b'' gis'' b' e'' b' gis' b e' b gis b,|
 r d a c' f' d' a' c'' f'' d'' a'' c''' f''' d''' a''' c''''| f'''' b''' g''' d''' f''' b'' g'' d'' f'' b' g' d' f' b g d |
 
- r b, gis b e' b gis' b' e'' b' gis'' b'' e''' b'' gis''' b''' e'''' b''' gis''' b'' e''' b'' gis'' b' e'' b' gis' b e' b gis b,|
  %|
  r c g c' e' c' g' c'' e'' c'' bes'' c''' g''' c''' bes'' e'' fis''' c''' a'' ees'' fis'' c'' a' ees' f'' b' gis' d' f' b gis d|
  r c g c' e' c' g' c'' e'' c'' g'' c''' e''' c''' g'' c'' ees''' a'' fis'' c'' ees' a' fis' c' d'' aes' f' b d' aes f b,|
  r bes, e g des' bes e' g' des'' bes' e'' g'' des''' bes'' e''' g''' des'''' fis''' ees''' a'' des''' fis'' ees'' a' des'' fis' ees' a c'' fis' ees' a|
- r aes d' f' c'' aes' d'' f'' c''' aes'' d''' f''' c'''' f''' d''' aes'' b''' f''' d''' g''  c, g, c e d, c,, c, c, g, c e c g c' e' c' g' c'' e'' c'' g' c' c' e' c' g c d e c g, c c, f,, f, c, c d, a, c, a, c f c d a c' f' c' a' g' c'' e'' c'' a' c' c' a c fis,, fis, c, g, b, d c, b,, g, b, d b, g b d' a g b g' b' d'' c'' a' fis' c' d' a fis c d,, d, c, g, c, f, gis, d c f gis d' c' f' gis' d'' g' f' b d' g f b, g, g,, c,, c, c, g, c e c g c' e' c' g' c'' e''b'' f'' d'' g' b' f' d' g b f d g,|
- r g, e g c' g e' g' c'' g' e'' g'' c''' g'' e''' g'''| e''' c'''' g''' e''' g'' c''' g'' e'' g' c'' g' g c' g e g,|
- r1
+ r  aes d' f' c'' aes' d'' f'' c''' aes'' d''' f''' c'''' f''' d''' aes''| b''' f''' d''' g'' b'' f'' d'' g' b' f' d' g b f d g,|
+ r g, e g c' g e' g' c'' g' e'' g'' c''' g'' e''' g'''| c'''' g''' e''' g'' c''' g'' e'' g' c'' g' e' g c' g e g,|
+ r1 \bar "|."
 }
 
 lh = {
