@@ -1,54 +1,88 @@
 \version "2.24.3"
+\include "event-listener.ly"
 
-\include "libraries/internalMacros.ly"
+rh = {
+ r16 c g c' e' c' g' c'' e'' c'' g'' c''' e''' c''' g''' c''''| e'''' c'''' g''' c''' e''' c''' g'' c'' e'' c'' g' c' e' c' g c|
+ r c a c' f' c'a' c'' f'' c'' a'' c''' f''' c''' a''' c''''| e'''' c'''' a''' c''' e''' c''' a'' c'' e'' c'' a' c' d' c'  a c|
+ r b, g b d' b g' b' d'' b' g'' b'' d''' b'' g''' a'''| d'''' a''' fis''' c''' d''' a'' fis'' c'' d'' a' fis' c' d' a fis c|
+ r c f aes d' c' f' aes' d'' c'' f'' aes'' d''' c''' f''' aes'''| d'''' g''' f''' b'' d''' g'' f'' b' d'' g' f' b dis' g f b,|
+ r c g c' e' c' g' c'' e'' c'' g'' c''' e''' c''' g''' c'''' e'''' c'''' g''' c''' e''' c''' g'' c'' e'' c'' g' c' e' c' g c|
+ %Bar 11
+ r c f c' f' c' f' c'' f'' c'' f'' c''' f''' c''' f''' c'''' e'''' c'''' fis''' c''' e''' c''' fis'' c'' e'' c'' fis' c' e' c' fis c|
+ r c g c' d' c' g' c'' d'' c'' g'' c''' d''' c''' g''' c'''' d'''' b''' g''' b'' d''' b'' g'' b' d'' b' g' b d' b g b,|
+ r d g d' e' d' g' d'' e'' d'' g'' d''' e''' d''' g''' d'''' e'''' c'''' g''' c''' e''' c''' g'' c'' e'' c'' g' c' e' c' g c|
+ r e c' e' f' e' c'' e'' f'' e'' c''' e''' f''' e''' c'''' e'''' f'''' d'''' b''' d''' f''' d''' b'' d'' f'' d'' b' d' f' d' b d|
+ r d b d' e' d' b' d'' e'' d'' b'' d''' e''' d''' b''' d'''' e'''' c'''' a''' c''' e''' c''' a'' c'' e'' c'' a' c' e' c' a c|
+ %Bar 21
+ r c a c' e' c' a' c'' e'' c'' a'' c''' e''' c''' a''' c'''' dis'''' b''' a''' b'' dis''' b'' a'' b' dis'' b' a' b dis' b a b,|
+ r b, a b e' b a' b' e'' b' a'' b'' e''' b'' a''' b''' e'''' b''' gis''' b'' e''' b'' gis'' b' e'' b' gis' b e' b gis b,|
 
-openingSection = {
-  \runUpAndDown c16 g c' e' | \runUp c a c' f' c' | \runDown e' c' a c d' |
-  \runUp b, g b d' a | \runDown d' a fis  c d' | \runUp c f aes d' aes | \runDown d' g f b, dis' |
-  % Bar 9
-  \runUpAndDown c g c' e' | \runUp c f c' f' c' 
+ r e a cis' g' e' a' cis'' g'' e'' a'' cis''' g''' cis''' a'' e''|   g''' c''' a'' e'' g'' c'' a' e' g' c' a e fis' c' a d|
+ r d g c' f' d' g' c'' f'' d'' g'' c''' f''' d''' g''' c''''|   f'''' b''' g''' d''' f''' b'' g'' d'' f'' b' g' d' f' b g d|
+ r c g bes e' c' g' bes' e'' c'' g'' bes'' e''' c''' g''' c'''' ees'''' bes''' ees''' c''' ees''' bes'' ees'' c'' ees'' bes' ees' c' ees' bes ees c|
+ r c ees a ees' c' ees' a' ees'' c'' ees'' a'' ees''' c''' ees''' a''' ees'''' aes''' ees''' b'' ees''' aes'' ees'' b' ees'' aes' ees' b ees' aes ees b,|
+ r bes, f aes d' bes f' aes' d'' bes' f'' aes'' d''' bes'' f''' aes''' d'''' gis''' e''' bes'' d''' gis'' e'' bes' d'' gis' e' bes d' gis e bes,| %Chopin Special
+ %Bar 31
+ r a, e a cis' a e' a' cis'' a' e'' a'' cis''' a'' e''' a''' cis'''' a''' e''' a'' cis''' a'' e'' a' cis'' a' e' a cis' a e a,|
+ r a, d fis c' a d' fis' c'' a' d'' fis'' c''' a'' d''' fis''' c'''' f''' d''' g'' c''' f'' d'' g' c'' f' d' g b f d g,|
+ r g, c e b c' g e' b' g' c'' e'' b'' g'' c''' e''' b''' e''' c''' f'' b'' e'' c'' f' b' e' c' f a e c f,|
+ r f, b, d a f b d' a' f' b' d'' a'' f'' b'' d''' g''' d''' b'' e'' g'' d'' b' e' a' c'' g'' e'' a'' c''' g''' e''' |
+ f''' c''' a'' d'' f'' c'' a' d' g' b' d'' f'' g'' b'' f''' d''' e''' b'' g'' c'' e'' b' g' c' f' a' e'' c'' f'' a'' e''' c'''|
+ d''' a'' f'' b' d'' a' f' b d' a f b, r4 dis'''16 a'' fis'' b' dis'' a' fis' b dis' a fis b, r4|
+ r16 b, e gis e' b e' gis' e'' b' e'' gis'' e''' b'' e''' gis''' e'''' gis''' e''' b'' e''' gis'' e'' b' e'' gis' e' b f' b g d|
+ %|
+ r c g c' e' c' g' c'' e'' c'' g'' c''' e''' c''' g''' c'''' e'''' c'''' g''' c''' e''' c''' g'' c'' e'' c'' g' c' e' c' g c|
+ r c a c' f' c' a' c'' f'' c'' a'' c''' f''' c''' a''' c'''' e'''' c'''' a''' c''' e''' c''' a'' c'' e'' c'' a' c' d' c' a c|
+ r b, g b d' b g' b' d'' b' g'' b'' d''' b'' g''' a''' d'''' a''' fis''' c''' d''' a'' fis'' c'' d'' a' fis' c' d' a fis c|
+ r c f aes d' c' f' aes' d'' c'' f'' aes'' d''' c''' f''' aes''' d'''' g''' f''' b'' d''' g'' f'' b' d'' g' f' b dis' g f b,|
+ r c g c' e' c' g' e'' c'' c'' g'' c''' e''' c''' g''' c'''' e'''' c'''' g''' c''' e''' c''' g'' c'' e'' c'' g' c' e' c' g c|
+ r c f c' f' c' f' c'' f'' c'' f'' c''' f''' c''' f''' c'''' e'''' c'''' fis''' c''' e''' c''' fis'' c'' ees'' c'' fis' c' ees' c' fis c|
+ r c g c' d' c' g' c'' d'' c'' g'' c''' d''' c''' g''' c'''' d'''' b''' g''' b'' d''' b'' g'' b' d'' b' g' b d' b g b,|
+ r c a c' d' c' a' c'' d'' c'' a'' c''' d''' c''' a''' c'''' | ees'''' c'''' a''' c''' ees''' c''' a'' c'' dis'' b' a' b dis' b a b,|
+ 
+r d a c' f' d' a' c'' f'' d'' a'' c''' f''' d''' a''' c''''| f'''' b''' g''' d''' f''' b'' g'' d'' f'' b' g' d' f' b g d |
+
+ r b, gis b e' b gis' b' e'' b' gis'' b'' e''' b'' gis''' b''' e'''' b''' gis''' b'' e''' b'' gis'' b' e'' b' gis' b e' b gis b,|
+ %|
+ r c g c' e' c' g' c'' e'' c'' bes'' c''' g''' c''' bes'' e'' fis''' c''' a'' ees'' fis'' c'' a' ees' f'' b' gis' d' f' b gis d|
+ r c g c' e' c' g' c'' e'' c'' g'' c''' e''' c''' g'' c'' ees''' a'' fis'' c'' ees' a' fis' c' d'' aes' f' b d' aes f b,|
+ r bes, e g des' bes e' g' des'' bes' e'' g'' des''' bes'' e''' g''' des'''' fis''' ees''' a'' des''' fis'' ees'' a' des'' fis' ees' a c'' fis' ees' a|
+ r aes d' f' c'' aes' d'' f'' c''' aes'' d''' f''' c'''' f''' d''' aes'' b''' f''' d''' g''  c, g, c e d, c,, c, c, g, c e c g c' e' c' g' c'' e'' c'' g' c' c' e' c' g c d e c g, c c, f,, f, c, c d, a, c, a, c f c d a c' f' c' a' g' c'' e'' c'' a' c' c' a c fis,, fis, c, g, b, d c, b,, g, b, d b, g b d' a g b g' b' d'' c'' a' fis' c' d' a fis c d,, d, c, g, c, f, gis, d c f gis d' c' f' gis' d'' g' f' b d' g f b, g, g,, c,, c, c, g, c e c g c' e' c' g' c'' e''b'' f'' d'' g' b' f' d' g b f d g,|
+ r g, e g c' g e' g' c'' g' e'' g'' c''' g'' e''' g'''| e''' c'''' g''' e''' g'' c''' g'' e'' g' c'' g' g c' g e g,|
+ r1
 }
 
-barFourtyTwoUpper = { \absolute \repeatOctaveLower {  g'''16 d''' b'' e''} 
-\repeatOctaveHigher { a' c'' g'' e'' }
+lh = {
+<c, c>1~| <c, c>| <f,, f,>| <fis,, fis,>| <g,, g,>2 <fis,, fis,>4 <e,, e,> |<d,, d,>1| <g,, g,>~| <g,, g,>|
+<c, c>~| <c, c>| <a,, a,>~| <a,, a,>| <g,, g,>~|<g,, g,>| <c, c>~| <c, c>| <a,, a,>| <b,, b,>2 <a,, a,>| <gis,, gis,>1| <a,, a,>2 <g,, g,>| <f,, f,>1~| <f,, f,>| <e,, e,>~| <e,, e,>|
+<a,, a,>| <d, d>| <g,, g,>~| <g,, g,>| <c, c>| <ges,, ges,>| <f,, f,>| <b,, b,>| bes,,~| <bes,, bes,>| <a,, a,>~| <a,, a,>|
+d,| <g,, g,>| c,| <f,, f,>| b,,| <e,, e,>2 <a,, a,>| <d,, d,> <g,, g,>| <c,, c,> <f,, f,>| <b,, b,>2. b,,4~| <b,, b,>2. b,,4 |<e,, e,>1~| <e,, e,>2. <d,, d,>4|
+<c,, c,>1~| <c, c>| <f,, f,>| <fis,, fis,>| <g,, g,>2 <fis,, fis,>4 <e,, e,>| <d,, d,>1| <g,, g,>~| <g,, g,>|
+<c, c>~| <c, c>| <a,, a,>~| <a,, a,>2. <aes,, aes,>4| <g,, g,>1~| <g,, g,>| <fis,, fis,>| <f,, f,>| <e,, e,>~| <e, e>|
+d,| <g,, g,>| c,~| <c, c>| c,| <g,, g,>| <g,, g,>~| <g,, g,>| <g,, g,>~| <g,, g,>| <c,, c,>~| <c,, c,>| <c,, c,>
 }
 
-upper = {
-  \openingSection | \runDown e' c' fis c e' | \runUp c g c' d' c' | \runDown d' b g b, g | \runUp d g d'e' d' | \runDown e' c' g c e'| % Bar 17
-  \runUp e c' e' f' e' | \runDown f' d' b d f' | \runUp d b d' e' d' | \runDown e' c' a c e' | \runUp c a c' e' c' |
-  \runDown dis' b a b, dis' | \runUp b, a b e' b | \runDown e' b gis b, e'| % Bar 25 Note that this bar is special 
-  \runUpVariant e a cis' g' | \runDownVariant g' c' a e fis' | \runUp d g c' f' c' | \runDown f' b g d f' | \runUp c g bes e' bes |
-  \runDown ees' bes ees c ees' | \runUp c ees a ees' a | \runDown ees' aes ees c ees | % Bar 33
-  \runUp bes, f aes d' aes | \runDown d' gis e bes, d' | \runUpAndDown a,e a cis' | 
-  \runUp a, d fis c' fis | \runDown c' f d g, b | \runUp g, c e b e | \runDown b e c f, a | \runUp f, b, d a d | % Bar 42
-  \ottava #0 \barFourtyTwoUpper | \transposeBarDown { \barFourtyTwoUpper } | \transposeBarDown { \transposeBarDown { \barFourtyTwoUpper } } | % Bar 45
-  \threeOctavesDown { \absolute d' a f b,} \skip4 | \threeOctavesDown { \absolute dis' a fis b,} \skip4 |
-  \absolute \runUp b, e gis e' gis | \threeOctavesDownWithOttava { e'' gis' e' b} \oneGroupAs { f' b g d } | % Bar 49
-  \openingSection | \repeatOctaveLowerWithOttava { e'''' c'''' fis''' c''' } \repeatOctaveLower { ees'' c'' fis' c' } | % Bar 61
-  \runUp c g c' d' c' | \runDown d' b g b, g | 
-  \oneGroupAs { r c a c' } \oneGroupAs { d' c' a' c''} \repeatOctaveHigherWithOttava { d'' c'' g'' c'''} | % Bar 64
-  \repeatOctaveLowerWithOttava { ees'''' c'''' a''' c''' } \repeatOctaveLower { dis'' b' a' b } | \runUpAndDown b, gis b e' | % Bar 67
-  \runUp d a c' e' c' | \runDown f' b g d f' |
-  \oneGroupAs { r c g c' } \oneGroupAs { e' c' g' c'' } \oneGroupAs { e'' c'' bes'' c'''}  \oneGroupAs { g''' c''' bes'' e'' } | % Bar 70
-  \repeatOctaveLower { fis''' c ''' a'' ees'' } \repeatOctaveLower { f'' c'' a' d'} | % Bar 71
-  \oneGroupAs { r c g c' } \repeatOctaveHigher { e' c' g' c'' } \oneGroupAs { e''' c''' g'' c'' } | % Bar 72
-  \repeatOctaveLower { ees''' a'' fis'' c'' } \repeatOctaveLower { d'' aes' f' b } | \runUp bes, e g des' g |
-  \threeOctavesDownWithOttava { des'' fis' ees' a } \oneGroupAs { c'' fis' ees' a} |
-  \oneGroupAs { r aes d' f' } \repeatOctaveHigher { c'' aes' d'' f'' } \oneGroupAs { c'''' f''' d''' aes'' } |
-  \fourOctavesDown { b f d g, } | \runUpAndDown g, e g c' | % Bar 79
-  \skip1 \bar "|." % Bar 80
+\book {
+\score {
+  \new PianoStaff 
+%  \set Staff.ottavationMarkups = #ottavation-ordinals
+  <<
+    \new Staff = "up" {
+  \clef treble
+  \key c \major
+  \time 4/4
+  \tempo 4 = 176
+  \absolute
+    << 
+      \new Voice { \voiceOne \autoChange \rh }
+      \new Voice { \voiceTwo \autoChange \lh }
+    >>
+    }
+    \new Staff = "down" {
+  \clef bass
+    }
+  >>
+  \layout { }
+  \midi { }
 }
-
-openingSectionLower = {
-  f,1-1 | fis,-1 | g,2  fis,4 e, | d,1| g,~ | g,
-}
-
-lower = { 
-  c1~ | c | \openingSectionLower | c1~ | c | a,~ | a, | g,~ | g, | c~ | c % Bar 17
-  a, | b,2 a, | gis,1 | a,2 g, | f,1~ | f, | e,~ | e, | % Bar 25
-  a, | d | g,~ | g, | c | ges, | f, | ces | bes,,~ | bes,,| a,~ | a, | % Bar 37
-  d, | g, | c, | f, | b,, |  e,2 a, | d, g, | c, f, | b,2. r4 | b,2. r4 | % Bar 47
-  e,1~ | e,2. d,4 | % Bar 49 These bars are a little special
-  c1~ | c | \openingSectionLower | c,~ | c, | a,~ | a,2. aes,4 | g,1~ | g,| fis, | f, | % Bar 66 These two bars are a little special
-  e,~ | e, | d, | g, | c,~ | c, | c,| g, | g,~ | g,| g,~ |g,  | c,~ | c, | c, \bar "|." | % Bar 79
 }

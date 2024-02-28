@@ -1,3 +1,7 @@
 *.pdf
 *.mid
 *.notes
+--1.tmp
+-.tmp.*
+lilypond-tmp-2935850
+lilypond-tmp-9949865
