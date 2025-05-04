@@ -280,8 +280,6 @@ PartPOneVoiceFive =  {
         
         \new PianoStaff
         <<
-            \set PianoStaff.instrumentName = "Piano"
-            \set PianoStaff.shortInstrumentName = "Pno."
             \set PianoStaff.midiInstrument = "acoustic grand"
             
             \context Staff = "1" << 
@@ -302,8 +300,6 @@ PartPOneVoiceFive =  {
         
         \new PianoStaff
         <<
-            \set PianoStaff.instrumentName = "Piano"
-            \set PianoStaff.shortInstrumentName = "Pno."
             \set PianoStaff.midiInstrument = "acoustic grand"
             
             \context Staff = "1" << 

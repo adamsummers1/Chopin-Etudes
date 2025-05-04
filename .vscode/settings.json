@@ -1,4 +1,4 @@
 {
-    "vslilypond.midiPlayback.output": "Microsoft GS Wavetable Synth",
+    "vslilypond.midiPlayback.output": "Silent Piano",
     "vslilypond.midiInput.input": "Silent Piano"
 }
