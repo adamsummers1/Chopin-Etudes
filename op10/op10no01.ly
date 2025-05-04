@@ -266,10 +266,10 @@ PartPOneVoiceOne =  {
     e'16 g'16 ] c''16 [ _\< g'16 e''16 g''16 ] \ottava #1 c'''16 [ g''16
     e'''16 g'''16 ] _\! | % 78
     c''''16 [ _\> g'''16 e'''16 g''16 ] \ottava #0 c'''16 [ g''16 e''16
-    g'16 ] _\! c''16 [ g'16 e'16 \change Staff="2" g16 ] c'16 [ g16 e16
-    g,16 ] \change Staff="1" | % 79
-    r4*5 ^\fermata \bar "|."
-    c''4 \rest \bar "|."
+    g'16 ] _\! c''16 [ g'16 e'16 g16 ] c'16 [ g16 e16
+    g,16 ] |
+    r1
+    \bar "|."
     }
 
 PartPOneVoiceFive =  {
@@ -363,9 +363,9 @@ PartPOneVoiceFive =  {
     <g,, g,>1 ~ ~ \sustainOff\sustainOn | % 76
     <g,, g,>1 \sustainOff\sustainOn \sustainOff\sustainOn | % 77
     <c,, c,>1 ~ ~ \sustainOff\sustainOn \sustainOff\sustainOn | % 78
-    <c,, c,>1 s1 \bar "|."
-    c,,1 ^\fermata c,1 \bar "|."
-    \sustainOff\sustainOn }
+    <c,, c,>1 |
+     <c,, c,>1 \bar "|."
+    }
 
 
 % The score definition
