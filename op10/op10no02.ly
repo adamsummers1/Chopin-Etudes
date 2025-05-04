@@ -53,10 +53,10 @@ PartPOneVoiceOne =  {
     cis'''16 [ d'''16 dis'''16 e'''16 ] f'''16 [ e'''16 dis'''16 d'''16
     ] cis''' ?16 [ c'''16 b''16 bes''16 ] a''16 [ gis''16 b''16 a''16 ]
     | % 15
-    bes''16 [ _\! _\markup{ \italic {cresc.} } \startTrillSpan b''16
+    bes''16 [ _\! _\markup{ \italic {cresc.} } b''16
     c'''16 cis'''16 ] \ottava #1 d'''16 [ dis'''16 e'''16 f'''16 ] e'''16
     [ f'''16 fis'''16 g''' ?16 ] gis'''16 [ a'''16 ais'''16 b''' ?16 ] | % 16
-    a''' ?16 [ \stopTrillSpan _\f gis'''16 g'''16 fis'''16 ] f'''16 [
+    a''' ?16 [  _\f gis'''16 g'''16 fis'''16 ] f'''16 [
     e'''16 es'''16 d'''16 ] \ottava #0 cis'''16 [ c'''16 b''16 bes''16 ]
     a''16 [ gis''16 g''16 fis''16 ] | % 17
     f'' ?16 [ e''16 es''16 d''16 ] cis''16 [ d''16 f''16 d''16 ] b' ?16
@@ -71,13 +71,13 @@ PartPOneVoiceOne =  {
     des''16 [ c''16 b' ?16 c''16 ] cis''16 [ d''16 dis''16 e''16 ] f''16
     [ fis''16 g''16 as''16 ] g''16 [ fis''16 f''16 e''16 ] | % 21
     es''16 [ d''16 cis''16 d''16 ] es'' ?16 [ e''16 f''16 fis''16 ] g''16
-    [ _\markup{ \italic {poco a poco crescendo} } \startTrillSpan gis''16
+    [ _\markup{ \italic {poco a poco crescendo} }  gis''16
     a''16 bes''16 ] a''16 [ fis''16 g''16 es''16 ] | % 22
     d''16 [ es''16 cis''16 d''16 ] es''16 [ e''16 f'' ?16 fis''16 ] g''16
     [ gis''16 a''16 bes''16 ] a''16 [ gis''16 g''16 fis'' ?16 ] | % 23
     f'' ?16 [ e''16 dis''16 e''16 ] f''16 [ fis''16 g''16 gis''16 ] a''16
     [ ais''16 b''16 c'''16 ] b''16 [ bes''16 a''16 gis'' ?16 ] | % 24
-    g'' ?16 [ \stopTrillSpan fis''16 f''16 e''16 ] f''16 [ _\< fis''16
+    g'' ?16 [  fis''16 f''16 e''16 ] f''16 [ _\< fis''16
     g''16 gis''16 ] a''16 [ ais''16 b''16 c'''16 ] cis'''16 [ d'''16
     dis'''16 e'''16 ] | % 25
     f''' ?16 [ _\! _\f e'''16 es'''16 d'''16 ] cis'''16 [ c'''16 b''16
@@ -86,11 +86,11 @@ PartPOneVoiceOne =  {
     es'''16 [ _\! d'''16 cis'''16 c'''16 ] b'' ?16 [ bes''16 a''16 gis''16
     ] g''16 [ fis''16 f''16 e'' ?16 ] es''16 [ d''16 cis''16 d''16 ] | % 27
     d'''16 [ cis'''16 c'''16 b'' ?16 ] bes''16 [ _\markup{ \italic
-        {cresc.} } \startTrillSpan a''16 as''16 g''16 ] fis''16 [ g''16
+        {cresc.} }  a''16 as''16 g''16 ] fis''16 [ g''16
     gis''16 a''16 ] bes'' ?16 [ b''16 c'''16 b''16 ] | % 28
     d'''16 [ c'''16 bes''16 a''16 ] as''16 [ g''16 fis''16 f''16 ] e'' ?16
     [ f''16 fis''16 g''16 ] gis''16 [ a''16 bes'' ?16 a''16 ] | % 29
-    c'''16 [ bes''16 \stopTrillSpan a''16 as''16 ] g''16 [ fis''16 f''16
+    c'''16 [ bes''16  a''16 as''16 ] g''16 [ fis''16 f''16
     e'' ?16 ] es''16 [ d''16 des''16 c''16 ] bes'16 [ a'16 gis'16 g'16 ]
     | \barNumberCheck #30
     fis'16 [ g'16 gis'16 a'16 ] bes'16 [ a'16 gis' ?16 g'16 ] fis'16 [
@@ -120,28 +120,28 @@ PartPOneVoiceOne =  {
     cis'''16 [ d'''16 dis'''16 e'''16 ] f'''16 [ e'''16 dis'''16 d'''16
     ] cis''' ?16 [ c'''16 b''16 bes''16 ] a''16 [ gis''16 b''16 a''16 ]
     | % 42
-    bes''16 [ _\! _\markup{ \italic {cresc.} } \startTrillSpan b''16
+    bes''16 [ _\! _\markup{ \italic {cresc.} }  b''16
     c'''16 cis'''16 ] \ottava #1 d'''16 [ dis'''16 e'''16 f'''16 ] e'''16
     [ f'''16 fis'''16 g''' ?16 ] gis'''16 [ a'''16 ais'''16 b''' ?16 ] | % 43
-    a''' ?16 [ \stopTrillSpan _\f gis'''16 g'''16 fis'''16 ] f'''16 [
+    a''' ?16 [  _\f gis'''16 g'''16 fis'''16 ] f'''16 [
     e'''16 es'''16 d'''16 ] \ottava #0 cis'''16 [ c'''16 b''16 bes''16 ]
     a''16 [ gis''16 g''16 fis''16 ] | % 44
     f'' ?16 [ e''16 es''16 d''16 ] cis''16 [ d''16 f''16 d''16 ] b' ?16
     [ c''16 _\markup{ \italic {dim.} } e''16 c''16 ] ais'16 [ b'16 e''16
     b'16 ] | % 45
     a' ?16 [ ais'16 b'16 c''16 ] cis''16 [ d''16 _\markup{ \italic
-        {crescendo} } \startTrillSpan dis''16 e''16 ] f''16 [ fis''16
+        {crescendo} }  dis''16 e''16 ] f''16 [ fis''16
     g''16 gis''16 ] a''16 [ ais''16 b''16 c''' ?16 ] | % 46
     a'' ?16 [ ais''16 b''16 c'''16 ] cis'''16 [ d'''16 dis'''16 e'''16 ]
     \ottava #1 f'''16 [ fis'''16 g'''16 gis'''16 ] a'''16 [ ais'''16
     b'''16 c''''16 ] | % 47
-    a'''16 [ \stopTrillSpan _\f gis'''16 g'''16 fis'''16 ] f'''16 [ e'''16
+    a'''16 [  _\f gis'''16 g'''16 fis'''16 ] f'''16 [ e'''16
     es'''16 d'''16 ] \ottava #0 cis'''16 [ c'''16 b''16 bes''16 ] a''16
     [ gis''16 g''16 fis''16 ] | % 48
-    f'' ?16 [ _\markup{ \italic {dimin.} } \startTrillSpan e''16 es''16
+    f'' ?16 [ _\markup{ \italic {dimin.} }  e''16 es''16
     d''16 ] cis''16 [ c''16 b'16 bes'16 ] a'16 [ gis'16 g'16 fis'16 ] f'16
     [ e' ?16 es'16 d'16 ] | % 49
-    cis'1 ^\fermata \stopTrillSpan _\p \bar "|."
+    cis'1 ^\fermata  _\p \bar "|."
     }
 
 PartPOneVoiceTwo =  {
