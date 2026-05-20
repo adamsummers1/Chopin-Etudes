@@ -16,6 +16,9 @@
 %.musicxml: %.mscz
 	/mnt/c/Program\ Files/MuseScore\ 4/bin/MuseScore4.exe $< -o $@
 
+%.pdf: %.ly
+	lilypond.exe --pdf --loglevel=DEBUG --output=$* $<
+
 all: alkan-op76no3.midi
 
 clean:
