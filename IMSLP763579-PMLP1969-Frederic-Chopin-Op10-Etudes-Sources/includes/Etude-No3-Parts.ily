@@ -1,7 +1,7 @@
 %...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....
 
 \version "2.22.1"
-\language "english"
+\language "nederlands"
 
 \include "Global.ily"
 \include "articulate.ly"
@@ -54,183 +54,183 @@ global = {
   \accidentalStyle piano
 }
 
-rightHandUpper = \relative {
+rightHandUpper = {
   \partial 8 b8^\legato\p
-  e8\< ds16 e\! <ds fs>4~( |
-  fs16[^\< gs]\! gs[^\> fs])\! gs4->~( |
-  gs16[^\< a]\! a[^\> gs])\! cs8.->( b16 |
-  a16 gs ds e) fs4->~( |
-  fs16[ gs] gs[ fs]) e4-> |
-  gs16( a fs gs a b gs a) |
-  cs8 fs,4->^\stretto \slashedGrace as8 \slurUp gs16(^\> fs)\!~ | 
-  fs8 \slashedGrace as8 gs16 fs <ds b'>4_>^\ritenTen |
+  e'8\< dis'16 e'\! <dis' fis'>4~( |
+  fis'16[^\< gis']\! gis'[^\> fis'])\! gis'4->~( |
+  gis'16[^\< a']\! a'[^\> gis'])\! cis''8.->( b'16 |
+  a'16 gis' dis' e') fis'4->~( |
+  fis'16[ gis'] gis'[ fis']) e'4-> |
+  gis'16( a' fis' gis' a' b' gis' a') |
+  cis''8 fis'4->^\stretto \slashedGrace ais'8 \slurUp gis'16(^\> fis')\!~ | 
+  fis'8 \slashedGrace ais'8 gis'16 fis' <dis' b'>4_>^\ritenTen |
   
   \barNumberCheck 9
-  <e gs>8\< ds16 e\! <ds fs>4~( |
-  fs16[^\< gs]\! gs[^\> fs])\! gs4->~( |
-  gs16[^\< a]\! a[^\> gs])\! cs8.^\>( b16\! |
-  a16 gs ds e) fs4->~( |
-  fs16[^\< gs]\! gs[^\> fs])\! e4-> |
-  b'16[( cs]) cs[( b]) a( b gs a) |
-  ds16[(^\stretto e]) e[( ds]) cs( ds bs cs) |
+  <e' gis'>8\< dis'16 e'\! <dis' fis'>4~( |
+  fis'16[^\< gis']\! gis'[^\> fis'])\! gis'4->~( |
+  gis'16[^\< a']\! a'[^\> gis'])\! cis''8.^\>( b'16\! |
+  a'16 gis' dis' e') fis'4->~( |
+  fis'16[^\< gis']\! gis'[^\> fis'])\! e'4-> |
+  b'16[( cis'']) cis''[( b']) a'( b' gis' a') |
+  dis''16[(^\stretto e'']) e''[( dis'']) cis''( dis'' bis' cis'') |
   s2 | 
   
   \barNumberCheck 17
-  <e gs>4~^\ten gs16 fs e cs |
-  ds4^(^\ten e16) ds cs gs |
-  b4^(^\ten cs16) b a e |
-  gs2^>(^\rall |
-  \grace { gs16 fs } e4)^\animato \tag #'midi { \tempo 8 = 100 }
-    \oneVoice <gs e'>16^( <fs ds'> <gs e'> <ds b'> |
-  <fs ds'>16 <e cs'> <fs ds'> <ds gs> \voiceOne b' as cs8 |
-  \oneVoice \slashedGrace as8 <e gs>16 <ds fs> \slashedGrace as'8 <e gs>16
-    <ds fs>) <gs e'>^( <fs ds'> <gs e'> <ds b'> |
-  <fs ds'>16 <e cs'> <fs ds'> <ds gs> \voiceOne b' as cs8 |
+  <e'' gis''>4~^\ten gis''16 fis'' e'' cis'' |
+  dis''4^(^\ten e''16) dis'' cis'' gis' |
+  b'4^(^\ten cis''16) b' a' e' |
+  gis'2^>(^\rall |
+  \grace { gis'16 fis' } e'4)^\animato \tag #'midi { \tempo 8 = 100 }
+    \oneVoice <gis' e''>16^( <fis' dis''> <gis' e''> <dis' b'> |
+  <fis' dis''>16 <e' cis''> <fis' dis''> <dis' gis'> \voiceOne b' ais' cis''8 |
+  \oneVoice \slashedGrace ais'8 <e' gis'>16 <dis' fis'> \slashedGrace ais'8 <e' gis'>16
+    <dis' fis'>) <gis' e''>^( <fis' dis''> <gis' e''> <dis' b'> |
+  <fis' dis''>16 <e' cis''> <fis' dis''> <dis' gis'> \voiceOne b' ais' cis''8 |
   
   \barNumberCheck 25
-  \oneVoice \slashedGrace as8 <e gs>16 <ds fs> \slashedGrace as'8 <e gs>16
-    <ds fs>) <a' fs'>16( \adjustDynA \> <gs e'> <a fs'> <e cs'>\! |
-  <gs e'>16 <fs ds'> <gs e'> <e as> \voiceOne cs' bs ds8 |
-  \oneVoice \slashedGrace b8 <fs a>16 \adjustDynB \< <e gs> \slashedGrace b'8 
-    <fs a>16 <e gs>)\! <a fs'>16( \adjustDynC \> <gs e'> <a fs'> <e cs'>\! |
-  <gs e'>16 <fs ds'> <gs e'> <e as> \voiceOne cs' bs ds8 |
-  \oneVoice \slashedGrace b8 <fs a>16 \adjustDynD \> <e gs> \slashedGrace b'8 
-    <fs a>16 <e gs>\! \slashedGrace b'8 <fs a>16 \adjustDynF \< <e gs> <fs a> 
-    <gs b>)\! |
-  \voiceOne <a cs>8.( q16 <gs b>8. q16) | 
-  <a c>8.( q16 <gs b>8. q16) |
-  \oneVoice <cs, e b' cs>16-^ <cs' e>[( <g b>]) <b cs>[( <e g>]) <g b>[( 
-    <cs, e>]) <e g>[( |
+  \oneVoice \slashedGrace ais'8 <e' gis'>16 <dis' fis'> \slashedGrace ais'8 <e' gis'>16
+    <dis' fis'>) <a' fis''>16( \adjustDynA \> <gis' e''> <a' fis''> <e' cis''>\! |
+  <gis' e''>16 <fis' dis''> <gis' e''> <e' ais'> \voiceOne cis'' bis' dis''8 |
+  \oneVoice \slashedGrace b'8 <fis' a'>16 \adjustDynB \< <e' gis'> \slashedGrace b'8 
+    <fis' a'>16 <e' gis'>)\! <a' fis''>16( \adjustDynC \> <gis' e''> <a' fis''> <e' cis''>\! |
+  <gis' e''>16 <fis' dis''> <gis' e''> <e' ais'> \voiceOne cis'' bis' dis''8 |
+  \oneVoice \slashedGrace b'8 <fis' a'>16 \adjustDynD \> <e' gis'> \slashedGrace b'8 
+    <fis' a'>16 <e' gis'>\! \slashedGrace b'8 <fis' a'>16 \adjustDynF \< <e' gis'> <fis' a'> 
+    <gis' b'>)\! |
+  \voiceOne <a' cis''>8.( q16 <gis' b'>8. q16) | 
+  <a' c''>8.( q16 <gis' b'>8. q16) |
+  \oneVoice <cis' e' b' cis''>16-^ <cis'' e''>[( <g' b'>]) <b' cis''>[( <e'' g''>]) <g'' b''>[( 
+    <cis'' e''>]) <e'' g''>[( |
   
   \barNumberCheck 33
-  <b' cs>]) <cs e>[( <g b>]) <b cs>[( <e g>]) <as,, g'>-.( <as fs'>-. 
-    <as e'>-.) |
-  \voiceOne <b ds>8.( q16 <as cs>8. q16) |
-  <b d>8.( q16 <as cs>8. q16) | 
-  \oneVoice <ds, fs cs' ds>16-^ <ds' fs>[( <a cs>]) <cs ds>[( <fs a>]) <a cs>[(
-    <ds, fs>]) <fs a>[( |
-  <cs' ds>16]) <ds fs>[( <a cs>]) <cs ds>[( <fs a>]) <bs,, a'>-.( <bs gs'>-.
-    <bs fs'>-.) |
+  <b'' cis'''>]) <cis''' e'''>[( <g'' b''>]) <b'' cis'''>[( <e''' g'''>]) <ais' g''>-.( <ais' fis''>-. 
+    <ais' e''>-.) |
+  \voiceOne <b' dis''>8.( q16 <ais' cis''>8. q16) |
+  <b' d''>8.( q16 <ais' cis''>8. q16) | 
+  \oneVoice <dis' fis' cis'' dis''>16-^ <dis'' fis''>[( <a' cis''>]) <cis'' dis''>[( <fis'' a''>]) <a'' cis'''>[(
+    <dis'' fis''>]) <fis'' a''>[( |
+  <cis''' dis'''>16]) <dis''' fis'''>[( <a'' cis'''>]) <cis''' dis'''>[( <fis''' a'''>]) <bis' a''>-.( <bis' gis''>-.
+    <bis' fis''>-.) |
   \override Fingering.avoid-slur = #'inside
-  <b es>16-. <gs d'>-2-5[( <g cs>-1-4 <c fs>-2-5] <b es>-1-4 <e as>-2-5 
-    <ds a'>-1-4 <gs d'>-2-5 |
-  <g cs>16-1-4) <g, cs>[( <fs c'> <b f'>] <as e'> <ds a'> <d gs> <g cs> |
-  <fs c'>16) <fs, c'>[( <f b> <as e'>] <a ds> <d gs> <cs g'> <fs c'> |
+  <b' eis''>16-. <gis' d''>-2-5[( <g' cis''>-1-4 <c'' fis''>-2-5] <b' eis''>-1-4 <e'' ais''>-2-5 
+    <dis'' a''>-1-4 <gis'' d'''>-2-5 |
+  <g'' cis'''>16-1-4) <g' cis''>[( <fis' c''> <b' f''>] <ais' e''> <dis'' a''> <d'' gis''> <g'' cis'''> |
+  <fis'' c'''>16) <fis' c''>[( <f' b'> <ais' e''>] <a' dis''> <d'' gis''> <cis'' g''> <fis'' c'''> |
   
   \barNumberCheck 41
-  <f b>16 <as e'> <a ds> \ottava 1 <d gs> <cs g'> <fs c'> <es b'> <as e'> |
-  <b ds>16-.) <ds, b'>[( <a fs'>]) \ottava 0 r r <ds,, b'>[( <a fs'>]) r |
-  r16 <a e' fs a> <b e fs b> <c e fs c'> <b e fs b> <a e' fs a> <b e fs b>
-    <c e fs c'> |
-  <b ds fs b>16-^ \ottava 1 <a''' ds>[( <ds, b'>]) \ottava 0 r r <a, ds>[( 
-    <ds, b'>]) r |
-  r16 <a e' fs a> <b e fs b> <c e fs c'> <b e fs b> <a e' fs a> <b e fs b>
-    <fs' c' e fs> |
+  <f'' b''>16 <ais'' e'''> <a'' dis'''> \ottava 1 <d''' gis'''> <cis''' g'''> <fis''' c''''> <eis''' b'''> <ais''' e''''> |
+  <b''' dis''''>16-.) <dis''' b'''>[( <a'' fis'''>]) \ottava 0 r r <dis' b'>[( <a fis'>]) r |
+  r16 <a e' fis' a'> <b e' fis' b'> <c' e' fis' c''> <b e' fis' b'> <a e' fis' a'> <b e' fis' b'>
+    <c' e' fis' c''> |
+  <b dis' fis' b'>16-^ \ottava 1 <a''' dis''''>[( <dis''' b'''>]) \ottava 0 r r <a' dis''>[( 
+    <dis' b'>]) r |
+  r16 <a e' fis' a'> <b e' fis' b'> <c' e' fis' c''> <b e' fis' b'> <a e' fis' a'> <b e' fis' b'>
+    <fis' c'' e'' fis''> |
   \override Beam.breakable = ##t
-  <fs b ds fs>16 \tag #'midi { \tempo 8 = 120 }
-    <d'' b'>[(_\conBravura <gs, f'>]) <f d'>[( <b gs'>]) <c a'>[(
-    <fs,ds'>]) <ds c'>[( |
-  <a' fs'>16]) <c a'>[( <fs, ds'>]) <f d'>[( <b gs'>]) <as g'>[( <e cs'>]) 
-    <ds c'>[( |
-  <a' fs'>16]) <c a'>[( <fs, ds'>]) <ds cs'>[( <a' fs'>]) <b gs'>[( <f d'>])
-    <d b'>[( | 
+  <fis' b' dis'' fis''>16 \tag #'midi { \tempo 8 = 120 }
+    <d''' b'''>[(_\conBravura <gis'' f'''>]) <f'' d'''>[( <b'' gis'''>]) <c''' a'''>[(
+    <fis''dis'''>]) <dis'' c'''>[( |
+  <a'' fis'''>16]) <c''' a'''>[( <fis'' dis'''>]) <f'' d'''>[( <b'' gis'''>]) <ais'' g'''>[( <e'' cis'''>]) 
+    <dis'' c'''>[( |
+  <a'' fis'''>16]) <c''' a'''>[( <fis'' dis'''>]) <dis'' cis'''>[( <a'' fis'''>]) <b'' gis'''>[( <f'' d'''>])
+    <d'' b''>[( | 
   
   \barNumberCheck 49
-  <gs f'>16]) <b gs'>[( <f d'>]) <e cs'>[( <as g'>]) <a fs'>[( <ds, c'>])
-    <d b'>[( |
-  <gs f'>16]) <b gs'>[( <f d'>]) <d b'>[( <gs f'>]) <a fs'>[( <ds, c'>])
-    <c a'>[( |
-  <fs ds'>16]) <a fs'>[( <ds, c'>]) <d b'>[(^\stretto <gs f'>]) <g e'>[( 
-    <cs, as'>]) <c a'>[( |
-  <fs ds'>16]) <f d'>[( <b, gs'>]) <as g'>[( <e' cs'>]) <as, g'>[( <e' cs'>])
-    <a, g'>[( |
-  <e' c'>16]) <as, fs'>[(^\riten <e' c'>]) <as, fs'>[( <e' c'>]) <a, fs'>[( 
-    <e' c'>]) <a, fs'>[( |
-  <ds b'>16]) \tag #'midi { \tempo 8 = 100 } r \voiceOne b16(^\legatissimo 
-    gs b a fs8^>~ |
-  fs8) b16( gs b a fs8^>~ |
-  fs8) gs16( fs fs e cs8_>) |
+  <gis'' f'''>16]) <b'' gis'''>[( <f'' d'''>]) <e'' cis'''>[( <ais'' g'''>]) <a'' fis'''>[( <dis'' c'''>])
+    <d'' b''>[( |
+  <gis'' f'''>16]) <b'' gis'''>[( <f'' d'''>]) <d'' b''>[( <gis'' f'''>]) <a'' fis'''>[( <dis'' c'''>])
+    <c'' a''>[( |
+  <fis'' dis'''>16]) <a'' fis'''>[( <dis'' c'''>]) <d'' b''>[(^\stretto <gis'' f'''>]) <g'' e'''>[( 
+    <cis'' ais''>]) <c'' a''>[( |
+  <fis'' dis'''>16]) <f'' d'''>[( <b' gis''>]) <ais' g''>[( <e'' cis'''>]) <ais' g''>[( <e'' cis'''>])
+    <a' g''>[( |
+  <e'' c'''>16]) <ais' fis''>[(^\riten <e'' c'''>]) <ais' fis''>[( <e'' c'''>]) <a' fis''>[( 
+    <e'' c'''>]) <a' fis''>[( |
+  <dis'' b''>16]) \tag #'midi { \tempo 8 = 100 } r \voiceOne b'16(^\legatissimo 
+    gis' b' a' fis'8^>~ |
+  fis'8) b'16( gis' b' a' fis'8^>~ |
+  fis'8) gis'16( fis' fis' e' cis'8_>) |
   
   \barNumberCheck 57
-  e16 ds gs_> fs fs e cs8_> |
-  e16 ds8_> cs16 e ds8_> cs16 |
-  e16 ds8_> cs16 e ds8_> cs16 |
-  e16(^\smorz ds e ds e ds e ds |
+  e'16 dis' gis'_> fis' fis' e' cis'8_> |
+  e'16 dis'8_> cis'16 e' dis'8_> cis'16 |
+  e'16 dis'8_> cis'16 e' dis'8_> cis'16 |
+  e'16(^\smorz dis' e' dis' e' dis' e' dis' |
   \tag #'midi { \tempo 8 = 85 }
-  e16^\pocoRall ds e ds e ds cs ds) |
+  e'16^\pocoRall dis' e' dis' e' dis' cis' dis') |
   \tag #'midi { \tempo 8 = 70 }
-  e8^\aTempo ds16 e <ds fs>4~ |
-  fs16[ gs] gs[ fs] gs4~( |
-  gs16[ a]) a[( gs]) cs8. b16 |
+  e'8^\aTempo dis'16 e' <dis' fis'>4~ |
+  fis'16[ gis'] gis'[ fis'] gis'4~( |
+  gis'16[ a']) a'[( gis']) cis''8. b'16 |
   
   \barNumberCheck 65
-  a16( gs ds e) fs4~ |
-  fs16[ gs] gs[ fs] e4 |
-  b'16[( cs]) cs[( b]) a b gs a |
-  ds16[ e] e[ ds] cs^\stretto ds bs cs |
+  a'16( gis' dis' e') fis'4~ |
+  fis'16[ gis'] gis'[ fis'] e'4 |
+  b'16[( cis'']) cis''[( b']) a' b' gis' a' |
+  dis''16[ e''] e''[ dis''] cis''^\stretto dis'' bis' cis'' |
   s2 |
-  <e gs>4~ gs16 fs e cs |
-  ds4^> e16( ds cs gs) |
-  b4^> cs16( b a e) |
+  <e'' gis''>4~ gis''16 fis'' e'' cis'' |
+  dis''4^> e''16( dis'' cis'' gis') |
+  b'4^> cis''16( b' a' e') |
   
   \barNumberCheck 73
-  gs4_~( gs16 fs e c) |
-  gs'4_~( gs16 fs e c) |
+  gis'4_~( gis'16 fis' e' c') |
+  gis'4_~( gis'16 fis' e' c') |
   \oneVoice
     <<
-      { gs'2~ }
+      { gis'2~ }
       { s4 \tag #'midi { \tempo 8 = 60 } s^\rall }
     >> |
-  gs4~ gs16 fs^.^( e^. b^.) |
-  e2\fermata |
+  gis'4~ gis'16 fis'^.^( e'^. b^.) |
+  e'2\fermata |
   \bar "|."
 }
 
-rightHandLower = \relative {
+rightHandLower = {
   \partial 8 s8
-  s4 \hideNotes ds'~ \unHideNotes |
-  ds8 ds e4 |
-  gs,16 e' b e ds \adjustDynQ \> a' b, ds\! |
-  b16\> e gs, b\! s4 |
+  s4 \hideNotes dis'~ \unHideNotes |
+  dis'8 dis' e'4 |
+  gis16 e' b e' dis' \adjustDynQ \> a' b dis'\! |
+  b16\> e' gis b\! s4 |
   s2 |
-  d16 e d e cs e cs e |
-  cs16 e cs e b e b e |
-  as,16 e' as, e' s4 |
+  d'16 e' d' e' cis' e' cis' e' |
+  cis'16 e' cis' e' b e' b e' |
+  ais16 e' ais e' s4 |
   
   \barNumberCheck 9
-  s4 \hideNotes ds~ \unHideNotes |
-  ds8 ds e4 |
-  gs,16\< e' b e\! ds a' b, ds |
-  b16 e gs, b s4 |
+  s4 \hideNotes dis'~ \unHideNotes |
+  dis'8 dis' e'4 |
+  gis16\< e' b e'\! dis' a' b dis' |
+  b16 e' gis b s4 |
   s2 |
-  <d fs>16 <e gs> <d fs> <e gs> cs e cs e |
-  <fs bs>16 gs <fs as> <gs bs> e gs e gs |
-  <e as e'>^.^(^\riten <fs as fs'>^. <ds as' ds>^. <e as e'>^.
-    <fs as fs'>^. <gs as gs'>^. <e as e'>^. <fs as fs'>^.) |
+  <d' fis'>16 <e' gis'> <d' fis'> <e' gis'> cis' e' cis' e' |
+  <fis' bis'>16 gis' <fis' ais'> <gis' bis'> e' gis' e' gis' |
+  <e' ais' e''>^.^(^\riten <fis' ais' fis''>^. <dis' ais' dis''>^. <e' ais' e''>^.
+    <fis' ais' fis''>^. <gis' ais' gis''>^. <e' ais' e''>^. <fis' ais' fis''>^.) |
   
   \barNumberCheck 17
-  gs16 b gs b gs \adjustDynT _\> b gs b\! |
-  ds,16 fs ds fs e gs e gs |
-  b,16 ds b ds cs e cs e |
+  gis'16 b' gis' b' gis' \adjustDynT _\> b' gis' b'\! |
+  dis'16 fis' dis' fis' e' gis' e' gis' |
+  b16 dis' b dis' cis' e' cis' e' |
   s2 * 2 |
-  s4 e8 gs16 fs |
+  s4 e'8 gis'16 fis' |
   s2 |
-  s4 e8 gs16 fs |
+  s4 e'8 gis'16 fis' |
   
   \barNumberCheck 25
   s2 |
-  s4 fs8 a16 gs |
+  s4 fis'8 a'16 gis' |
   s2 |
-  s4 fs8 a16 gs |
+  s4 fis'8 a'16 gis' |
   s2 |
-  r16 <cs, e> <d fs>8~ q16 q <d e>8~ |
-  q16 <c e> <d f>8~ q16 q <d e>8 |
+  r16 <cis' e'> <d' fis'>8~ q16 q <d' e'>8~ |
+  q16 <c' e'> <d' f'>8~ q16 q <d' e'>8 |
   s2 |
   
   \barNumberCheck 33
   s2 |
-  r16 <ds fs> <e gs>8~ q16 q <e fs>8~ |
-  q16 <d fs> <e g>8~ q16 q <e fs>8 |
+  r16 <dis' fis'> <e' gis'>8~ q16 q <e' fis'>8~ |
+  q16 <d' fis'> <e' g'>8~ q16 q <e' fis'>8 |
   s2 * 5 |
   
   \barNumberCheck 41
@@ -238,26 +238,26 @@ rightHandLower = \relative {
   
   \barNumberCheck 49
   s2 * 5 |
-  s8 d16 e cs e a, e' |
-  a,16 ds d e cs e a, e' |
+  s8 d'16 e' cis' e' a e' |
+  a16 dis' d' e' cis' e' a e' |
   s2 |
   
   \barNumberCheck 57
   s2 * 5 |
-  s4 \hideNotes ds~ \unHideNotes |
-  ds8 ds e4 |
-  gs,16\< e' b e\! ds \adjustDynO \> a' b, ds\! |
+  s4 \hideNotes dis'~ \unHideNotes |
+  dis'8 dis' e'4 |
+  gis16\< e' b e'\! dis' \adjustDynO \> a' b dis'\! |
   
   \barNumberCheck 65
-  b16 e gs, b s4 |
+  b16 e' gis b s4 |
   s2 |
-  <d fs>16 <e gs> <d fs> <e gs> cs e cs e |
-  <fs bs>16 <gs bs> <fs as> <gs bs> e gs e gs |
-  <e as e'>^.^( <fs as fs'>^. <ds as' ds>^. <e as e'>^.
-    <fs as fs'>^. <gs as gs'>^. <e as e'>^. <fs as fs'>^.) |
-  gs16 b gs b gs \adjustDynP _\> b gs b\! |
-  ds,16 fs ds fs e\dim gs\! e gs |
-  b,16 ds b ds cs e cs e |
+  <d' fis'>16 <e' gis'> <d' fis'> <e' gis'> cis' e' cis' e' |
+  <fis' bis'>16 <gis' bis'> <fis' ais'> <gis' bis'> e' gis' e' gis' |
+  <e' ais' e''>^.^( <fis' ais' fis''>^. <dis' ais' dis''>^. <e' ais' e''>^.
+    <fis' ais' fis''>^. <gis' ais' gis''>^. <e' ais' e''>^. <fis' ais' fis''>^.) |
+  gis'16 b' gis' b' gis' \adjustDynP _\> b' gis' b'\! |
+  dis'16 fis' dis' fis' e'\dim gis'\! e' gis' |
+  b16 dis' b dis' cis' e' cis' e' |
   
   \barNumberCheck 73
   s2 * 5 |
@@ -270,28 +270,28 @@ rightHand = {
   << { \rightHandUpper } \\ { \rightHandLower } >>
 }
 
-leftHandUpper = \relative {
+leftHandUpper = {
   \override NoteColumn.ignore-collision = ##t
   \partial 8 d8\rest
-  gs16 b gs b a b a b |
-  a16 b a b gs b gs b |
+  gis16 b gis b a b a b |
+  a16 b a b gis b gis b |
   s2 |
-  s4 <a cs>16 <b ds> <a cs> <b ds> |
-  <a cs>16 <b ds> <a cs> <b ds> gs b gs b |
+  s4 <a cis'>16 <b dis'> <a cis'> <b dis'> |
+  <a cis'>16 <b dis'> <a cis'> <b dis'> gis b gis b |
   s2 * 3 |
   
   \barNumberCheck 9
-  gs16 b gs b a b a b |
-  a16 b a b gs b gs b |
+  gis16 b gis b a b a b |
+  a16 b a b gis b gis b |
   s2 |
-  s4 <a cs>16( <b ds> <a cs> <b ds> |
-  <a cs>16 <b ds> <a cs> <b ds>) gs b gs b |
+  s4 <a cis'>16( <b dis'> <a cis'> <b dis'> |
+  <a cis'>16 <b dis'> <a cis'> <b dis'>) gis b gis b |
   s2 * 3 |
   
   \barNumberCheck 17
   s2 * 3 |
-  gs16 b gs^\pp b gs b gs b |
-  \crossStaff { gs4 } s4 |
+  gis16 b gis^\pp b gis b gis b |
+  \crossStaff { gis4 } s4 |
   s2 * 3 |
   
   \barNumberCheck 25
@@ -302,8 +302,8 @@ leftHandUpper = \relative {
   
   \barNumberCheck 33
   s2 |
-  s16 fs fs8~ fs16 fs fs8~ |
-  fs16 fs fs8~ fs16 fs fs8 |
+  s16 fis fis8~ fis16 fis fis8~ |
+  fis16 fis fis8~ fis16 fis fis8 |
   s2 * 5 |
   
   \barNumberCheck 41
@@ -311,50 +311,50 @@ leftHandUpper = \relative {
   
   \barNumberCheck 49
   s2 * 7 |
-  a16^\sempreP ds a b gs b g^> b |
+  a16^\sempreP dis' a b gis b g^> b |
   
   \barNumberCheck 57
-  fs16 b a b gs b g^> b |
-  fs16 b g^> b fs^\dim b\! g^> b |
-  fs16 b g^> b fs b g^> b |
-  \autoBeamOff \crossStaff { fs16 b fs b fs cs' fs, cs' 
-  fs,16 a fs a fs b fs b } |
-  \autoBeamOn gs16 b gs b a b a b |
-  a16 b a b gs b gs b |
+  fis16 b a b gis b g^> b |
+  fis16 b g^> b fis^\dim b\! g^> b |
+  fis16 b g^> b fis b g^> b |
+  \autoBeamOff \crossStaff { fis16 b fis b fis cis' fis cis' 
+  fis16 a fis a fis b fis b } |
+  \autoBeamOn gis16 b gis b a b a b |
+  a16 b a b gis b gis b |
   s2 |
   
   \barNumberCheck 65
-  s4 <a cs>16 <b ds> <a cs> <b ds> |
-  <a cs>16 <b ds> <a cs> <b ds> gs b gs b |
+  s4 <a cis'>16 <b dis'> <a cis'> <b dis'> |
+  <a cis'>16 <b dis'> <a cis'> <b dis'> gis b gis b |
   s2 * 6 |
   
   \barNumberCheck 73
-  gs16^\pp b gs b a c a \staffUp \stemDown c | \staffDown \stemUp
-  gs16 b gs b a c a \staffUp \stemDown c | \staffDown \stemUp
-  gs16 b gs b gs b gs b |
-  gs16^\smorz b gs b gs b gs \staffUp \stemDown b | \staffDown \stemUp
-  \crossStaff { gs2 } |
+  gis16^\pp b gis b a c' a \staffUp \stemDown c' | \staffDown \stemUp
+  gis16 b gis b a c' a \staffUp \stemDown c' | \staffDown \stemUp
+  gis16 b gis b gis b gis b |
+  gis16^\smorz b gis b gis b gis \staffUp \stemDown b | \staffDown \stemUp
+  \crossStaff { gis2 } |
 }
 
-leftHandMiddle = \relative {
+leftHandMiddle = {
   \partial 8 s8
-  e,4 b |
-  b4 e |
-  e4 b |
-  e4 b |
-  b4 e |
-  e4 a |
-  a4 b |
-  cs4 a'16-1 b-1 a-1 b-1 |
+  e,4 b,, |
+  b,,4 e, |
+  e,4 b,, |
+  e,4 b,, |
+  b,,4 e, |
+  e,4 a, |
+  a,4 b, |
+  cis4 a16-1 b-1 a-1 b-1 |
   
   \barNumberCheck 9
-  e,,4 b |
-  b4 e |
-  e4 b |
-  e4 b |
-  b4 e |
-  e4 a |
-  gs4 cs |
+  e,4 b,, |
+  b,,4 e, |
+  e,4 b,, |
+  e,4 b,, |
+  b,,4 e, |
+  e,4 a, |
+  gis,4 cis |
   s2 |
   
   \barNumberCheck 17
@@ -371,147 +371,147 @@ leftHandMiddle = \relative {
   
   \barNumberCheck 49
   s2 * 7 |
-  s4. \voiceFour \beamPositionShort g'8[ |
+  s4. \voiceFour \beamPositionShort g8[ |
   
   \barNumberCheck 57
-  fs8] s s g[ |
-  fs8] \beamPositionDefault g[ fs] \beamPositionShort g[ |
-  fs8] g[ fs] \beamPositionDefault g[ |
-  fs8] s s4 |
+  fis8] s s g[ |
+  fis8] \beamPositionDefault g[ fis] \beamPositionShort g[ |
+  fis8] g[ fis] \beamPositionDefault g[ |
+  fis8] s s4 |
   s2 |
-  \voiceThree e,4 b |
-  b4 e |
-  e4 b |
+  \voiceThree e,4 b,, |
+  b,,4 e, |
+  e,4 b,, |
   
   \barNumberCheck 65
-  e4 b |
-  b4 e |
-  e4 a |
-  gs4 cs |
+  e,4 b,, |
+  b,,4 e, |
+  e,4 a, |
+  gis,4 cis |
   s2 * 4 |
   
   \barNumberCheck 73
   s2 * 5 |
 }
 
-leftHandLower = \relative {
+leftHandLower = {
   \partial 8 s8
-  e,16 b'8-> b16 b, b'8-> b16 |
-  b,16 b'8-> b16 e, b'8-> b16 |
-  e,16 b'8 b16 b, b'8 b16 |
-  e,16 b'8 b16 b, b'8 b16 |
-  b,16 b'8 b16 e, b'8 b16 |
-  e,16 \adjustDynR ^\< e'8 e16 a, \adjustDynS ^\cresc e'8\! e16 |
-  a,16 fs'8-> fs16 b, fs'8-> fs16 |
-  cs16 fs8 fs16 b,-3 fs'8-1 fs16 |
+  e,16 b,8-> b,16 b,, b,8-> b,16 |
+  b,,16 b,8-> b,16 e, b,8-> b,16 |
+  e,16 b,8 b,16 b,, b,8 b,16 |
+  e,16 b,8 b,16 b,, b,8 b,16 |
+  b,,16 b,8 b,16 e, b,8 b,16 |
+  e,16 \adjustDynR ^\< e8 e16 a, \adjustDynS ^\cresc e8\! e16 |
+  a,16 fis8-> fis16 b, fis8-> fis16 |
+  cis16 fis8 fis16 b,-3 fis8-1 fis16 |
   
   \barNumberCheck 9
-  e,16 b'8 b16 b, b'8 b16 |
-  b,16 b'8 b16 e, b'8 b16 |
-  e,16 b'8 b16 b, b'8 b16 |
-  e,16 b'8 b16 b, b'8 b16 |
-  b,16 b'8 b16 e, b'8 b16 |
-  e,16^\cresc e'8->\! e16 a, e'8 e16 |
-  gs,16 gs'8 gs16 cs,^\cresc gs'8\! gs16 |
-  <cs, e fs as>16^\conForza q q q <c e fs as> q q q |
+  e,16 b,8 b,16 b,, b,8 b,16 |
+  b,,16 b,8 b,16 e, b,8 b,16 |
+  e,16 b,8 b,16 b,, b,8 b,16 |
+  e,16 b,8 b,16 b,, b,8 b,16 |
+  b,,16 b,8 b,16 e, b,8 b,16 |
+  e,16^\cresc e8->\! e16 a, e8 e16 |
+  gis,16 gis8 gis16 cis^\cresc gis8\! gis16 |
+  <cis e fis ais>16^\conForza q q q <c e fis ais> q q q |
   
   \barNumberCheck 17
-  <b e gs b>2^\ff |
-  fs'16^\sempreLegato b b, b' cs, gs' gs, gs' |
-  ds16 gs gs, gs' a,^\dim e'\! e, e' |
-  b16 e e, e' b e \set tieWaitForNote = ##t e,~ b'~ |
-  <e, b' e>4 \oneVoice r |
-  fs16-. as'-. fs,-. b'-. fs,-. cs''( b as) |
-  b,16( fs' b) r r4 |
-  fs,16-. as'-. fs,-. b'-. fs,-. cs''( b as) |
+  <b, e gis b>2^\ff |
+  fis16^\sempreLegato b b, b cis gis gis, gis |
+  dis16 gis gis, gis a,^\dim e\! e, e |
+  b,16 e e, e b, e \set tieWaitForNote = ##t e,~ b,~ |
+  <e, b, e>4 \oneVoice r |
+  fis,16-. ais-. fis,-. b-. fis,-. cis'( b ais) |
+  b,16( fis b) r r4 |
+  fis,16-. ais-. fis,-. b-. fis,-. cis'( b ais) |
   
   \barNumberCheck 25
-  b,16( fs' b) r r4 |
-  gs,16-. bs' gs,-. cs'-. gs,-. ds''( cs bs) |
-  cs,16( gs' cs) r r4 |
-  gs,16-. bs' gs,-. cs'-. gs,-. ds''( cs bs) |
-  cs,16-. gs' cs cs,-. b-. d'-. e,-. b-. |
-  \voiceFour a8. e16 b'8. e,16 |
-  a8. e16 b'8. e,16 |
-  \oneVoice <g g'>16-^ <g' b>[( <cs e>]) \clef treble <e g>[( <cs ds>])
-    <cs e>[( \adjustDynG ^\cresc <g' b>])\! <b cs>[( |
+  b,16( fis b) r r4 |
+  gis,16-. bis gis,-. cis'-. gis,-. dis'( cis' bis) |
+  cis16( gis cis') r r4 |
+  gis,16-. bis gis,-. cis'-. gis,-. dis'( cis' bis) |
+  cis16-. gis cis' cis-. b,-. d'-. e-. b,-. |
+  \voiceFour a,8. e,16 b,8. e,16 |
+  a,8. e,16 b,8. e,16 |
+  \oneVoice <g, g>16-^ <g b>[( <cis' e'>]) \clef treble <e' g'>[( <cis' dis'>])
+    <cis' e'>[( \adjustDynG ^\cresc <g' b'>])\! <b' cis''>[( |
   
   \barNumberCheck 33
-  <e, g>16]) <g b>[( <cs e>]) <e g>[( <b cs>]) \clef bass <fs, cs' e>-.( q-. 
+  <e' g'>16]) <g' b'>[( <cis'' e''>]) <e'' g''>[( <b' cis''>]) \clef bass <fis cis' e'>-.( q-. 
     q-.) |
-  b16^\f \voiceFour r fs16 fs, cs'8. fs,16 |
-  b8.^\p fs16 cs'8. fs,16 |
-  \oneVoice <a a'>16-^ \adjustDynH ^\f <a' cs>[( <ds fs>]) \clef treble 
-    <fs a>[( <cs ds>]) <ds fs>[( \adjustDynI ^\cresc <a' cs>])\! <cs ds>[( |
-  <fs, a>16]) <a cs>[( <ds fs>]) <fs a>[( <cs ds>]) \clef bass <gs, ds' fs>-.(
+  b16^\f \voiceFour r fis16 fis, cis8. fis,16 |
+  b,8.^\p fis,16 cis8. fis,16 |
+  \oneVoice <a, a>16-^ \adjustDynH ^\f <a cis'>[( <dis' fis'>]) \clef treble 
+    <fis' a'>[( <cis' dis'>]) <dis' fis'>[( \adjustDynI ^\cresc <a' cis''>])\! <cis'' dis''>[( |
+  <fis' a'>16]) <a' cis''>[( <dis'' fis''>]) <fis'' a''>[( <cis'' dis''>]) \clef bass <gis dis' fis'>-.(
     q-. q-.) |
-  <gs d' es>16 <f b>-1-4[^(^\< <e as>-2-5 <ds a'>-1-3]\! <d gs>-2-4^\cresc
-    <cs g'>-1-3\! <c fs>-2-4 <b f'>-1-5 |
-  <as e'>16-1-5-.) <e' as>-2-4[^(^\< <ds a'>-1-3 <d gs>-2-4] <cs g'>-1-3 
-    <c fs>-2-4^\cresc <b f'>-1-5\! <as e'>-1-3 |
-  <a ds>16-2-4) <ds a'>-1-3[(^\< <d gs>-2-4 <cs g'>-1-3] <c fs>-2-4 <b f'>-1-5
-    <as e'>-1-3^\cresc <a ds>-2-4\! |
+  <gis d' eis'>16 <f b>-1-4[^(^\< <e ais>-2-5 <dis a>-1-3]\! <d gis>-2-4^\cresc
+    <cis g>-1-3\! <c fis>-2-4 <b, f>-1-5 |
+  <ais, e>16-1-5-.) <e ais>-2-4[^(^\< <dis a>-1-3 <d gis>-2-4] <cis g>-1-3 
+    <c fis>-2-4^\cresc <b, f>-1-5\! <ais, e>-1-3 |
+  <a, dis>16-2-4) <dis a>-1-3[(^\< <d gis>-2-4 <cis g>-1-3] <c fis>-2-4 <b, f>-1-5
+    <ais, e>-1-3^\cresc <a, dis>-2-4\! |
   
   \barNumberCheck 41
-  <gs d'>16 \adjustDynJ ^\< <g cs> <fs c'> <f b> <e as> <ds a'> <d gs> 
-    <cs fs>^\! |
-  <b fs'>16-.) \adjustDynK ^\ff\sustainOn r r \clef treble <ds''' b'>[( 
-    <a fs'>]) r r \clef bass <ds,, b'>[( |
-  <a fs'>16]) \adjustDynL ^\<\sustainOff <c, c'>\! <b b'> \adjustDynM 
-    ^\conForza <a a'> <b b'> <c c'> <b b'> <a a'> |
-  <b b'>16-^\sustainOn r r \clef treble <fs'''' ds'>[( <b, a'>]) r r \clef bass 
-    <fs, ds'>[( |
-  <b, a'>16])\sustainOff <c, c'>^\conFuoco <b b'> <a a'> <b b'> <c c'> <b b'>
-    <a a'> |
+  <gis, d>16 \adjustDynJ ^\< <g, cis> <fis, c> <f, b,> <e, ais,> <dis, a,> <d, gis,> 
+    <cis, fis,>^\! |
+  <b,, fis,>16-.) \adjustDynK ^\ff\sustainOn r r \clef treble <dis'' b''>[( 
+    <a' fis''>]) r r \clef bass <dis b>[( |
+  <a, fis>16]) \adjustDynL ^\<\sustainOff <c, c>\! <b,, b,> \adjustDynM 
+    ^\conForza <a,, a,> <b,, b,> <c, c> <b,, b,> <a,, a,> |
+  <b,, b,>16-^\sustainOn r r \clef treble <fis'' dis'''>[( <b' a''>]) r r \clef bass 
+    <fis dis'>[( |
+  <b, a>16])\sustainOff <c, c>^\conFuoco <b,, b,> <a,, a,> <b,, b,> <c, c> <b,, b,>
+    <a,, a,> |
   \override Beam.breakable = ##t
-  <b b'>16^\f \clef treble <d'' b'>[( <gs f'>]) <f d'>[( <b, gs'>]) <c a'>[( 
-    <fs ds'>]) <ds c'>[( |
-  <a fs'>16]) <c a'>[( <fs ds'>]) <f d'>[( <b,gs'>]) <as g'>[( <e' cs'>]) 
-    <ds c'>[( |
-  <a fs'>16]) <c a'>[( <fs ds'>]) <ds c'>[( <a fs'>]) <b gs'>[( <f' d'>]) 
-    <d b'>[( |
+  <b,, b,>16^\f \clef treble <d' b'>[( <gis' f''>]) <f' d''>[( <b gis'>]) <c' a'>[( 
+    <fis' dis''>]) <dis' c''>[( |
+  <a fis'>16]) <c' a'>[( <fis' dis''>]) <f' d''>[( <bgs'>]) <ais g'>[( <e' cis''>]) 
+    <dis' c''>[( |
+  <a fis'>16]) <c' a'>[( <fis' dis''>]) <dis' c''>[( <a fis'>]) <b gis'>[( <f' d''>]) 
+    <d' b'>[( |
   
   \barNumberCheck 49
-  <gs, f'>16]) <b gs'>[( <f' d'>]) <e cs'>[( <as, g'>]) <a fs'>[( <ds c'>]) 
-    <d b'>[( |
-  <gs, f'>16]) <b gs'>[( <f' d'>]) <d b'>[( <gs, f'>]) <a fs'>[( <ds c'>])
-    <c a'>[( |
-  <fs, ds'>16])^\cresc <a fs'>[(\! <ds c'>]) <d b'>[( <gs, f'>]) <g e'>[( 
-    <cs as'>]) <c a'>[( |
-  <fs, ds'>16]) <f d'>[( <b gs'>]) <cs g'>[( \clef bass <e, cs'>]) <as g'>[(
-    <e cs'>]) <as g'>[( |
-  <e c'>16]) <as fs'>[( <e c'>]) <as fs'>[( <e c'>]) <a fs'>[(^\cresc 
-    <e c'>])\! <a fs'>[( |
-  <b, b'>16])^\sf r \voiceFour e8[^( \adjustDynN ^\p a,]) c^>[^( |
-  b8]) \omit TupletBracket \tuplet 3/2 { e16[^( fs e) } a,8^^] c->[^( |
-  b8]) b,[( e]) b'->[~ |
+  <gis f'>16]) <b gis'>[( <f' d''>]) <e' cis''>[( <ais g'>]) <a fis'>[( <dis' c''>]) 
+    <d' b'>[( |
+  <gis f'>16]) <b gis'>[( <f' d''>]) <d' b'>[( <gis f'>]) <a fis'>[( <dis' c''>])
+    <c' a'>[( |
+  <fis dis'>16])^\cresc <a fis'>[(\! <dis' c''>]) <d' b'>[( <gis f'>]) <g e'>[( 
+    <cis' ais'>]) <c' a'>[( |
+  <fis dis'>16]) <f d'>[( <b gis'>]) <cis' g'>[( \clef bass <e cis'>]) <ais g'>[(
+    <e cis'>]) <ais g'>[( |
+  <e c'>16]) <ais fis'>[( <e c'>]) <ais fis'>[( <e c'>]) <a fis'>[(^\cresc 
+    <e c'>])\! <a fis'>[( |
+  <b, b>16])^\sf r \voiceFour e8[^( \adjustDynN ^\p a,]) c^>[^( |
+  b,8]) \omit TupletBracket \tuplet 3/2 { e16[^( fis e) } a,8^^] c->[^( |
+  b,8]) b,,[( e,]) b,->[~ |
   
   \barNumberCheck 57
-  b8] \tuplet 3/2 { b,16[( cs b } e8])-^ b'->[~ |
-  b8] \tuplet 3/2 { e,16[( fs e } b8])-^ b'->[~ |
-  b8] \tuplet 3/2 { e,16[( fs e } b'8])-^ r |
-  r4 r8 \tuplet 3/2 { fs16( gs fs } |
-  b,4) r |
-  e16 b'8 b16 b, b'8 b16 |
-  b,16 b'8 b16 e, b'8 b16 |
-  e,16 b'8 b16 b, b'8 b16 |
+  b,8] \tuplet 3/2 { b,,16[( cis, b,, } e,8])-^ b,->[~ |
+  b,8] \tuplet 3/2 { e,16[( fis, e, } b,,8])-^ b,->[~ |
+  b,8] \tuplet 3/2 { e,16[( fis, e, } b,8])-^ r |
+  r4 r8 \tuplet 3/2 { fis,16( gis, fis, } |
+  b,,4) r |
+  e,16 b,8 b,16 b,, b,8 b,16 |
+  b,,16 b,8 b,16 e, b,8 b,16 |
+  e,16 b,8 b,16 b,, b,8 b,16 |
   
   \barNumberCheck 65
-  e,16 b'8 b16 b, b'8 b16 |
-  b,16 b'8 b16 e, b'8 b16 |
-  e,16^\pocoCresc e'8-> e16 a, e'8 e16 |
-  gs,16^\cresc gs'8\! gs16 cs, gs'8 gs16 |
-  <cs, e fs as>16^\< q q q\! <c e fs as>^\cresc q\! q q |
-  <b e gs b>2^\f |
-  fs'16 b b, b' cs, gs' gs, gs' |
-  ds16 gs gs, gs' a, e' e, e' |
+  e,16 b,8 b,16 b,, b,8 b,16 |
+  b,,16 b,8 b,16 e, b,8 b,16 |
+  e,16^\pocoCresc e8-> e16 a, e8 e16 |
+  gis,16^\cresc gis8\! gis16 cis gis8 gis16 |
+  <cis e fis ais>16^\< q q q\! <c e fis ais>^\cresc q\! q q |
+  <b, e gis b>2^\f |
+  fis16 b b, b cis gis gis, gis |
+  dis16 gis gis, gis a, e e, e |
   
   \barNumberCheck 73
-  b16 e e, e' c e e, e' |
-  b16 e e, e' c e e, e' |
-  b16 e e, e' b e e, e' |
-  b16 e e, e' b e e, b'~ |
-  <e, b'>2\fermata |
+  b,16 e e, e c e e, e |
+  b,16 e e, e c e e, e |
+  b,16 e e, e b, e e, e |
+  b,16 e e, e b, e e, b,~ |
+  <e, b,>2\fermata |
 }
 
 leftHand = <<

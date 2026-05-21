@@ -1,7 +1,7 @@
 %...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....
 
 \version "2.22.1"
-\language "english"
+\language "nederlands"
 
 \include "Global.ily"
 \include "articulate.ly"
@@ -37,7 +37,7 @@ slurShapeB = \shape #'(
 
 global = {
   \time 2/4
-  \key gf \major
+  \key ges \major
   \accidentalStyle piano
   
   % group beams by 1/8 note, must be in both staves
@@ -46,261 +46,261 @@ global = {
   \set Timing.beatStructure = 1,1,1,1
 }
 
-rightHand = \relative {
+rightHand = {
   \clef treble
   \global
   \tempo "Vivace" 4 = 116
   
   \scaleDurations 2/3 {
-    \ottava 1 gf'''16-3^\brillante bf-5 df,-1  gf-4 ef-2 gf-4  df-1 gf-5 bf,
-      df gf,-1 bf-4 |
-    \ottava 0 gf16-2 bf df,  gf ef gf  df gf bf,  df gf,-1 bf-5 |
-    df,16-1^\legato df' af-2  df-5 af af'  af, af' ef  af ef ef' |
-    ef,16 ef' af,  \ottava 1 ef' af, af'  af, af' df,  af' df, df' |
-    gf,16 bf df,  gf ef gf  df gf bf,  \ottava 0 df gf, bf |
-    gf16 bf df,  gf ef gf  df gf bf,  df gf, bf |
-    ef, ef' af,  ef' af, af'  ef af ef  \ottava 1 ef' af, af' |
-    bf, bf' bf,  bf'^\pocoRall bf, bf'  bf, bf' bf,  bf' bf, bf' |
+    \ottava 1 ges'''16-3^\brillante bes'''-5 des'''-1  ges'''-4 es'''-2 ges'''-4  des'''-1 ges'''-5 bes''
+      des''' ges''-1 bes''-4 |
+    \ottava 0 ges''16-2 bes'' des''  ges'' es'' ges''  des'' ges'' bes'  des'' ges'-1 bes'-5 |
+    des'16-1^\legato des'' as'-2  des''-5 as' as''  as' as'' es''  as'' es'' es''' |
+    es''16 es''' as''  \ottava 1 es''' as'' as'''  as'' as''' des'''  as''' des''' des'''' |
+    ges'''16 bes''' des'''  ges''' es''' ges'''  des''' ges''' bes''  \ottava 0 des''' ges'' bes'' |
+    ges''16 bes'' des''  ges'' es'' ges''  des'' ges'' bes'  des'' ges' bes' |
+    es' es'' as'  es'' as' as''  es'' as'' es''  \ottava 1 es''' as'' as''' |
+    bes'' bes''' bes''  bes'''^\pocoRall bes'' bes'''  bes'' bes''' bes''  bes''' bes'' bes''' |
     
     \barNumberCheck 9
-    gf16^\aTempo bf df,  gf ef gf  df gf bf,  df gf, bf |
-    \ottava 0 gf16 bf df,  gf ef gf  df gf bf,  df gf, bf |
-    df,16 df' af  df af af'  af, af' ef  af ef ef' |
-    \ottava 1 ef,16 ef' af,  ef' af, af'  af, af' df,  af' df, df' |
-    gf,16 bf df,  gf ef gf  df gf bf,  df gf, bf |
-    \ottava 0 gf16 bf df,  gf ef gf  df gf bf,  df gf, bf |
-    ef,16-1 ef' af,-2  ef'-5 af,-1 af'  ef-2 af ef-1  ef' af, ef' |
-    ef,16 ef'-5 af,-2  ef' df,-1 df'-4  af-2 df-4 af-1  
-      \ottava 1 af'( df,-1 df' |
+    ges'''16^\aTempo bes''' des'''  ges''' es''' ges'''  des''' ges''' bes''  des''' ges'' bes'' |
+    \ottava 0 ges''16 bes'' des''  ges'' es'' ges''  des'' ges'' bes'  des'' ges' bes' |
+    des'16 des'' as'  des'' as' as''  as' as'' es''  as'' es'' es''' |
+    \ottava 1 es''16 es''' as''  es''' as'' as'''  as'' as''' des'''  as''' des''' des'''' |
+    ges'''16 bes''' des'''  ges''' es''' ges'''  des''' ges''' bes''  des''' ges'' bes'' |
+    \ottava 0 ges''16 bes'' des''  ges'' es'' ges''  des'' ges'' bes'  des'' ges' bes' |
+    es'16-1 es'' as'-2  es''-5 as'-1 as''  es''-2 as'' es''-1  es''' as'' es''' |
+    es''16 es'''-5 as''-2  es''' des''-1 des'''-4  as''-2 des'''-4 as''-1  
+      \ottava 1 as'''( des'''-1 des'''' |
       
     \barNumberCheck 17
-    af16-2 bf af  ef-1 ef' ef,  df ef df  af af' af, |
-    \ottava 0 af16-2 bf af  ef-1 ef' ef,  df[ ef df)  af8*3/2->]~ |
-    af16 ef'-2( af-4  bf-5 af-4 ef-2  df-1 af' df  ef df bf) |
-    \ottava 1 af16 ef' af  bf af ef  df af' df  ef df bf |
-    af16 bf af  ef ef' ef,  df ef df  af af' af, |
-    \ottava 0 af16 bf af  ef ef' ef,  df[ ef df  af8*3/2->]~ |
-    af16 af'(-4 gf-2  af-3 gf-1 af-2  gf'-^)-5 af,(-2 gf-1  af-3 gf-2 af-3 |
-    af,16)-1 af'(-3 gf-2  af-3 gf-1 af-2  gf'-^)-5 af, gf  af gf af-3 |
+    as'''16-2 bes''' as'''  es'''-1 es'''' es'''  des''' es''' des'''  as'' as''' as'' |
+    \ottava 0 as''16-2 bes'' as''  es''-1 es''' es''  des''[ es'' des'')  as'8*3/2->]~ |
+    as'16 es''-2( as''-4  bes''-5 as''-4 es''-2  des''-1 as'' des'''  es''' des''' bes'') |
+    \ottava 1 as''16 es''' as'''  bes''' as''' es'''  des''' as''' des''''  es'''' des'''' bes''' |
+    as'''16 bes''' as'''  es''' es'''' es'''  des''' es''' des'''  as'' as''' as'' |
+    \ottava 0 as''16 bes'' as''  es'' es''' es''  des''[ es'' des''  as'8*3/2->]~ |
+    as'16 as''(-4 ges''-2  as''-3 ges''-1 as''-2  ges'''-^)-5 as''(-2 ges''-1  as''-3 ges''-2 as''-3 |
+    as'16)-1 as''(-3 ges''-2  as''-3 ges''-1 as''-2  ges'''-^)-5 as'' ges''  as'' ges'' as''-3 |
     
     \barNumberCheck 25
-    bf,16(-1 bf'-3 gf-2  bf-4 gf-1 bf)-2  gf'-^-5 bf,(-2 gf-1  
-      bf-\adjustFingerA-4 gf-2 bf)-3 |
-    bf,16-1( bf' gf  bf gf bf)  gf'-^ bf,(-2 gf-1  bf-\adjustFingerB-2 
-      gf-1 bf)-2 |
-    \ottava 1 gf16(-1 bf-2 gf  bf'-.-5 bf,-2 gf-1  af'-. bf, gf  
-      gf'-. bf, gf) |
-    df'16-. bf( gf  bf'-. bf, gf  af'-. bf, gf  gf'-.-5 bf,-3 gf)-2 |
-    df16-1 df'-4 bf-2  df-4 df-1 df'  bf df df,  df bf df |
-    df,16 df' bf  df df df'  bf df df,  df bf df |
-    df,16 df' bf  df df df'  af df df,  df-5 af-2 df-5 |
-    \ottava 0 df,16-1 df'-5 gf,-1  df' df,-1 df-5  gf,-2 df' df,-1 
-      \staffDown \voiceOne df-5 gf,-2 df'-5 |
+    bes'16(-1 bes''-3 ges''-2  bes''-4 ges''-1 bes'')-2  ges'''-^-5 bes''(-2 ges''-1  
+      bes''-\adjustFingerA-4 ges''-2 bes'')-3 |
+    bes'16-1( bes'' ges''  bes'' ges'' bes'')  ges'''-^ bes''(-2 ges''-1  bes''-\adjustFingerB-2 
+      ges''-1 bes'')-2 |
+    \ottava 1 ges''16(-1 bes''-2 ges''  bes'''-.-5 bes''-2 ges''-1  as'''-. bes'' ges''  
+      ges'''-. bes'' ges'') |
+    des'''16-. bes''( ges''  bes'''-. bes'' ges''  as'''-. bes'' ges''  ges'''-.-5 bes''-3 ges'')-2 |
+    des''16-1 des'''-4 bes''-2  des'''-4 des'''-1 des''''  bes''' des'''' des'''  des''' bes'' des''' |
+    des''16 des''' bes''  des''' des''' des''''  bes''' des'''' des'''  des''' bes'' des''' |
+    des''16 des''' bes''  des''' des''' des''''  as''' des'''' des'''  des'''-5 as''-2 des'''-5 |
+    \ottava 0 des''16-1 des'''-5 ges''-1  des''' des''-1 des''-5  ges'-2 des'' des'-1 
+      \staffDown \voiceOne des'-5 ges-2 des'-5 |
    
    \barNumberCheck 33
-   \sempLeg \slurShapeA ef,16( gf df'  \staffUp ef16 gf,-\adjustFingerC-1 df'
-     ef gf df-1  ef gf df' |
-   \oneVoice ef,16-1 gf df'  ef gf,-1 df'  ef gf df-1  
-     ef-2 df'-\adjustFingerD-5 gf,-3 |
-   ef16-1 gf ef'-5  df gf, ef  df'-5 gf, ef  df gf-5 ef |
-   df16 gf, ef'-5  df gf, ef  df'-5 gf, ef  df-1 gf-4 ef)-2 |
-   af,16(-1 ef' gf  af ef-1 gf  af ef' gf,-1  af ef' gf |
-   af,-1 ef' gf  af ef-1 gf  af ef' gf,-1  af gf'-5 ef-4 |
-   af,16-2 gf-1 ef'-5  af, gf ef  af-5 gf ef  af, gf'-5 ef |
-   af,16 gf-1 ef'  af,-3 gf ef  af gf ef  af, gf'-4 ef)-2 |
+   \sempLeg \slurShapeA es16( ges des'  \staffUp es'16 ges-\adjustFingerC-1 des'
+     es' ges' des'-1  es' ges' des'' |
+   \oneVoice es'16-1 ges' des''  es'' ges'-1 des''  es'' ges'' des''-1  
+     es''-2 des'''-\adjustFingerD-5 ges''-3 |
+   es''16-1 ges'' es'''-5  des''' ges'' es''  des'''-5 ges'' es''  des'' ges''-5 es'' |
+   des''16 ges' es''-5  des'' ges' es'  des''-5 ges' es'  des'-1 ges'-4 es')-2 |
+   as16(-1 es' ges'  as' es'-1 ges'  as' es'' ges'-1  as' es'' ges'' |
+   as'-1 es'' ges''  as'' es''-1 ges''  as'' es''' ges''-1  as'' ges'''-5 es'''-4 |
+   as''16-2 ges''-1 es'''-5  as'' ges'' es''  as''-5 ges'' es''  as' ges''-5 es'' |
+   as'16 ges'-1 es''  as'-3 ges' es'  as' ges' es'  as ges'-4 es')-2 |
    
    \barNumberCheck 41
-   df16(-1 df'-4 af-2  df-4 af-1 af'-5  df,-2 af'-5 af,-1  df-4 af-2 df-4 |
-   df,16 df' af  df af af'  df, af' af,  df af df) |
-   df,16 df' af  df-5 df-1 df'  af-2 df-5 df,-1  df-5 af df |
-   af16-1 af'-5 df,-2  af'-5 af-1 af'  df, af' af,  af df,-2 af'-5 |
-   df,16-1 ef-2 df-1  \ottava 1 ef'-5 df-1 ef'-5  df-4 ef-5 df-4  
-     df,-1 ef-5 df-4 |
-   \ottava 0 df,16-1 ef-2 df-1  \ottava 1 ef'-5 df-1 ef'  df ef df  df, ef df |
-   df'16-4 ef-5 df-4  df,-1 ef-2 df-1  df' ef df  df, ef df |
-   df'16 ef df  df, ef df  df' ef df  df, ef df |
+   des'16(-1 des''-4 as'-2  des''-4 as'-1 as''-5  des''-2 as''-5 as'-1  des''-4 as'-2 des''-4 |
+   des'16 des'' as'  des'' as' as''  des'' as'' as'  des'' as' des'') |
+   des'16 des'' as'  des''-5 des''-1 des'''  as''-2 des'''-5 des''-1  des''-5 as' des'' |
+   as'16-1 as''-5 des''-2  as''-5 as''-1 as'''  des''' as''' as''  as'' des''-2 as''-5 |
+   des''16-1 es''-2 des''-1  \ottava 1 es'''-5 des'''-1 es''''-5  des''''-4 es''''-5 des''''-4  
+     des'''-1 es'''-5 des'''-4 |
+   \ottava 0 des''16-1 es''-2 des''-1  \ottava 1 es'''-5 des'''-1 es''''  des'''' es'''' des''''  des''' es''' des''' |
+   des''''16-4 es''''-5 des''''-4  des'''-1 es'''-2 des'''-1  des'''' es'''' des''''  des''' es''' des''' |
+   des''''16 es'''' des''''  des''' es''' des'''  des'''' es'''' des''''  des''' es''' des''' |
    
    \barNumberCheck 49
-   gf16-3 bf-5 df,-1  gf-4 ef gf  df gf bf,  \ottava 0 df gf, bf |
-   gf16 bf df,  gf ef gf  df gf bf,  df gf, bf |
-   df,16 df' af  df af af'  af, af' ef  af ef ef' |
-   ef,16 ef' af,  \ottava 1 ef' af, af'  af, af' df,  af' df, df' |
-   gf,16 bf df,  gf ef gf  df gf bf,  \ottava 0 df gf, bf |
-   gf16 bf df,  gf ef gf  df gf bf,  df gf, bf |
-   ef,16 ef' af,  ef' af, af'  bf, bf' bf,  bf' bf, bf' |
-   ef,16 ef' af,  \ottava 1 ef' af, af'  bf, bf'-> bf,  bf' bf, bf' |
+   ges'''16-3 bes'''-5 des'''-1  ges'''-4 es''' ges'''  des''' ges''' bes''  \ottava 0 des''' ges'' bes'' |
+   ges''16 bes'' des''  ges'' es'' ges''  des'' ges'' bes'  des'' ges' bes' |
+   des'16 des'' as'  des'' as' as''  as' as'' es''  as'' es'' es''' |
+   es''16 es''' as''  \ottava 1 es''' as'' as'''  as'' as''' des'''  as''' des''' des'''' |
+   ges'''16 bes''' des'''  ges''' es''' ges'''  des''' ges''' bes''  \ottava 0 des''' ges'' bes'' |
+   ges''16 bes'' des''  ges'' es'' ges''  des'' ges'' bes'  des'' ges' bes' |
+   es'16 es'' as'  es'' as' as''  bes' bes'' bes'  bes'' bes' bes'' |
+   es''16 es''' as''  \ottava 1 es''' as'' as'''  bes'' bes'''-> bes''  bes''' bes'' bes''' |
    
    \barNumberCheck 57
-   bf,16 bf' ef,  bf'-5 af,-1 af'  af,-1 af'-5 df,  af' gf,-1 gf' |
-   df,16 df' af-2  df-5 af-1 af'  gf,-1 gf' df-2  gf-5 df-1 df' |
-   bf,16-1 bf' ef,  bf' af,-1 af'  af, af' df,  af' gf, gf' |
-   df,16 df' af  df af af'  bf, gf' df  gf df df' |
-   bf,16-1 bf'-5 ef,-2  bf'-5 af,-1 af'-4  bf,-1 bf'-5 ef,-2  bf'-5 af, af'-4 |
-   bf,16 bf' ef,  bf' af, af'  bf, bf' ef,  bf' af, af' |
-   df,16(-2 bf'-5 af,-1  af'-4 df,-2 bf'-5  af,-1 af'-4 df,-2  
-     bf'-5 af,-1 af'-4 |
-   df,16  bf' af,  af' df, bf'  af,^\pocoRall af' df,  bf' af, af'-4 |
+   bes''16 bes''' es'''  bes'''-5 as''-1 as'''  as''-1 as'''-5 des'''  as''' ges''-1 ges''' |
+   des''16 des''' as''-2  des'''-5 as''-1 as'''  ges''-1 ges''' des'''-2  ges'''-5 des'''-1 des'''' |
+   bes''16-1 bes''' es'''  bes''' as''-1 as'''  as'' as''' des'''  as''' ges'' ges''' |
+   des''16 des''' as''  des''' as'' as'''  bes'' ges''' des'''  ges''' des''' des'''' |
+   bes''16-1 bes'''-5 es'''-2  bes'''-5 as''-1 as'''-4  bes''-1 bes'''-5 es'''-2  bes'''-5 as'' as'''-4 |
+   bes''16 bes''' es'''  bes''' as'' as'''  bes'' bes''' es'''  bes''' as'' as''' |
+   des'''16(-2 bes'''-5 as''-1  as'''-4 des'''-2 bes'''-5  as''-1 as'''-4 des'''-2  
+     bes'''-5 as''-1 as'''-4 |
+   des'''16  bes''' as''  as''' des''' bes'''  as''^\pocoRall as''' des'''  bes''' as'' as'''-4 |
    
    \barNumberCheck 65
-   ef'16)[-5 r32 \slurShapeB df\(-3 bf16]-2  af-1 gf-4 ef-3  
-     \ottava 0 df-2 bf-1 af-4  gf-3 ef-2 df-1 |
+   es''''16)[-5 r32 \slurShapeB des''''\(-3 bes'''16]-2  as'''-1 ges'''-4 es'''-3  
+     \ottava 0 des'''-2 bes''-1 as''-4  ges''-3 es''-2 des''-1 |
   }
-  << { af4-3 bf8.[-\adjustFingerE-4 af16] } \\ { <ef gf>4( <df f>) } >>
-  gf8\)^\aTempo r
+  << { as'4-3 bes'8.[-\adjustFingerE-4 as'16] } \\ { <es' ges'>4( <des' f'>) } >>
+  ges'8\)^\aTempo r
   \scaleDurations 2/3 {
-    \ottava 1 af''16 bf af  df, df' df, |
-    df16 ef df  gf, gf' gf,  \ottava 0 af[ bf af df,8*3/2]->~ |
-    df16 gf af  bf af gf  df af' df  ef df af
-    \ottava 1 gf16 df' gf  af gf ef  df af' df  ef df af |
-    gf16 af gf  df df' df,  df ef df  af af' af, |
-    \ottava 0 af16 bf af  gf gf' gf,  df4*3/2->~ |
+    \ottava 1 as'''16 bes''' as'''  des''' des'''' des''' |
+    des'''16 es''' des'''  ges'' ges''' ges''  \ottava 0 as''[ bes'' as'' des''8*3/2]->~ |
+    des''16 ges'' as''  bes'' as'' ges''  des'' as'' des'''  es''' des''' as''
+    \ottava 1 ges''16 des''' ges'''  as''' ges''' es'''  des''' as''' des''''  es'''' des'''' as''' |
+    ges'''16 as''' ges'''  des''' des'''' des'''  des''' es''' des'''  as'' as''' as'' |
+    \ottava 0 as''16 bes'' as''  ges'' ges''' ges''  des''4*3/2->~ |
     
     \barNumberCheck 73
-    df16 gf af  bf af gf  df af' df  ef df af |
-    \ottava 1 gf16 df' gf  af gf df  af df af' bf af df, |
-    bf'16 df, af'-4  bf,-1 af'-5 df,  gf-4 bf,-1 ef-5  
-      \ottava 0 af,-2 df-4 df,-1 |
-    bf'16-5 df, af'  bf, af' df,  gf bf, ef  af, df df, |
-    bf'16 df, af'  bf, af' df,  gf bf, ef  \clef bass af, df df, |
-    bf'16-3 gf-2 ef'-5  df,-1 df'-4 af-2  bf-3 gf-2 ef'-5  df, df' af |
-    bf8*3/2  <bf df>16->( af gf)  \clef treble <ef' gf>->( df bf) 
-      <gf' bf>->( ef df) |
-    <bf' df>16->( af gf)  <ef' gf>->( df bf)  <gf' bf>->( ef df)  
-      <bf' df>->( af gf) |
+    des''16 ges'' as''  bes'' as'' ges''  des'' as'' des'''  es''' des''' as'' |
+    \ottava 1 ges''16 des''' ges'''  as''' ges''' des'''  as'' des''' as''' bes''' as''' des''' |
+    bes'''16 des''' as'''-4  bes''-1 as'''-5 des'''  ges'''-4 bes''-1 es'''-5  
+      \ottava 0 as''-2 des'''-4 des''-1 |
+    bes''16-5 des'' as''  bes' as'' des''  ges'' bes' es''  as' des'' des' |
+    bes'16 des' as'  bes as' des'  ges' bes es'  \clef bass as des' des |
+    bes16-3 ges-2 es'-5  des-1 des'-4 as-2  bes-3 ges-2 es'-5  des des' as |
+    bes8*3/2  <bes des'>16->( as ges)  \clef treble <es' ges'>->( des' bes) 
+      <ges' bes'>->( es' des') |
+    <bes' des''>16->( as' ges')  <es'' ges''>->( des'' bes')  <ges'' bes''>->( es'' des'')  
+      <bes'' des'''>->( as'' ges'') |
       
     \barNumberCheck 81
-    \ottava 1 <ef' gf>16( df bf)  <gf' bf>( ef df)  <ef gf>( df bf)
-      <gf' bf>( ef df) |
-    <ef gf>16( df bf)  <gf' bf>( ef df)  <ef gf>( df bf)  <gf' bf>( ef df) |
-    <bf gf'>16-. \ottava 0 r <gf gf'>-.  <ef ef'>-. <df df'>-. <bf bf'>
-      <af af'>-. <gf gf'>-. <ef ef'>-.  <df df'>-. <bf bf'>-. <af af'>-. |
+    \ottava 1 <es''' ges'''>16( des''' bes'')  <ges''' bes'''>( es''' des''')  <es''' ges'''>( des''' bes'')
+      <ges''' bes'''>( es''' des''') |
+    <es''' ges'''>16( des''' bes'')  <ges''' bes'''>( es''' des''')  <es''' ges'''>( des''' bes'')  <ges''' bes'''>( es''' des''') |
+    <bes'' ges'''>16-. \ottava 0 r <ges'' ges'''>-.  <es'' es'''>-. <des'' des'''>-. <bes' bes''>
+      <as' as''>-. <ges' ges''>-. <es' es''>-.  <des' des''>-. <bes bes'>-. <as as'>-. |
   }
-  <gf gf'>8-. r \ottava 1 <bf'' df gf bf>4 |
-  \staffDown \voiceOne gf,,2\fermata |
+  <ges ges'>8-. r \ottava 1 <bes'' des''' ges''' bes'''>4 |
+  \staffDown \voiceOne ges2\fermata |
   \bar "|."
 }
 
-leftHand = \relative {
+leftHand = {
   \clef bass
   \global
   
-  <gf bf df gf>8-.[ <gf cf ef gf>-. <gf bf df gf>-.] r |
-  <gf, gf'>8-. <cf' ef gf>-.[ <bf df gf>-.] r |
-  <df,, df'>8-. <af'' df f>-.[ <af cf ef>-.] af,-. |
-  << { r8 <af' cf ef>->[ <af cf df>] } \\ { df,4. } >> r8 |
-  <gf bf df gf>8-.[ <gf cf ef gf>-. <gf bf df gf>-.] r |
-  <gf, gf'>8-. <cf' ef gf>-.[ <bf df gf>-.] r |
-  cf,8 <af' ef'>4-> cf,8 |
-  <bf f' d'>8\arpeggio \clef treble <bf' f' d'>\arpeggio r4 |
+  <ges bes des' ges'>8-.[ <ges ces' es' ges'>-. <ges bes des' ges'>-.] r |
+  <ges, ges>8-. <ces' es' ges'>-.[ <bes des' ges'>-.] r |
+  <des, des>8-. <as des' f'>-.[ <as ces' es'>-.] as,-. |
+  << { r8 <as ces' es'>->[ <as ces' des'>] } \\ { des4. } >> r8 |
+  <ges bes des' ges'>8-.[ <ges ces' es' ges'>-. <ges bes des' ges'>-.] r |
+  <ges, ges>8-. <ces' es' ges'>-.[ <bes des' ges'>-.] r |
+  ces8 <as es'>4-> ces8 |
+  <bes, f d'>8\arpeggio \clef treble <bes f' d''>\arpeggio r4 |
   
   \barNumberCheck 9
-  <gf bf df gf>8-.[ <gf cf ef gf>-. <gf bf df gf>-.] r |
-  \clef bass <gf, gf'>8-. <cf' ef gf>-.[ <bf df gf>-.] r |
-  <df,, df'>8-. <af'' df f>-.[ <af cf ef>-.] af,-. |
-  << { r8 <af' cf ef>->[ <af cf df>] } \\ { df,4. } >> r8 |
-  <gf bf df gf>8-.[ <gf cf ef gf>-. <gf bf df gf>-.] r |
-  <gf, gf'>8-. <cf' ef gf>-.[ <bf df gf>-.] r |
-  c,8-. <af' gf'>4 af,8-. |
-  df-.[ <af' f'>-.] r4 \clef treble |
+  <ges bes des' ges'>8-.[ <ges ces' es' ges'>-. <ges bes des' ges'>-.] r |
+  \clef bass <ges, ges>8-. <ces' es' ges'>-.[ <bes des' ges'>-.] r |
+  <des, des>8-. <as des' f'>-.[ <as ces' es'>-.] as,-. |
+  << { r8 <as ces' es'>->[ <as ces' des'>] } \\ { des4. } >> r8 |
+  <ges bes des' ges'>8-.[ <ges ces' es' ges'>-. <ges bes des' ges'>-.] r |
+  <ges, ges>8-. <ces' es' ges'>-.[ <bes des' ges'>-.] r |
+  c8-. <as ges'>4 as,8-. |
+  des-.[ <as f'>-.] r4 \clef treble |
   
   \barNumberCheck 17
-  <c gf' af>8([ <af gf' af>)] <df f bf>[ <af f' af>] |
-  <c gf' bf>8[ <af gf' af>] <df f>[ af] \clef bass |
-  c,8-. <af' ef' gf>-.[ <af df f>-.] df,-. |
-  af8-.[ <af' c gf'>-.] df,,-.[ <af'' df f>-.] |
-  af,8 \clef treble <c' gf' af>[ <df f bf> <af f' af>] |
-  <c gf' bf>8[ <af gf' af>] <df f>[ af] \clef bass |
-  c,8-.[ <af' ef' gf>-.] r c,,_( |
-  c'8-^)[ <af' ef' gf>] r <c,, c'> |
+  <c' ges' as'>8([ <as ges' as'>)] <des' f' bes'>[ <as f' as'>] |
+  <c' ges' bes'>8[ <as ges' as'>] <des' f'>[ as] \clef bass |
+  c8-. <as es' ges'>-.[ <as des' f'>-.] des-. |
+  as,8-.[ <as c' ges'>-.] des,-.[ <as des' f'>-.] |
+  as,8 \clef treble <c' ges' as'>[ <des' f' bes'> <as f' as'>] |
+  <c' ges' bes'>8[ <as ges' as'>] <des' f'>[ as] \clef bass |
+  c8-.[ <as es' ges'>-.] r c,_( |
+  c8-^)[ <as es' ges'>] r <c, c> |
   
   \barNumberCheck 25
-  <df df'>8 <bf'' df gf> <c,, c'>[( <df df'>] |
-  <d d'>8) <bf'' gf'> <cs,, cs'>[( <d d'>] |
-  <ef ef'>8) <bf'' gf'>4-> <ef,, ef'>8 |
-  <ff ff'>8 <bf' gf'>4-> <e,, e'>8 |
-  <f f'>8[ <bf' df f>] <e,, e'>[( <f f'>]) |
-  <gf gf'>8-.[ <bf' df ff>-.] <f, f'>[( <gf gf'>]) |
-  <g g'>8[ <g' df' ff>] <af, af'>[ <af' df f>] |
-  <bff, bff'>8[ <bff' ef gf>] r \voiceFour <bff,, bff'>-> |
+  <des, des>8 <bes des' ges'> <c, c>[( <des, des>] |
+  <d, d>8) <bes ges'> <cis, cis>[( <d, d>] |
+  <es, es>8) <bes ges'>4-> <es, es>8 |
+  <fes, fes>8 <bes ges'>4-> <e, e>8 |
+  <f, f>8[ <bes des' f'>] <e, e>[( <f, f>]) |
+  <ges, ges>8-.[ <bes des' fes'>-.] <f, f>[( <ges, ges>]) |
+  <g, g>8[ <g des' fes'>] <as, as>[ <as des' f'>] |
+  <beses, beses>8[ <beses es' ges'>] r \voiceFour <beses,, beses,>-> |
   
   \barNumberCheck 33
-  <af af'>2 |
-  \oneVoice r4 <af'' df gf>8.[ q16] |
+  <as,, as,>2 |
+  \oneVoice r4 <as des' ges'>8.[ q16] |
   q2 |
   R2 |
-  <af,, af'>2 |
-  r4 \clef treble <af'' c gf' af>8.[ q16] |
+  <as,, as,>2 |
+  r4 \clef treble <as c' ges' as'>8.[ q16] |
   q2 |
   R2 |
   
   \barNumberCheck 41
-  \clef bass df,,8-. r <af'' f'>4~ |
-  q4 <g e'>8.[ <af f'>16] |
-  df,8-. r <af' f'>4~ |
-  q4 <g e'>8.[ <af f'>16] |
-  df,8-. \clef treble <af' df f>[( <bff df gf> <bf df g>] |
-  <cf df af'>4 <bf df g>8[ <bff df gf>]) |
-  <af df f>8-. \clef bass df,-. \clef treble 
+  \clef bass des,8-. r <as f'>4~ |
+  q4 <g e'>8.[ <as f'>16] |
+  des8-. r <as f'>4~ |
+  q4 <g e'>8.[ <as f'>16] |
+  des8-. \clef treble <as des' f'>[( <beses des' ges'> <bes des' g'>] |
+  <ces' des' as'>4 <bes des' g'>8[ <beses des' ges'>]) |
+  <as des' f'>8-. \clef bass des-. \clef treble 
   <<
-    { af''8[( bf] | cf4 bf8[ af]) | }
+    { as'8[( bes'] | ces''4 bes'8[ as']) | }
     \\
-    { <cf, df f>4 | q2 | }
+    { <ces' des' f'>4 | q2 | }
   >> 
   
   \barNumberCheck 49
-  <gf bf df gf>8-.[ <gf cf ef gf>-. <gf bf df gf>-.] r |
-  \clef bass <gf, gf'>8-. <cf' ef gf>-.[ <bf df gf>-.] r |
-  <df,, df'>8-. <af'' df f>-.[ <af cf ef>-.] af,-. |
-  << { r8 <af' cf ef>[ <af cf df>] } \\ { df,4. } >> r8 |
-  <gf bf df gf>8-.[ <gf cf ef gf>-. <gf bf df gf>-.] r |
-  <gf, gf'>8-. <cf' ef gf>-.[ <bf df gf>-.] r |
-  cf,8-.[ <af' ef'>]( <f bf d>)[ bf,]( |
-  cf8-.)[ <af' ef'>]( <f bf d>)[ bf,-.] |
+  <ges bes des' ges'>8-.[ <ges ces' es' ges'>-. <ges bes des' ges'>-.] r |
+  \clef bass <ges, ges>8-. <ces' es' ges'>-.[ <bes des' ges'>-.] r |
+  <des, des>8-. <as des' f'>-.[ <as ces' es'>-.] as,-. |
+  << { r8 <as ces' es'>[ <as ces' des'>] } \\ { des4. } >> r8 |
+  <ges bes des' ges'>8-.[ <ges ces' es' ges'>-. <ges bes des' ges'>-.] r |
+  <ges, ges>8-. <ces' es' ges'>-.[ <bes des' ges'>-.] r |
+  ces8-.[ <as es'>]( <f bes d'>)[ bes,]( |
+  ces8-.)[ <as es'>]( <f bes d'>)[ bes,-.] |
   
   \barNumberCheck 57
-  cf8-.[ \clef treble <cf' ef af>-.] \clef bass df,-.[ 
-    \clef treble <bf' df gf>-.] |
-  \clef bass cf,8-.[ \clef treble <cf' df f af>-.] \clef bass bf,-.[
-    \clef treble <bf' df gf bf>-.] |
-  \clef bass cf,8-.[ \clef treble <cf' ef af>-.] \clef bass df,-.[ 
-    \clef treble <bf' df gf>-.] |
-  \clef bass cf,8-.[ \clef treble <cf' df f af>-.] \clef bass bf,-.[
-    \clef treble <bf' df gf bf>-.] |
-  \clef bass cf,8 <af' ef' af>4-> cf,8 |
-  c8 <af' ef' gf af>4-> c,8 |
-  df4-. \clef treble <af' df gf af> |
-  <gf' af df>4 r |
+  ces8-.[ \clef treble <ces' es' as'>-.] \clef bass des-.[ 
+    \clef treble <bes des' ges'>-.] |
+  \clef bass ces8-.[ \clef treble <ces' des' f' as'>-.] \clef bass bes,-.[
+    \clef treble <bes des' ges' bes'>-.] |
+  \clef bass ces8-.[ \clef treble <ces' es' as'>-.] \clef bass des-.[ 
+    \clef treble <bes des' ges'>-.] |
+  \clef bass ces8-.[ \clef treble <ces' des' f' as'>-.] \clef bass bes,-.[
+    \clef treble <bes des' ges' bes'>-.] |
+  \clef bass ces8 <as es' as'>4-> ces8 |
+  c8 <as es' ges' as'>4-> c8 |
+  des4-. \clef treble <as des' ges' as'> |
+  <ges' as' des''>4 r |
   
   \barNumberCheck 65
-  \clef bass \grace { df,,8 } <df' af' df gf>2 |
-  <df af' cf>2 |
-  \clef treble << { <bf' gf'>8[ df_\legato <cf af'> <af f'>] } \\ { gf2 } >> |
-  << { <bf gf'>8[ df <cf af'> <af f'>] } \\ { gf2 } >> |
-  \clef bass <gf bf gf'>8 r <f cf' ef>[(\> <df df'>])\! |
-  <gf bf ef>[(\> <df df'>])\! <f cf' ef>[(\> <df df'>])\! |
-  \clef treble << { <bf' gf'>8[ df <cf af'> <af f'>] } \\ { gf2 } >> |
-  << { <bf gf'>8[ df <cf af'> <af f'>] } \\ { gf2 } >> |
+  \clef bass \grace { des,8 } <des as des' ges'>2 |
+  <des as ces'>2 |
+  \clef treble << { <bes ges'>8[ des'_\legato <ces' as'> <as f'>] } \\ { ges2 } >> |
+  << { <bes ges'>8[ des' <ces' as'> <as f'>] } \\ { ges2 } >> |
+  \clef bass <ges bes ges'>8 r <f ces' es'>[(\> <des des'>])\! |
+  <ges bes es'>[(\> <des des'>])\! <f ces' es'>[(\> <des des'>])\! |
+  \clef treble << { <bes ges'>8[ des' <ces' as'> <as f'>] } \\ { ges2 } >> |
+  << { <bes ges'>8[ des' <ces' as'> <as f'>] } \\ { ges2 } >> |
   
   \barNumberCheck 73
-  \clef bass <gf bf gf'>8[ df'] <f, cf' ef>[\> <df df'>]\! |
-  <gf bf ef>[\> <df df'>]\! <f cf' ef>[\> <df df'>]\! |
-  \clef treble <gf df' bf'>4\arpeggio r8 \clef bass <df af' cf f>(\> |
-  <gf bf gf'>4)\! r8 <df, cf' f>-> |
-  <gf bf gf'>4 r8 df |
-  <gf, gf'>8[ df' <gf, gf'> df'] |
-  <gf, gf'>8 r r 
+  \clef bass <ges bes ges'>8[ des'] <f ces' es'>[\> <des des'>]\! |
+  <ges bes es'>[\> <des des'>]\! <f ces' es'>[\> <des des'>]\! |
+  \clef treble <ges des' bes'>4\arpeggio r8 \clef bass <des as ces' f'>(\> |
+  <ges bes ges'>4)\! r8 <des, ces f>-> |
+  <ges, bes, ges>4 r8 des, |
+  <ges,, ges,>8[ des, <ges,, ges,> des,] |
+  <ges,, ges,>8 r r 
   \scaleDurations 2/3 {
-    gf'16( df' bf') |
-    gf,16( df' bf')  bf,( gf' df')  df,( bf' gf')  \clef treble gf,( df' bf') |
+    ges,16( des bes) |
+    ges,16( des bes)  bes,( ges des')  des( bes ges')  \clef treble ges( des' bes') |
     
     \barNumberCheck 81
-    bf,16( gf' df')  df,( bf' gf')  gf,( bf gf')  df,( bf' gf') |
-    gf,( bf gf')  df,( bf' gf')  gf,( bf gf')  df,( bf' gf') |
-    gf,16-. r \clef bass <gf, gf'>-.  <ef ef'>-. <df df'>-. <bf bf'>
-      <af af'>-. <gf gf'>-. <ef ef'>-.  <df df'>-. <bf bf'>-. <af af'>-. |
+    bes16( ges' des'')  des'( bes' ges'')  ges'( bes' ges'')  des'( bes' ges'') |
+    ges'( bes' ges'')  des'( bes' ges'')  ges'( bes' ges'')  des'( bes' ges'') |
+    ges'16-. r \clef bass <ges ges'>-.  <es es'>-. <des des'>-. <bes, bes>
+      <as, as>-. <ges, ges>-. <es, es>-.  <des, des>-. <bes,, bes,>-. <as,, as,>-. |
   }
-  <gf gf'>8-. r \clef treble <gf'' df' bf'>4\arpeggio |
-  \clef bass \voiceFour <gf,, gf'>2\fermata |
+  <ges,, ges,>8-. r \clef treble <ges des' bes'>4\arpeggio |
+  \clef bass \voiceFour <ges,, ges,>2\fermata |
 }
 
 dynamics = {

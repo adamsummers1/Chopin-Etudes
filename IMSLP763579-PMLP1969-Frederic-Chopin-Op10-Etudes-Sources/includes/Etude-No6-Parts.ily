@@ -1,7 +1,7 @@
 %...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....
 
 \version "2.22.1"
-\language "english"
+\language "nederlands"
 
 \include "Global.ily"
 \include "articulate.ly"
@@ -51,84 +51,84 @@ slurShapeC = \shape #'((0 . 0.5) (0 . 0) (0 . 0) (0 . 0)) \etc
 
 global = {
   \time 6/8
-  \key ef \minor
+  \key es \minor
   \accidentalStyle piano
 }
 
-rightHandUpper = \relative {
+rightHandUpper = {
   \override NoteColumn.ignore-collision = ##t
-  \partial 8 gf'8^\conMolto
-  gf4._~ gf4 f16 ef |
-  bf'4. af |
-  cf4.~ cf4 bf16 f-2 |
-  bf2. |
-  ef4.~ ef8 df16 cf af ef |
-  gf4->~ gf16 f ef4. |
-  <cf ff>4.-> <cf ef> |
-  \grace { ef8 } d4. <cf ef>8 <c e> f |
+  \partial 8 ges'8^\conMolto
+  ges'4._~ ges'4 f'16 es' |
+  bes'4. as' |
+  ces''4.~ ces''4 bes'16 f'-2 |
+  bes'2. |
+  es''4.~ es''8 des''16 ces'' as' es' |
+  ges'4->~ ges'16 f' es'4. |
+  <ces' fes'>4.-> <ces' es'> |
+  \grace { es'8 } d'4. <ces' es'>8 <c' e'> f' |
   
   \barNumberCheck 9 
-  gf4.->~ gf4 f16 ef |
-  bf'4.-> af |
-  cf4.~ cf4 bf16 f |
-  bf2. |
-  ef4.~ ef8 df16 cf af ef |
-  gf4~ gf16 f ef4. |
-  <cf ff>4. d4~ d16 ef |
-  ef4. \oneVoice r4 r8 |
+  ges'4.->~ ges'4 f'16 es' |
+  bes'4.-> as' |
+  ces''4.~ ces''4 bes'16 f' |
+  bes'2. |
+  es''4.~ es''8 des''16 ces'' as' es' |
+  ges'4~ ges'16 f' es'4. |
+  <ces' fes'>4. d'4~ d'16 es' |
+  es'4. \oneVoice r4 r8 |
   
   \barNumberCheck 17
-  \voiceOne <ef f>4.^\<-4-5 <d f>4-4-5 <df g>8\!-2-5 |
-  <af cf g' af>4. <af d f af> |
-  <f' g>4.^\< <e g>4 <ef a>8\! |
-  <bf d a' bf>4. <bf e~ g bf>4( <as e' as>8)
-  \key cs \minor
-  b'4.( a4 gs8 |
-  <e gs>4. <e fs>) |
-  <e a>4. <ds gs>4 <ds fs>8 |
-  <ds fs>4 <e gs>8 q4.^\< <>\! |
+  \voiceOne <es' f'>4.^\<-4-5 <d' f'>4-4-5 <des' g'>8\!-2-5 |
+  <as ces' g' as'>4. <as d' f' as'> |
+  <f' g'>4.^\< <e' g'>4 <es' a'>8\! |
+  <bes d' a' bes'>4. <bes e'~ g' bes'>4( <ais e' ais'>8)
+  \key cis \minor
+  b'4.( a'4 gis'8 |
+  <e' gis'>4. <e' fis'>) |
+  <e' a'>4. <dis' gis'>4 <dis' fis'>8 |
+  <dis' fis'>4 <e' gis'>8 q4.^\< <>\! |
   
   \barNumberCheck 25
-  <fs gs>4.->( <e gs>4^\< q8\! |
-  <gs cs>4.^\> <gs bs>4)\! ds'8\rest |
-  <fs, gs>4. <e gs>4^\< q8\! |
-  <bs' e>4. <b ds> |
-  \key ef \minor
-  <gf af>4.( <af cf>4^\> q8\! |
-  <af cf>4 <af bf>8) <bf df>4( q8 |
-  <bf df>4 <bf c>8) <c ef>4( q8 |
-  <c gf'>4. <c f> |
+  <fis' gis'>4.->( <e' gis'>4^\< q8\! |
+  <gis' cis''>4.^\> <gis' bis'>4)\! dis''8\rest |
+  <fis' gis'>4. <e' gis'>4^\< q8\! |
+  <bis' e''>4. <b' dis''> |
+  \key es \minor
+  <ges' as'>4.( <as' ces''>4^\> q8\! |
+  <as' ces''>4 <as' bes'>8) <bes' des''>4( q8 |
+  <bes' des''>4 <bes' c''>8) <c'' es''>4( q8 |
+  <c'' ges''>4. <c'' f''> |
   
   \barNumberCheck 33
-  <af bf>4.) q4 <g bf>8 |
-  <g bf>4. <gf a> |
-  <gf a>4.( <f af>4-> q8 |
-  <ff af>4. <ff g>) |
-  <e g>4.( q4 q8 |
-  <ds g>4.->^\pocoRiten <ds fs>) |
-  <d gf>4.->(^\smorz <d f>4 q8 |
-  <c f>4.) <d f> |
+  <as' bes'>4.) q4 <g' bes'>8 |
+  <g' bes'>4. <ges' a'> |
+  <ges' a'>4.( <f' as'>4-> q8 |
+  <fes' as'>4. <fes' g'>) |
+  <e' g'>4.( q4 q8 |
+  <dis' g'>4.->^\pocoRiten <dis' fis'>) |
+  <d' ges'>4.->(^\smorz <d' f'>4 q8 |
+  <c' f'>4.) <d' f'> |
   
   \barNumberCheck 41
-  gf4.~ gf4 f16 ef |
-  bf'4. af |
-  cf4.->~ cf4 bf16 f |
-  bf2. |
-  ef4.~ ef8 df16 cf af ef |
-  gf4->~ gf16 f ef4. |
-  <cf ff>4.( d4~ d16. ef32) |
-  <cf ff>4.( d4~ d16. ef32) |
+  ges'4.~ ges'4 f'16 es' |
+  bes'4. as' |
+  ces''4.->~ ces''4 bes'16 f' |
+  bes'2. |
+  es''4.~ es''8 des''16 ces'' as' es' |
+  ges'4->~ ges'16 f' es'4. |
+  <ces' fes'>4.( d'4~ d'16. es'32) |
+  <ces' fes'>4.( d'4~ d'16. es'32) |
   
   \barNumberCheck 49
-  <cf ff>4.( <cs e cs'>8^\sostenuto <e gs> <e a>) |
+  <ces' fes'>4.( <cis' e' cis''>8^\sostenuto <e' gis'> <e' a'>) |
   \override DynamicTextSpanner.style = #'none
-  af16 gf ff4-> ef^\dim d8\! |
+  as'16 ges' fes'4-> es'^\dim d'8\! |
   <<
     \new Voice {
       \voiceOne
-      ef2.~ |
-      ef2.~ |
-      ef2.\fermata |
+      es'2.~ |
+      es'2.~ |
+      es'2.\fermata |
     }
     \new Voice {
       s4. s^\rall |
@@ -139,86 +139,86 @@ rightHandUpper = \relative {
   \bar "|."
 }
 
-rightHandLower = \relative {
+rightHandLower = {
   \partial 8 s8
-  s4. s4 s16 \hideNotes ef'~ \unHideNotes |
-  ef2~ ef8. f16~ |
-  f2. |
-  ff2 ~ \voiceOne ff8. ef16~ |
-  \voiceTwo ef2. |
-  d4. \once \omit Dots ef |
+  s4. s4 s16 \hideNotes es'~ \unHideNotes |
+  es'2~ es'8. f'16~ |
+  f'2. |
+  fes'2 ~ \voiceOne fes'8. es'16~ |
+  \voiceTwo es'2. |
+  d'4. \once \omit Dots es' |
   s2. |
-  bf4. s8 s df16 d |
+  bes4. s8 s des'16 d' |
   
   \barNumberCheck 9
-  ef4. s4 s16 \hideNotes ef~ \unHideNotes |
-  ef2~ ef8. f16~ |
-  f2. |
-  ff2~ \voiceOne ff8. ef16_~ |
-  \voiceTwo ef2. |
-  d4. \once \omit Dots ef |
-  s4. af, |
-  gf4. s4. |
+  es'4. s4 s16 \hideNotes es'~ \unHideNotes |
+  es'2~ es'8. f'16~ |
+  f'2. |
+  fes'2~ \voiceOne fes'8. es'16_~ |
+  \voiceTwo es'2. |
+  d'4. \once \omit Dots es' |
+  s4. as |
+  ges4. s4. |
   
   \barNumberCheck 17
-  bf16-2 cf-3 a-1 cf-3 bf-2 f-1  bf cf a cf bf \staffDownThree { f-1~ |
+  bes16-2 ces'-3 a-1 ces'-3 bes-2 f-1  bes ces' a ces' bes \staffDownThree { f-1~ |
   \onlyNoteHead f16 } s16 s s8. s4. |
-  d'16 ef cs ef d g,  c df b df c \staffDownThree g |
+  d'16 es' cis' es' d' g  c' des' b des' c' \staffDownThree g |
   s2. |
-  \key cs \minor
-  <b e>16 fs' ds fs e b  e fs ds fs e b |
-  cs16 ds bs ds cs a  cs ds bs ds cs fs, |
-  cs'16 ds bs ds cs fs,  b cs a cs b fs |
-  b16 cs a cs b gs  b cs a cs b gs |
+  \key cis \minor
+  <b e'>16 fis' dis' fis' e' b  e' fis' dis' fis' e' b |
+  cis'16 dis' bis dis' cis' a  cis' dis' bis dis' cis' fis |
+  cis'16 dis' bis dis' cis' fis  b cis' a cis' b fis |
+  b16 cis' a cis' b gis  b cis' a cis' b gis |
   
   \barNumberCheck 25
-  ds'16 e css e ds gs,  cs ds bs ds cs gs |
-  ds'16 e css e ds \staffDownThree gs,  ds' e css e ds gs, |
-  ds'16 e css e ds gs,  cs ds bs ds cs gs |
-  gs'16 a fss a gs ds  gs a fss a gs d |
-  \key ef \minor
-  df16 ff d ff ef af,  f' gf e gf f cf |
-  f16 gf e gf f bf,  g' af fs af g df |
-  g16 af fs af g c,  a' bf gs bf a ef |
-  a16 bf gs bf a gf  a bf gs bf a f | 
+  dis'16 e' cisis' e' dis' gis  cis' dis' bis dis' cis' gis |
+  dis'16 e' cisis' e' dis' \staffDownThree gis  dis' e' cisis' e' dis' gis |
+  dis'16 e' cisis' e' dis' gis  cis' dis' bis dis' cis' gis |
+  gis'16 a' fisis' a' gis' dis'  gis' a' fisis' a' gis' d' |
+  \key es \minor
+  des'16 fes' d' fes' es' as  f' ges' e' ges' f' ces' |
+  f'16 ges' e' ges' f' bes  g' as' fis' as' g' des' |
+  g'16 as' fis' as' g' c'  a' bes' gis' bes' a' es' |
+  a'16 bes' gis' bes' a' ges'  a' bes' gis' bes' a' f' | 
   
   \barNumberCheck 33
-  f16 gf e gf f bf,  ff' gf ef gf e bf |
-  e16 f d f e bf  ef f d f ef a, |
-  ef'16 f d f ef a,  d ef cs ef d af |
-  df16 ef c ef df af  df ef c ef df g, |
-  cs16 ds bs ds cs g  c d b d c g |
-  b16 c as c b fs  b c as c b fs |
-  bf16 cf a cf bf f  bf cf a cf bf f |
-  a16 bf gs bf a f  bf cf a cf bf f |
+  f'16 ges' e' ges' f' bes  fes' ges' es' ges' e' bes |
+  e'16 f' d' f' e' bes  es' f' d' f' es' a |
+  es'16 f' d' f' es' a  d' es' cis' es' d' as |
+  des'16 es' c' es' des' as  des' es' c' es' des' g |
+  cis'16 dis' bis dis' cis' g  c' d' b d' c' g |
+  b16 c' ais c' b fis  b c' ais c' b fis |
+  bes16 ces' a ces' bes f  bes ces' a ces' bes f |
+  a16 bes gis bes a f  bes ces' a ces' bes f |
   
   \barNumberCheck 41
-  s4. s4 s16 \hideNotes ef'~ \unHideNotes |
-  ef2~ ef8. f16~ |
-  f2. |
-  ff2~ \voiceOne ff8. ef16~ |
-  \voiceTwo ef2. |
-  d4. \once \omit Dots ef |
-  s4. bf |
-  s4. bf |
+  s4. s4 s16 \hideNotes es'~ \unHideNotes |
+  es'2~ es'8. f'16~ |
+  f'2. |
+  fes'2~ \voiceOne fes'8. es'16~ |
+  \voiceTwo es'2. |
+  d'4. \once \omit Dots es' |
+  s4. bes |
+  s4. bes |
   
   \barNumberCheck 49
   s2. |
-  cf4. 
+  ces'4. 
   <<
     \new Voice {
       \voiceTwo
-      cf16 bf a bf8. |
-      gf4 
+      ces'16 bes a bes8. |
+      ges4 
     }
     \new Voice {
       \voiceTwo
-      s8. s8 \omit Stem \omit Flag gf16 ~ |
-      gf4
+      s8. s8 \omit Stem \omit Flag ges16 ~ |
+      ges4
     }
   >>
-  s16 [(f gf]) s4 f16[( |
-  gf16]) s4 f16[( gf]) s4 f16 |
+  s16 [(f ges]) s4 f16[( |
+  ges16]) s4 f16[( ges]) s4 f16 |
   g2. |
 }
 
@@ -229,198 +229,198 @@ rightHand = <<
   \new Voice { \voiceTwo \rightHandLower }
 >>
 
-leftHandUpper = \relative {
+leftHandUpper = {
   \partial 8 d8\rest
-  bf'16-2 cf-1 a-3 cf-1 bf-2 gf-4  bf cf a cf bf \staffUpTwo ef |
-  cf16-\slurShapeA_( df bf df cf af  cf df bf df cf af)~-3 |
-  af16-\slurShapeB_( bf-2 g-4 bf-2 af-3 f-4  af-3 bf-2 g-4 bf-2 af-3 
+  bes16-2 ces'-1 a-3 ces'-1 bes-2 ges-4  bes ces' a ces' bes \staffUpTwo es' |
+  ces'16-\slurShapeA_( des' bes des' ces' as  ces' des' bes des' ces' as)~-3 |
+  as16-\slurShapeB_( bes-2 g-4 bes-2 as-3 f-4  as-3 bes-2 g-4 bes-2 as-3 
     \staffUpTwo f') |
-  g,16-1 af-2 fs-3 af-1 g-2 e-4  g-\adjustFingerA-2 af-1 fs af g 
-    \staffUpTwo ef' |
-  \omitOneAccidental g,16 af fs af g ef  af bf g bf af \staffUpTwo ef' |
-  af,16 bf g bf af f  gf af f af gf ef |
-  \staffUpTwo { af16-1 bf-2 g-1 bf-2 af-\adjustFingerB-1 } ff-3  
-    gf-2 af-1 f-2 af-1 gf-2 \staffUpTwo cf |
-  f,16-1 gf-2 e-3 gf-1 f-2 af-1  gf[ bff] g[ bf] af[ cf] |
+  g16-1 as-2 fis-3 as-1 g-2 e-4  g-\adjustFingerA-2 as-1 fis as g 
+    \staffUpTwo es' |
+  \omitOneAccidental g16 as fis as g es  as bes g bes as \staffUpTwo es' |
+  as16 bes g bes as f  ges as f as ges es |
+  \staffUpTwo { as16-1 bes-2 g-1 bes-2 as-\adjustFingerB-1 } fes-3  
+    ges-2 as-1 f-2 as-1 ges-2 \staffUpTwo ces' |
+  f16-1 ges-2 e-3 ges-1 f-2 as-1  ges[ beses] g[ bes] as[ ces'] |
   
   \barNumberCheck 9
-  bf16 cf a cf bf gf  bf cf a cf bf \staffUpTwo ef |
-  cf16-\slurShapeC _( df bf df cf af  cf df bf df cf af)~ |
-  af16 bf g bf af f  af bf g bf af \staffUpTwo f' |
-  g,16 af fs af g e  g af fs af g \staffUpTwo ef' |
-  g,16 af fs af g ef  af bf g bf af \staffUpTwo ef' |
-  af,16 bf g bf af f  gf af f af gf ef |
-  \staffUpTwo { af16-1 bf-2 g-1 bf-2 af-\adjustFingerC-1 } ff  
-    f gf e gf f bf,~ |
-  bf16( cf a cf bf gf  ef-\adjustFingerD-4 f-\adjustFingerE-1 d-3 f-1 ef-2 
-    cf)-4 |
+  bes16 ces' a ces' bes ges  bes ces' a ces' bes \staffUpTwo es' |
+  ces'16-\slurShapeC _( des' bes des' ces' as  ces' des' bes des' ces' as)~ |
+  as16 bes g bes as f  as bes g bes as \staffUpTwo f' |
+  g16 as fis as g e  g as fis as g \staffUpTwo es' |
+  g16 as fis as g es  as bes g bes as \staffUpTwo es' |
+  as16 bes g bes as f  ges as f as ges es |
+  \staffUpTwo { as16-1 bes-2 g-1 bes-2 as-\adjustFingerC-1 } fes  
+    f ges e ges f bes,~ |
+  bes,16( ces a, ces bes, ges,  es,-\adjustFingerD-4 f,-\adjustFingerE-1 d,-3 f,-1 es,-2 
+    ces,)-4 |
   
   \barNumberCheck 17
   s2. |
-  f'16 g-1 e-2 g-1 f-2 c-3  b-4 c-1 as-3 c-1 b-2 b,-5 |
+  f16 g-1 e-2 g-1 f-2 c-3  b,-4 c-1 ais,-3 c-1 b,-2 b,,-5 |
   s2. |
-  \omitOneAccidental g''16 a fs a g d  cs d bs d cs fss,_( |
-  \key cs \minor
-  gs4._\legato) s |
+  \omitOneAccidental g16 a fis a g d  cis d bis, d cis fisis,_( |
+  \key cis \minor
+  gis,4._\legato) s |
   s2. |
-  gs4. gs4 gs8 |
+  gis,4. gis,4 gis,8 |
   s2. |
   
   \barNumberCheck 25
   s2. * 4 |
-  \key ef \minor
+  \key es \minor
   s2. * 4 |
   
   \barNumberCheck 33
   s2. * 8 |
   
   \barNumberCheck 41
-  bf'16 cf a cf bf gf  bf cf a cf bf \staffUpTwo ef |
-  cf16 df bf df cf af  cf df bf df cf af~ |
-  af16 bf g bf af f  af bf g bf af \staffUpTwo f' |
-  g,16 af fs af g e  g af fs af g \staffUpTwo ef' |
-  \omitOneAccidental g,16 af fs af g ef  af bf g bf af \staffUpTwo ef' |
-  af,16 bf g bf af f  gf af f af gf ef |
-  \staffUpTwo { af16 bf g bf af } ff  f gf e gf f bf, |
-  \staffUpTwo { af'16 bf g bf af } ff  f gf e gf f bf, |
+  bes16 ces' a ces' bes ges  bes ces' a ces' bes \staffUpTwo es' |
+  ces'16 des' bes des' ces' as  ces' des' bes des' ces' as~ |
+  as16 bes g bes as f  as bes g bes as \staffUpTwo f' |
+  g16 as fis as g e  g as fis as g \staffUpTwo es' |
+  \omitOneAccidental g16 as fis as g es  as bes g bes as \staffUpTwo es' |
+  as16 bes g bes as f  ges as f as ges es |
+  \staffUpTwo { as16 bes g bes as } fes  f ges e ges f bes, |
+  \staffUpTwo { as16 bes g bes as } fes  f ges e ges f bes, |
   
   \barNumberCheck 49
-  \staffUpTwo { af'16 bf g bf af } ff  a[ e] b'[ e,] cs'[ e,]( |
-  ff16) ff ef ff gf af s4 f16 \staffUpTwo gf |
-  bf,16[ cf bf d ef] s s cf[ bf d ef] s |
-  s16 cf[ bf d ef] s 
+  \staffUpTwo { as16 bes g bes as } fes  a[ e] b[ e] cis'[ e]( |
+  fes16) fes es fes ges as s4 f16 \staffUpTwo ges |
+  bes,16[ ces bes, d es] s s ces[ bes, d es] s |
+  s16 ces[ bes, d es] s 
   <<
     \new Voice {
       \override NoteColumn.ignore-collision = ##t
-      \voiceThree s16 cf[ bf d ef] s |
-      bf2. |
+      \voiceThree s16 ces[ bes, d es] s |
+      bes,2. |
     }
     \new Voice {
-      \voiceFour s8 bf4~ |
-      \hideNotes bf2. |
+      \voiceFour s8 bes,4~ |
+      \hideNotes bes,2. |
     }
   >>
 }
 
-leftHandLower = \relative {
+leftHandLower = {
   \partial 8 s8
-  ef2._\sempreLegatissimo |
+  es2._\sempreLegatissimo |
   f2. |
   d2. |
   <<
     \new Voice { 
       \override NoteColumn.ignore-collision = ##t
-      \voiceFour df2. |
-      cf2. |
-      bf4. cf |
+      \voiceFour des2. |
+      ces2. |
+      bes,4. ces |
     }
     \new Voice { 
-      \voiceFour s2 s8 g'~ |
-      \hideNotes g16 \unHideNotes s8 s8. s8 s af~ |
-      \hideNotes af16 s8 s8. s4. |
+      \voiceFour s2 s8 g~ |
+      \hideNotes g16 \unHideNotes s8 s8. s8 s as~ |
+      \hideNotes as16 s8 s8. s4. |
     }
   >>
-  af,4. a4.*2/3 gf'8 |
-  bf,2._\sempreLegato |
+  as,4. a,4.*2/3 ges8 |
+  bes,2._\sempreLegato |
   
   \barNumberCheck 9
-  ef2. |
+  es2. |
   f2. |
   d2. |
   <<
     \new Voice { 
       \override NoteColumn.ignore-collision = ##t
-      \voiceFour df2. |
-      cf2. |
-      bf4.
+      \voiceFour des2. |
+      ces2. |
+      bes,4.
     }
     \new Voice { 
-      \voiceFour s2 s8 g'~ |
-      \hideNotes g16 \unHideNotes s8 s8. s8 s af~ |
-      \hideNotes af16 s s8.
+      \voiceFour s2 s8 g~ |
+      \hideNotes g16 \unHideNotes s8 s8. s8 s as~ |
+      \hideNotes as16 s s8.
     }
   >>
-  cf,4. |
-  af4. bf |
-  ef,4._\pesante s4. |
+  ces4. |
+  as,4. bes, |
+  es,4._\pesante s4. |
   
   \barNumberCheck 17
-  \oneVoice <bf bf'>4. bf'4.*2/3 s16 \voiceFour f'16 |
+  \oneVoice <bes,, bes,>4. bes,4.*2/3 s16 \voiceFour f16 |
   f,4. s |
-  \voiceThree c4.-4
+  \voiceThree c,4.-4
   <<
     \new Voice {
       \override NoteColumn.ignore-collision = ##t
-      c'4._\finger \markup \undertie "13" | 
-      \voiceFour g4.
+      c4._\finger \markup \undertie "13" | 
+      \voiceFour g,4.
     }
     \new Voice {
-      s4 s16 g'~ |
+      s4 s16 g~ |
       \hideNotes g16 s s4
     }
   >>
   s4. |
-  \key cs \minor
-  s4. \oneVoice <cs,, cs'>_( |
-  <fs, fs'>4. <gs gs'>4 <a a'>8) |
-  \voiceFour gs2. |
-  \oneVoice <e' b'>2. |
+  \key cis \minor
+  s4. \oneVoice <cis, cis>_( |
+  <fis,, fis,>4. <gis,, gis,>4 <a,, a,>8) |
+  \voiceFour gis,,2. |
+  \oneVoice <e, b,>2. |
   
   \barNumberCheck 25
-  <bs bs'>4.( <cs cs'> |
-  gs'2.*1/4) s8 gs'16 s4. |
-  <bs,, bs'>4. <cs cs'> |
-  <gs gs'>2. |
-  \key ef \minor
-  <c c'>4. <ef ef'> |
-  <d d'>4. <f f'> |
-  <e e'>4. <g g'>4 <gf gf'>8 |
-  <ef ef'>2. |
+  <bis,, bis,>4.( <cis, cis> |
+  gis,2.*1/4) s8 gis16 s4. |
+  <bis,, bis,>4. <cis, cis> |
+  <gis,, gis,>2. |
+  \key es \minor
+  <c, c>4. <es, es> |
+  <d, d>4. <f, f> |
+  <e, e>4. <g, g>4 <ges, ges>8 |
+  <es, es>2. |
   
   \barNumberCheck 33
-  <d d'>4. <df df'> |
-  <c c'>2. |
-  <cf cf'>2. |
-  <bf bf'>2. |
-  <a a'>2.~ |
+  <d, d>4. <des, des> |
+  <c, c>2. |
+  <ces, ces>2. |
+  <bes,, bes,>2. |
+  <a,, a,>2.~ |
   q2. |
-  <bf bf'>2.~ |
+  <bes,, bes,>2.~ |
   q2. |
   
   \barNumberCheck 41
-  \voiceFour ef'2. |
+  \voiceFour es2. |
   f2. |
   d2. |
   <<
     \new Voice { 
       \override NoteColumn.ignore-collision = ##t
-      \voiceFour df2. |
-      cf2. |
-      bf4. cf |
+      \voiceFour des2. |
+      ces2. |
+      bes,4. ces |
     }
     \new Voice { 
-      \voiceFour s2 s8 g'~ |
-      \hideNotes g16 \unHideNotes s8 s8. s8 s af~ |
-      \hideNotes af16 s8 s8. s4. |
+      \voiceFour s2 s8 g~ |
+      \hideNotes g16 \unHideNotes s8 s8. s8 s as~ |
+      \hideNotes as16 s8 s8. s4. |
     }
   >>
-  af,4. bf |
-  af4. bf |
+  as,4. bes, |
+  as,4. bes, |
   
   \barNumberCheck 49
-  af4. a8 b cs |
-  af4. 
+  as,4. a,8 b, cis |
+  as,4. 
   <<
     \new Voice {
       \override NoteColumn.ignore-collision = ##t
-      \voiceFour bf4.-> |
-      ef,2.~ |
-      ef2.~ |
-      ef2.\fermata |
+      \voiceFour bes,4.-> |
+      es,2.~ |
+      es,2.~ |
+      es,2.\fermata |
     }
     \new Voice {
-      \voiceFour \hideNotes bf'4.~ |
-      bf16 s8 s8. s4. | 
+      \voiceFour \hideNotes bes,4.~ |
+      bes,16 s8 s8. s4. | 
       s2. |
       s2. |
     }

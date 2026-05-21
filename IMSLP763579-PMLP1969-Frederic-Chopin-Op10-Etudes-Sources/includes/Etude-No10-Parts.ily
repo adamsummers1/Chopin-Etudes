@@ -1,7 +1,7 @@
 %...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....
 
 \version "2.22.1"
-\language "english"
+\language "nederlands"
 
 \include "Global.ily"
 \include "articulate.ly"
@@ -23,19 +23,19 @@ slurPositionC = \tweak positions #'(4 . 0) \etc
 
 global = {
   \time 12/8
-  \key af \major
+  \key as \major
   \accidentalStyle piano
 }
 
-rightHandUpper = \relative {
+rightHandUpper = {
   \partial 8 s8
   s1. * 8 |
   
   \barNumberCheck 9
-  ef''4 bf b c cs d |
-  ef4 f ef c bf c |
-  bf4 c g af g af |
-  f4 g f ff ef g |
+  es''4 bes' b' c'' cis'' d'' |
+  es''4 f'' es'' c'' bes' c'' |
+  bes'4 c'' g' as' g' as' |
+  f'4 g' f' fes' es' g' |
   s1. * 4 |
   
   \barNumberCheck 17
@@ -61,158 +61,158 @@ rightHandUpper = \relative {
   
   \barNumberCheck 73
   s1. * 3 |
-  s2. s8 af2 * 5/4 ~ |
-  af1. |
+  s2. s8 as'2 * 5/4 ~ |
+  as'1. |
   \bar "|."
 }
 
-rightHandLower = \relative {
+rightHandLower = {
   \oneVoice
-  \partial 8 ef'8\(
-  af8 <c af'>_2-5( bf-1) <df bf'>->_2-5( b) <d b'>(  
-    c) <ef c'>( cs-1) <e cs'>->( d) <f d'>( |
-  ef8) <g ef'>( f) <af f'>->( ef) <g ef'>(  
-    c,) <ef c'> bf < df bf'>-> c <ef c'> |
-  bf8 <df bf'> c <ef c'>-> g, <bf g'>  af <c af'> g <bf g'>-> af <c af'> |
+  \partial 8 es'8\(
+  as'8 <c'' as''>_2-5( bes'-1) <des'' bes''>->_2-5( b') <d'' b''>(  
+    c'') <es'' c'''>( cis''-1) <e'' cis'''>->( d'') <f'' d'''>( |
+  es''8) <g'' es'''>( f'') <as'' f'''>->( es'') <g'' es'''>(  
+    c'') <es'' c'''> bes' < des'' bes''>-> c'' <es'' c'''> |
+  bes'8 <des'' bes''> c'' <es'' c'''>-> g' <bes' g''>  as' <c'' as''> g' <bes' g''>-> as' <c'' as''> |
   \stemDown
-  f,8 <af f'> g <bf g'>-> f <af ff'>->  ff <g ff'>-> ef <g ef'>-> g <bf g'> |
-  af8 <c af'> bf <df bf'>-> b <d b'>  c <ef c'> cs <e cs'>-> d <f d'> |
-  ef8 <g ef'> f <af f'>-> ef <f ef'>  c <ef c'> bf <df bf'>-> c <ef c'> |
-  ef8 <d bf'> c <ef c'>-> df <f df'>  ef <g ef'> f <af f'>-> fs <a fs'> |
-  g8-> <bf g'> af <c af'>-> d, <f d'>  f <af d> e <g e'>-> e <g ef'>\) |
+  f'8 <as' f''> g' <bes' g''>-> f' <as' fes''>->  fes' <g' fes''>-> es' <g' es''>-> g' <bes' g''> |
+  as'8 <c'' as''> bes' <des'' bes''>-> b' <d'' b''>  c'' <es'' c'''> cis'' <e'' cis'''>-> d'' <f'' d'''> |
+  es''8 <g'' es'''> f'' <as'' f'''>-> es'' <f'' es'''>  c'' <es'' c'''> bes' <des'' bes''>-> c'' <es'' c'''> |
+  es''8 <d'' bes''> c'' <es'' c'''>-> des'' <f'' des'''>  es'' <g'' es'''> f'' <as'' f'''>-> fis'' <a'' fis'''> |
+  g''8-> <bes'' g'''> as'' <c''' as'''>-> d'' <f'' d'''>  f'' <as'' d'''> e'' <g'' e'''>-> e'' <g'' es'''>\) |
   
   \barNumberCheck 9
-  ef8-1([ <c af'>_2-5)] bf([ <df bf'>)] b([ <d b'>)]
-    c([ <ef c'>)] cs([ <e cs'>)] d([ <f d'>)] |
-  ef8([ <g ef'>)] f([ <af f'>)] ef([ <g ef'>)]
-    c,([ <ef c'>)] bf([ <df bf'>)] c([ <ef c'>)] |
-  bf8([ <df bf'>)] c([ <ef c'>)] g,([ <bf g'>)]
-    af([ <c af'>)] g([ <bf g'>)] af([ <c af'>)] |
-  f,8([ <af f'>)] g([ <bf g'>)] f([ <af f'>)]
-    ff([ <g ff'>)] ef([ <g ef'>)] g([ <bf g'>)] |
-  af8-.[ <c af'>-.] bf-.[ <df bf'>-.] b-.[ <df b'>-.]
-    c-.[ <ef c'>-.] cs-.[ <e cs'>-.] d-.[ <f d'>-.] |
-  ef8-.[ <g ef'>-.] f-.[ <af f'>-.] ef-.[ <g ef'>-.]
-    c,-.[ <ef c'>-.] bf-.[ <df bf'>-.] c-.[ <ef c'>-.] |
-  df8-.[ <f df'>-.] ef-.[ <g ef'>-.] f-.[ <af f'>-.] \ottava 1
-    g-.[ <bf g'>-.] af-.[ <cf af'>-.] a-.[ <c a'>-.] |
-  bf8-.[ <df bf'>-.] c-.[ <ef c'>-.] g,-.[ <bf g'>-.]
-    af->( <c af'> \ottava 0 af <c, af'> af <c af'>) |
+  es''8-1([ <c'' as''>_2-5)] bes'([ <des'' bes''>)] b'([ <d'' b''>)]
+    c''([ <es'' c'''>)] cis''([ <e'' cis'''>)] d''([ <f'' d'''>)] |
+  es''8([ <g'' es'''>)] f''([ <as'' f'''>)] es''([ <g'' es'''>)]
+    c''([ <es'' c'''>)] bes'([ <des'' bes''>)] c''([ <es'' c'''>)] |
+  bes'8([ <des'' bes''>)] c''([ <es'' c'''>)] g'([ <bes' g''>)]
+    as'([ <c'' as''>)] g'([ <bes' g''>)] as'([ <c'' as''>)] |
+  f'8([ <as' f''>)] g'([ <bes' g''>)] f'([ <as' f''>)]
+    fes'([ <g' fes''>)] es'([ <g' es''>)] g'([ <bes' g''>)] |
+  as'8-.[ <c'' as''>-.] bes'-.[ <des'' bes''>-.] b'-.[ <des'' b''>-.]
+    c''-.[ <es'' c'''>-.] cis''-.[ <e'' cis'''>-.] d''-.[ <f'' d'''>-.] |
+  es''8-.[ <g'' es'''>-.] f''-.[ <as'' f'''>-.] es''-.[ <g'' es'''>-.]
+    c''-.[ <es'' c'''>-.] bes'-.[ <des'' bes''>-.] c''-.[ <es'' c'''>-.] |
+  des''8-.[ <f'' des'''>-.] es''-.[ <g'' es'''>-.] f''-.[ <as'' f'''>-.] \ottava 1
+    g''-.[ <bes'' g'''>-.] as''-.[ <ces''' as'''>-.] a''-.[ <c''' a'''>-.] |
+  bes''8-.[ <des''' bes'''>-.] c'''-.[ <es''' c''''>-.] g''-.[ <bes'' g'''>-.]
+    as''->( <c''' as'''> \ottava 0 as'' <c'' as''> as' <c'' as''>) |
     
   \barNumberCheck 17
   \key e \major
   \stemNeutral
-  gs8^\legatis <b gs'> a <cs a'>-> gs <b gs'>  
-    fs <as fs'> cs, <e cs'>-> ds <fs ds'> |
-  e8 <gs e'> gs <b gs'>-> fs <a fs'>  e <gs e'> b, <ds b'>-> cs <e cs'> |
-  e8 <gs e'> ds <fs ds'>-> e <gs e'>  gs <b gs'> fs <a fs'>-> gs <b gs'> |
-  b8 <ds b'> a <cs a'>-> b <ds b'>  ds <fs ds'>-> cs <e cs'>-> b <ds b'> |
-  gs,8([ <b gs'>)] a([ <c a'>)] gs([ <b gs'>)]
-    fs([ <a fs'>)] c,([ <e c'>)] e([ <gs e'>)] |
-  fs8[ <a fs'>] gs[ <b gs'>] fs[ <a fs'>]  
-    e[ <gs e'>] ds[ <gs ds'>] d[ <gs d'>] |
-  \key af \major
-  ef[ <g ef'>] f[ <af f'>] fs <a fs'>  g[ <bf g'>] af[ <c af'>] bf[ <df bf'>] |
-  c8[ <ef c'>] cs[ <e cs'>] d[ <f d'>]  
-    ef[ < gf ef'>] f[ <af f'>] gf[ <bf gf'>] |
+  gis'8^\legatis <b' gis''> a' <cis'' a''>-> gis' <b' gis''>  
+    fis' <ais' fis''> cis' <e' cis''>-> dis' <fis' dis''> |
+  e'8 <gis' e''> gis' <b' gis''>-> fis' <a' fis''>  e' <gis' e''> b <dis' b'>-> cis' <e' cis''> |
+  e'8 <gis' e''> dis' <fis' dis''>-> e' <gis' e''>  gis' <b' gis''> fis' <a' fis''>-> gis' <b' gis''> |
+  b'8 <dis'' b''> a' <cis'' a''>-> b' <dis'' b''>  dis'' <fis'' dis'''>-> cis'' <e'' cis'''>-> b' <dis'' b''> |
+  gis'8([ <b' gis''>)] a'([ <c'' a''>)] gis'([ <b' gis''>)]
+    fis'([ <a' fis''>)] c'([ <e' c''>)] e'([ <gis' e''>)] |
+  fis'8[ <a' fis''>] gis'[ <b' gis''>] fis'[ <a' fis''>]  
+    e'[ <gis' e''>] dis'[ <gis' dis''>] d'[ <gis' d''>] |
+  \key as \major
+  es'[ <g' es''>] f'[ <as' f''>] fis' <a' fis''>  g'[ <bes' g''>] as'[ <c'' as''>] bes'[ <des'' bes''>] |
+  c''8[ <es'' c'''>] cis''[ <e'' cis'''>] d''[ <f'' d'''>]  
+    es''[ < ges'' es'''>] f''[ <as'' f'''>] ges''[ <bes'' ges'''>] |
   
   \barNumberCheck 25
-  gf8[ <bf gf'>] f[ <af f'>] c,[ <ef c'>]  
-    ef[ <g ef'>] df[ <ff df'>] bf,[ <df bf'>] |
-  bf8[ <df bf'>] bff[ <df bff'>] af[ <df af'>] 
-    g,[ <c g'>] gf[ <c gf'>] ef,[ <gf ef'>] |
-  df8([ <f df'>)] df8([ <f df'>)] df8([ <f df'>)]
-    df8( <f df'> df8 <f df'>-> df8 <f df'>) |
-  df8([ <ff df'>)] df8([ <ff df'>)] df8([ <ff df'>)]
-    df( <ff df'> df <ff df'> df'-1 <ff df'>) |
+  ges''8[ <bes'' ges'''>] f''[ <as'' f'''>] c''[ <es'' c'''>]  
+    es''[ <g'' es'''>] des''[ <fes'' des'''>] bes'[ <des'' bes''>] |
+  bes'8[ <des'' bes''>] beses'[ <des'' beses''>] as'[ <des'' as''>] 
+    g'[ <c'' g''>] ges'[ <c'' ges''>] es'[ <ges' es''>] |
+  des'8([ <f' des''>)] des'8([ <f' des''>)] des'8([ <f' des''>)]
+    des'8( <f' des''> des'8 <f' des''>-> des'8 <f' des''>) |
+  des'8([ <fes' des''>)] des'8([ <fes' des''>)] des'8([ <fes' des''>)]
+    des'( <fes' des''> des' <fes' des''> des''-1 <fes'' des'''>) |
   \key a \major
-  cs8 <e cs'> d <fs d'> cs <e cs'>  b <ds b'> fs, <a fs'> gs <b gs'> |
-  a8 <cs a'> cs <e cs'> b <d b'>  a <cs a'> e, <gs e'> fs <a fs'> |
-  a8 <cs a'> gs <b gs'> a <cs a'>  cs <e cs'> b <d b'> cs <e cs'> |
-  e8 <gs e'> d <fs d'> e <gs e'>  gs <b gs'> fs <a fs'> e <gs e'> |
+  cis''8 <e'' cis'''> d'' <fis'' d'''> cis'' <e'' cis'''>  b' <dis'' b''> fis' <a' fis''> gis' <b' gis''> |
+  a'8 <cis'' a''> cis'' <e'' cis'''> b' <d'' b''>  a' <cis'' a''> e' <gis' e''> fis' <a' fis''> |
+  a'8 <cis'' a''> gis' <b' gis''> a' <cis'' a''>  cis'' <e'' cis'''> b' <d'' b''> cis'' <e'' cis'''> |
+  e''8 <gis'' e'''> d'' <fis'' d'''> e'' <gis'' e'''>  gis'' <b'' gis'''> fis'' <a'' fis'''> e'' <gis'' e'''> |
     
   \barNumberCheck 33
-  cs,8[ <e cs'>] d[ <f d'>] cs[ <e cs'>]  b[ <d b'>] f,[ <a f'>] a[ <cs a'>] |
-  b8[ <d b'>] cs[ <e cs'>] b[ <d b'>]  a[ <cs a'>] gs[ <cs gs'>] g[ <cs g'>] |
-  \key af \major
-  af8[ <c af'>] bf[ <df bf'>] b[ <d b'>]  
-    c[ <ef c'>] df[ <f df'>] ef[ <gf ef'>] |
-  f8[ <af f'>] gf[ <bff gf'>] g[ <bf g'>] \ottava 1
-    af[ <cf af'>] bf[ <df bf'>] cf[ <ef cf'>] |
-  cf8[ < ef cf'>] bf[ <df bf'>] f,[ <af f'>]  
-    af[ <cf af'>] gf[ <cf gf'>] \ottava 0 ef,[ <gf ef'>] |
-  ef8[ <gf ef'>] eff[ <gf eff'>] df[ <gf df>]
-    df[ <f df'>] c[ <f c'>] cf[ <f cf'>] |
-  bf,8[ <d bf'>] c[ <ef c'>] cs[ <e cs'>] d <f d'> ef <g ef'> f <af f'> |
-  af8 <c af'> g <bf g'> d, <f d'>  f <a f'> ef <gf ef'> c, <ef c'> |
+  cis''8[ <e'' cis'''>] d''[ <f'' d'''>] cis''[ <e'' cis'''>]  b'[ <d'' b''>] f'[ <a' f''>] a'[ <cis'' a''>] |
+  b'8[ <d'' b''>] cis''[ <e'' cis'''>] b'[ <d'' b''>]  a'[ <cis'' a''>] gis'[ <cis'' gis''>] g'[ <cis'' g''>] |
+  \key as \major
+  as'8[ <c'' as''>] bes'[ <des'' bes''>] b'[ <d'' b''>]  
+    c''[ <es'' c'''>] des''[ <f'' des'''>] es''[ <ges'' es'''>] |
+  f''8[ <as'' f'''>] ges''[ <beses'' ges'''>] g''[ <bes'' g'''>] \ottava 1
+    as''[ <ces''' as'''>] bes''[ <des''' bes'''>] ces'''[ <es''' ces''''>] |
+  ces'''8[ < es''' ces''''>] bes''[ <des''' bes'''>] f''[ <as'' f'''>]  
+    as''[ <ces''' as'''>] ges''[ <ces''' ges'''>] \ottava 0 es''[ <ges'' es'''>] |
+  es''8[ <ges'' es'''>] eses''[ <ges'' eses'''>] des''[ <ges'' des''>]
+    des''[ <f'' des'''>] c''[ <f'' c'''>] ces''[ <f'' ces'''>] |
+  bes'8[ <d'' bes''>] c''[ <es'' c'''>] cis''[ <e'' cis'''>] d'' <f'' d'''> es'' <g'' es'''> f'' <as'' f'''> |
+  as''8 <c''' as'''> g'' <bes'' g'''> d'' <f'' d'''>  f'' <a'' f'''> es'' <ges'' es'''> c'' <es'' c'''> |
   
   \barNumberCheck 41
-  c8( <ef c'> cf <ef cf'>-> bf <ef bf'>)  c-\slurPositionA ( 
-    <e c'> b <e b'>-> bf <e bf'>) |
-  c8( <f c'> cf <f cf'>-> bf, <f' bf>)  bf,-\slurPositionB ( 
-    <d bf'> g <bf gf'>-> f <af f'>) |
-  ef8( <g ef'> ff-1 <af ff'> ff'-1 \ottava 1 <af ff'> ff <af, ff'> \ottava 0
-    ff <af, ff'> ff <af ff'>) |
-  ef8( <g ef'> ff <af ff'> ff' <af ff'> \ottava 1 ff' <af ff'> ff <af, ff'>
-    \ottava 0 ff <af, ff'>) |
-  ef8-1 <g ef'> ef'-1 <g ef'> ef <g, ef>  
-    gf-1 <a gf'> gf'-1 <a gf'> gf <a, gf'> |
-  f8 <af f'> f' <af f'> f <af, f'>  af <cf af'> af' <cf af'> af <cf, af'> |
-  g8 <bf g'> g' <bf g'> g <bf, g'>  bf <df bf'> bf' <df bf'> bf <df, bf'> |
-  a8 <c a'> a' <c a'> a <c, a'>  c <ef c'> c' <ef c'> c <ef, c'> |
+  c''8( <es'' c'''> ces'' <es'' ces'''>-> bes' <es'' bes''>)  c''-\slurPositionA ( 
+    <e'' c'''> b' <e'' b''>-> bes' <e'' bes''>) |
+  c''8( <f'' c'''> ces'' <f'' ces'''>-> bes' <f'' bes''>)  bes'-\slurPositionB ( 
+    <d'' bes''> g'' <bes'' ges'''>-> f'' <as'' f'''>) |
+  es''8( <g'' es'''> fes''-1 <as'' fes'''> fes'''-1 \ottava 1 <as''' fes''''> fes''' <as'' fes'''> \ottava 0
+    fes'' <as' fes''> fes' <as' fes''>) |
+  es'8( <g' es''> fes' <as' fes''> fes'' <as'' fes'''> \ottava 1 fes''' <as''' fes''''> fes''' <as'' fes'''>
+    \ottava 0 fes'' <as' fes''>) |
+  es'8-1 <g' es''> es''-1 <g'' es'''> es'' <g' es'>  
+    ges'-1 <a' ges''> ges''-1 <a'' ges'''> ges'' <a' ges''> |
+  f'8 <as' f''> f'' <as'' f'''> f'' <as' f''>  as' <ces'' as''> as'' <ces''' as'''> as'' <ces'' as''> |
+  g'8 <bes' g''> g'' <bes'' g'''> g'' <bes' g''>  bes' <des'' bes''> bes'' <des''' bes'''> bes'' <des'' bes''> |
+  a'8 <c'' a''> a'' <c''' a'''> a'' <c'' a''>  c'' <es'' c'''> c''' <es''' c''''> c''' <es'' c'''> |
     
   \barNumberCheck 49
-  df8 <ef df'> df' \ottava 1 <ef df'> \repeat unfold 4 { df <ef df'> } |
-  \repeat unfold 6 { df8 <ef df'> } |
-  df8 <ef df'> df <ef c'> c <ef c'> c <d c'> c <d b'> b <d b'> |
-  cf8 <df cf'> cf <df bf'> bf <df bf'>  bf <c bf'> bf <c a'> a <c a'> |
-  a8 <b a'> \repeat unfold 5 { af <cf af'> } |
-  af8^\rall <cf af'> gf \ottava 0 <bff gf'> ff <af ff'>  
-    eff <gf eff'> cf, <ef cf'> af, <cf af'> |
-  af8^\aTempo <c af'> bf <df bf'> b <d b'>  c <ef c'> cs <e cs'> d <f d'> |
-  ef8 <g ef'> f <af f'> ef <g ef'>  c, <ef c'> bf <df bf'> c <ef c'> |
+  des''8 <es'' des'''> des''' \ottava 1 <es''' des''''> \repeat unfold 4 { des''' <es''' des''''> } |
+  \repeat unfold 6 { des'''8 <es''' des''''> } |
+  des'''8 <es''' des''''> des''' <es''' c''''> c''' <es''' c''''> c''' <d''' c''''> c''' <d''' b'''> b'' <d''' b'''> |
+  ces'''8 <des''' ces''''> ces''' <des''' bes'''> bes'' <des''' bes'''>  bes'' <c''' bes'''> bes'' <c''' a'''> a'' <c''' a'''> |
+  a''8 <b'' a'''> \repeat unfold 5 { as'' <ces''' as'''> } |
+  as''8^\rall <ces''' as'''> ges'' \ottava 0 <beses'' ges'''> fes'' <as'' fes'''>  
+    eses'' <ges'' eses'''> ces'' <es'' ces'''> as' <ces'' as''> |
+  as'8^\aTempo <c'' as''> bes' <des'' bes''> b' <d'' b''>  c'' <es'' c'''> cis'' <e'' cis'''> d'' <f'' d'''> |
+  es''8 <g'' es'''> f'' <as'' f'''> es'' <g'' es'''>  c'' <es'' c'''> bes' <des'' bes''> c'' <es'' c'''> |
   
   \barNumberCheck 57
-  bf8 <df bf'> c <ef c'> g, <bf g'>  af <c af'> g <bf g'> af <c af'> |
+  bes'8 <des'' bes''> c'' <es'' c'''> g' <bes' g''>  as' <c'' as''> g' <bes' g''> as' <c'' as''> |
   \stemDown
-  f,8 <af f'> g <bf g'> f <af f'>  ff <g ff'> ef <g ef'> g <bf g'> |
+  f'8 <as' f''> g' <bes' g''> f' <as' f''>  fes' <g' fes''> es' <g' es''> g' <bes' g''> |
   \stemNeutral
-  af8([ <c af'>)] bf([ <df bf'>)] b([ <d b'>)] 
-    c([ <ef c'>)] cs([ <e cs'>)] d([ <f d'>)] |
-  ef8([ <g ef'>)] f([ <af f'>)] ef([ <g ef'>)]
-    c,([ <ef c'>)] bf([ <df bf'>)] c([ <ef c'>)] |
-  df8 <f df'>] ef[ <g ef'>] f[ <af f'>]  
-    e[ <bf' g'>] f[ <c' af'>] g[ <df' bf'>] |
-  g,8[ <df' bf'>] c[ <ef c'>] e,[ <g e'>] 
-    e[ <bf' g'>] f[ <af f'>] df,[ <f df'>] |
-  f8[ <af f'>] ff[ <af ff'>] ef[ <af ef'>] 
-    ef[ <g ef'>] d[ <g d'>] df[ <g df'>] |
-  \ottava 1 df'8[ <f df'>] c[ <f c'>] g,[ <bf g'>] 
-    bf[ <df bf'>] af[ <cf af'>] \ottava 0 f,[ <af f'>] |
+  as'8([ <c'' as''>)] bes'([ <des'' bes''>)] b'([ <d'' b''>)] 
+    c''([ <es'' c'''>)] cis''([ <e'' cis'''>)] d''([ <f'' d'''>)] |
+  es''8([ <g'' es'''>)] f''([ <as'' f'''>)] es''([ <g'' es'''>)]
+    c''([ <es'' c'''>)] bes'([ <des'' bes''>)] c''([ <es'' c'''>)] |
+  des''8 <f'' des'''>] es''[ <g'' es'''>] f''[ <as'' f'''>]  
+    e''[ <bes'' g'''>] f''[ <c''' as'''>] g''[ <des''' bes'''>] |
+  g''8[ <des''' bes'''>] c'''[ <es''' c''''>] e''[ <g'' e'''>] 
+    e''[ <bes'' g'''>] f''[ <as'' f'''>] des''[ <f'' des'''>] |
+  f''8[ <as'' f'''>] fes''[ <as'' fes'''>] es''[ <as'' es'''>] 
+    es''[ <g'' es'''>] d''[ <g'' d'''>] des''[ <g'' des'''>] |
+  \ottava 1 des'''8[ <f''' des''''>] c'''[ <f''' c''''>] g''[ <bes'' g'''>] 
+    bes''[ <des''' bes'''>] as''[ <ces''' as'''>] \ottava 0 f''[ <as'' f'''>] |
   
   \barNumberCheck 65
-  f8[ <af f'>] ff[ <af ff'>] ef[ <af ef'>]  
-    f[ <a f'>] ff[ <a ff'>] ef[ <a ef'>] |
-  f8[ <bf f'>] ff[ <bf ff'>] ef,[ <bf' ef>]
-    ef,[ <c' ef>] ef,[ <df' ef>] ef,[ <g ef'>] |
-  f8[ <af f'>] ff[ <af ff'>] ef[ <af ef'>]
-    f[ <a f'>] ff[ <a ff'>] ef[ <a ef'>] |
-  d,8[ <af' f'>] g[ <bf g'>] f[ <c' af'>]
-    \ottava 1 ef,[ <df' bf'>] c[ <ef c'>] bf[ <df g>] |
-  af8 <c af'> bf <df bf'> b <d b'>  c <ef c'> cs <e cs'> d <f d'> |
-  ef8 <g ef'> f <af f'> ef <g ef'>  c, <ef c'> bf <df bf'> c <ef c'> |
-  bf8 <df bf'> c <ef c'> g, <bf g'>  af <c af'> g <bf g'> af <c af'> |
-  \ottava 0 ef,8 <g ef'> f <af f'> g <bf g'>  
-    c, <ef c'> bf <df bf'> c <ef c'> |
+  f''8[ <as'' f'''>] fes''[ <as'' fes'''>] es''[ <as'' es'''>]  
+    f''[ <a'' f'''>] fes''[ <a'' fes'''>] es''[ <a'' es'''>] |
+  f''8[ <bes'' f'''>] fes''[ <bes'' fes'''>] es''[ <bes'' es'''>]
+    es''[ <c''' es'''>] es''[ <des''' es'''>] es''[ <g'' es'''>] |
+  f''8[ <as'' f'''>] fes''[ <as'' fes'''>] es''[ <as'' es'''>]
+    f''[ <a'' f'''>] fes''[ <a'' fes'''>] es''[ <a'' es'''>] |
+  d''8[ <as'' f'''>] g''[ <bes'' g'''>] f''[ <c''' as'''>]
+    \ottava 1 es''[ <des''' bes'''>] c'''[ <es''' c''''>] bes''[ <des''' g'''>] |
+  as''8 <c''' as'''> bes'' <des''' bes'''> b'' <d''' b'''>  c''' <es''' c''''> cis''' <e''' cis''''> d''' <f''' d''''> |
+  es'''8 <g''' es''''> f''' <as''' f''''> es''' <g''' es''''>  c''' <es''' c''''> bes'' <des''' bes'''> c''' <es''' c''''> |
+  bes''8 <des''' bes'''> c''' <es''' c''''> g'' <bes'' g'''>  as'' <c''' as'''> g'' <bes'' g'''> as'' <c''' as'''> |
+  \ottava 0 es''8 <g'' es'''> f'' <as'' f'''> g'' <bes'' g'''>  
+    c'' <es'' c'''> bes' <des'' bes''> c'' <es'' c'''> |
     
   \barNumberCheck 73
-  bf8 <df bf'> c <ef c'> g, <bf g'>  af <c af'> df <f df'> c <ef c'> |
-  af,8 <c af'> df <f df'> c <ef c'>  af, <c af'> df <f df'> c <ef c'> |
-  af,8 <c af'> af' <c af'> af <c, af'>  
-    af <c, af'> af <df ff af> af' <df ff af> |
-  af8 <c ef af> af' <c ef af> af <c, ef af> \voiceTwo 
-    af <c, ef af> af <bf df> \set tieWaitForNote = ##t <af~ c> <bf df> |
-  <af c ef>1. |
+  bes'8 <des'' bes''> c'' <es'' c'''> g' <bes' g''>  as' <c'' as''> des'' <f'' des'''> c'' <es'' c'''> |
+  as'8 <c'' as''> des'' <f'' des'''> c'' <es'' c'''>  as' <c'' as''> des'' <f'' des'''> c'' <es'' c'''> |
+  as'8 <c'' as''> as'' <c''' as'''> as'' <c'' as''>  
+    as' <c' as'> as <des' fes' as'> as' <des'' fes'' as''> |
+  as'8 <c'' es'' as''> as'' <c''' es''' as'''> as'' <c'' es'' as''> \voiceTwo 
+    as' <c' es' as'> as <bes des'> \set tieWaitForNote = ##t <as~ c'> <bes des'> |
+  <as c' es'>1. |
 }
 
 rightHand = <<
@@ -224,15 +224,15 @@ rightHand = <<
   \new Voice { \voiceTwo \rightHandLower }
 >>
 
-leftHandUpper = \relative {
+leftHandUpper = {
   \oneVoice
   \partial 8 r8
   \voiceThree
-  \repeat unfold 3 { s4. ef2*3/4 s4. ef2*3/4 | }
-  s4. af4 s8 s2. |
-  \repeat unfold 2 { s4. ef2*3/4 s4. ef2*3/4 | }
-  s4. af4 s8 s2. |
-  s2. s4. df |
+  \repeat unfold 3 { s4. es2*3/4 s4. es2*3/4 | }
+  s4. as4 s8 s2. |
+  \repeat unfold 2 { s4. es2*3/4 s4. es2*3/4 | }
+  s4. as4 s8 s2. |
+  s2. s4. des' |
   
   \barNumberCheck 9
   s1. * 8 |
@@ -251,117 +251,117 @@ leftHandUpper = \relative {
   
   \barNumberCheck 49
   s1. |
-  s2. s4. \voiceFour <bff' df gf^~>4.^> |
-  \voiceThree <ef gf>2. <d f> |
-  <df ff>2. <c ef> |
-  <cf ef>2. s2. |
+  s2. s4. \voiceFour <beses' des'' ges''^~>4.^> |
+  \voiceThree <es'' ges''>2. <d'' f''> |
+  <des'' fes''>2. <c'' es''> |
+  <ces'' es''>2. s2. |
 }
 
-leftHandLower = \relative {
+leftHandLower = {
   \partial 8 s8
-  af,8-.^([ c'_\lagato af ef ef' af,)]  af,-.^([ c' af ef ef' af,)] |
-  af,8[ df' g, ef ef' g,]  af,[ c' af ef ef' af,] |
-  af,8[ df' g, ef ef' g,]  af,[ c' af ef ef' af,] |
-  bf,8[ d' bf af d af]  ef,[ df'' bf ef, df' bf] |
-  af,8[ c' af ef ef' af,]  af,[ c' af ef ef' af,] |
-  af,8[ df' g, ef ef' g,]  af,[ c' af ef ef' af,] |
+  as,8-.^([ c'_\lagato as es es' as)]  as,-.^([ c' as es es' as)] |
+  as,8[ des' g es es' g]  as,[ c' as es es' as] |
+  as,8[ des' g es es' g]  as,[ c' as es es' as] |
+  bes,8[ d' bes as d' as]  es,[ des' bes es des' bes] |
+  as,8[ c' as es es' as]  as,[ c' as es es' as] |
+  as,8[ des' g es es' g]  as,[ c' as es es' as] |
   \stemNeutral
-  bf,8[ d'^( bf af d bf)]  ef,[ \clef treble g' ef c a' ef] |
-  bf8[ bf' ef, bf af' d,]  \clef bass ef,[ g' ef! df g ef] |
+  bes,8[ d'^( bes as d' bes)]  es[ \clef treble g' es' c' a' es'] |
+  bes8[ bes' es' bes as' d']  \clef bass es[ g' es'! des' g' es'] |
   
   \barNumberCheck 9
   \oneVoice
-  af,,8[_\legatis c' af ef ef' af,]  af,[ c'af ef ef' af,] |
-  af,8[ df' g, ef ef' g,]  af,[ c' af ef ef' af,] |
-  af,8[ df' g, ef ef' g,]  af,[ c' af ef ef' af,] |
-  bf,8[ d' bf af d bf]  ef,,[ df'' bf g df' bf] |
-  af,8-.[^\stac c'-. af-. ef-. ef'-. af,-.]  
-    af,-.[ c'-. af-. ef-. ef'-. af,-.] |
-  af,8-.[ df'-. g,-. ef-. ef'-. g,-.]  af,-.[ c'-. af-. gf-. ef'-. af,-.] |
-  df,8-.[ f'-. df-. af-. f'-. df-.]  df,-.[ ff'-. df-. af-. ff'-. df-.] |
-  ef,8-.[ \clef treble g'-. ef-. df-. g-. ef-.] \clef bass
-    af,,-.([ c' af ef ef' af,)] |
+  as,8[_\legatis c' as es es' as]  as,[ c'as es es' as] |
+  as,8[ des' g es es' g]  as,[ c' as es es' as] |
+  as,8[ des' g es es' g]  as,[ c' as es es' as] |
+  bes,8[ d' bes as d' bes]  es,[ des' bes g des' bes] |
+  as,8-.[^\stac c'-. as-. es-. es'-. as-.]  
+    as,-.[ c'-. as-. es-. es'-. as-.] |
+  as,8-.[ des'-. g-. es-. es'-. g-.]  as,-.[ c'-. as-. ges-. es'-. as-.] |
+  des8-.[ f'-. des'-. as-. f'-. des'-.]  des-.[ fes'-. des'-. as-. fes'-. des'-.] |
+  es8-.[ \clef treble g'-. es'-. des'-. g'-. es'-.] \clef bass
+    as,-.([ c' as es es' as)] |
     
   \barNumberCheck 17
   \key e \major
-  e,8[ b'' e, b b' e,]  e,[ as' fs cs as' fs] |
-  e,8[ a' ds, b b' ds,]  e,[ gs' e b b' e,] |
-  e,8[ a' fs b, b' fs]  e,[ a' ds, b b' ds,] |
-  e,8[ a' fs b, b' fs]  e,[ a' ds, b b' ds,] |
-  e,8[ b'' e, b b' e,]  e,[ a' e c a' e] |
-  e,8[ a' ds, b b' ds,]  e,[ gs' e b b' e,] |
-  \key af \major
-  ef,8[ df'' g, ef ef' g,]  ef,[ df'' g, ef ef' g,] |
-  af,8[ c' af gf ef' af,]  af,[ c' af gf ef' af,] |
+  e,8[ b e b, b e]  e,[ ais fis cis ais fis] |
+  e,8[ a dis b, b dis]  e,[ gis e b, b e] |
+  e,8[ a fis b, b fis]  e,[ a dis b, b dis] |
+  e,8[ a fis b, b fis]  e,[ a dis b, b dis] |
+  e,8[ b e b, b e]  e,[ a e c a e] |
+  e,8[ a dis b, b dis]  e,[ gis e b, b e] |
+  \key as \major
+  es,8[ des' g es es' g]  es,[ des' g es es' g] |
+  as,8[ c' as ges es' as]  as,[ c' as ges es' as] |
   
   \barNumberCheck 25
-  df,,8[ f'' df af f' df]  g,,[ df'' bf ff df' bf] |
-  af,8[ df' af f df' af]  af,[ c' af gf c af] |
-  df,,8[ af'' df, af af' df,]  df,[ af'' df, af af' df,] |
-  df,8[ af'' df, af af' df,]  df,[ af'' df, af af' df,] |
+  des,8[ f' des' as f' des']  g,[ des' bes fes des' bes] |
+  as,8[ des' as f des' as]  as,[ c' as ges c' as] |
+  des,8[ as des as, as des]  des,[ as des as, as des] |
+  des,8[ as des as, as des]  des,[ as des as, as des] |
   \key a \major
-  a8[ e'' a, e e' a,] a,[ ds' a fs ds' a] |
-  a,8[ d' gs, e e' gs,]  a,[ cs' a e e' a,] |
-  a,8[ d' b e, e' b]  a,[ d' gs, e e' gs,] |
-  a,8[ d' b e, e' b]  a,[ d' gs, e e' gs,] |
+  a,8[ e' a e e' a] a,[ dis' a fis dis' a] |
+  a,8[ d' gis e e' gis]  a,[ cis' a e e' a] |
+  a,8[ d' b e e' b]  a,[ d' gis e e' gis] |
+  a,8[ d' b e e' b]  a,[ d' gis e e' gis] |
   
   \barNumberCheck 33
-  a,8[ e'' a, e e' a,]  a,[ d' a f d' a] |
-  a,8[ d' gs, e e' gs,]  a,[ cs' a e e' a,] |
-  \key af \major
-  af,8[ c' af gf ef' af,]  af,[ c' af ef ef' af,] |
-  df,8[ f' df cf af' df,]  df,[ f' df cf af' f] \clef treble |
-  gf,8[ gf' df bf bf' df,] \clef bass cf,[ ef' cf af gf' cf,] |
-  df,[ df' bf gf gf' bf,]  df,[ f' cf af af' cf,] |
-  d,8[ f' bf, af af' bf,]  bf,[ d' bf af af' bf,] |
-  ef,8[ ef' bf g g' bf,]  a, ef''[c gf gf' c,] |
+  a,8[ e' a e e' a]  a,[ d' a f d' a] |
+  a,8[ d' gis e e' gis]  a,[ cis' a e e' a] |
+  \key as \major
+  as,8[ c' as ges es' as]  as,[ c' as es es' as] |
+  des8[ f' des' ces' as' des']  des[ f' des' ces' as' f'] \clef treble |
+  ges8[ ges' des' bes bes' des'] \clef bass ces[ es' ces' as ges' ces'] |
+  des[ des' bes ges ges' bes]  des[ f' ces' as as' ces'] |
+  d8[ f' bes as as' bes]  bes,[ d' bes as as' bes] |
+  es8[ es' bes g g' bes]  a, es'[c' ges ges' c'] |
   
   \barNumberCheck 41
-  bf,8[ ef' bf g g' bf,]  bf,[ e' c g g' c,]
-  bf,8[ f'' d af af' d,]  bf,-\slurPositionC ([ df' bf af df bf] |
-  <ef, g ef'>4) r8 <ef af cf d>2. ef,4 r8 |
-  <ef' bf'>4 r8 <ef af cf d>4.  ef,4 r8 <ef'~ af cf d>4. |
-  <ef g bf>8 ef, r r4 <ef' bf'>8(  <ef dff'>) ef, r r4 <ef' dff'>8 |
-  <ef cf'>8 ef, r r4 <ef' cf'>8  <ef d'> ef, r r4 <ef' d'>8 |
-  <ef df'>8 ef, r r4 <ef' df'>8  <ef ff'> ef, r r4 <ef' ff'>8 |
-  <ef ef'>8 ef, r r4 <ef' ef'>8  <ef gf'> ef, r r4 <ef' gf'>8 |
+  bes,8[ es' bes g g' bes]  bes,[ e' c' g g' c']
+  bes,8[ f' d' as as' d']  bes,-\slurPositionC ([ des' bes as des' bes] |
+  <es g es'>4) r8 <es as ces' d'>2. es,4 r8 |
+  <es bes>4 r8 <es as ces' d'>4.  es,4 r8 <es~ as ces' d'>4. |
+  <es g bes>8 es, r r4 <es bes>8(  <es deses'>) es, r r4 <es deses'>8 |
+  <es ces'>8 es, r r4 <es ces'>8  <es d'> es, r r4 <es d'>8 |
+  <es des'>8 es, r r4 <es des'>8  <es fes'> es, r r4 <es fes'>8 |
+  <es es'>8 es, r r4 <es es'>8  <es ges'> es, r r4 <es ges'>8 |
   
   \barNumberCheck 49
-  <ef bf' df g>4.\arpeggio \clef treble <bf'' df g>2.-> <a df fs>4.->( |
-  <bf df g>4-.) r8 <a df fs>4.->( <bf df g>4) r8 
-    \voiceFour \hideNotes bff4._~ \unHideNotes |
-  bff4. af2. g4.( |
-  aff4.) gf2. f4. |
-  f4. ff \oneVoice r4 r8 r4 r8 \clef bass |
-  ff,,8([ r cf'] eff af eff' af4.) r4 r8 |
-  ef,,8-.[ c''( af ef ef' af,)]  ef,8-.[ c''( af ef ef' af,)] |
-  ef,8-.[ df''( g, ef ef' g,)]  af,-.[ c'( af ef ef' af,)] |
+  <es bes des' g'>4.\arpeggio \clef treble <bes' des'' g''>2.-> <a' des'' fis''>4.->( |
+  <bes' des'' g''>4-.) r8 <a' des'' fis''>4.->( <bes' des'' g''>4) r8 
+    \voiceFour \hideNotes beses'4._~ \unHideNotes |
+  beses'4. as'2. g'4.( |
+  ases'4.) ges'2. f'4. |
+  f'4. fes' \oneVoice r4 r8 r4 r8 \clef bass |
+  fes,8([ r ces] eses as eses' as'4.) r4 r8 |
+  es,8-.[ c'( as es es' as)]  es,8-.[ c'( as es es' as)] |
+  es,8-.[ des'( g es es' g)]  as,-.[ c'( as es es' as)] |
   
   \barNumberCheck 57
-  af,8[ df' g, ef ef' g,]  af,[ c' af ef ef' af,] |
-  bf,8[ d' bf af d bf]  ef,, df''[ bf ef, df' bf] |
-  af,8[ c' af ef ef' af,]  af,[ c' af ef ef' af,] |
-  af,8[ df'g, ef ef' g,]  af,[ c' af gf ef' af,] |
-  df,8[ f' df af f' df]  af,[ e'' c bf g' c,] |
-  f,8[ f' c af af' c,]  df,[ f' bf, af f' bf,] |
-  ef,8[ ef' c af af' c,]  ef,[ g' df bf g' df] |
-  f,8[ f' c af af' c,]  d,[ f' b, af af' b,] |
+  as,8[ des' g es es' g]  as,[ c' as es es' as] |
+  bes,8[ d' bes as d' bes]  es, des'[ bes es des' bes] |
+  as,8[ c' as es es' as]  as,[ c' as es es' as] |
+  as,8[ des'g es es' g]  as,[ c' as ges es' as] |
+  des8[ f' des' as f' des']  as,[ e' c' bes g' c'] |
+  f8[ f' c' as as' c']  des[ f' bes as f' bes] |
+  es8[ es' c' as as' c']  es[ g' des' bes g' des'] |
+  f8[ f' c' as as' c']  d[ f' b as as' b] |
   
   \barNumberCheck 65
-  ef,8[ af' ef c af' ef]  ef,[ a' ef c a' ef] |
-  ef,8[ bf'' ef, bf bf' ef,]  ef,[ g' ef df g ef] |
-  ef,8[ af' ef c af' ef]  ef,[ a' ef cf a' ef] |
-  ef,8[ af' d, bf af' d,]  ef,[ g' ef df g ef] |
-  af,,8[ c' af ef ef' af,]  af,[ c' af ef ef' af,] |
-  af,8[ df' g, ef ef' g,]  af,[ c' af ef ef' af,] |
-  af,8[ df' g, ef ef' g,]  af,[ c' af ef ef' af,] |
-  af,8[ df' g, ef ef' g,]  af,[ c' af ef ef' af,] |
+  es8[ as' es' c' as' es']  es[ a' es' c' a' es'] |
+  es8[ bes' es' bes bes' es']  es[ g' es' des' g' es'] |
+  es8[ as' es' c' as' es']  es[ a' es' ces' a' es'] |
+  es8[ as' d' bes as' d']  es[ g' es' des' g' es'] |
+  as,8[ c' as es es' as]  as,[ c' as es es' as] |
+  as,8[ des' g es es' g]  as,[ c' as es es' as] |
+  as,8[ des' g es es' g]  as,[ c' as es es' as] |
+  as,8[ des' g es es' g]  as,[ c' as es es' as] |
   
   \barNumberCheck 73
-  af,8[ df' g, ef ef' g,]  af,[ c' af ef ef' af,] |
-  af,8[ c' af ef ef' af,]  af,[ c' af ef ef' af,] |
-  af,2. r4 r8 <df, df'>4. |
-  <af af'>1. ~ |
+  as,8[ des' g es es' g]  as,[ c' as es es' as] |
+  as,8[ c' as es es' as]  as,[ c' as es es' as] |
+  as,2. r4 r8 <des, des>4. |
+  <as,, as,>1. ~ |
   q1. |
   
 }
