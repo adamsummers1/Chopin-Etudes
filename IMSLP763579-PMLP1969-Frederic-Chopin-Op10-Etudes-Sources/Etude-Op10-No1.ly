@@ -1,4 +1,4 @@
-\version "2.22.1"
+\version "2.27.0"
 
 \include "includes/Header-paper-layout.ily"
 \include "includes/Etude-No1-Parts.ily"

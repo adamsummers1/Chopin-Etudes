@@ -1,6 +1,6 @@
 %...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....
 
-\version "2.22.1"
+\version "2.27.0"
 \language "nederlands"
 
 \include "Global.ily"
@@ -214,7 +214,7 @@ leftHand = {
   \barNumberCheck 17
   d,8-. r <d f bes d'>4( <e a c'>) e->( |
   <a, a)>4 <e, e> <a,, a,> r |
-  <c, c>8-. r <c g c'>-. r f,-. r <c ac'>-. r |
+  <c, c>8-. r <c g c'>-. r f,-. r <c a c'>-. r |
   c,8-. r <c g c'>-. r des,-. r <des as b>-. r |
   d,8-. r <d a c'>-. r g,-. r <d g bes> r |
   d,8-. r <d a c'>-. r es,-. r <es bes cis'>-. r |
@@ -341,7 +341,7 @@ etude-two-music = {
 }
 
 etude-two-midi = \book {
-  \bookOutputName "Fredric-Chopin-Etudes-Op10-No2"
+  \bookOutputName "Etude-Op10-No2"
   \score { 
     \articulate << 
       \new Staff = "upper" << \rightHand \dynamics >>
@@ -359,3 +359,14 @@ etude-two-midi = \book {
     }
   }
 }
+
+
+%{
+convert-ly (GNU LilyPond) 2.27.0  convert-ly: Processing `'...
+Applying conversion: 2.23.1, 2.23.2, 2.23.3, 2.23.4, 2.23.5, 2.23.6,
+2.23.7, 2.23.8, 2.23.9, 2.23.10, 2.23.11, 2.23.12, 2.23.13, 2.23.14,
+2.24.0, 2.25.0, 2.25.1, 2.25.2, 2.25.3, 2.25.4, 2.25.5, 2.25.6,
+2.25.8, 2.25.9, 2.25.11, 2.25.12, 2.25.13, 2.25.18, 2.25.22, 2.25.23,
+2.25.24, 2.25.25, 2.25.26, 2.25.28, 2.25.30, 2.25.31, 2.25.32,
+2.25.33, 2.25.34, 2.25.35, 2.25.80, 2.26.0, 2.27.0
+%}

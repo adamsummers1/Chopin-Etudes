@@ -12,3 +12,8 @@
 }
 
 \etude-seven-midi
+
+\include "dev-tools.ly"
+
+#(write-display-music rightHand "107.scm")
+#(write-display-music (music-filter (lambda (x) (ly:duration? (ly:music-property x 'duration))) rightHand ) "107-b.scm")

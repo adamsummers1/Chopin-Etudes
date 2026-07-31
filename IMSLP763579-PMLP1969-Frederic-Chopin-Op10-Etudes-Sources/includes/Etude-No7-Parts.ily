@@ -1,6 +1,6 @@
 %...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....
 
-\version "2.22.1"
+\version "2.27.0"
 \language "nederlands"
 
 \include "Global.ily"
@@ -14,7 +14,7 @@ adjustFingerB = \tweak Y-offset 4 \etc
 global = {
   \time 6/8
   \key c \major
-  \accidentalStyle piano
+  %\accidentalStyle piano
 }
 
 rightHand = {
@@ -22,7 +22,7 @@ rightHand = {
   \tempo Vivace 4. = 84
   
   \partial 8 g'8
-  <e' g'>16^(_2-3 <e' c''>_1-5 <f' as'>_2-\adjustFingerA-3 <f' d''>_1-\adjustFingerB-5
+  <e' g'>16^(_2-3 <e' c''>_1-5 <f' as'> <f' d''>
     <d' f'> <d' b'>  <b d'> <b g'> <c' es'> <c' a'> <d' as'>_2-4 <d' b'>)_1-5 |
   <e' g'>16 <e' c''> <f' as'> <f' d''> <d' f'> <d' b'>  
     <b d'> <b g'> <c' es'> <c' a'> <d' as'> <d' b'> |
@@ -39,7 +39,7 @@ rightHand = {
   <g' b'>16 <g' e''> <b' e''> <b' g''> <e'' g''> <e'' b''>
     <g'' b''> <g'' e'''> <f'' a''> <f'' d'''> <g'' f''> <f'' b''> |
     
-  \barNumberCheck 9
+%  \barNumberCheck 9
   <e'' g''>16 <e'' c'''> <f'' as''> <f'' d'''> <d'' f''> <d'' b''>
     <b' d''> <b' g''> <c'' es''> <c'' a''> <d'' as''> <d'' b''> |
   <e'' g''>16 <e'' c'''> <f'' as''> <f'' d'''> <d'' f''> <d'' b''>
@@ -57,7 +57,7 @@ rightHand = {
   <g'' b''>16 <g'' e'''> <g'' b''>16 <g'' e'''> <g'' b''>16 <g'' e'''>
     <g'' b''>16 <g'' e'''> <g'' b''>16 <g'' e'''> <g'' bes''>16 <g'' e'''> |
     
-  \barNumberCheck 17
+%  \barNumberCheck 17
   <g'' a''>16-2-3 <g'' e'''>-1-5 <g'' a''>16-2-3 <g'' e'''>-1-5 <g'' a''>16 <g'' e'''>
     <g'' a''>16 <g'' e'''> <g'' a''>16 <g'' f'''> <g'' a''>16 <g'' e'''> |
   <g'' a''>16 <g'' e'''> <e'' a''> <e'' cis'''> <f'' a''> <f'' d'''>
@@ -75,12 +75,12 @@ rightHand = {
   <b' d''>16 <b' g''> <c'' es''> <c'' as''> <as' c''> <as' f''>
     <f' as'> <f' d''> <f' as'> <f' d''> <es' a'> <es' c''> |
     
-  \barNumberCheck 25
+%  \barNumberCheck 25
   <d' g'>16 <d' b'> <c' es'>-> <c' as'> <as c'> <as f'>
-    \staffDown \voiceOne <f as> <f d'> <f as> <f d'> <es a> <es c'> |
+    \change Staff = "lower" \voiceOne <f as> <f d'> <f as> <f d'> <es a> <es c'> |
   <d g>16 <d b> <f a> <f d'> <e g> <e c'>
     <g b> <g e'> <f a> <f d'> <a c'> <a f'> |
-  \staffUp \oneVoice <g b>16 <g e'> <b d'> <b g'> <a c'> <a f'>
+  \change Staff = "upper" \oneVoice <g b>16 <g e'> <b d'> <b g'> <a c'> <a f'>
     <c' e'> <c' a'> <b d'> <b f'> <d' f'> <d' b'> |
   <c' e'>16 <c' a'> <d' f'> <d' b'> <e' g'> <e' c''>
     <f' a'> <f' d''> <g' b'> <g' e''> <a' c''> <a' f''> |
@@ -93,7 +93,7 @@ rightHand = {
   <gis' b'>16->( <gis' e''> <g' b'> <g' e''> <g' a'> <g' e''>
     <fis' a'>-> <fis' d''> <f' a'> <f' d''> <f' g'> <f' d''>) |
     
-  \barNumberCheck 33
+%  \barNumberCheck 33
   <e' g'>16 <e' c''> <es' as'-4> <es' c''-5> <dis'_2 a'-4> <dis'_1 c''-5> 
     <e'_2 g'-3> <e'_1 c''-5> <es'_2 fis'> <es'_1 c''> <d' f'> <d' b'>
   <e' g'>16 <e' c''> <f' as'> <f' d''> <d' f'> <d' b'> 
@@ -111,7 +111,7 @@ rightHand = {
   <e' g'>16 <e' c''> <g' a'>-> <g' e''> <f' a'> <f' d''>
     <bes' c''>-> <bes' g''> <a' c''> <a' f''> <c'' d''>-> <c'' a''> |
     
-  \barNumberCheck 41
+%  \barNumberCheck 41
   <b' d''>16 <b' g''> <d'' e''> <d'' b''> <c'' e''> <c'' a''>
     <f'' g''> <f'' d'''> <e'' g''> <e'' c'''> <g'' a''> <g'' e'''> |
   <g'' a''>16 <g'' e'''> <g'' a''> <g'' e'''> <g'' a''> <g'' e'''> 
@@ -129,7 +129,7 @@ rightHand = {
   <e'' g''>16( <e'' c'''> <es'' a''> <es'' c'''> <d'' g''> <d'' b''> 
     <des'' g''> <des'' bes''> <c'' es''> <c'' as''> <bes' e''> <bes' g''> |
     
-  \barNumberCheck 49
+%  \barNumberCheck 49
   <a' d''>16 <a' fis''> <as' d''> <as' f''> <g' c''> <g' e''>
     <as' c''> <as' es''> <a' c''> <a' d''> <f' g'> <f' b'> |
   <e' g'>16 <e' c''> <es' a'> <es' c''> <d' g'> <d' b'>
@@ -145,9 +145,9 @@ rightHand = {
   <e g>-> <e c'> <f g> <f d'> <e g> <e c'> 
     <f g>-> <f d'> <e g> <e c'> <f g> <f d'>-> |
   <e c'>8 <e c'>16[-2-5 e-1 <g e'>-2-5 g]-1 
-    \staffUp \oneVoice <c' g'> c' <e' c''> e' <g' e''> g' |
+    \change Staff = "upper" \oneVoice <c' g'> c' <e' c''> e' <g' e''> g' |
     
-  \barNumberCheck 57
+%  \barNumberCheck 57
   <c'' g''>16 c'' <e'' c'''> e'' <g'' e'''> g''
     \ottava 1 <c''' g'''>[ c''' <e''' c''''> e''' <g''' e''''> r32 <g''' e''''>] |
   \ottava 0 c'''4 r8 <e'' g'' c''' e'''>4 r8 |
@@ -418,7 +418,7 @@ etude-seven-music = {
 }
 
 etude-seven-midi = \book {
-  \bookOutputName "Fredric-Chopin-Etudes-Op10-No7"
+  \bookOutputName "Etude-Op10-No7"
   \score { 
     \articulate << 
       \new Staff = "upper" << \rightHand \dynamics \pedal >>
