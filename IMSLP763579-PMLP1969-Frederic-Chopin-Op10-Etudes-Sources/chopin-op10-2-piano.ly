@@ -1,10 +1,9 @@
 %...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....
 
-\version "2.27.0"
+\version "2.27.1"
 \language "nederlands"
 
-\include "Global.ily"
-\include "articulate.ly"
+#(load-from-path "click-track-tools.scm")
 
 sempreLegato = \markup \larger \italic "sempre legato"
 
@@ -181,7 +180,7 @@ rightHandLower = {
   <a' d''>16 s8. <f' a'>16 s8. <d' f'>16 s8. <a d'>16 s8. |
   
   \barNumberCheck 49
-  \staffDown <e a>1 |
+  \change Staff="lower" <e a>1 |
 }
 
 rightHand = {
@@ -329,10 +328,15 @@ breaks = {
   s1 \pageBreak
 }
 
-etude-two-header = \header { }
+etude-two-header = \header { 
+  title = "Etude"
+  composer = "Frédéric Chopin"
+  opus = "Opus 10 No 2"
+  tagline = \date 
+}
 
 etude-two-music = {
-  \new PianoStaff \with { instrumentName = \markup \huge "No. 2" } <<
+  \new PianoStaff <<
     \new Staff = "upper" \rightHand
     \new Dynamics = "dynamics" \dynamics
     \new Staff = "lower" \leftHand
@@ -340,33 +344,19 @@ etude-two-music = {
   >>
 }
 
-etude-two-midi = \book {
-  \bookOutputName "Etude-Op10-No2"
-  \score { 
-    \articulate << 
+#(define (moment->whole-notes m)
+   (/ (ly:moment-main-numerator m)
+      (ly:moment-main-denominator m)))
+
+barcount = #(moment->whole-notes ((ly:music-property etude-two-music 'length-callback) etude-two-music))
+
+myPartial = #(find-leading-partial etude-two-music )
+#(format #t "partial is ~a \n" myPartial)
+clickTrack = #(make-click-track '( 4 . 4) barcount)
+
+etude-two-midi =
+    << 
       \new Staff = "upper" << \rightHand \dynamics >>
       \new Staff = "lower" << \leftHand \dynamics >>
+      \new Staff = "click" {\clickTrack}
     >>
-    \midi {
-      \context {
-        \Staff
-        \consists "Dynamic_performer"
-      }
-      \context {
-        \Voice
-        \remove "Dynamic_performer"
-      }   
-    }
-  }
-}
-
-
-%{
-convert-ly (GNU LilyPond) 2.27.0  convert-ly: Processing `'...
-Applying conversion: 2.23.1, 2.23.2, 2.23.3, 2.23.4, 2.23.5, 2.23.6,
-2.23.7, 2.23.8, 2.23.9, 2.23.10, 2.23.11, 2.23.12, 2.23.13, 2.23.14,
-2.24.0, 2.25.0, 2.25.1, 2.25.2, 2.25.3, 2.25.4, 2.25.5, 2.25.6,
-2.25.8, 2.25.9, 2.25.11, 2.25.12, 2.25.13, 2.25.18, 2.25.22, 2.25.23,
-2.25.24, 2.25.25, 2.25.26, 2.25.28, 2.25.30, 2.25.31, 2.25.32,
-2.25.33, 2.25.34, 2.25.35, 2.25.80, 2.26.0, 2.27.0
-%}

@@ -3,7 +3,8 @@
 \version "2.27.0"
 \language "nederlands"
 
-\include "Global.ily"
+#(load-from-path "click-track-tools.scm")
+
 \include "articulate.ly"
 
 delicato = \markup \larger \italic "delicato"
@@ -134,7 +135,7 @@ rightHand = {
     <as' c''> <as' es''> <a' c''> <a' d''> <f' g'> <f' b'> |
   <e' g'>16 <e' c''> <es' a'> <es' c''> <d' g'> <d' b'>
     <des' g'> <des' bes'> <c' es'> <c' as'> <bes e'> <bes g'> |
-  \voiceOne <a d'>16 <a fis'> <as d'> <as f'> \staffDown <g c'> <g e'>
+  \voiceOne <a d'>16 <a fis'> <as d'> <as f'> \change Staff = "lower" <g c'> <g e'>
     <as c'> <as es'> <a c'> <a d'> <f g> <f b>) |
   <e g>16( <e c'>\< <f a> <f d'> <g b> <g e'>\!
     <a c'>->\> <a f'> <f a> <f d'>\! <g b> <g e'> |
@@ -406,10 +407,14 @@ pedal = {
 #(ly:expect-warning "conflict with event: `crescendo-event'")
 #(ly:expect-warning "discarding event: `decrescendo-event'")
 
-etude-seven-header = \header { }
-
+etude-seven-header = \header { 
+    title = "Etude"
+  composer = "Frédéric Chopin"
+  opus = "Opus 10 No 2"
+  tagline = \date 
+}
 etude-seven-music = {
-  \new PianoStaff \with { instrumentName = \markup \huge "No. 7" } <<
+  \new PianoStaff <<
     \new Staff = "upper" \rightHand
     \new Dynamics = "dynamics" \dynamics
     \new Staff = "lower" \leftHand
@@ -417,22 +422,29 @@ etude-seven-music = {
   >>
 }
 
-etude-seven-midi = \book {
-  \bookOutputName "Etude-Op10-No7"
-  \score { 
-    \articulate << 
+
+#(define (moment->whole-notes m)
+   (/ (ly:moment-main-numerator m)
+      (ly:moment-main-denominator m)))
+
+barcount = #(moment->whole-notes ((ly:music-property etude-seven-music 'length-callback) etude-seven-music))
+
+myPartial = #(find-leading-partial etude-seven-music )
+#(format #t "partial is ~a \n" myPartial)
+clickTrack = #(make-click-track-with-partial '( 6 . 8) barcount myPartial)
+
+etude-seven-midi = 
+    << 
       \new Staff = "upper" << \rightHand \dynamics \pedal >>
       \new Staff = "lower" << \leftHand \dynamics \pedal >>
+      \new DrumStaff = "click" {\clickTrack}
     >>
-    \midi {
-      \context {
-        \Staff
-        \consists "Dynamic_performer"
-      }
-      \context {
-        \Voice
-        \remove "Dynamic_performer"
-      }    
-    }
-  }
-}
+    %}
+%  \displayLilyMusic { \clickTrack }
+
+
+#(use-modules (lily to-xml))
+#(define p (open-output-file "chopin-op10-7.xml"))
+#(music-to-xml etude-seven-music p)
+#(close-port p)
+

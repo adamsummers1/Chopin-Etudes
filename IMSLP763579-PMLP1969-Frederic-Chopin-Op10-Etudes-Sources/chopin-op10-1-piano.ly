@@ -1,9 +1,9 @@
 %...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....
 
-\version "2.27.0"
+\version "2.27.1"
 \language "nederlands"
 
-\include "articulate.ly"
+#(load-from-path "click-track-tools.scm")
 
 legatoMark = {
   \once \override Score.RehearsalMark.outside-staff-priority = 900
@@ -22,7 +22,7 @@ rightHand = {
   \global
   \tempo "Allegro" 4 = 176
   
-  \change Staff="lower" \stemUp \legatoMark r16 c-1 g-2 c'-4 \change Staff="upper" \stemNeutral e'->-5
+  \change Staff="lower" \stemUp r16 c-1 g-2 c'-4 \change Staff="upper" \stemNeutral e'->-5
     c'-1 g'-2 c''-4  e''->-5 c'' g'' c'''  \ottava 1 e'''-> c''' g''' c'''' |
   e''''16-> c'''' g''' c'''  \ottava 0 e'''-> c''' g'' c''  e''-> c'' g' c'  e'-> c' \change Staff="lower" g c |
   \stemUp r16 c-1 a-2 c'-3  \change Staff="upper" \stemNeutral f'-5 c'-1 a'-2 c''-3  f'' c'' a'' c''' 
@@ -405,14 +405,10 @@ breaks = {
 }
 
 etude-one-header = \header {
-  title = "Etudes"
-  composer = "Frédéric Chopin (1810-1849)"
-  opus = "Opus 10"
-  copyright = \markup { 
-    "This work is licensed under a" 
-    \with-url #"https://creativecommons.org/licenses/by-sa/4.0/" 
-    "Creative Commons Attribution-ShareAlike 4.0 License" 
-  }
+  title = "Etude"
+  composer = "Frédéric Chopin"
+  opus = "Opus 10 No 1"
+  tagline = \date
 }
 
 etude-one-music = {
@@ -425,35 +421,20 @@ etude-one-music = {
   >>
 }
 
-etude-one-midi = \book {
-  \bookOutputName "Etude-Op10-No1"
-  \score { 
-    \articulate \unfoldRepeats {
+
+#(define (moment->whole-notes m)
+   (/ (ly:moment-main-numerator m)
+      (ly:moment-main-denominator m)))
+
+barcount = #(moment->whole-notes ((ly:music-property etude-one-music 'length-callback) etude-one-music))
+
+clickTrack = #(make-click-track '( 4 . 4) barcount)
+
+%\displayLilyMusic \clickTrack
+etude-one-midi = 
       << 
         \new Staff = "upper" << \rightHand \dynamics \pedal >>
         \new Staff = "lower" << \leftHand \dynamics \pedal >>
+        \new DrumStaff = "click" {\clickTrack}
       >>
-    }
-    \midi {
-      \context {
-        \Staff
-        \consists "Dynamic_performer"
-      }
-      \context {
-        \Voice
-        \remove "Dynamic_performer"
-      }   
-    }
-  }
-}
 
-
-%{
-convert-ly (GNU LilyPond) 2.27.0  convert-ly: Processing `'...
-Applying conversion: 2.23.1, 2.23.2, 2.23.3, 2.23.4, 2.23.5, 2.23.6,
-2.23.7, 2.23.8, 2.23.9, 2.23.10, 2.23.11, 2.23.12, 2.23.13, 2.23.14,
-2.24.0, 2.25.0, 2.25.1, 2.25.2, 2.25.3, 2.25.4, 2.25.5, 2.25.6,
-2.25.8, 2.25.9, 2.25.11, 2.25.12, 2.25.13, 2.25.18, 2.25.22, 2.25.23,
-2.25.24, 2.25.25, 2.25.26, 2.25.28, 2.25.30, 2.25.31, 2.25.32,
-2.25.33, 2.25.34, 2.25.35, 2.25.80, 2.26.0, 2.27.0
-%}
