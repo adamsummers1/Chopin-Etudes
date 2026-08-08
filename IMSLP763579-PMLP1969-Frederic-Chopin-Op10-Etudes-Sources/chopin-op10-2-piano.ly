@@ -358,5 +358,5 @@ etude-two-midi =
     << 
       \new Staff = "upper" << \rightHand \dynamics >>
       \new Staff = "lower" << \leftHand \dynamics >>
-      \new Staff = "click" {\clickTrack}
+      \new DrumStaff = "click" {\clickTrack}
     >>
