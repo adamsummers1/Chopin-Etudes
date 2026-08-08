@@ -1,0 +1,13 @@
+<frozen runpy>:128: RuntimeWarning: 'pianolearn.midi_parse_v2' found in sys.modules after import of package 'pianolearn', but prior to execution of 'pianolearn.midi_parse_v2'; this may result in unpredictable behaviour
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/adams/devstuff/repos/pianolearn/midi_parse_v2.py", line 163, in <module>
+    _result_from_wrapper = wrapper_from_midi_file(_input_midi,  args.start_bar, no_discard_time_signature_ticks=args.no_discard_time_signature_ticks )
+  File "/home/adams/devstuff/repos/pianolearn/midi_parse_v2.py", line 117, in wrapper_from_midi_file
+    mido_file = mido.MidiFile(midi_file_name)
+  File "/home/adams/venvs/runtime_env/lib/python3.14/site-packages/mido/midifiles/midifiles.py", line 319, in __init__
+    with open(filename, 'rb') as file:
+         ~~~~^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'chopin-op10-1.midi'
+Platform: posix
