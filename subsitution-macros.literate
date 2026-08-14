@@ -1,0 +1,139 @@
+# Building some macros
+
+How to build some macros as a reference doc
+
+## Substitution macros
+
+Example: convert a list of chords to a sixteenth note, followed by s8. 
+This is used in chopin op10-2
+
+```lilypond: <<sub_a basic example>>=
+nsss = #(define-music-function (p) (ly:pitch?)
+  #{
+  $p 16 s8.
+  #})
+
+```
+
+Its important to note that because this is a pitch, you can pass in any length note. However, this doesn't do everything required
+at that level. Most of the passages contain two notes. These would be represented by chords.
+
+Heres the difference.
+
+### notes
+```scheme
+;; note
+(make-music
+ 'SequentialMusic
+ 'elements
+ (list (make-music
+        'NoteEvent
+        'duration
+        (ly:make-duration 4)
+        'pitch
+        (ly:make-pitch 0 0))
+       (make-music 'SkipEvent 'duration (ly:make-duration 3 1))))
+
+;; chord
+(make-music
+ 'SequentialMusic
+ 'elements
+ (list (make-music
+        'EventChord
+        'elements
+        (list (make-music
+               'NoteEvent
+               'duration
+               (ly:make-duration 4)
+               'pitch
+               (ly:make-pitch 0 0))
+              (make-music
+               'NoteEvent
+               'duration
+               (ly:make-duration 4)
+               'pitch
+               (ly:make-pitch 0 2))
+              (make-music
+               'NoteEvent
+               'duration
+               (ly:make-duration 4)
+               'pitch
+               (ly:make-pitch 0 4))))
+       (make-music 'SkipEvent 'duration (ly:make-duration 3 1))))
+
+```
+
+* The 'SkipEvent happens _after_ the 'NoteEvent when it's a single note
+
+* The 'SkipEvent happens _after_ the 'EventChord when its a chord (not the individual notes)
+
+So this means in scheme we could use this logic:
+Walk thru sequqntial music (which would be a list of pitches):
+
+    If we find a 'NoteEvent
+        change the duration property to (ly:make-duration 4)
+    If we find a 'EventChord
+        for each 'NoteEvent in the list in 'elements
+            change the duration property
+    then,
+    add the skip event after the note we found.
+
+```scheme : <<op10-2.structure-rhythm>>=
+(define (structure-10-2-rhythm p-music-list p-in-chord) 
+;; note: when calling, use p-in-chord = #f
+;; p-music needs to be a list
+
+;(format #t "In call...length of p-music-list is: ~a\n" (length p-music-list))
+    (let ((skip-item (list  (make-music 'SkipEvent 'duration (ly:make-duration 3 1))))
+        (p-music (if (null? p-music-list) '() (car p-music-list))))
+        (cond 
+            ((null? p-music) (list))
+            ((music-is-of-type? p-music 'sequential-music)
+;    (format #t "sequential test fired!\n")
+                (let* (
+                        (element-result (structure-10-2-rhythm (ly:music-property p-music 'elements) #f))
+                        (child-result (structure-10-2-rhythm (cdr p-music-list) #f)))
+                    (append element-result child-result)))
+            ((music-is-of-type? p-music 'event-chord)
+;    (format #t "chord test fired!\n")
+                (let* (
+                        (element-result (list (make-music 'EventChord 'elements (structure-10-2-rhythm (ly:music-property p-music 'elements) #t))))
+                        (child-result (structure-10-2-rhythm (cdr p-music-list) #f)))
+                    (append element-result skip-item child-result)))
+            ((music-is-of-type? p-music 'note-event)
+;    (format #t "note test fired! inchord? ~a\n" p-in-chord)
+                (let* (
+                        (current-result (list (make-music 'NoteEvent 'pitch (ly:music-property  p-music 'pitch) 'duration (ly:make-duration 4))))
+                        (child-result (structure-10-2-rhythm (cdr p-music-list) p-in-chord)))
+                    (if (not p-in-chord)
+                        (append current-result skip-item child-result)
+                        (append current-result child-result))
+                )
+            )
+           )))
+
+(define raconv (define-music-function (p-music) (ly:music?)
+    (make-music 'SequentialMusic 'elements (structure-10-2-rhythm  (list p-music) #f)))
+)
+```
+
+### testing
+
+a sample test would look like:
+
+```scheme : <<op10-2.structure-rhythym-test>>=
+
+(define x  (list #{ c e g <f' a'> c #}))
+(format #t "past definition.\n")
+(display-scheme-music x)
+(format #t " simple test: ~a \n" (make-music 'SequentialMusic 'elements (structure-10-2-rhythm  (list #{ c e g <f' a'> c #}) #f)))
+(display-lily-music (make-music 'SequentialMusic 'elements (structure-10-2-rhythm  (list #{ c e g <f' a'> c #}) #f)))
+```
+
+```scheme : <<op10-2-macros.*>>=chopin-macros.scm $
+(ly:set-option 'compile-scheme-code)
+(debug-enable 'backtrace)
+
+<<op10-2.structure-rhythm>>
+
+```

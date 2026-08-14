@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="A Literate Program written with the Literate Programming vscode extension by Nathan 'jesterKing' Letwory and contributors" />
+  <meta property="og:description" content="A Literate Program written with the Literate Programming vscode extension by Nathan 'jesterKing' Letwory and contributors" />
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <meta name="author" content="">
+</head>
+<body>
+<h1>Building some macros</h1>
+<p>How to build some macros as a reference doc</p>
+<h2>Substitution macros</h2>
+<p>Example: convert a list of chords to a sixteenth note, followed by s8.
+This is used in chopin op10-2</p>
+<div class="codefragment">
+<div class="fragmentname">&lt;&lt;sub_a basic example&gt;&gt;= </div>
+<div class="code">
+<pre title="<<sub_a basic example>>=">nsss = #(define-music-function (p) (ly:pitch?)
+  #{
+  $p 16 s8.
+  #})
+
+</pre>
+
+</div>
+</div><p>Its important to note that because this is a pitch, you can pass in any length note. However, this doesn't do everything required
+at that level. Most of the passages contain two notes. These would be represented by chords.</p>
+<p>Heres the difference.</p>
+<h3>notes</h3>
+<pre><code><span class="hljs-comment">;; note</span>
+(<span class="hljs-name">make-music</span>
+ <span class="hljs-symbol">&#x27;SequentialMusic</span>
+ <span class="hljs-symbol">&#x27;elements</span>
+ (<span class="hljs-name"><span class="hljs-built_in">list</span></span> (<span class="hljs-name">make-music</span>
+        <span class="hljs-symbol">&#x27;NoteEvent</span>
+        <span class="hljs-symbol">&#x27;duration</span>
+        (<span class="hljs-name">ly:make-duration</span> <span class="hljs-number">4</span>)
+        <span class="hljs-symbol">&#x27;pitch</span>
+        (<span class="hljs-name">ly:make-pitch</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>))
+       (<span class="hljs-name">make-music</span> <span class="hljs-symbol">&#x27;SkipEvent</span> <span class="hljs-symbol">&#x27;duration</span> (<span class="hljs-name">ly:make-duration</span> <span class="hljs-number">3</span> <span class="hljs-number">1</span>))))
+
+<span class="hljs-comment">;; chord</span>
+(<span class="hljs-name">make-music</span>
+ <span class="hljs-symbol">&#x27;SequentialMusic</span>
+ <span class="hljs-symbol">&#x27;elements</span>
+ (<span class="hljs-name"><span class="hljs-built_in">list</span></span> (<span class="hljs-name">make-music</span>
+        <span class="hljs-symbol">&#x27;EventChord</span>
+        <span class="hljs-symbol">&#x27;elements</span>
+        (<span class="hljs-name"><span class="hljs-built_in">list</span></span> (<span class="hljs-name">make-music</span>
+               <span class="hljs-symbol">&#x27;NoteEvent</span>
+               <span class="hljs-symbol">&#x27;duration</span>
+               (<span class="hljs-name">ly:make-duration</span> <span class="hljs-number">4</span>)
+               <span class="hljs-symbol">&#x27;pitch</span>
+               (<span class="hljs-name">ly:make-pitch</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>))
+              (<span class="hljs-name">make-music</span>
+               <span class="hljs-symbol">&#x27;NoteEvent</span>
+               <span class="hljs-symbol">&#x27;duration</span>
+               (<span class="hljs-name">ly:make-duration</span> <span class="hljs-number">4</span>)
+               <span class="hljs-symbol">&#x27;pitch</span>
+               (<span class="hljs-name">ly:make-pitch</span> <span class="hljs-number">0</span> <span class="hljs-number">2</span>))
+              (<span class="hljs-name">make-music</span>
+               <span class="hljs-symbol">&#x27;NoteEvent</span>
+               <span class="hljs-symbol">&#x27;duration</span>
+               (<span class="hljs-name">ly:make-duration</span> <span class="hljs-number">4</span>)
+               <span class="hljs-symbol">&#x27;pitch</span>
+               (<span class="hljs-name">ly:make-pitch</span> <span class="hljs-number">0</span> <span class="hljs-number">4</span>))))
+       (<span class="hljs-name">make-music</span> <span class="hljs-symbol">&#x27;SkipEvent</span> <span class="hljs-symbol">&#x27;duration</span> (<span class="hljs-name">ly:make-duration</span> <span class="hljs-number">3</span> <span class="hljs-number">1</span>))))
+
+</code></pre>
+<ul>
+<li>
+<p>The 'SkipEvent happens <em>after</em> the 'NoteEvent when it's a single note</p>
+</li>
+<li>
+<p>The 'SkipEvent happens <em>after</em> the 'EventChord when its a chord (not the individual notes)</p>
+</li>
+</ul>
+<p>So this means in scheme we could use this logic:
+Walk thru sequqntial music (which would be a list of pitches):</p>
+<pre><code>If we find a 'NoteEvent
+    change the duration property to (ly:make-duration 4)
+If we find a 'EventChord
+    for each 'NoteEvent in the list in 'elements
+        change the duration property
+then,
+add the skip event after the note we found.
+</code></pre>
+<div class="codefragment">
+<div class="fragmentname">&lt;&lt;op10-2.structure-rhythm&gt;&gt;= </div>
+<div class="code">
+<pre><code>(<span class="hljs-name"><span class="hljs-built_in">define</span></span> (<span class="hljs-name">structure-10-2-rhythm</span> p-music-list p-in-chord) 
+
+
+
+
+    (<span class="hljs-name"><span class="hljs-built_in">let</span></span> ((<span class="hljs-name">skip-item</span> (<span class="hljs-name"><span class="hljs-built_in">list</span></span>  (<span class="hljs-name">make-music</span> <span class="hljs-symbol">&#x27;SkipEvent</span> <span class="hljs-symbol">&#x27;duration</span> (<span class="hljs-name">ly:make-duration</span> <span class="hljs-number">3</span> <span class="hljs-number">1</span>))))
+        (<span class="hljs-name">p-music</span> (<span class="hljs-name"><span class="hljs-built_in">if</span></span> (<span class="hljs-name"><span class="hljs-built_in">null?</span></span> p-music-list) &#x27;() (<span class="hljs-name"><span class="hljs-built_in">car</span></span> p-music-list))))
+        (<span class="hljs-name"><span class="hljs-built_in">cond</span></span> 
+            ((<span class="hljs-name"><span class="hljs-built_in">null?</span></span> p-music) (<span class="hljs-name"><span class="hljs-built_in">list</span></span>))
+            ((<span class="hljs-name">music-is-of-type?</span> p-music <span class="hljs-symbol">&#x27;sequential-music</span>)
+
+                (<span class="hljs-name"><span class="hljs-built_in">let*</span></span> (
+                        (<span class="hljs-name">element-result</span> (<span class="hljs-name">structure-10-2-rhythm</span> (<span class="hljs-name">ly:music-property</span> p-music <span class="hljs-symbol">&#x27;elements</span>) <span class="hljs-literal">#f</span>))
+                        (<span class="hljs-name">child-result</span> (<span class="hljs-name">structure-10-2-rhythm</span> (<span class="hljs-name"><span class="hljs-built_in">cdr</span></span> p-music-list) <span class="hljs-literal">#f</span>)))
+                    (<span class="hljs-name"><span class="hljs-built_in">append</span></span> element-result child-result)))
+            ((<span class="hljs-name">music-is-of-type?</span> p-music <span class="hljs-symbol">&#x27;event-chord</span>)
+
+                (<span class="hljs-name"><span class="hljs-built_in">let*</span></span> (
+                        (<span class="hljs-name">element-result</span> (<span class="hljs-name"><span class="hljs-built_in">list</span></span> (<span class="hljs-name">make-music</span> <span class="hljs-symbol">&#x27;EventChord</span> <span class="hljs-symbol">&#x27;elements</span> (<span class="hljs-name">structure-10-2-rhythm</span> (<span class="hljs-name">ly:music-property</span> p-music <span class="hljs-symbol">&#x27;elements</span>) <span class="hljs-literal">#t</span>))))
+                        (<span class="hljs-name">child-result</span> (<span class="hljs-name">structure-10-2-rhythm</span> (<span class="hljs-name"><span class="hljs-built_in">cdr</span></span> p-music-list) <span class="hljs-literal">#f</span>)))
+                    (<span class="hljs-name"><span class="hljs-built_in">append</span></span> element-result skip-item child-result)))
+            ((<span class="hljs-name">music-is-of-type?</span> p-music <span class="hljs-symbol">&#x27;note-event</span>)
+
+                (<span class="hljs-name"><span class="hljs-built_in">let*</span></span> (
+                        (<span class="hljs-name">current-result</span> (<span class="hljs-name"><span class="hljs-built_in">list</span></span> (<span class="hljs-name">make-music</span> <span class="hljs-symbol">&#x27;NoteEvent</span> <span class="hljs-symbol">&#x27;pitch</span> (<span class="hljs-name">ly:music-property</span>  p-music <span class="hljs-symbol">&#x27;pitch</span>) <span class="hljs-symbol">&#x27;duration</span> (<span class="hljs-name">ly:make-duration</span> <span class="hljs-number">4</span>))))
+                        (<span class="hljs-name">child-result</span> (<span class="hljs-name">structure-10-2-rhythm</span> (<span class="hljs-name"><span class="hljs-built_in">cdr</span></span> p-music-list) p-in-chord)))
+                    (<span class="hljs-name"><span class="hljs-built_in">if</span></span> (<span class="hljs-name"><span class="hljs-built_in">not</span></span> p-in-chord)
+                        (<span class="hljs-name"><span class="hljs-built_in">append</span></span> current-result skip-item child-result)
+                        (<span class="hljs-name"><span class="hljs-built_in">append</span></span> current-result child-result))
+                )
+            )
+           )))
+
+
+</code></pre>
+
+</div>
+</div><h3>testing</h3>
+<p>a sample test would look like:</p>
+<div class="codefragment">
+<div class="fragmentname">&lt;&lt;op10-2.structure-rhythym-test&gt;&gt;= </div>
+<div class="code">
+<pre><code>
+(<span class="hljs-name"><span class="hljs-built_in">define</span></span> x  (<span class="hljs-name"><span class="hljs-built_in">list</span></span> #{ c e g &lt;f&#x27; a<span class="hljs-symbol">&#x27;&gt;</span> c #}))
+(<span class="hljs-name">format</span> <span class="hljs-literal">#t</span> <span class="hljs-string">&quot;past definition.\n&quot;</span>)
+(<span class="hljs-name">display-scheme-music</span> x)
+(<span class="hljs-name">format</span> <span class="hljs-literal">#t</span> <span class="hljs-string">&quot; simple test: ~a \n&quot;</span> (<span class="hljs-name">make-music</span> <span class="hljs-symbol">&#x27;SequentialMusic</span> <span class="hljs-symbol">&#x27;elements</span> (<span class="hljs-name">structure-10-2-rhythm</span>  (<span class="hljs-name"><span class="hljs-built_in">list</span></span> #{ c e g &lt;f&#x27; a<span class="hljs-symbol">&#x27;&gt;</span> c #}) <span class="hljs-literal">#f</span>)))
+(<span class="hljs-name">display-lily-music</span> (<span class="hljs-name">make-music</span> <span class="hljs-symbol">&#x27;SequentialMusic</span> <span class="hljs-symbol">&#x27;elements</span> (<span class="hljs-name">structure-10-2-rhythm</span>  (<span class="hljs-name"><span class="hljs-built_in">list</span></span> #{ c e g &lt;f&#x27; a<span class="hljs-symbol">&#x27;&gt;</span> c #}) <span class="hljs-literal">#f</span>)))
+</code></pre>
+
+</div>
+</div><div class="codefragment">
+<div class="fragmentname">&lt;&lt;op10-2-macros.*&gt;&gt;= chopin-macros.scm $</div>
+<div class="code">
+<pre><code>(<span class="hljs-name">ly:set-option</span> <span class="hljs-symbol">&#x27;compile-scheme-code</span>)
+(<span class="hljs-name">debug-enable</span> <span class="hljs-symbol">&#x27;backtrace</span>)
+
+<span class="literate-tag-name">&lt;&lt;op10-2.structure-rhythm&gt;&gt;</span>
+
+</code></pre>
+
+</div>
+</div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+</script>
+</body>
+</html>

@@ -140,7 +140,7 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 75,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 0
         },
@@ -233,14 +233,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 384
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 73,
@@ -295,10 +287,18 @@
             "ticks_absolute": 384
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 384
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 384
         },
@@ -405,22 +405,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 768
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 768
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -442,6 +426,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 69,
+            "ticks_absolute": 768
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 768
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 768
         },
         {
@@ -547,22 +547,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 1152
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 1152
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -592,6 +576,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 80,
+            "ticks_absolute": 1152
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 1152
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 1152
         },
         {
@@ -729,14 +729,6 @@
             "ticks_absolute": 1536
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 1536
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -745,11 +737,11 @@
             "ticks_absolute": 1536
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 1536
         },
         {
@@ -766,6 +758,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 80,
+            "ticks_absolute": 1536
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 1536
         },
         {
@@ -881,14 +881,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 1920
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 84,
@@ -911,11 +903,11 @@
             "ticks_absolute": 1920
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 1920
         },
         {
@@ -924,6 +916,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 80,
+            "ticks_absolute": 1920
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 1920
         },
         {
@@ -1053,22 +1053,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 2304
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 2304
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -1090,6 +1074,22 @@
             "channel": 1,
             "note": 64,
             "velocity": 84,
+            "ticks_absolute": 2304
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 2304
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 2304
         },
         {
@@ -1227,10 +1227,18 @@
             ]
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 0,
+            "note": 72,
+            "velocity": 80,
+            "ticks_absolute": 2688
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 2688
         },
@@ -1238,16 +1246,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 2688
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 0,
-            "note": 72,
-            "velocity": 80,
             "ticks_absolute": 2688
         },
         {
@@ -1353,14 +1353,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 3072
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -1377,11 +1369,11 @@
             "ticks_absolute": 3072
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 3072
         },
         {
@@ -1406,6 +1398,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 0,
+            "ticks_absolute": 3072
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 3072
         },
         {
@@ -1497,14 +1497,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 3456
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 84,
@@ -1543,11 +1535,11 @@
             "ticks_absolute": 3456
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 3456
         },
         {
@@ -1563,6 +1555,14 @@
             "time": 0,
             "channel": 0,
             "note": 77,
+            "velocity": 0,
+            "ticks_absolute": 3456
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 3456
         },
@@ -1669,22 +1669,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 3840
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 3840
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -1714,6 +1698,22 @@
             "channel": 0,
             "note": 75,
             "velocity": 80,
+            "ticks_absolute": 3840
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 3840
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 3840
         },
         {
@@ -1811,22 +1811,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 4224
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 4224
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -1880,6 +1864,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 0,
+            "ticks_absolute": 4224
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 4224
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 4224
         },
         {
@@ -1985,14 +1985,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 4608
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -2041,10 +2033,18 @@
             "ticks_absolute": 4608
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 4608
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 4608
         },
@@ -2145,14 +2145,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 4992
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 53,
             "velocity": 100,
@@ -2199,10 +2191,18 @@
             "ticks_absolute": 4992
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 4992
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 4992
         },
@@ -2285,22 +2285,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 5376
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 5376
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -2362,6 +2346,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 0,
+            "ticks_absolute": 5376
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 5376
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 5376
         },
         {
@@ -2459,22 +2459,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 5760
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 5760
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -2504,6 +2488,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 0,
+            "ticks_absolute": 5760
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 5760
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 5760
         },
         {
@@ -2585,14 +2585,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 6144
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -2633,10 +2625,18 @@
             "ticks_absolute": 6144
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 6144
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 6144
         },
@@ -2729,14 +2729,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 6528
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 92,
@@ -2791,10 +2783,18 @@
             "ticks_absolute": 6528
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 6528
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 6528
         },
@@ -2901,22 +2901,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 6912
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 6912
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -2938,6 +2922,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 88,
+            "ticks_absolute": 6912
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 6912
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 6912
         },
         {
@@ -3043,22 +3043,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 7296
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 7296
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -3088,6 +3072,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 98,
+            "ticks_absolute": 7296
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 7296
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 7296
         },
         {
@@ -3225,14 +3225,6 @@
             "ticks_absolute": 7680
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 7680
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -3241,11 +3233,11 @@
             "ticks_absolute": 7680
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 7680
         },
         {
@@ -3262,6 +3254,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 98,
+            "ticks_absolute": 7680
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 7680
         },
         {
@@ -3377,14 +3377,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 8064
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 102,
@@ -3407,11 +3399,11 @@
             "ticks_absolute": 8064
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 8064
         },
         {
@@ -3420,6 +3412,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 98,
+            "ticks_absolute": 8064
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 8064
         },
         {
@@ -3549,22 +3549,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 8448
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 8448
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -3586,6 +3570,22 @@
             "channel": 1,
             "note": 64,
             "velocity": 102,
+            "ticks_absolute": 8448
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 8448
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 8448
         },
         {
@@ -3723,10 +3723,18 @@
             ]
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 0,
+            "note": 72,
+            "velocity": 98,
+            "ticks_absolute": 8832
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 8832
         },
@@ -3734,16 +3742,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 8832
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 0,
-            "note": 72,
-            "velocity": 98,
             "ticks_absolute": 8832
         },
         {
@@ -3849,14 +3849,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 9216
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -3873,11 +3865,11 @@
             "ticks_absolute": 9216
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 9216
         },
         {
@@ -3902,6 +3894,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 0,
+            "ticks_absolute": 9216
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 9216
         },
         {
@@ -3993,14 +3993,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 9600
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 59,
             "velocity": 102,
@@ -4023,11 +4015,11 @@
             "ticks_absolute": 9600
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 9600
         },
         {
@@ -4044,6 +4036,14 @@
             "channel": 0,
             "note": 79,
             "velocity": 98,
+            "ticks_absolute": 9600
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 9600
         },
         {
@@ -4165,22 +4165,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 9984
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 9984
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -4194,6 +4178,22 @@
             "channel": 0,
             "note": 75,
             "velocity": 98,
+            "ticks_absolute": 9984
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 9984
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 9984
         },
         {
@@ -4307,22 +4307,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 10368
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 10368
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -4360,6 +4344,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 98,
+            "ticks_absolute": 10368
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 10368
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 10368
         },
         {
@@ -4481,14 +4481,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 10752
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -4521,11 +4513,11 @@
             "ticks_absolute": 10752
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 10752
         },
         {
@@ -4542,6 +4534,14 @@
             "channel": 0,
             "note": 78,
             "velocity": 0,
+            "ticks_absolute": 10752
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 10752
         },
         {
@@ -4641,14 +4641,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 11136
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 40,
             "velocity": 90,
@@ -4687,11 +4679,11 @@
             "ticks_absolute": 11136
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 11136
         },
         {
@@ -4699,6 +4691,14 @@
             "time": 0,
             "channel": 0,
             "note": 76,
+            "velocity": 0,
+            "ticks_absolute": 11136
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 11136
         },
@@ -4783,22 +4783,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 11520
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 11520
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 40,
             "velocity": 0,
@@ -4842,6 +4826,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 0,
+            "ticks_absolute": 11520
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 11520
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 11520
         },
         {
@@ -4923,22 +4923,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 11904
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 11904
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -4984,6 +4968,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 0,
+            "ticks_absolute": 11904
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 11904
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 11904
         },
         {
@@ -5067,14 +5067,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 12288
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 40,
             "velocity": 0,
@@ -5129,10 +5121,18 @@
             "ticks_absolute": 12288
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 12288
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 12288
         },
@@ -5225,14 +5225,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 12672
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 73,
@@ -5287,10 +5279,18 @@
             "ticks_absolute": 12672
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 12672
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 12672
         },
@@ -5397,22 +5397,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 13056
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 13056
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -5434,6 +5418,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 69,
+            "ticks_absolute": 13056
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 13056
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 13056
         },
         {
@@ -5539,22 +5539,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 13440
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 13440
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -5584,6 +5568,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 95,
+            "ticks_absolute": 13440
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 13440
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 13440
         },
         {
@@ -5721,14 +5721,6 @@
             "ticks_absolute": 13824
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 13824
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -5737,11 +5729,11 @@
             "ticks_absolute": 13824
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 13824
         },
         {
@@ -5758,6 +5750,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 95,
+            "ticks_absolute": 13824
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 13824
         },
         {
@@ -5873,14 +5873,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 14208
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 99,
@@ -5903,11 +5895,11 @@
             "ticks_absolute": 14208
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 14208
         },
         {
@@ -5916,6 +5908,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 95,
+            "ticks_absolute": 14208
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 14208
         },
         {
@@ -6045,22 +6045,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 14592
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 14592
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -6082,6 +6066,22 @@
             "channel": 1,
             "note": 64,
             "velocity": 99,
+            "ticks_absolute": 14592
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 14592
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 14592
         },
         {
@@ -6219,10 +6219,18 @@
             ]
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 0,
+            "note": 72,
+            "velocity": 95,
+            "ticks_absolute": 14976
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 14976
         },
@@ -6230,16 +6238,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 14976
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 0,
-            "note": 72,
-            "velocity": 95,
             "ticks_absolute": 14976
         },
         {
@@ -6345,14 +6345,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 15360
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -6369,11 +6361,11 @@
             "ticks_absolute": 15360
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 15360
         },
         {
@@ -6398,6 +6390,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 0,
+            "ticks_absolute": 15360
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 15360
         },
         {
@@ -6489,14 +6489,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 15744
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 99,
@@ -6535,11 +6527,11 @@
             "ticks_absolute": 15744
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 15744
         },
         {
@@ -6555,6 +6547,14 @@
             "time": 0,
             "channel": 0,
             "note": 77,
+            "velocity": 0,
+            "ticks_absolute": 15744
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 15744
         },
@@ -6661,22 +6661,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 16128
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 16128
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -6706,6 +6690,22 @@
             "channel": 0,
             "note": 75,
             "velocity": 95,
+            "ticks_absolute": 16128
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 16128
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 16128
         },
         {
@@ -6803,22 +6803,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 16512
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 16512
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -6872,6 +6856,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 0,
+            "ticks_absolute": 16512
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 16512
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 16512
         },
         {
@@ -6977,14 +6977,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 16896
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -7033,10 +7025,18 @@
             "ticks_absolute": 16896
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 16896
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 16896
         },
@@ -7137,14 +7137,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 17280
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 53,
             "velocity": 95,
@@ -7191,10 +7183,18 @@
             "ticks_absolute": 17280
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 17280
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 17280
         },
@@ -7277,22 +7277,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 17664
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 17664
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -7354,6 +7338,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 0,
+            "ticks_absolute": 17664
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 17664
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 17664
         },
         {
@@ -7451,22 +7451,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 18048
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 18048
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -7496,6 +7480,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 0,
+            "ticks_absolute": 18048
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 18048
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 18048
         },
         {
@@ -7577,14 +7577,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 18432
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -7625,10 +7617,18 @@
             "ticks_absolute": 18432
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 18432
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 18432
         },
@@ -7721,14 +7721,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 18816
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 73,
@@ -7783,10 +7775,18 @@
             "ticks_absolute": 18816
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 18816
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 18816
         },
@@ -7893,22 +7893,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 19200
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 19200
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -7930,6 +7914,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 69,
+            "ticks_absolute": 19200
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 19200
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 19200
         },
         {
@@ -8035,22 +8035,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 19584
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 19584
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -8080,6 +8064,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 69,
+            "ticks_absolute": 19584
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 19584
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 19584
         },
         {
@@ -8217,14 +8217,6 @@
             "ticks_absolute": 19968
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 19968
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -8233,11 +8225,11 @@
             "ticks_absolute": 19968
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 19968
         },
         {
@@ -8254,6 +8246,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 69,
+            "ticks_absolute": 19968
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 19968
         },
         {
@@ -8369,14 +8369,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 20352
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 73,
@@ -8399,11 +8391,11 @@
             "ticks_absolute": 20352
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 20352
         },
         {
@@ -8412,6 +8404,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 69,
+            "ticks_absolute": 20352
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 20352
         },
         {
@@ -8541,22 +8541,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 20736
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 20736
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -8578,6 +8562,22 @@
             "channel": 1,
             "note": 64,
             "velocity": 73,
+            "ticks_absolute": 20736
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 20736
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 20736
         },
         {
@@ -8715,10 +8715,18 @@
             ]
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 0,
+            "note": 72,
+            "velocity": 69,
+            "ticks_absolute": 21120
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 21120
         },
@@ -8726,16 +8734,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 21120
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 0,
-            "note": 72,
-            "velocity": 69,
             "ticks_absolute": 21120
         },
         {
@@ -8849,14 +8849,6 @@
             "ticks_absolute": 21504
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 21504
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -8873,11 +8865,11 @@
             "ticks_absolute": 21504
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 21504
         },
         {
@@ -8894,6 +8886,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 0,
+            "ticks_absolute": 21504
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 21504
         },
         {
@@ -9001,14 +9001,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 21888
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 50,
             "velocity": 73,
@@ -9039,11 +9031,11 @@
             "ticks_absolute": 21888
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 21888
         },
         {
@@ -9052,6 +9044,14 @@
             "channel": 0,
             "note": 77,
             "velocity": 69,
+            "ticks_absolute": 21888
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 21888
         },
         {
@@ -9189,22 +9189,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 22272
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 22272
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -9218,6 +9202,22 @@
             "channel": 1,
             "note": 52,
             "velocity": 73,
+            "ticks_absolute": 22272
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 22272
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 22272
         },
         {
@@ -9347,22 +9347,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 22656
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 22656
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -9384,6 +9368,22 @@
             "channel": 1,
             "note": 62,
             "velocity": 102,
+            "ticks_absolute": 22656
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 22656
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 22656
         },
         {
@@ -9505,14 +9505,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 23040
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -9529,10 +9521,18 @@
             "ticks_absolute": 23040
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 23040
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 23040
         },
@@ -9665,14 +9665,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 23424
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 57,
             "velocity": 102,
@@ -9695,11 +9687,11 @@
             "ticks_absolute": 23424
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 23424
         },
         {
@@ -9708,6 +9700,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 98,
+            "ticks_absolute": 23424
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 23424
         },
         {
@@ -9845,10 +9845,18 @@
             "ticks_absolute": 23808
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 1,
+            "note": 48,
+            "velocity": 102,
+            "ticks_absolute": 23808
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 23808
         },
@@ -9856,16 +9864,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 23808
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 1,
-            "note": 48,
-            "velocity": 102,
             "ticks_absolute": 23808
         },
         {
@@ -9995,22 +9995,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 24192
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 24192
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -10040,6 +10024,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 98,
+            "ticks_absolute": 24192
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 24192
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 24192
         },
         {
@@ -10177,14 +10177,6 @@
             "ticks_absolute": 24576
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 24576
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -10201,11 +10193,11 @@
             "ticks_absolute": 24576
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 24576
         },
         {
@@ -10222,6 +10214,14 @@
             "channel": 0,
             "note": 78,
             "velocity": 0,
+            "ticks_absolute": 24576
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 24576
         },
         {
@@ -10313,14 +10313,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 24960
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 50,
             "velocity": 98,
@@ -10383,10 +10375,18 @@
             "ticks_absolute": 24960
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 24960
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 24960
         },
@@ -10471,22 +10471,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 25344
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 25344
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 50,
             "velocity": 0,
@@ -10574,6 +10558,22 @@
         },
         {
             "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 25344
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 25344
+        },
+        {
+            "type": "note_off",
             "time": 96,
             "channel": 0,
             "note": 64,
@@ -10653,22 +10653,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 25728
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 25728
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 0,
@@ -10728,6 +10712,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 0,
+            "ticks_absolute": 25728
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 25728
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 25728
         },
         {
@@ -10809,14 +10809,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 26112
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -10873,10 +10865,18 @@
             "ticks_absolute": 26112
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 26112
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 26112
         },
@@ -10961,14 +10961,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 26496
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 40,
             "velocity": 86,
@@ -11031,10 +11023,18 @@
             "ticks_absolute": 26496
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 26496
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 26496
         },
@@ -11127,22 +11127,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 26880
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 26880
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 40,
             "velocity": 0,
@@ -11178,6 +11162,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 98,
+            "ticks_absolute": 26880
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 26880
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 26880
         },
         {
@@ -11285,8 +11285,16 @@
         {
             "type": "note_off",
             "time": 0,
+            "channel": 1,
+            "note": 45,
+            "velocity": 0,
+            "ticks_absolute": 27264
+        },
+        {
+            "type": "note_off",
+            "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 27264
         },
@@ -11294,16 +11302,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 27264
-        },
-        {
-            "type": "note_off",
-            "time": 0,
-            "channel": 1,
-            "note": 45,
-            "velocity": 0,
             "ticks_absolute": 27264
         },
         {
@@ -11393,14 +11393,6 @@
             "ticks_absolute": 27648
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 27648
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -11441,10 +11433,18 @@
             "ticks_absolute": 27648
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 27648
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 27648
         },
@@ -11545,14 +11545,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 28032
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 48,
             "velocity": 73,
@@ -11607,10 +11599,18 @@
             "ticks_absolute": 28032
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 28032
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 28032
         },
@@ -11717,22 +11717,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 28416
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 28416
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -11746,6 +11730,22 @@
             "channel": 0,
             "note": 69,
             "velocity": 69,
+            "ticks_absolute": 28416
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 28416
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 28416
         },
         {
@@ -11843,22 +11843,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 28800
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 28800
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -11888,6 +11872,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 69,
+            "ticks_absolute": 28800
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 28800
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 28800
         },
         {
@@ -12009,14 +12009,6 @@
             "ticks_absolute": 29184
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 29184
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -12041,10 +12033,18 @@
             "ticks_absolute": 29184
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 29184
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 29184
         },
@@ -12129,14 +12129,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 29568
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 48,
             "velocity": 73,
@@ -12191,10 +12183,18 @@
             "ticks_absolute": 29568
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 29568
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 29568
         },
@@ -12309,22 +12309,6 @@
             "ticks_absolute": 29952
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 29952
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 29952
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -12338,6 +12322,22 @@
             "channel": 0,
             "note": 68,
             "velocity": 69,
+            "ticks_absolute": 29952
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 29952
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 29952
         },
         {
@@ -12443,22 +12443,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 30336
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 30336
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -12488,6 +12472,22 @@
             "channel": 0,
             "note": 71,
             "velocity": 84,
+            "ticks_absolute": 30336
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 30336
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 30336
         },
         {
@@ -12609,14 +12609,6 @@
             "ticks_absolute": 30720
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 30720
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -12633,11 +12625,11 @@
             "ticks_absolute": 30720
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 30720
         },
         {
@@ -12646,6 +12638,14 @@
             "channel": 0,
             "note": 76,
             "velocity": 0,
+            "ticks_absolute": 30720
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 30720
         },
         {
@@ -12729,14 +12729,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 31104
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 50,
             "velocity": 73,
@@ -12791,10 +12783,18 @@
             "ticks_absolute": 31104
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 31104
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 31104
         },
@@ -12901,22 +12901,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 31488
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 31488
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -12930,6 +12914,22 @@
             "channel": 0,
             "note": 70,
             "velocity": 69,
+            "ticks_absolute": 31488
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 31488
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 31488
         },
         {
@@ -13027,22 +13027,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 31872
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 31872
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -13072,6 +13056,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 69,
+            "ticks_absolute": 31872
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 31872
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 31872
         },
         {
@@ -13193,14 +13193,6 @@
             "ticks_absolute": 32256
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 32256
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -13225,10 +13217,18 @@
             "ticks_absolute": 32256
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 32256
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 32256
         },
@@ -13313,14 +13313,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 32640
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 50,
             "velocity": 73,
@@ -13375,10 +13367,18 @@
             "ticks_absolute": 32640
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 32640
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 32640
         },
@@ -13493,22 +13493,6 @@
             "ticks_absolute": 33024
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 33024
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 33024
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -13522,6 +13506,22 @@
             "channel": 0,
             "note": 70,
             "velocity": 69,
+            "ticks_absolute": 33024
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 33024
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 33024
         },
         {
@@ -13627,22 +13627,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 33408
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 33408
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -13672,6 +13656,22 @@
             "channel": 0,
             "note": 73,
             "velocity": 69,
+            "ticks_absolute": 33408
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 33408
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 33408
         },
         {
@@ -13785,14 +13785,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 33792
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -13809,11 +13801,11 @@
             "ticks_absolute": 33792
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 33792
         },
         {
@@ -13830,6 +13822,14 @@
             "channel": 0,
             "note": 78,
             "velocity": 0,
+            "ticks_absolute": 33792
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 33792
         },
         {
@@ -13913,14 +13913,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 34176
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 77,
@@ -13959,11 +13951,11 @@
             "ticks_absolute": 34176
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 34176
         },
         {
@@ -13980,6 +13972,14 @@
             "channel": 0,
             "note": 77,
             "velocity": 73,
+            "ticks_absolute": 34176
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 34176
         },
         {
@@ -14085,22 +14085,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 34560
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 34560
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -14114,6 +14098,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 76,
+            "ticks_absolute": 34560
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 34560
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 34560
         },
         {
@@ -14211,22 +14211,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 34944
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 34944
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -14256,6 +14240,22 @@
             "channel": 1,
             "note": 64,
             "velocity": 83,
+            "ticks_absolute": 34944
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 34944
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 34944
         },
         {
@@ -14385,14 +14385,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 35328
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -14409,11 +14401,11 @@
             "ticks_absolute": 35328
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 35328
         },
         {
@@ -14430,6 +14422,14 @@
             "channel": 0,
             "note": 80,
             "velocity": 0,
+            "ticks_absolute": 35328
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 35328
         },
         {
@@ -14513,14 +14513,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 35712
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 90,
@@ -14559,11 +14551,11 @@
             "ticks_absolute": 35712
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 35712
         },
         {
@@ -14580,6 +14572,14 @@
             "channel": 0,
             "note": 77,
             "velocity": 86,
+            "ticks_absolute": 35712
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 35712
         },
         {
@@ -14685,22 +14685,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 36096
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 36096
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -14722,6 +14706,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 89,
+            "ticks_absolute": 36096
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 36096
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 36096
         },
         {
@@ -14811,22 +14811,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 36480
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 36480
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -14856,6 +14840,22 @@
             "channel": 1,
             "note": 57,
             "velocity": 0,
+            "ticks_absolute": 36480
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 36480
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 36480
         },
         {
@@ -14969,14 +14969,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 36864
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -15009,11 +15001,11 @@
             "ticks_absolute": 36864
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 36864
         },
         {
@@ -15022,6 +15014,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 95,
+            "ticks_absolute": 36864
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 36864
         },
         {
@@ -15111,14 +15111,6 @@
             ]
         },
         {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 37248
-        },
-        {
             "type": "note_off",
             "time": 0,
             "channel": 1,
@@ -15151,11 +15143,11 @@
             "ticks_absolute": 37248
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 37248
         },
         {
@@ -15172,6 +15164,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 95,
+            "ticks_absolute": 37248
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 37248
         },
         {
@@ -15269,10 +15269,18 @@
             ]
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 0,
+            "note": 74,
+            "velocity": 95,
+            "ticks_absolute": 37632
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 37632
         },
@@ -15280,16 +15288,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 37632
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 0,
-            "note": 74,
-            "velocity": 95,
             "ticks_absolute": 37632
         },
         {
@@ -15397,22 +15397,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 38016
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 38016
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 47,
             "velocity": 0,
@@ -15456,6 +15440,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 95,
+            "ticks_absolute": 38016
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 38016
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 38016
         },
         {
@@ -15561,14 +15561,6 @@
             "ticks_absolute": 38400
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 38400
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -15593,11 +15585,11 @@
             "ticks_absolute": 38400
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 38400
         },
         {
@@ -15614,6 +15606,14 @@
             "channel": 0,
             "note": 79,
             "velocity": 66,
+            "ticks_absolute": 38400
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 38400
         },
         {
@@ -15705,14 +15705,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 38784
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 45,
             "velocity": 86,
@@ -15743,11 +15735,11 @@
             "ticks_absolute": 38784
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 38784
         },
         {
@@ -15756,6 +15748,14 @@
             "channel": 0,
             "note": 79,
             "velocity": 66,
+            "ticks_absolute": 38784
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 38784
         },
         {
@@ -15853,10 +15853,18 @@
             ]
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 0,
+            "note": 72,
+            "velocity": 66,
+            "ticks_absolute": 39168
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 39168
         },
@@ -15864,16 +15872,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 39168
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 0,
-            "note": 72,
-            "velocity": 66,
             "ticks_absolute": 39168
         },
         {
@@ -15981,22 +15981,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 39552
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 39552
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 45,
             "velocity": 0,
@@ -16048,6 +16032,22 @@
             "channel": 0,
             "note": 75,
             "velocity": 66,
+            "ticks_absolute": 39552
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 39552
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 39552
         },
         {
@@ -16137,14 +16137,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 39936
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -16185,11 +16177,11 @@
             "ticks_absolute": 39936
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 39936
         },
         {
@@ -16198,6 +16190,14 @@
             "channel": 0,
             "note": 79,
             "velocity": 66,
+            "ticks_absolute": 39936
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 39936
         },
         {
@@ -16295,14 +16295,6 @@
             ]
         },
         {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 40320
-        },
-        {
             "type": "note_off",
             "time": 0,
             "channel": 1,
@@ -16343,11 +16335,11 @@
             "ticks_absolute": 40320
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 40320
         },
         {
@@ -16356,6 +16348,14 @@
             "channel": 0,
             "note": 79,
             "velocity": 66,
+            "ticks_absolute": 40320
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 40320
         },
         {
@@ -16453,22 +16453,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 40704
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 40704
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -16514,6 +16498,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 95,
+            "ticks_absolute": 40704
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 40704
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 40704
         },
         {
@@ -16611,22 +16611,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 41088
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 41088
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -16664,6 +16648,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 95,
+            "ticks_absolute": 41088
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 41088
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 41088
         },
         {
@@ -16769,14 +16769,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 41472
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -16809,11 +16801,11 @@
             "ticks_absolute": 41472
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 41472
         },
         {
@@ -16830,6 +16822,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 95,
+            "ticks_absolute": 41472
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 41472
         },
         {
@@ -16927,14 +16927,6 @@
             ]
         },
         {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 41856
-        },
-        {
             "type": "note_off",
             "time": 0,
             "channel": 1,
@@ -16975,11 +16967,11 @@
             "ticks_absolute": 41856
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 41856
         },
         {
@@ -17002,6 +16994,14 @@
             "type": "note_off",
             "time": 0,
             "channel": 0,
+            "note": 81,
+            "velocity": 0,
+            "ticks_absolute": 41856
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
             "note": 81,
             "velocity": 0,
             "ticks_absolute": 41856
@@ -17085,22 +17085,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 42240
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 42240
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -17146,6 +17130,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 95,
+            "ticks_absolute": 42240
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 42240
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 42240
         },
         {
@@ -17243,22 +17243,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 42624
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 42624
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -17304,6 +17288,22 @@
             "channel": 0,
             "note": 75,
             "velocity": 95,
+            "ticks_absolute": 42624
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 42624
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 42624
         },
         {
@@ -17411,14 +17411,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 43008
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 43,
             "velocity": 0,
@@ -17449,11 +17441,11 @@
             "ticks_absolute": 43008
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 43008
         },
         {
@@ -17470,6 +17462,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 0,
+            "ticks_absolute": 43008
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 43008
         },
         {
@@ -17577,14 +17577,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 43392
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 51,
             "velocity": 95,
@@ -17615,11 +17607,11 @@
             "ticks_absolute": 43392
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 43392
         },
         {
@@ -17635,6 +17627,14 @@
             "time": 0,
             "channel": 0,
             "note": 80,
+            "velocity": 0,
+            "ticks_absolute": 43392
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 43392
         },
@@ -17717,22 +17717,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 43776
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 43776
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -17752,6 +17736,22 @@
             "type": "note_on",
             "time": 0,
             "channel": 0,
+            "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 43776
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 43776
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
             "note": 75,
             "velocity": 90,
             "ticks_absolute": 43776
@@ -17853,22 +17853,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 44160
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 44160
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 51,
             "velocity": 0,
@@ -17920,6 +17904,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 0,
+            "ticks_absolute": 44160
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 44160
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 44160
         },
         {
@@ -18017,14 +18017,6 @@
             "ticks_absolute": 44544
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 44544
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -18073,10 +18065,18 @@
             "ticks_absolute": 44544
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 44544
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 44544
         },
@@ -18185,14 +18185,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 44928
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 45,
             "velocity": 110,
@@ -18231,10 +18223,18 @@
             "ticks_absolute": 44928
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 44928
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 44928
         },
@@ -18335,22 +18335,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 45312
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 45312
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 45,
             "velocity": 0,
@@ -18394,6 +18378,22 @@
             "channel": 0,
             "note": 67,
             "velocity": 0,
+            "ticks_absolute": 45312
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 45312
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 45312
         },
         {
@@ -18491,22 +18491,6 @@
             "ticks_absolute": 45696
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 45696
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 45696
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -18551,6 +18535,22 @@
             "time": 0,
             "channel": 0,
             "note": 70,
+            "velocity": 90,
+            "ticks_absolute": 45696
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 45696
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
             "velocity": 90,
             "ticks_absolute": 45696
         },
@@ -18651,14 +18651,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 46080
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 45,
             "velocity": 0,
@@ -18705,10 +18697,18 @@
             "ticks_absolute": 46080
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 46080
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 46080
         },
@@ -18801,14 +18801,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 46464
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 41,
             "velocity": 90,
@@ -18855,10 +18847,18 @@
             "ticks_absolute": 46464
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 46464
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 46464
         },
@@ -18933,22 +18933,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 46848
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 46848
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -19010,6 +18994,22 @@
             "channel": 0,
             "note": 69,
             "velocity": 0,
+            "ticks_absolute": 46848
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 46848
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 46848
         },
         {
@@ -19093,22 +19093,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 47232
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 47232
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 40,
             "velocity": 0,
@@ -19168,6 +19152,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 86,
+            "ticks_absolute": 47232
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 47232
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 47232
         },
         {
@@ -19249,14 +19249,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 47616
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -19321,10 +19313,18 @@
             "ticks_absolute": 47616
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 47616
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 47616
         },
@@ -19370,16 +19370,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 48000
-        },
-        {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 48000
         },
         {
@@ -19388,6 +19380,14 @@
             "channel": 0,
             "note": 80,
             "velocity": 83,
+            "ticks_absolute": 48000
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 48000
         },
         {
@@ -19488,7 +19488,7 @@
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 48384
         },
@@ -19496,7 +19496,7 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
             "ticks_absolute": 48384
         },
@@ -19611,10 +19611,18 @@
             ]
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 0,
+            "note": 72,
+            "velocity": 79,
+            "ticks_absolute": 48768
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 48768
         },
@@ -19622,16 +19630,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 48768
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 0,
-            "note": 72,
-            "velocity": 79,
             "ticks_absolute": 48768
         },
         {
@@ -19737,14 +19737,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 49152
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -19761,11 +19753,11 @@
             "ticks_absolute": 49152
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 49152
         },
         {
@@ -19782,6 +19774,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 0,
+            "ticks_absolute": 49152
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 49152
         },
         {
@@ -19866,16 +19866,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 49536
-        },
-        {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 49536
         },
         {
@@ -19900,6 +19892,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 78,
+            "ticks_absolute": 49536
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 49536
         },
         {
@@ -19989,10 +19989,18 @@
             ]
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 0,
+            "note": 74,
+            "velocity": 76,
+            "ticks_absolute": 49920
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 49920
         },
@@ -20000,16 +20008,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 49920
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 0,
-            "note": 74,
-            "velocity": 76,
             "ticks_absolute": 49920
         },
         {
@@ -20115,22 +20115,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 50304
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 50304
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -20144,6 +20128,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 73,
+            "ticks_absolute": 50304
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 50304
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 50304
         },
         {
@@ -20241,14 +20241,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 50688
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -20265,11 +20257,11 @@
             "ticks_absolute": 50688
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 50688
         },
         {
@@ -20286,6 +20278,14 @@
             "channel": 0,
             "note": 79,
             "velocity": 0,
+            "ticks_absolute": 50688
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 50688
         },
         {
@@ -20370,16 +20370,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 51072
-        },
-        {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 51072
         },
         {
@@ -20404,6 +20396,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 72,
+            "ticks_absolute": 51072
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 51072
         },
         {
@@ -20493,10 +20493,18 @@
             ]
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 0,
+            "note": 72,
+            "velocity": 70,
+            "ticks_absolute": 51456
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 51456
         },
@@ -20504,16 +20512,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 51456
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 0,
-            "note": 72,
-            "velocity": 70,
             "ticks_absolute": 51456
         },
         {
@@ -20619,22 +20619,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 51840
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 51840
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -20648,6 +20632,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 68,
+            "ticks_absolute": 51840
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 51840
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 51840
         },
         {
@@ -20745,14 +20745,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 52224
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -20777,11 +20769,11 @@
             "ticks_absolute": 52224
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 52224
         },
         {
@@ -20790,6 +20782,14 @@
             "channel": 0,
             "note": 77,
             "velocity": 0,
+            "ticks_absolute": 52224
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 52224
         },
         {
@@ -20873,14 +20873,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 52608
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 0,
             "note": 62,
             "velocity": 66,
@@ -20911,10 +20903,18 @@
             "ticks_absolute": 52608
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 52608
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 52608
         },
@@ -20997,22 +20997,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 52992
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 52992
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -21042,6 +21026,22 @@
             "channel": 0,
             "note": 71,
             "velocity": 0,
+            "ticks_absolute": 52992
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 52992
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 52992
         },
         {
@@ -21125,22 +21125,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 53376
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 53376
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 0,
             "note": 64,
             "velocity": 0,
@@ -21152,6 +21136,22 @@
             "channel": 0,
             "note": 65,
             "velocity": 70,
+            "ticks_absolute": 53376
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 53376
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 53376
         },
         {
@@ -21219,14 +21219,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 53760
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 40,
             "velocity": 0,
@@ -21281,10 +21273,18 @@
             "ticks_absolute": 53760
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 53760
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 53760
         },
@@ -21377,14 +21377,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 54144
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 78,
@@ -21439,10 +21431,18 @@
             "ticks_absolute": 54144
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 54144
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 54144
         },
@@ -21549,22 +21549,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 54528
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 54528
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -21586,6 +21570,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 74,
+            "ticks_absolute": 54528
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 54528
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 54528
         },
         {
@@ -21691,22 +21691,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 54912
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 54912
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -21736,6 +21720,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 74,
+            "ticks_absolute": 54912
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 54912
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 54912
         },
         {
@@ -21873,14 +21873,6 @@
             "ticks_absolute": 55296
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 55296
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -21889,11 +21881,11 @@
             "ticks_absolute": 55296
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 55296
         },
         {
@@ -21910,6 +21902,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 74,
+            "ticks_absolute": 55296
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 55296
         },
         {
@@ -22025,14 +22025,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 55680
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 78,
@@ -22055,11 +22047,11 @@
             "ticks_absolute": 55680
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 55680
         },
         {
@@ -22068,6 +22060,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 74,
+            "ticks_absolute": 55680
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 55680
         },
         {
@@ -22197,22 +22197,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 56064
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 56064
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -22234,6 +22218,22 @@
             "channel": 1,
             "note": 64,
             "velocity": 78,
+            "ticks_absolute": 56064
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 56064
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 56064
         },
         {
@@ -22371,10 +22371,18 @@
             ]
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 0,
+            "note": 72,
+            "velocity": 74,
+            "ticks_absolute": 56448
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 56448
         },
@@ -22382,16 +22390,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 56448
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 0,
-            "note": 72,
-            "velocity": 74,
             "ticks_absolute": 56448
         },
         {
@@ -22497,14 +22497,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 56832
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -22521,11 +22513,11 @@
             "ticks_absolute": 56832
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 56832
         },
         {
@@ -22550,6 +22542,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 0,
+            "ticks_absolute": 56832
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 56832
         },
         {
@@ -22641,14 +22641,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 57216
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 78,
@@ -22687,11 +22679,11 @@
             "ticks_absolute": 57216
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 57216
         },
         {
@@ -22707,6 +22699,14 @@
             "time": 0,
             "channel": 0,
             "note": 77,
+            "velocity": 0,
+            "ticks_absolute": 57216
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 57216
         },
@@ -22813,22 +22813,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 57600
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 57600
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -22858,6 +22842,22 @@
             "channel": 0,
             "note": 75,
             "velocity": 74,
+            "ticks_absolute": 57600
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 57600
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 57600
         },
         {
@@ -22955,22 +22955,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 57984
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 57984
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -23024,6 +23008,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 0,
+            "ticks_absolute": 57984
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 57984
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 57984
         },
         {
@@ -23129,14 +23129,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 58368
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -23185,10 +23177,18 @@
             "ticks_absolute": 58368
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 58368
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 58368
         },
@@ -23289,14 +23289,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 58752
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 53,
             "velocity": 94,
@@ -23343,10 +23335,18 @@
             "ticks_absolute": 58752
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 58752
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 58752
         },
@@ -23429,22 +23429,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 59136
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 59136
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -23506,6 +23490,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 0,
+            "ticks_absolute": 59136
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 59136
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 59136
         },
         {
@@ -23603,22 +23603,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 59520
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 59520
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -23648,6 +23632,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 0,
+            "ticks_absolute": 59520
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 59520
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 59520
         },
         {
@@ -23729,14 +23729,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 59904
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -23777,10 +23769,18 @@
             "ticks_absolute": 59904
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 59904
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 59904
         },
@@ -23873,14 +23873,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 60288
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 78,
@@ -23935,10 +23927,18 @@
             "ticks_absolute": 60288
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 60288
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 60288
         },
@@ -24045,22 +24045,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 60672
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 60672
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -24082,6 +24066,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 74,
+            "ticks_absolute": 60672
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 60672
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 60672
         },
         {
@@ -24187,22 +24187,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 61056
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 61056
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -24232,6 +24216,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 74,
+            "ticks_absolute": 61056
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 61056
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 61056
         },
         {
@@ -24369,14 +24369,6 @@
             "ticks_absolute": 61440
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 61440
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -24385,11 +24377,11 @@
             "ticks_absolute": 61440
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 61440
         },
         {
@@ -24406,6 +24398,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 74,
+            "ticks_absolute": 61440
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 61440
         },
         {
@@ -24521,14 +24521,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 61824
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 78,
@@ -24551,11 +24543,11 @@
             "ticks_absolute": 61824
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 61824
         },
         {
@@ -24564,6 +24556,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 74,
+            "ticks_absolute": 61824
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 61824
         },
         {
@@ -24693,22 +24693,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 62208
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 62208
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -24730,6 +24714,22 @@
             "channel": 1,
             "note": 64,
             "velocity": 78,
+            "ticks_absolute": 62208
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 62208
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 62208
         },
         {
@@ -24867,10 +24867,18 @@
             ]
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 0,
+            "note": 72,
+            "velocity": 74,
+            "ticks_absolute": 62592
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 62592
         },
@@ -24878,16 +24886,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 62592
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 0,
-            "note": 72,
-            "velocity": 74,
             "ticks_absolute": 62592
         },
         {
@@ -25001,14 +25001,6 @@
             "ticks_absolute": 62976
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 62976
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -25025,11 +25017,11 @@
             "ticks_absolute": 62976
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 62976
         },
         {
@@ -25046,6 +25038,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 0,
+            "ticks_absolute": 62976
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 62976
         },
         {
@@ -25153,14 +25153,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 63360
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 50,
             "velocity": 84,
@@ -25191,11 +25183,11 @@
             "ticks_absolute": 63360
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 63360
         },
         {
@@ -25204,6 +25196,14 @@
             "channel": 0,
             "note": 77,
             "velocity": 80,
+            "ticks_absolute": 63360
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 63360
         },
         {
@@ -25341,22 +25341,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 63744
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 63744
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -25370,6 +25354,22 @@
             "channel": 1,
             "note": 52,
             "velocity": 89,
+            "ticks_absolute": 63744
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 63744
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 63744
         },
         {
@@ -25499,22 +25499,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 64128
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 64128
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -25536,6 +25520,22 @@
             "channel": 1,
             "note": 62,
             "velocity": 95,
+            "ticks_absolute": 64128
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 64128
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 64128
         },
         {
@@ -25657,14 +25657,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 64512
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -25681,10 +25673,18 @@
             "ticks_absolute": 64512
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 64512
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 64512
         },
@@ -25817,14 +25817,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 64896
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 57,
             "velocity": 99,
@@ -25847,11 +25839,11 @@
             "ticks_absolute": 64896
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 64896
         },
         {
@@ -25860,6 +25852,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 95,
+            "ticks_absolute": 64896
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 64896
         },
         {
@@ -25997,10 +25997,18 @@
             "ticks_absolute": 65280
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 1,
+            "note": 48,
+            "velocity": 99,
+            "ticks_absolute": 65280
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 65280
         },
@@ -26008,16 +26016,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 65280
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 1,
-            "note": 48,
-            "velocity": 99,
             "ticks_absolute": 65280
         },
         {
@@ -26147,22 +26147,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 65664
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 65664
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -26192,6 +26176,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 95,
+            "ticks_absolute": 65664
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 65664
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 65664
         },
         {
@@ -26329,14 +26329,6 @@
             "ticks_absolute": 66048
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 66048
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -26361,11 +26353,11 @@
             "ticks_absolute": 66048
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 66048
         },
         {
@@ -26382,6 +26374,14 @@
             "channel": 0,
             "note": 78,
             "velocity": 0,
+            "ticks_absolute": 66048
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 66048
         },
         {
@@ -26481,14 +26481,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 66432
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 50,
             "velocity": 95,
@@ -26551,10 +26543,18 @@
             "ticks_absolute": 66432
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 66432
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 66432
         },
@@ -26639,22 +26639,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 66816
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 66816
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 50,
             "velocity": 0,
@@ -26742,6 +26726,22 @@
         },
         {
             "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 66816
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 66816
+        },
+        {
+            "type": "note_off",
             "time": 96,
             "channel": 0,
             "note": 64,
@@ -26821,22 +26821,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 67200
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 67200
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 52,
             "velocity": 0,
@@ -26904,6 +26888,22 @@
             "channel": 0,
             "note": 72,
             "velocity": 0,
+            "ticks_absolute": 67200
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 67200
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 67200
         },
         {
@@ -26985,14 +26985,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 67584
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -27049,10 +27041,18 @@
             "ticks_absolute": 67584
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 67584
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 67584
         },
@@ -27145,14 +27145,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 67968
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 41,
             "velocity": 86,
@@ -27199,10 +27191,18 @@
             "ticks_absolute": 67968
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 67968
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 67968
         },
@@ -27285,22 +27285,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 68352
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 68352
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -27314,6 +27298,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 66,
+            "ticks_absolute": 68352
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 68352
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 68352
         },
         {
@@ -27411,22 +27411,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 68736
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 68736
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -27464,6 +27448,22 @@
             "channel": 0,
             "note": 74,
             "velocity": 71,
+            "ticks_absolute": 68736
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 68736
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 68736
         },
         {
@@ -27579,14 +27579,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 69120
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 40,
             "velocity": 0,
@@ -27617,11 +27609,11 @@
             "ticks_absolute": 69120
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 69120
         },
         {
@@ -27638,6 +27630,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 76,
+            "ticks_absolute": 69120
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 69120
         },
         {
@@ -27753,14 +27753,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 69504
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 1,
             "note": 41,
             "velocity": 101,
@@ -27775,11 +27767,11 @@
             "ticks_absolute": 69504
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 69504
         },
         {
@@ -27788,6 +27780,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 81,
+            "ticks_absolute": 69504
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 69504
         },
         {
@@ -27888,7 +27888,7 @@
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 69888
         },
@@ -27896,7 +27896,7 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
             "ticks_absolute": 69888
         },
@@ -28027,22 +28027,6 @@
             "ticks_absolute": 70272
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 70272
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 70272
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -28056,6 +28040,22 @@
             "channel": 1,
             "note": 41,
             "velocity": 0,
+            "ticks_absolute": 70272
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 70272
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 70272
         },
         {
@@ -28187,14 +28187,6 @@
         {
             "type": "note_off",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 70656
-        },
-        {
-            "type": "note_off",
-            "time": 0,
             "channel": 1,
             "note": 40,
             "velocity": 0,
@@ -28209,10 +28201,18 @@
             "ticks_absolute": 70656
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 70656
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 70656
         },
@@ -28330,16 +28330,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 71040
-        },
-        {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
             "note": 75,
-            "velocity": 0,
+            "velocity": 90,
             "ticks_absolute": 71040
         },
         {
@@ -28348,6 +28340,14 @@
             "channel": 0,
             "note": 81,
             "velocity": 95,
+            "ticks_absolute": 71040
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 0,
             "ticks_absolute": 71040
         },
         {
@@ -28456,7 +28456,7 @@
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 71424
         },
@@ -28464,7 +28464,7 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
             "ticks_absolute": 71424
         },
@@ -28579,10 +28579,18 @@
             ]
         },
         {
+            "type": "note_on",
+            "time": 0,
+            "channel": 0,
+            "note": 74,
+            "velocity": 95,
+            "ticks_absolute": 71808
+        },
+        {
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 71808
         },
@@ -28590,16 +28598,8 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
-            "ticks_absolute": 71808
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 0,
-            "note": 74,
-            "velocity": 95,
             "ticks_absolute": 71808
         },
         {
@@ -28705,14 +28705,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 72192
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -28729,11 +28721,11 @@
             "ticks_absolute": 72192
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
-            "velocity": 90,
+            "velocity": 0,
             "ticks_absolute": 72192
         },
         {
@@ -28750,6 +28742,14 @@
             "channel": 0,
             "note": 78,
             "velocity": 0,
+            "ticks_absolute": 72192
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
+            "velocity": 90,
             "ticks_absolute": 72192
         },
         {
@@ -28833,14 +28833,6 @@
         {
             "type": "note_on",
             "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 72576
-        },
-        {
-            "type": "note_on",
-            "time": 0,
             "channel": 0,
             "note": 65,
             "velocity": 91,
@@ -28871,10 +28863,18 @@
             "ticks_absolute": 72576
         },
         {
-            "type": "note_off",
+            "type": "note_on",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 90,
+            "ticks_absolute": 72576
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 72576
         },
@@ -28957,22 +28957,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 72960
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 72960
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -29002,6 +28986,22 @@
             "channel": 0,
             "note": 70,
             "velocity": 0,
+            "ticks_absolute": 72960
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 72960
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 72960
         },
         {
@@ -29083,22 +29083,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 73344
-        },
-        {
-            "type": "note_on",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 90,
-            "ticks_absolute": 73344
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 0,
@@ -29128,6 +29112,22 @@
             "channel": 0,
             "note": 66,
             "velocity": 0,
+            "ticks_absolute": 73344
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 73344
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
+            "velocity": 90,
             "ticks_absolute": 73344
         },
         {
@@ -29209,14 +29209,6 @@
             ]
         },
         {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
-            "velocity": 0,
-            "ticks_absolute": 73728
-        },
-        {
             "type": "note_on",
             "time": 0,
             "channel": 1,
@@ -29249,10 +29241,18 @@
             "ticks_absolute": 73728
         },
         {
-            "type": "note_on",
+            "type": "note_off",
             "time": 0,
             "channel": 9,
             "note": 75,
+            "velocity": 0,
+            "ticks_absolute": 73728
+        },
+        {
+            "type": "note_on",
+            "time": 0,
+            "channel": 9,
+            "note": 81,
             "velocity": 90,
             "ticks_absolute": 73728
         },
@@ -29274,7 +29274,7 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
             "ticks_absolute": 74112
         },
@@ -29282,7 +29282,7 @@
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 75,
+            "note": 81,
             "velocity": 0,
             "ticks_absolute": 74112
         },
@@ -29304,7 +29304,7 @@
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 74496
         },
@@ -29312,7 +29312,7 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
             "ticks_absolute": 74496
         },
@@ -29334,7 +29334,7 @@
             "type": "note_off",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 74880
         },
@@ -29342,7 +29342,7 @@
             "type": "note_on",
             "time": 0,
             "channel": 9,
-            "note": 39,
+            "note": 75,
             "velocity": 90,
             "ticks_absolute": 74880
         },
@@ -29351,14 +29351,6 @@
             "time": 384,
             "channel": 1,
             "note": 33,
-            "velocity": 0,
-            "ticks_absolute": 75264
-        },
-        {
-            "type": "note_off",
-            "time": 0,
-            "channel": 9,
-            "note": 39,
             "velocity": 0,
             "ticks_absolute": 75264
         },
@@ -29391,6 +29383,14 @@
             "time": 0,
             "channel": 0,
             "note": 61,
+            "velocity": 0,
+            "ticks_absolute": 75264
+        },
+        {
+            "type": "note_off",
+            "time": 0,
+            "channel": 9,
+            "note": 75,
             "velocity": 0,
             "ticks_absolute": 75264
         },

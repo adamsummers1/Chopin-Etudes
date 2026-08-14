@@ -58,10 +58,12 @@ ekmFont = "Mezza#"
       \context {
         \Staff
         \consists "Dynamic_performer"
+        \remove "Staff_performer"
       }
       \context {
         \Voice
         \remove "Dynamic_performer"
+        \consists "Staff_performer"
       }   
     }
   }

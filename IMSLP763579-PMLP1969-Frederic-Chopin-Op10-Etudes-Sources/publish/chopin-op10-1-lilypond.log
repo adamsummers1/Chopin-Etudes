@@ -1,14 +1,213 @@
+Log level set to 287
 GNU LilyPond 2.27.1 (running Guile 3.0)
+
+Relocation
+  Absolute file name of LilyPond binary computed from PATH:
+    PATH=/home/adams/venvs/runtime_env/bin:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.1/bin:/home/adams/devstuff/lilypond/lilypond-2.27.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adams/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts
+    argv0=lilypond
+  Setting INSTALLER_PREFIX to '/home/adams/devstuff/lilypond/lilypond-2.27.1'
+  Using run-time value for datadir,
+    setting it to '/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1'
+  Using run-time value for libdir,
+    setting it to '/home/adams/devstuff/lilypond/lilypond-2.27.1/lib/lilypond/2.27.1'
+  Using run-time value for localedir,
+    setting it to '/home/adams/devstuff/lilypond/lilypond-2.27.1/share/locale'
+  Using run-time value for relocdir,
+    setting it to '/home/adams/devstuff/lilypond/lilypond-2.27.1/etc/relocate'
+
+  Using relocation config directory '/home/adams/devstuff/lilypond/lilypond-2.27.1/etc/relocate'
+  Relocation file '/home/adams/devstuff/lilypond/lilypond-2.27.1/etc/relocate/guile.reloc'
+  Prepending '/home/adams/devstuff/lilypond/lilypond-2.27.1/share/guile/3.0' to GUILE_LOAD_PATH
+  Setting GUILE_LOAD_PATH to '/home/adams/devstuff/lilypond/lilypond-2.27.1/share/guile/3.0:/home/adams/devstuff/repos/adam-common-lilypond:/home/adams/devstuff/repos/adam-common-lilypond:'
+  Prepending '/home/adams/devstuff/lilypond/lilypond-2.27.1/lib/guile/3.0/ccache' to GUILE_LOAD_COMPILED_PATH
+  Setting GUILE_LOAD_COMPILED_PATH to '/home/adams/devstuff/lilypond/lilypond-2.27.1/lib/guile/3.0/ccache'
+  Relocation file '/home/adams/devstuff/lilypond/lilypond-2.27.1/etc/relocate/fontconfig.reloc'
+  FONTCONFIG_FILE not overwritten
+  FONTCONFIG_PATH not overwritten
+  Relocation file '/home/adams/devstuff/lilypond/lilypond-2.27.1/etc/relocate/libexec.reloc'
+  Prepending '/home/adams/devstuff/lilypond/lilypond-2.27.1/libexec' to PATH
+  Setting PATH to '/home/adams/devstuff/lilypond/lilypond-2.27.1/libexec:/home/adams/venvs/runtime_env/bin:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.1/bin:/home/adams/devstuff/lilypond/lilypond-2.27.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adams/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'
+  Prepending '/home/adams/devstuff/lilypond/lilypond-2.27.1/bin' to PATH
+  Setting PATH to '/home/adams/devstuff/lilypond/lilypond-2.27.1/bin:/home/adams/devstuff/lilypond/lilypond-2.27.1/libexec:/home/adams/venvs/runtime_env/bin:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.1/bin:/home/adams/devstuff/lilypond/lilypond-2.27.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adams/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'
 Changing working directory to: `./publish'
+Setting GUILE_AUTO_COMPILE to '0'
+Setting GUILE_WARN_DEPRECATED to 'detailed'
+Setting GC_INITIAL_HEAP_SIZE to '40M'
+Setting GC_NPROCS to '1'
+Setting GC_FREE_SPACE_DIVISOR to '1'
+
+Top-level directory of LilyPond's data tree:
+  '/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1'
+
+FONTCONFIG_FILE="/etc/fonts/fonts.conf"
+FONTCONFIG_PATH="/etc/fonts"
+GUILE_LOAD_PATH="/home/adams/devstuff/lilypond/lilypond-2.27.1/share/guile/3.0:/home/adams/devstuff/repos/adam-common-lilypond:/home/adams/devstuff/repos/adam-common-lilypond:"
+PATH="/home/adams/devstuff/lilypond/lilypond-2.27.1/bin:/home/adams/devstuff/lilypond/lilypond-2.27.1/libexec:/home/adams/venvs/runtime_env/bin:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.1/bin:/home/adams/devstuff/lilypond/lilypond-2.27.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adams/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts"
+
+[]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/color.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/operators.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/lily-library.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/output-lib.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/markup-macros.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/parser-ly-from-scheme.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/file-cache.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/define-event-classes.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/define-music-callbacks.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/define-music-types.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/define-note-names.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/c++.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/chord-entry.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/skyline.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/markup.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/define-markup-commands.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/stencil.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/modal-transforms.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/chord-ignatzek-names.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/music-functions.scm
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/define-music-display-methods.scm]
+]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/part-combiner.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/autochange.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/define-music-properties.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/time-signature.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/time-signature-settings.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/auto-beam.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/chord-name.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/define-context-properties.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/translation-functions.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/breath.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/script.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/midi.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/layout-beam.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/parser-clef.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/layout-slur.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/font-encodings.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/bar-line.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/flag-styles.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/fret-diagrams.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/tablature.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/harp-pedals.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/define-woodwind-diagrams.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/display-woodwind-diagrams.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/predefined-fretboards.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/define-grob-properties.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/define-grobs.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/define-grob-interfaces.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/define-stencil-commands.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/scheme-engravers.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/scheme-performers.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/titling.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/paper.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/backend-library.scm]
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/context.scm]
+(primitive-load-path lily): 0.07 seconds
+Creating font configuration...
+Adding fontconfig configuration file: /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/00-lilypond-fonts.conf
+Adding fontconfig configuration file: /etc/fonts/fonts.conf
+Adding fontconfig configuration file: /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/99-lilypond-fonts.conf
+Adding font directory: /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf
+Font cache directory: /var/cache/fontconfig
+Font cache directory: /home/adams/.cache/fontconfig
+Font cache directory: /home/adams/.fontconfig
+Building font database...
+
+Creating Emmentaler font configuration...
+Adding fontconfig configuration file: /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/emmentaler-font.conf
+Adding font directory: /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf
+Font cache directory: /home/adams/.cache/fontconfig
+Building font database...
+
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/declarations-init.ly[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/music-functions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/toc-init.ly]
+Using `nederlands' note names...[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/drumpitch-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/chord-modifiers-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/script-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/chord-repetition-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/scale-definitions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/dynamic-scripts-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/spanners-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/predefined-fretboards-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/string-tunings-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/property-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/grace-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/midi-init.ly[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/performer-init.ly]][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/paper-defaults-init.ly[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/titling-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/text-replacements.ly]][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/context-mods-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/ancient-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/engraver-init.ly]]
 Processing `/home/adams/devstuff/repos/Chopin-Etudes/IMSLP763579-PMLP1969-Frederic-Chopin-Op10-Etudes-Sources/chopin-op10-1.ly'
-Parsing...
+Parsing...[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/init.ly
+Using `nederlands' note names...[/home/adams/devstuff/repos/Chopin-Etudes/IMSLP763579-PMLP1969-Frederic-Chopin-Op10-Etudes-Sources/chopin-op10-1.ly[/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily
+Found file in search path: ekmd-template.scm -> /home/adams/devstuff/repos-lib/esmuflily/ly/ekmd-template.scm
+Found file in search path: types-template.scm -> /home/adams/devstuff/repos-lib/esmuflily/ly/types-template.scm][/home/adams/devstuff/repos/adam-common-lilypond/a4_cover_page.ly][/home/adams/devstuff/repos/adam-common-lilypond/common-macros.ily][/home/adams/devstuff/repos/adam-common-lilypond/dev-tools.ly][/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ly/articulate.ly][/home/adams/devstuff/repos/Chopin-Etudes/IMSLP763579-PMLP1969-Frederic-Chopin-Op10-Etudes-Sources/chopin-op10-1-piano.ly
+Using `nederlands' note names...][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily]]
 Interpreting music...[8][16][24][32][40][48][56][64][72][80]
+elapsed time: 0.43 seconds
+Element count 13460 (spanners 467) 
 Preprocessing graphical objects...
+Grob count 18986
+[mezza_6.889]
+CFF name for font Mezza is the same.
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/emmentaler-20.otf
+CFF name for font Emmentaler-20 is the same.]
+[mezza_8.191]
+[lilypond_serif_3.866]
+CFF name for font C059-Roman is the same.
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/emmentaler-18.otf
+CFF name for font Emmentaler-18 is the same.]
+[lilypond_serif_bold_3.866]
+CFF name for font C059-Bold is the same.
+[lilypond_serif_3.068]
 Interpreting music...
+elapsed time: 0.05 seconds
 MIDI output to `chopin-op10-1.midi'...
+Track...
+[0 Etude]
+[1]
+[2]
+[3]
+[4 click:]
+[5]
+
+[sans-serif_3.866]
 Finding the ideal number of pages...
 Fitting music on 7 or 8 pages...
 Drawing systems...
+[lilypond_serif_bold_italic_3.866]
+CFF name for font C059-BdIta is the same.
+Element count 19451
+[mezza_26.215]
+[mezza_26.437]
+[mezza_27.319]
+[mezza_26.747]
+[mezza_26.263]
+[lilypond_serif_italic_4.34]
+CFF name for font C059-Italic is the same.
+[mezza_27.321]
+[mezza_27.316]
+[mezza_26.185]
+[mezza_28.648]
+[mezza_26.225]
+[mezza_26.221]
+[mezza_26.271]
+[mezza_26.743]
+[mezza_26.445]
+[mezza_26.217]
+Initializing embedded CFF font list.
+Found file in search path: /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/C059-BdIta.otf -> /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/C059-BdIta.otf
+Embedding CFF font `C059-BdIta'.
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/C059-BdIta.otf]
+Found file in search path: /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/C059-Bold.otf -> /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/C059-Bold.otf
+Embedding CFF font `C059-Bold'.
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/C059-Bold.otf]
+Found file in search path: /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/C059-Italic.otf -> /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/C059-Italic.otf
+Embedding CFF font `C059-Italic'.
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/C059-Italic.otf]
+Found file in search path: /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/C059-Roman.otf -> /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/C059-Roman.otf
+Embedding CFF font `C059-Roman'.
+[/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/fonts/otf/C059-Roman.otf]
+Found file in search path: /usr/local/share/fonts/Mezza.otf -> /usr/local/share/fonts/Mezza.otf
+Embedding CFF font `Mezza'.
+[/usr/local/share/fonts/Mezza.otf]
+Found file in search path: /usr/share/fonts/truetype/noto/NotoSans-Regular.ttf -> /usr/share/fonts/truetype/noto/NotoSans-Regular.ttf
+[/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf]
+Found file in search path: music-drawing-routines.ps -> /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ps/music-drawing-routines.ps
+Found file in search path: lilyponddefs.ps -> /home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/ps/lilyponddefs.ps
+Paper_outputter elapsed time: 0.30 seconds
 Converting to `chopin-op10-1.pdf'...
-fnarg: entereing make click. timesig (4 . 4) length 79 
+Preparing Ghostscript command to `/tmp/lilypond-tmp-0c471c': << /OutputFile (./lilypond-tmp-a5f20b.pdf) /CompatibilityLevel 1.4 /PageSize [595.28 841.89] /OutputDevice /pdfwrite >> setpagedevice /.setdefaultscreen where { pop .setdefaultscreen } { (Warning: .setdefaultscreen not available) print } ifelse newpath fill (/tmp/lilypond-tmp-a5f20b) (r) file .setsafe run
+Invoking `gs -dNODISPLAY -dNOSAFER -dNOPAUSE -dBATCH -dAutoRotatePages=/None -dPrinted=false /tmp/lilypond-tmp-0c471c'...
+
+GPL Ghostscript 10.06.0 (2025-09-09)
+Copyright (C) 2025 Artifex Software, Inc.  All rights reserved.
+This software is supplied under the GNU AGPLv3 and comes with NO WARRANTY:
+see the file COPYING for details.
+]/home/adams/devstuff/lilypond/lilypond-2.27.1/share/lilypond/2.27.1/scm/lily/lily.scmfnarg: entereing make click. timesig (4 . 4) length 79 
+gc time taken: 0.52840418
+
 Success: compilation successfully completed
