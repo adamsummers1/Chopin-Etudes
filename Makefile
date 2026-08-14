@@ -1,5 +1,7 @@
-LILYLIBS=/home/adams/devstuff/repos-lib
-MAINREPODIR=/home/adams/devstuff/repos
+#MNT_PREFIX=/home
+MNT_PREFIX=/mnt/c/Users/adams
+LILYLIBS=$(MNT_PREFIX)/devstuff/repos-lib
+MAINREPODIR=$(MNT_PREFIX)/devstuff/repos
 PYTHONPATH=$(MAINREPODIR)
 PLIBDIR=$(MAINREPODIR)/music-learn-library
 LILYFLAGS=--verbose --include=$(LILYLIBS)/esmuflily/ly  --include=$(LILYLIBS)/ekmelos/ly --include=$(MAINREPODIR)/adam-common-lilypond 
