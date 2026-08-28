@@ -1,15 +1,16 @@
-#MNT_PREFIX=/home
-MNT_PREFIX=/mnt/c/Users/adams
+MNT_PREFIX=/home/adams
+#MNT_PREFIX=/mnt/c/Users/adams
 LILYLIBS=$(MNT_PREFIX)/devstuff/repos-lib
 MAINREPODIR=$(MNT_PREFIX)/devstuff/repos
 PYTHONPATH=$(MAINREPODIR)
 PLIBDIR=$(MAINREPODIR)/music-learn-library
-LILYFLAGS=--verbose --include=$(LILYLIBS)/esmuflily/ly  --include=$(LILYLIBS)/ekmelos/ly --include=$(MAINREPODIR)/adam-common-lilypond 
+LILYFLAGS=--verbose --include=$(LILYLIBS)/esmuflily/ly  --include=$(MAINREPODIR)/adam-common-lilypond 
 OUTDIR=./publish
 
 all: chopin-op10-1.pdf chopin-op10-1.midi chopin-op10-1.json\
  chopin-op10-2.pdf chopin-op10-2.midi chopin-op10-2.json\
- chopin-op10-7.pdf
+ chopin-op10-7.pdf \
+ no4-op10-2-piano.pdf
 
 %.pdf: %.ly
 	lilypond $(LILYFLAGS) -o $(OUTDIR)/$* $< 2>&1 | tee $(OUTDIR)/$*-lilypond.log
@@ -25,7 +26,7 @@ all: chopin-op10-1.pdf chopin-op10-1.midi chopin-op10-1.json\
 clean:
 	rm -f $(OUTDIR)/*.pdf $(OUTDIR)/*.log $(OUTDIR)/*.midi
 
-json-deploy: publish/bwv848-fugue.json
+json-deploy: publish/xxx.json
 	cp $^ $(PLIBDIR)/data/.
 
 $(OUTDIR)/chopin-op10-1.pdf: chopin-op10-1.ly chopin-op10-1-piano.ly
