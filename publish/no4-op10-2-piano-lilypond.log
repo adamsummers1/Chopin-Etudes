@@ -100,7 +100,7 @@ PATH="/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/devstuff/lil
 [/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/scm/lily/paper.scm]
 [/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/scm/lily/backend-library.scm]
 [/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/scm/lily/context.scm]
-(primitive-load-path lily): 0.15 seconds
+(primitive-load-path lily): 0.14 seconds
 Creating font configuration...
 Adding fontconfig configuration file: /home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/fonts/00-lilypond-fonts.conf
 Adding fontconfig configuration file: /home/adams/devstuff/lilypond/lilypond-2.27.2/etc/fonts/fonts.conf
@@ -145,7 +145,7 @@ CFF name for font Emmentaler-18 is the same.]
 CFF name for font C059-Bold is the same.
 [lilypond_serif_3.068]
 Interpreting music...
-elapsed time: 0.05 seconds
+elapsed time: 0.04 seconds
 MIDI output to `no4-op10-2-piano.midi'...
 Track...
 [0 control track]
@@ -186,16 +186,16 @@ Embedding CFF font `Mezza'.
 [/usr/local/share/fonts/Mezza.otf]
 Found file in search path: music-drawing-routines.ps -> /home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ps/music-drawing-routines.ps
 Found file in search path: lilyponddefs.ps -> /home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ps/lilyponddefs.ps
-Paper_outputter elapsed time: 0.23 seconds
+Paper_outputter elapsed time: 0.22 seconds
 Converting to `no4-op10-2-piano.pdf'...
-Preparing Ghostscript command to `/tmp/lilypond-tmp-8a98f5': << /OutputFile (./lilypond-tmp-d84ebe.pdf) /CompatibilityLevel 1.4 /PageSize [595.28 841.89] /OutputDevice /pdfwrite >> setpagedevice /.setdefaultscreen where { pop .setdefaultscreen } { (Warning: .setdefaultscreen not available) print } ifelse newpath fill (/tmp/lilypond-tmp-d84ebe) (r) file .setsafe run
-Invoking `gs -dNODISPLAY -dNOSAFER -dNOPAUSE -dBATCH -dAutoRotatePages=/None -dPrinted=false /tmp/lilypond-tmp-8a98f5'...
+Preparing Ghostscript command to `/tmp/lilypond-tmp-090e22': << /OutputFile (./lilypond-tmp-07721a.pdf) /CompatibilityLevel 1.4 /PageSize [595.28 841.89] /OutputDevice /pdfwrite >> setpagedevice /.setdefaultscreen where { pop .setdefaultscreen } { (Warning: .setdefaultscreen not available) print } ifelse newpath fill (/tmp/lilypond-tmp-07721a) (r) file .setsafe run
+Invoking `gs -dNODISPLAY -dNOSAFER -dNOPAUSE -dBATCH -dAutoRotatePages=/None -dPrinted=false /tmp/lilypond-tmp-090e22'...
 
 GPL Ghostscript 10.06.0 (2025-09-09)
 Copyright (C) 2025 Artifex Software, Inc.  All rights reserved.
 This software is supplied under the GNU AGPLv3 and comes with NO WARRANTY:
 see the file COPYING for details.
 ]/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/scm/lily/lily.scmfnarg: entereing make click. timesig (4 . 4) length 26 
-gc time taken: 0.3836427
+gc time taken: 0.391365
 
 Success: compilation successfully completed

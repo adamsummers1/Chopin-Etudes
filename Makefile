@@ -24,6 +24,9 @@ all: chopin-op10-1.pdf chopin-op10-1.midi chopin-op10-1.json\
 	#cd $(OUTDIR) && \
 	PYTHONPATH=$(PYTHONPATH) python -m pianolearn.midi_parse_v2 --output-json=$@ --no-discard-time-signature-ticks $< 2>&1 | tee $@.log
 
+%-2up.pdf: %.pdf
+	pdfjam --nup 2x1 --paper a3paper --landscape $(OUTDIR)/$< --pages 2- --outfile $(OUTDIR)/$@
+
 clean:
 	rm -f $(OUTDIR)/*.pdf $(OUTDIR)/*.log $(OUTDIR)/*.midi
 
