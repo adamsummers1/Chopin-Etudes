@@ -21,7 +21,7 @@ all: chopin-op10-1.pdf chopin-op10-1.midi chopin-op10-1.json\
 	lilypond $(LILYFLAGS) -o $(OUTDIR)/$* $< 2>&1 | tee $(OUTDIR)/$*-lilypond.log
 
 %.json : %.midi
-	#cd $(OUTDIR) && \
+	cd $(OUTDIR) && \
 	PYTHONPATH=$(PYTHONPATH) python -m pianolearn.midi_parse_v2 --output-json=$@ --no-discard-time-signature-ticks $< 2>&1 | tee $@.log
 
 %-2up.pdf: %.pdf
@@ -30,7 +30,7 @@ all: chopin-op10-1.pdf chopin-op10-1.midi chopin-op10-1.json\
 clean:
 	rm -f $(OUTDIR)/*.pdf $(OUTDIR)/*.log $(OUTDIR)/*.midi
 
-json-deploy: publish/xxx.json
+json-deploy: publish/no4-op10-2-piano.json
 	cp $^ $(PLIBDIR)/data/.
 
 $(OUTDIR)/chopin-op10-1.pdf: chopin-op10-1.ly chopin-op10-1-piano.ly

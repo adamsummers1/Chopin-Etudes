@@ -157,13 +157,23 @@ rh_a = {
       }
     }
   >> | % bar 29
- <d' d''>8 r \tuplet 3/2 { <fis' f''!>8 <g' e''> <bes' ees''> <a' d''> <bes' cis''> <fis' d''> <fis' f''!> <g' e''> <bes' ees''> 
-| % bar 30
- <a' d''> <cis'' e''> <c'' fis''> <gis' g''> <a' fis''> <c'' f''> <b' e''> <c'' dis''> <gis' e''> <gis' g''> <a' fis''> <c'' f''> } | % bar 31
- <e' e''>4 \tuplet 3/2 { <c''' e'''>8 <b'' e'''> <gis'' e'''> <a'' e'''> <g'' e'''> <e'' e'''> <f'' e'''> <e'' e'''> c'' } | % bar 32
-<< {  \tuplet 3/2 { b'8 c'' cis''}} \\ { a'4 } >> \tuplet 3/2 { <b'' d'''>8 <a'' d'''> <f'' d'''> <g'' d'''> <f'' d'''> <d'' d'''> <e'' d'''> <d'' d'''> b'} | % bar 33
-<< { \tuplet 3/2 { a'8 b' c''} } \\ { g'4 } >> \tuplet 3/2 { <a'' c'''>8 <g'' c'''> <e'' c'''> <f'' c'''> <e'' c'''> <c'' c'''> <d'' c'''> <c'' c'''> a' } | % bar 34
-<< {\tupletSpan 4 \tuplet 3/2 { e''8 e'' r e'' e'' r e'' r r }  e'4 } \\ { \tupletSpan 4 \tuplet 3/2 { b'8 a' gis' g' fis' f' e' dis' d' cis' c' b}}>> | % bar 35
+  <d' d''>8 r \tuplet 3/2 {
+    <fis' f''!>8 <g' e''> <bes' ees''> <a' d''> <bes' cis''> <fis' d''> <fis' f''!> <g' e''> <bes' ees''>
+    | % bar 30
+    <a' d''> <cis'' e''> <c'' fis''> <gis' g''> <a' fis''> <c'' f''> <b' e''> <c'' dis''> <gis' e''> <gis' g''> <a' fis''> <c'' f''>
+  } | % bar 31
+  <e' e''>4 \tuplet 3/2 { <c''' e'''>8 <b'' e'''> <gis'' e'''> <a'' e'''> <g'' e'''> <e'' e'''> <f'' e'''> <e'' e'''> c'' } | % bar 32
+  << {  \tuplet 3/2 { b'8 c'' cis''}} \\ { a'4 } >> \tuplet 3/2 { <b'' d'''>8 <a'' d'''> <f'' d'''> <g'' d'''> <f'' d'''> <d'' d'''> <e'' d'''> <d'' d'''> b'} | % bar 33
+  << { \tuplet 3/2 { a'8 b' c''} } \\ { g'4 } >> \tuplet 3/2 { <a'' c'''>8 <g'' c'''> <e'' c'''> <f'' c'''> <e'' c'''> <c'' c'''> <d'' c'''> <c'' c'''> a' } | % bar 34
+  << {\tupletSpan 4 \tuplet 3/2 { e''8 e'' r e'' e'' r e'' r r }  e'4 } \\ { \tupletSpan 4 \tuplet 3/2 { b'8 a' gis' g' fis' f' e' dis' d' cis' c' b}}>> | % bar 35
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \tuplet 3/2 {
+    <a' c''>8 <g' d''> <f' dis''> <e' e''> <c'' fis''> <b' gis''> <a' a''> <f'' b''> <e'' c'''> <d'' d'''> <a'' e'''> <g'' f'''> | % bar 36
+    <a'' e'''> \ottava #1  <e''' c''''> <d''' b'''> <c''' a'''> \ottava #0  <a'' c'''> <gis'' e'''> <a'' e'''> <e'' a''> <gis'' d'''> <a'' c'''> <d'' e''> <c'' fis''> | % bar 37
+    <b' gis''> <dis'' a''> <d'' b''> <c'' e''> <b' d''> <e'' cis''' e'''> <b' d''> <a' c''> <e'' e'''> <g' b'> <ges' bes'> <f' a' f''> | % bar 38
+    <gis' e''> <e' a'> <gis' e''> <dis' b'> <ais' dis''> <dis' a'>
+  } <gis' e''>4
+  << { \tuplet 3/2 {  fis'8 g' gis' } } \\ { e'4 } >> | % bar 39
 }
 
 
@@ -198,15 +208,15 @@ lh_a = {
   g' fis' f' e' f' fis' g' gis' a' bes' b' c'' cis'' d'' dis'' e'' | % bar 24
   f'' e'' ees'' d'' cis'' c'' b' bes' a' gis' g' fis' f' e' dis' e' | % bar 25
   ees'' d'' des'' c'' ces'' bes' a' aes' g' fis' f' e' ees' d' cis'  d' | % bar 26
- d'' cis'' c'' b' bes' a' aes' g' fis' g' gis' a' gis' a' bes' a' | % bar 27
- d'' c'' bes' a' aes' g' ges' f' e' f' fis' g' fis' g' aes' g' | % bar 28
- c'' bes' a' aes' g' fis' f' fes' ees' d' des' c' \clef "bass" bes a aes g | % bar 29
- fis g gis a bes a aes g fis g gis a bes a aes g | % bar 30
- fis g gis a c' b bes a gis a ais b c' b bes a | % bar 31
- gis4 \clef "treble" e''16 f'' d'' e'' c'' d'' b' c'' a' b' g' a' | % bar 32
- f' g' e' f' d'' e'' c'' d'' b' c'' a' b' gis' a' f' g' | % bar 33
- e' f' dis' e' c'' d'' b' c'' a' b' g' a' f' g' e' f' \clef "bass" | % bar 34
- d' e' c' d' b c' a b gis f dis e f fis g gis | % bar 35
+  d'' cis'' c'' b' bes' a' aes' g' fis' g' gis' a' gis' a' bes' a' | % bar 27
+  d'' c'' bes' a' aes' g' ges' f' e' f' fis' g' fis' g' aes' g' | % bar 28
+  c'' bes' a' aes' g' fis' f' fes' ees' d' des' c' \clef "bass" bes a aes g | % bar 29
+  fis g gis a bes a aes g fis g gis a bes a aes g | % bar 30
+  fis g gis a c' b bes a gis a ais b c' b bes a | % bar 31
+  gis4 \clef "treble" e''16 f'' d'' e'' c'' d'' b' c'' a' b' g' a' | % bar 32
+  f' g' e' f' d'' e'' c'' d'' b' c'' a' b' gis' a' f' g' | % bar 33
+  e' f' dis' e' c'' d'' b' c'' a' b' g' a' f' g' e' f' \clef "bass" | % bar 34
+  d' e' c' d' b c' a b gis f dis e f fis g gis | % bar 35
 
 }
 
@@ -248,15 +258,19 @@ lh_b = {
   \multiRhythm {  <e gis> <gis d'> <a c'> }  <g' a'>4 | % bar 24
   \multiRhythm {  <f' a'> } <f' a'>4 <d' f'> \multiRhythm { <e gis d'> } | % bar 25
   <g' bes'>4 <ees' g'> <c' ees'> \multiRhythm { <d fis c'> } | % bar 26
-\multiRhythm { <g' bes'> <cis' g'> <d a> <a f'>  % bar 27
- <f' a'> <b f'> <c g> <g ees'>  % bar 28
- <ees' g'> <bes ees'> <g bes> <cis g>  % bar 29
- <d, a,> <cis g> <d, a,> <cis g>  % bar 30
- <d, a,> <dis a> <e, b,> <d a> } | % bar 31
- <e, b,>4 \multiRhythm { <gis' b'> <e' a'> <c' e'> % bar 32
- <e b> <f' a'> <d' f'> <b d'> % bar 33
- <e c'> <e' g'> <c' e'> <a c'> % bar 34
- <f a> <d f> <e, b,> } s4 | % bar 35
+  \multiRhythm {
+    <g' bes'> <cis' g'> <d a> <a f'>  % bar 27
+    <f' a'> <b f'> <c g> <g ees'>  % bar 28
+    <ees' g'> <bes ees'> <g bes> <cis g>  % bar 29
+    <d, a,> <cis g> <d, a,> <cis g>  % bar 30
+    <d, a,> <dis a> <e, b,> <d a>
+  } | % bar 31
+  <e, b,>4 \multiRhythm {
+    <gis' b'> <e' a'> <c' e'> % bar 32
+    <e b> <f' a'> <d' f'> <b d'> % bar 33
+    <e c'> <e' g'> <c' e'> <a c'> % bar 34
+    <f a> <d f> <e, b,>
+  } s4 | % bar 35
 }
 
 etude-four-music = {
