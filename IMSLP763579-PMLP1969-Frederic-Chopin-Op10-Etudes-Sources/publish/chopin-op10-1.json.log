@@ -1,1 +1,2 @@
-/bin/sh: 2: python: not found
+<frozen runpy>:128: RuntimeWarning: 'pianolearn.midi_parse_v2' found in sys.modules after import of package 'pianolearn', but prior to execution of 'pianolearn.midi_parse_v2'; this may result in unpredictable behaviour
+Platform: posix

@@ -1,7 +1,9 @@
-%...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....
-
-\version "2.27.1"
+\version "2.27.2"
 \language "nederlands"
+\include "dev-tools.ly"
+\include "laban-tools.ly"
+\include "laban-voice-merge.ly"
+#(load-from-path "laban-build.scm")
 
 #(load-from-path "click-track-tools.scm")
 
