@@ -6,7 +6,6 @@ ekmFont = "Mezza#"
 \include "common-macros.ily"
 %\include "dev-tools.ly"
 \include "articulate.ly"
-
 \include "chopin-op10-2-piano.ly"
 
 \etude-two-header
@@ -56,10 +55,12 @@ ekmFont = "Mezza#"
       \context {
         \Staff
         \consists "Dynamic_performer"
+        \remove "Staff_performer"
       }
       \context {
         \Voice
         \remove "Dynamic_performer"
+        \consists "Staff_performer"
       }   
     }
   }

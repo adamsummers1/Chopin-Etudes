@@ -3,6 +3,7 @@
 \include "dev-tools.ly"
 \include "laban-tools.ly"
 \include "laban-voice-merge.ly"
+\include "color-voices.ily"
 #(load-from-path "laban-build.scm")
 
 #(load-from-path "click-track-tools.scm")
@@ -26,6 +27,7 @@ global = {
 }
 
 rightHandUpper = {
+  \voiceOne
   \global
   \tempo "Allegro" 4 = 144
   
@@ -121,6 +123,7 @@ rightHandUpper = {
 }
 
 rightHandLower = {
+  \voiceTwo
   <c' e'>16 \tweakFingerA -2 \tweakFingerB -1 s8. 
     <e' a'>16 \tweakFingerA -2 \tweakFingerB -1 s8. <a' d''>16 s8. <d'' f''>16 s8. |
   <e'' a''>16 s8. <a'' c'''>16 s8. <e'' a''>16 s8. <c'' e''>16 s8. |
@@ -190,6 +193,7 @@ rightHand = {
 }
 
 leftHand = {
+  \voiceThree
   \global
   \clef bass
   
