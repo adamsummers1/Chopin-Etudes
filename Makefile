@@ -1,5 +1,5 @@
-#MNT_PREFIX=/home/adams
-MNT_PREFIX=/mnt/c/Users/adams
+MNT_PREFIX=/home/adams
+#MNT_PREFIX=/mnt/c/Users/adams
 LILYLIBS=$(MNT_PREFIX)/devstuff/repos-lib
 MAINREPODIR=$(MNT_PREFIX)/devstuff/repos
 PYTHONPATH=$(MAINREPODIR)
@@ -7,6 +7,8 @@ PLIBDIR=$(MAINREPODIR)/music-learn-library
 GUILE_LOAD_PATH=$(MAINREPODIR)/adam-common-lilypond
 LILYFLAGS=--verbose --include=$(LILYLIBS)/esmuflily/ly  --include=$(MAINREPODIR)/adam-common-lilypond 
 OUTDIR=./publish
+
+current-item: no4-op10-2-piano.pdf
 
 all: chopin-op10-1.pdf chopin-op10-1.midi chopin-op10-1.json\
  chopin-op10-2.pdf chopin-op10-2.midi chopin-op10-2.json\

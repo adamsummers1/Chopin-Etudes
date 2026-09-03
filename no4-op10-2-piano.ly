@@ -7,6 +7,7 @@ ekmFont = "Mezza#"
 \include "esmufl.ily"
 \include "a4_cover_page.ly"
 \include "articulate.ly"
+\include "color-voices.ily"
 #(load-from-path "click-track-tools.scm")
 
 \paper {
@@ -23,6 +24,7 @@ global = {
 }
 
 rh_a = {
+  \voiceOne
   \tempo "Allego"  4 = 132
   \clef "treble"
   \global
@@ -47,9 +49,11 @@ rh_a = {
     <dis' b'> <a' dis''> <dis' a'>
   }
   <gis' e''>4
-  << {\tuplet 3/2 { e'8 fis' gis' }} \\ { e'4 } >>
+  \mergeDifferentlyDottedOn
+  \mergeDifferentlyHeadedOn
+  << {\voiceOne\tuplet 3/2 { e'8 fis' gis' }} \\ {  e'4 } >>
   |
-  <<{\tuplet 3/2 { c''8 <g' d''> <f' dis''>} } \\ { a'4} >>
+  <<{\voiceOne\tuplet 3/2 { c''8 <g' d''> <f' dis''>} } \\  {  a'4} >>
 
   \tuplet 3/2 {
     <e' e''>8 <c'' fis''> <b' gis''>
@@ -69,43 +73,43 @@ rh_a = {
   | % bar 7
   <e'' e'''>8 r8
   <<
-    { \tupletSpan 4 \tuplet 3/2 { g'8 gis' b' gis' a' e'' e' <dis' fis'> <d' gis'> }}
+    { \voiceOne\tupletSpan 4 \tuplet 3/2 { g'8 gis' b' gis' a' e'' e' <dis' fis'> <d' gis'> }}
     \\
     { f'4 ( e') e' }
   >>
   | % bar 8
-  << {\acciaccatura b'8 \hideNotes c''4 } \\ {\tuplet 3/2 { <c'' a'>8 <g' d''> <f' dis''> }} >>
+  << {\acciaccatura b'8 \hideNotes c''4 } \\ {\voiceOne\tuplet 3/2 { <c'' a'>8 <g' d''> <f' dis''> }} >>
   \tuplet 3/2 { <e' e''>8 <c'' fis''> <b' gis''>}
-  << { \acciaccatura gis''8 \hideNotes a''4 } \\ {\tuplet 3/2 { <a'' a' >8 <f'' b''> <e'' c'''>}} >>
+  << { \acciaccatura gis''8 \hideNotes a''4 } \\ {\voiceOne\tuplet 3/2 { <a'' a' >8 <f'' b''> <e'' c'''>}} >>
   \tuplet 3/2 {   <d'' d'''>8 <a'' e'''> <gis'' f'''>}
   | % bar 9
-  << { \acciaccatura dis'''8 \hideNotes e'''4 } \\ { \tuplet 3/2 { <e''' a'' >8 \ottava #1 <e''' c''''> <d''' b'''>}} >>
+  << { \acciaccatura dis'''8 \hideNotes e'''4 } \\ { \voiceOne\tuplet 3/2 { <e''' a'' >8 \ottava #1 <e''' c''''> <d''' b'''>}} >>
   \tuplet 3/2 { <c''' a'''>8 \ottava #0 <a'' c'''> <gis'' f'''> }
-  << { \acciaccatura f'''8 \once\hideNotes e'''4 } \\ { \tuplet 3/2 {<e''' a'' >8  <e'' a''> <gis'' d'''>}} >>
-  << { \acciaccatura d'''8 \hideNotes c'''4 } \\ { \tuplet 3/2 {<c''' a'' >8 <c'' e''> <dis'' fis''>}} >>
+  << { \acciaccatura f'''8 \once\hideNotes e'''4 } \\ { \voiceOne\tuplet 3/2 {<e''' a'' >8  <e'' a''> <gis'' d'''>}} >>
+  << { \acciaccatura d'''8 \hideNotes c'''4 } \\ { \voiceOne\tuplet 3/2 {<c''' a'' >8 <c'' e''> <dis'' fis''>}} >>
   | % bar 10
   \tuplet 3/2 {   <e'' gis''>8 <dis'' a''> <d'' b''>}
-  << { \acciaccatura f''8\hideNotes e''4 } \\ { \tuplet 3/2 { <e'' c'' >8 <b' d''> <e'' e'''>}} >>
+  << { \acciaccatura f''8\hideNotes e''4 } \\ { \voiceOne\tuplet 3/2 { <e'' c'' >8 <b' d''> <e'' e'''>}} >>
   \tuplet 3/2 {  <b' d''>8 <a' c''> <e'' e'''> }
-  << { \acciaccatura c''8 \hideNotes b'4 } \\ { \tuplet 3/2 {<b' g' >8 <f' a'> <a' f''>}} >>
+  << { \acciaccatura c''8 \hideNotes b'4 } \\ { \voiceOne\tuplet 3/2 {<b' g' >8 <f' a'> <a' f''>}} >>
   | % bar 11
   \tuplet 3/2{
     <gis' e''>8 <e' a'> <gis' e''>
     <dis' b'> <a' dis''> <dis' a'>
   }
   < e'' gis' >4
-  <<{ \tuplet 3/2 { e'8 fis' gis'}} \\ { \acciaccatura dis' e'4 }>> | % bar 12
-  << {\acciaccatura b'8 \hideNotes c''4 } \\ {\tuplet 3/2 { <c'' a'>8 <g' d''> <f' dis''> }} >>
+  <<{ \voiceOne\tuplet 3/2 { e'8 fis' gis'}} \\ { \acciaccatura dis' e'4 }>> | % bar 12
+  << {\acciaccatura b'8 \hideNotes c''4 } \\ {\voiceOne\tuplet 3/2 { <c'' a'>8 <g' d''> <f' dis''> }} >>
   \tuplet 3/2 { <e' e''> <c'' fis''> <b' gis''> }
-  << { \acciaccatura gis''8 \hideNotes a''4 } \\ {\tuplet 3/2 { <a'' a' >8 <f'' b''> <e'' c'''>}} >>
+  << { \acciaccatura gis''8 \hideNotes a''4 } \\ {\voiceOne\tuplet 3/2 { <a'' a' >8 <f'' b''> <e'' c'''>}} >>
   \tuplet 3/2 {   <d'' d'''>8 <a'' e'''> <gis'' f'''>} | % bar 13
-  << { \acciaccatura dis'''8 \hideNotes e'''4 } \\ { \tuplet 3/2 { <e''' a'' >8 \ottava #1 <e''' c''''> <d''' b'''>}} >>
+  << { \acciaccatura dis'''8 \hideNotes e'''4 } \\ { \voiceOne\tuplet 3/2 { <e''' a'' >8 \ottava #1 <e''' c''''> <d''' b'''>}} >>
   \tuplet 3/2 {
     <c''' a'''>8 \ottava #0 <a'' c'''> <gis'' f'''>
     <a'' e'''> \ottava #1 <dis''' fis'''> <d''' gis'''> <cis''' a'''> <gis''' b'''> <g''' cis''''>
   }  | % bar 14
   <<
-    { \tupletSpan 4 \tuplet 3/2 { <f''' d''''>8 <bes''' d''''> <e'''' a'''> f'''' <f''' d''''> <d''' bes'''>  <b'' gis'''> <e''' gis'''> <dis''' a'''> b''' gis''' e'''} }
+    { \voiceOne\tupletSpan 4 \tuplet 3/2 { <f''' d''''>8 <bes''' d''''> <e'''' a'''> f'''' <f''' d''''> <d''' bes'''>  <b'' gis'''> <e''' gis'''> <dis''' a'''> b''' gis''' e'''} }
     \\ { s4  gis'''4 s d'''}
   >> | % bar 15
   \tuplet 3/2 {
@@ -122,16 +126,16 @@ rh_a = {
     <aes' aes''> <des'' e''> <c'' f''> <bes' e''> <a' f''> <g' bes'> | % bar 20
     <gis' b'> <a' c''> <c'' a''>
   }
-  << { \acciaccatura  d'''8 \hideNotes  c'''4 } \\ { \tuplet 3/2 { <ees'' c'''>8 <d'' bes''> <c'' a''>} } >>
+  << { \acciaccatura  d'''8 \hideNotes  c'''4 } \\ { \voiceOne\tuplet 3/2 { <ees'' c'''>8 <d'' bes''> <c'' a''>} } >>
   \tuplet 3/2 { <bes' g''>8 <ees'' fis''> <d'' g''>}
-  << { \acciaccatura g''8 \hideNotes f''4 } \\  { \tuplet 3/2 { <c'' f''>8 <bes' ees''> <a' c''> } } >> | % bar 21
+  << { \acciaccatura g''8 \hideNotes f''4 } \\  { \voiceOne\tuplet 3/2 { <c'' f''>8 <bes' ees''> <a' c''> } } >> | % bar 21
   \tuplet 3/2 { <gis' b'>8 <a' c''> <fis' a'> }
-  << { \acciaccatura f''8 \hideNotes ees''4 } \\ { \tuplet 3/2 { <c'' ees''>8 <bes' d''> <a' c''> } } >>
+  << { \acciaccatura f''8 \hideNotes ees''4 } \\ { \voiceOne\tuplet 3/2 { <c'' ees''>8 <bes' d''> <a' c''> } } >>
   \tuplet 3/2 {
     bes'8 <c'' fis''> <d'' g''> <c'' fis'' a''> <bes' g'' bes''> <c'' a'' c'''> | % bar 22
     <cis'' ais'' cis'''> <d'' b''  d'''> <cis'' e''>
   }
-  << { \acciaccatura c'''8 \hideNotes b''4 } \\ { \tuplet 3/2 { <d'' b''>8 <c'' e''> <b' d''> } } >>
+  << { \acciaccatura c'''8 \hideNotes b''4 } \\ { \voiceOne\tuplet 3/2 { <d'' b''>8 <c'' e''> <b' d''> } } >>
   \tuplet 3/2 {
     c''8 <f'' gis''> <e'' a''> <d'' g'' b''> <c'' a'' c'''> <cis'' ais'' cis'''> | % bar 23
     <cis'' ais'' cis'''> <d'' b'' d'''> <b' gis'' b''> <f'' d''' f'''> <e'' c''' e'''> <d'' b'' d'''>
@@ -150,6 +154,7 @@ rh_a = {
       }
     } \\
     {
+      \voiceOne
       \omit TupletBracket \tupletSpan 4 \tuplet 3/2 {
         g''8 <bes'' g'''> f'' <bes'' f'''> ees'' <bes'' ees'''> d'' <fis'' d'''> des'' <f'' des'''> c'' <f'' c'''> | % bar 27
         f'' <a'' f'''> ees'' <aes'' ees'''> des'' <aes'' des'''> c'' <e'' c'''> ces'' <ees'' ces'''> bes' <ees'' bes''> | % bar 28
@@ -180,6 +185,7 @@ rh_a = {
 
 
 lh_a = {
+  \voiceThree
   \clef "bass"\global
   a16 ais b c' cis' d' dis' e' \clef "treble" f' fis' g' gis' a' ais' b' c''| % bar 1
   cis'' d'' dis'' e'' f'' e'' dis'' d'' cis'' c'' b' bes' a' gis' b' a'| % bar 2
@@ -218,9 +224,26 @@ lh_a = {
   e' f' dis' e' c'' d'' b' c'' a' b' g' a' f' g' e' f' \clef "bass" | % bar 34
   d' e' c' d' b c' a b gis f dis e f fis g gis | % bar 35
 
+  a16 ais b c' cis' d' dis' e' \clef "treble" f' fis' g' gis' a' ais' b' c''| % bar 36
+  cis'' d'' dis'' e'' f'' e'' dis'' d'' cis'' c'' b' bes' a' gis' b' a'| % bar 2
+  gis' g' fis' f' e' dis' f' e' \clef "bass" dis' d' cis' c' b c' d' c'|
+  b c' b c' b c' b c' b e' dis' d' cis' c' b bes|
+  a16 ais b c' cis' d' dis' e' \clef "treble" f' fis' g' gis' a' ais' b' c''| % bar 5
+  cis'' d'' dis'' e'' f'' e'' dis'' d'' cis'' c'' b' bes' a' gis' b' a'|
+  g' gis' a' ais' b' c'' b' ais' a' gis' g' fis' eis' fis' g' fis'|
+  e' f' dis' e' d' e' cis' d' c' d' b c' b c' ais b |
+  a16 ais b c' cis' d' dis' e' \clef "treble" f' fis' g' gis' a' ais' b' c''| % bar 9
+  cis'' d'' dis'' e'' f'' e'' dis'' d'' cis'' c'' b' bes' a' gis' b' a'|
+  gis' g' fis' f' e' dis' f' e' \clef "bass" dis' d' cis' c' b c' d' c'|
+  b c' b c' b c' b c' b e' dis' d' cis' c' b bes|
+  a16 ais b c' cis' d' dis' e' \clef "treble" f' fis' g' gis' a' ais' b' c''| % bar 13
+  cis'' d'' dis'' e'' f'' e'' dis'' d'' cis'' c'' b' bes' a' gis' b' a'| % bar 14
+  bes' b' c'' cis'' d'' ees'' e'' f'' e'' f'' fis'' g'' gis'' a'' ais'' <gis'' b''> | % bar 15
+  a'' gis'' g'' fis'' f'' e'' dis'' d'' cis'' c'' b' bes' a' gis' g' ges' | % bar 16
 }
 
 lh_b = {
+  \voiceFour
   \clef "bass" \global
   \multiRhythm {
     a,4 <e a> <a d'> <d' f'>
