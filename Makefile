@@ -1,5 +1,5 @@
-MNT_PREFIX=/home/adams
-#MNT_PREFIX=/mnt/c/Users/adams
+#MNT_PREFIX=/home/adams
+MNT_PREFIX=/mnt/c/Users/adams
 LILYLIBS=$(MNT_PREFIX)/devstuff/repos-lib
 MAINREPODIR=$(MNT_PREFIX)/devstuff/repos
 PYTHONPATH=$(MAINREPODIR)

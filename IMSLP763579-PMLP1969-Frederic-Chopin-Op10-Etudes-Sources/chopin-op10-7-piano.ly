@@ -443,8 +443,8 @@ etude-seven-midi =
 %  \displayLilyMusic { \clickTrack }
 
 
-#(use-modules (lily to-xml))
-#(define p (open-output-file "chopin-op10-7.xml"))
-#(music-to-xml etude-seven-music p)
-#(close-port p)
+%#(use-modules (lily to-xml))
+%#(define p (open-output-file "chopin-op10-7.xml"))
+%#(music-to-xml etude-seven-music p)
+%#(close-port p)
 
