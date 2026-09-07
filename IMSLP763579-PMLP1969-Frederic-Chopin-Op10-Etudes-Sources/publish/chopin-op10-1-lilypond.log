@@ -3,7 +3,7 @@ GNU LilyPond 2.27.2 (running Guile 3.0)
 
 Relocation
   Absolute file name of LilyPond binary computed from PATH:
-    PATH=/home/adams/venvs/runtime_env/bin:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adams/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts
+    PATH=/home/adams/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adams/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts
     argv0=lilypond
   Setting INSTALLER_PREFIX to '/home/adams/devstuff/lilypond/lilypond-2.27.2'
   Using run-time value for datadir,
@@ -26,9 +26,9 @@ Relocation
   FONTCONFIG_PATH not overwritten
   Relocation file '/home/adams/devstuff/lilypond/lilypond-2.27.2/etc/relocate/libexec.reloc'
   Prepending '/home/adams/devstuff/lilypond/lilypond-2.27.2/libexec' to PATH
-  Setting PATH to '/home/adams/devstuff/lilypond/lilypond-2.27.2/libexec:/home/adams/venvs/runtime_env/bin:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adams/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'
+  Setting PATH to '/home/adams/devstuff/lilypond/lilypond-2.27.2/libexec:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adams/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'
   Prepending '/home/adams/devstuff/lilypond/lilypond-2.27.2/bin' to PATH
-  Setting PATH to '/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/libexec:/home/adams/venvs/runtime_env/bin:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adams/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'
+  Setting PATH to '/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/libexec:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adams/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'
 Changing working directory to: `./publish'
 Setting GUILE_AUTO_COMPILE to '0'
 Setting GUILE_WARN_DEPRECATED to 'detailed'
@@ -42,7 +42,7 @@ Top-level directory of LilyPond's data tree:
 FONTCONFIG_FILE="/etc/fonts/fonts.conf"
 FONTCONFIG_PATH="/etc/fonts"
 GUILE_LOAD_PATH="/home/adams/devstuff/lilypond/lilypond-2.27.2/share/guile/3.0:/home/adams/devstuff/repos/adam-common-lilypond:/home/adams/devstuff/repos/adam-common-lilypond:"
-PATH="/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/libexec:/home/adams/venvs/runtime_env/bin:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adams/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts"
+PATH="/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/libexec:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/adams/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/.local/bin:/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/adams/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts"
 
 []
 [/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/scm/lily/color.scm]
@@ -123,10 +123,10 @@ Using `nederlands' note names...[/home/adams/devstuff/lilypond/lilypond-2.27.2/s
 Processing `/home/adams/devstuff/repos/Chopin-Etudes/IMSLP763579-PMLP1969-Frederic-Chopin-Op10-Etudes-Sources/chopin-op10-1.ly'
 Parsing...[/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/init.ly
 Using `nederlands' note names...[/home/adams/devstuff/repos/Chopin-Etudes/IMSLP763579-PMLP1969-Frederic-Chopin-Op10-Etudes-Sources/chopin-op10-1.ly[/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily
-Found file in search path: ekmd-mezza.scm -> /home/adams/devstuff/repos-lib/esmuflily/ly/ekmd-mezza.scm][/home/adams/devstuff/repos/adam-common-lilypond/a4_cover_page.ly][/home/adams/devstuff/repos/adam-common-lilypond/common-macros.ily][/home/adams/devstuff/repos/adam-common-lilypond/dev-tools.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/articulate.ly][/home/adams/devstuff/repos/Chopin-Etudes/IMSLP763579-PMLP1969-Frederic-Chopin-Op10-Etudes-Sources/chopin-op10-1-piano.ly
+Found file in search path: ekmd-mezza.scm -> /home/adams/devstuff/repos-lib/esmuflily/ly/ekmd-mezza.scm][/home/adams/devstuff/repos/adam-common-lilypond/a4_cover_page.ly][/home/adams/devstuff/repos/adam-common-lilypond/common-macros.ily][/home/adams/devstuff/repos/adam-common-lilypond/dev-tools.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/articulate.ly][/home/adams/devstuff/repos/adam-common-lilypond/color-voices.ily[/home/adams/devstuff/repos/adam-common-lilypond/color-voice.ily][/home/adams/devstuff/repos/adam-common-lilypond/color-voice.ily][/home/adams/devstuff/repos/adam-common-lilypond/color-voice.ily][/home/adams/devstuff/repos/adam-common-lilypond/color-voice.ily][/home/adams/devstuff/repos/adam-common-lilypond/color-voice.ily][/home/adams/devstuff/repos/adam-common-lilypond/color-voice.ily][/home/adams/devstuff/repos/adam-common-lilypond/color-voice.ily][/home/adams/devstuff/repos/adam-common-lilypond/color-voice.ily]][/home/adams/devstuff/repos/Chopin-Etudes/IMSLP763579-PMLP1969-Frederic-Chopin-Op10-Etudes-Sources/chopin-op10-1-piano.ly
 Using `nederlands' note names...[/home/adams/devstuff/repos/adam-common-lilypond/dev-tools.ly][/home/adams/devstuff/repos/adam-common-lilypond/laban-tools.ly][/home/adams/devstuff/repos/adam-common-lilypond/laban-voice-merge.ly]][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily]]
 Interpreting music...[8][16][24][32][40][48][56][64][72][80]
-elapsed time: 0.48 seconds
+elapsed time: 0.43 seconds
 Element count 13460 (spanners 467) 
 Preprocessing graphical objects...
 Grob count 18986
@@ -171,12 +171,12 @@ CFF name for font C059-Italic is the same.
 [mezza_27.316]
 [mezza_26.185]
 [mezza_28.648]
-[mezza_26.225]
+[mezza_26.164]
 [mezza_26.221]
 [mezza_26.271]
 [mezza_26.743]
 [mezza_26.445]
-[mezza_26.217]
+[mezza_26.229]
 Initializing embedded CFF font list.
 Found file in search path: /home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/fonts/otf/C059-BdIta.otf -> /home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/fonts/otf/C059-BdIta.otf
 Embedding CFF font `C059-BdIta'.
@@ -197,16 +197,16 @@ Found file in search path: /usr/share/fonts/truetype/noto/NotoSans-Regular.ttf -
 [/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf]
 Found file in search path: music-drawing-routines.ps -> /home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ps/music-drawing-routines.ps
 Found file in search path: lilyponddefs.ps -> /home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ps/lilyponddefs.ps
-Paper_outputter elapsed time: 0.28 seconds
+Paper_outputter elapsed time: 0.30 seconds
 Converting to `chopin-op10-1.pdf'...
-Preparing Ghostscript command to `/tmp/lilypond-tmp-2d1e77': << /OutputFile (./lilypond-tmp-431f6e.pdf) /CompatibilityLevel 1.4 /PageSize [595.28 841.89] /OutputDevice /pdfwrite >> setpagedevice /.setdefaultscreen where { pop .setdefaultscreen } { (Warning: .setdefaultscreen not available) print } ifelse newpath fill (/tmp/lilypond-tmp-431f6e) (r) file .setsafe run
-Invoking `gs -dNODISPLAY -dNOSAFER -dNOPAUSE -dBATCH -dAutoRotatePages=/None -dPrinted=false /tmp/lilypond-tmp-2d1e77'...
+Preparing Ghostscript command to `/tmp/lilypond-tmp-7c2831': << /OutputFile (./lilypond-tmp-4bfeff.pdf) /CompatibilityLevel 1.4 /PageSize [595.28 841.89] /OutputDevice /pdfwrite >> setpagedevice /.setdefaultscreen where { pop .setdefaultscreen } { (Warning: .setdefaultscreen not available) print } ifelse newpath fill (/tmp/lilypond-tmp-4bfeff) (r) file .setsafe run
+Invoking `gs -dNODISPLAY -dNOSAFER -dNOPAUSE -dBATCH -dAutoRotatePages=/None -dPrinted=false /tmp/lilypond-tmp-7c2831'...
 
 GPL Ghostscript 10.06.0 (2025-09-09)
 Copyright (C) 2025 Artifex Software, Inc.  All rights reserved.
 This software is supplied under the GNU AGPLv3 and comes with NO WARRANTY:
 see the file COPYING for details.
 ]fnarg: entereing make click. timesig (4 . 4) length 79 
-gc time taken: 0.586601033
+gc time taken: 0.550085612
 /home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/scm/lily/lily.scm
 Success: compilation successfully completed

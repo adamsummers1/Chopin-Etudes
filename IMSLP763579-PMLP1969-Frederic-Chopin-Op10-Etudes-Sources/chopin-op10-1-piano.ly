@@ -22,6 +22,7 @@ global = {
 
 rightHand = {
   \set Voice.hand = #'right
+\voiceOne
   \clef treble
   \global
   \tempo "Allegro" 4 = 176
@@ -178,6 +179,7 @@ rightHand = {
 
 leftHand = {
   \set Voice.hand = #'left
+\voiceTwo
   \clef bass
   \global
   
@@ -185,7 +187,7 @@ leftHand = {
   q1 |
   <f,, f,>1 |
   <fis,, fis,>1 |
-  \voiceFour <g,, g,>2 \oneVoice <fis,, fis,>4 <e,, e,> |
+   <g,, g,>2  <fis,, fis,>4 <e,, e,> |
   <d,, d,>1 |
   <g,, g,>1~ |
   q1 |
@@ -235,9 +237,9 @@ leftHand = {
   <e,, e,>2 <a,, a,> |
   <d,, d,>2 <g,, g,> |
   <c,, c,>2 <f,, f,> |
-  <b,, b,>2. \voiceFour b,,4~ |
-  \oneVoice <b,, b,>2. \voiceFour b,,4 |
-  \oneVoice <e,, e,>1~ |
+  <b,, b,>2.  b,,4~ |
+   <b,, b,>2.  b,,4 |
+   <e,, e,>1~ |
   q2. <d,, d,>4 |
   
   \barNumberCheck 49
@@ -245,7 +247,7 @@ leftHand = {
   <c, c>1 |
   <f,, f,>1 |
   <fis,, fis,>1 |
-  \voiceFour <g,, g,>2 \oneVoice <fis,, fis,>4 <e,, e,> |
+   <g,, g,>2 <fis,, fis,>4 <e,, e,> |
   <d,, d,>1 |
   <g,, g,>1~ |
   q1 |
@@ -254,8 +256,8 @@ leftHand = {
   <c, c>1~ |
   q1 |
   <a,, a,>1~ |
-  q2. \voiceFour <as,, as,>4 |
-  \oneVoice <g,, g,>1~ |
+  q2.  <as,, as,>4 |
+   <g,, g,>1~ |
   q1 |
   <fis,, fis,>1 |
   <f,, f,>1 |
