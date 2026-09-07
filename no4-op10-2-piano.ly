@@ -2,7 +2,6 @@
 \language "nederlands"
 #(ly:set-option 'compile-scheme-code)
 #(debug-enable 'backtrace)
-\version "2.27.1"
 ekmFont = "Mezza#"
 \include "esmufl.ily"
 \include "a4_cover_page.ly"
@@ -28,29 +27,31 @@ rh_a = {
   \clef "treble"
   \global
   \tupletSpan 4
+  \omit TupletNumber
+  \omit TupletBracket
   \tuplet 3/2 {
-    <a' c''>8 <g' d''> <f' dis''>
-    <e' e''> <c'' fis''> <b' gis''>
-    <a' a''> <f'' b''> <e'' c'''>
-    <d'' d'''> <a'' e'''> <gis'' f'''>
+    <a' c''>8-. <g' d''>-. <f' dis''>-.
+    <e' e''>-. <c'' fis''>-. <b' gis''>-.
+    <a' a''>-. <f'' b''>-. <e'' c'''>-.
+    <d'' d'''>-. <a'' e'''>-. <gis'' f'''>-.
     |
-    <a'' e'''> \ottava #1 <e''' c''''> <d''' b'''>
-    <c''' a'''> \ottava #0 <a'' c'''> <gis'' f'''>
-    <a'' e'''> <e'' a''> <gis'' d'''>
-    <a'' c'''> <c'' e''> <dis'' fis''>
+    <a'' e'''>-. \ottava #1 <e''' c''''>-. <d''' b'''>-.
+    <c''' a'''>-. \ottava #0 <a'' c'''>-. <gis'' f'''>-.
+    <a'' e'''>-. <e'' a''>-. <gis'' d'''>-.
+    <a'' c'''>-. <c'' e''>-. <dis'' fis''>-.
     |
-    <e'' gis''> <dis'' a''> <d'' b''>
-    <c'' e''> <b' d''> <e'' e'''>
-    <b' d''> <a' c''> <e'' e'''>
-    <g' b'> <f' a'> <a' f''>
+    <e'' gis''>-. <dis'' a''>-. <d'' b''>-.
+    <c'' e''>-. <b' d''>-. <e'' e'''>-.
+    <b' d''>-. <a' c''>-. <e'' e'''>-.
+    <g' b'>-. <f' a'>-. <a' f''>-.
     |
-    <gis' e''> <e' a'> <gis' e''>
-    <dis' b'> <a' dis''> <dis' a'>
+    <gis' e''>-. <e' a'>-. <gis' e''>-.
+    <dis' b'>-. <a' dis''>-. <dis' a'>-.
   }
-  <gis' e''>4
-  << {\tuplet 3/2 { e'8 fis' gis' }} \\ { e'4 } >>
+  <gis' e''>4--
+  << {\omit TupletNumber \tuplet 3/2 { e'8 fis' gis' }} \\ { e'4 } >>
   |
-  <<{\tuplet 3/2 { c''8 <g' d''> <f' dis''>} } \\ { a'4} >>
+  <<{\omit TupletNumber\tuplet 3/2 { c''8 <g' d''> <f' dis''>} } \\ { a'4} >>
 
   \tuplet 3/2 {
     <e' e''>8 <c'' fis''> <b' gis''>
@@ -70,43 +71,43 @@ rh_a = {
   | % bar 7
   <e'' e'''>8 r8
   <<
-    { \tupletSpan 4 \tuplet 3/2 { g'8 gis' b' gis' a' e'' e' <dis' fis'> <d' gis'> }}
+    { \omit TupletNumber \tupletSpan 4 \tuplet 3/2 { g'8 gis' b' gis' a' e'' e' <dis' fis'> <d' gis'> }}
     \\
     { f'4 ( e') e' }
   >>
   | % bar 8
-  << {\acciaccatura b'8 \hideNotes c''4 } \\ {\tuplet 3/2 { <c'' a'>8 <g' d''> <f' dis''> }} >>
+  << {\acciaccatura b'8 \hideNotes c''4 } \\ {\omit TupletNumber\tuplet 3/2 { <c'' a'>8 <g' d''> <f' dis''> }} >>
   \tuplet 3/2 { <e' e''>8 <c'' fis''> <b' gis''>}
-  << { \acciaccatura gis''8 \hideNotes a''4 } \\ {\tuplet 3/2 { <a'' a' >8 <f'' b''> <e'' c'''>}} >>
+  << { \acciaccatura gis''8 \hideNotes a''4 } \\ {\omit TupletNumber\tuplet 3/2 { <a'' a' >8 <f'' b''> <e'' c'''>}} >>
   \tuplet 3/2 {   <d'' d'''>8 <a'' e'''> <gis'' f'''>}
   | % bar 9
-  << { \acciaccatura dis'''8 \hideNotes e'''4 } \\ { \tuplet 3/2 { <e''' a'' >8 \ottava #1 <e''' c''''> <d''' b'''>}} >>
+  << { \acciaccatura dis'''8 \hideNotes e'''4 } \\ { \omit TupletNumber\tuplet 3/2 { <e''' a'' >8 \ottava #1 <e''' c''''> <d''' b'''>}} >>
   \tuplet 3/2 { <c''' a'''>8 \ottava #0 <a'' c'''> <gis'' f'''> }
-  << { \acciaccatura f'''8 \once\hideNotes e'''4 } \\ { \tuplet 3/2 {<e''' a'' >8  <e'' a''> <gis'' d'''>}} >>
-  << { \acciaccatura d'''8 \hideNotes c'''4 } \\ { \tuplet 3/2 {<c''' a'' >8 <c'' e''> <dis'' fis''>}} >>
+  << { \acciaccatura f'''8 \once\hideNotes e'''4 } \\ {\omit TupletNumber \tuplet 3/2 {<e''' a'' >8  <e'' a''> <gis'' d'''>}} >>
+  << { \acciaccatura d'''8 \hideNotes c'''4 } \\ {\omit TupletNumber \tuplet 3/2 {<c''' a'' >8 <c'' e''> <dis'' fis''>}} >>
   | % bar 10
   \tuplet 3/2 {   <e'' gis''>8 <dis'' a''> <d'' b''>}
-  << { \acciaccatura f''8\hideNotes e''4 } \\ { \tuplet 3/2 { <e'' c'' >8 <b' d''> <e'' e'''>}} >>
+  << { \acciaccatura f''8\hideNotes e''4 } \\ {\omit TupletNumber \tuplet 3/2 { <e'' c'' >8 <b' d''> <e'' e'''>}} >>
   \tuplet 3/2 {  <b' d''>8 <a' c''> <e'' e'''> }
-  << { \acciaccatura c''8 \hideNotes b'4 } \\ { \tuplet 3/2 {<b' g' >8 <f' a'> <a' f''>}} >>
+  << { \acciaccatura c''8 \hideNotes b'4 } \\ {\omit TupletNumber \tuplet 3/2 {<b' g' >8 <f' a'> <a' f''>}} >>
   | % bar 11
   \tuplet 3/2{
     <gis' e''>8 <e' a'> <gis' e''>
     <dis' b'> <a' dis''> <dis' a'>
   }
   < e'' gis' >4
-  <<{ \tuplet 3/2 { e'8 fis' gis'}} \\ { \acciaccatura dis' e'4 }>> | % bar 12
-  << {\acciaccatura b'8 \hideNotes c''4 } \\ {\tuplet 3/2 { <c'' a'>8 <g' d''> <f' dis''> }} >>
+  <<{ \omit TupletNumber\tuplet 3/2 { e'8 fis' gis'}} \\ { \acciaccatura dis' e'4 }>> | % bar 12
+  << {\acciaccatura b'8 \hideNotes c''4 } \\ {\omit TupletNumber\tuplet 3/2 { <c'' a'>8 <g' d''> <f' dis''> }} >>
   \tuplet 3/2 { <e' e''> <c'' fis''> <b' gis''> }
-  << { \acciaccatura gis''8 \hideNotes a''4 } \\ {\tuplet 3/2 { <a'' a' >8 <f'' b''> <e'' c'''>}} >>
+  << { \acciaccatura gis''8 \hideNotes a''4 } \\ {\omit TupletNumber\tuplet 3/2 { <a'' a' >8 <f'' b''> <e'' c'''>}} >>
   \tuplet 3/2 {   <d'' d'''>8 <a'' e'''> <gis'' f'''>} | % bar 13
-  << { \acciaccatura dis'''8 \hideNotes e'''4 } \\ { \tuplet 3/2 { <e''' a'' >8 \ottava #1 <e''' c''''> <d''' b'''>}} >>
+  << { \acciaccatura dis'''8 \hideNotes e'''4 } \\ {\omit TupletNumber \tuplet 3/2 { <e''' a'' >8 \ottava #1 <e''' c''''> <d''' b'''>}} >>
   \tuplet 3/2 {
     <c''' a'''>8 \ottava #0 <a'' c'''> <gis'' f'''>
     <a'' e'''> \ottava #1 <dis''' fis'''> <d''' gis'''> <cis''' a'''> <gis''' b'''> <g''' cis''''>
   }  | % bar 14
   <<
-    { \tupletSpan 4 \tuplet 3/2 { <f''' d''''>8 <bes''' d''''> <e'''' a'''> f'''' <f''' d''''> <d''' bes'''>  <b'' gis'''> <e''' gis'''> <dis''' a'''> b''' gis''' e'''} }
+    { \omit TupletNumber\tupletSpan 4 \tuplet 3/2 { <f''' d''''>8 <bes''' d''''> <e'''' a'''> f'''' <f''' d''''> <d''' bes'''>  <b'' gis'''> <e''' gis'''> <dis''' a'''> b''' gis''' e'''} }
     \\ { s4  gis'''4 s d'''}
   >> | % bar 15
   \tuplet 3/2 {
@@ -123,16 +124,16 @@ rh_a = {
     <aes' aes''> <des'' e''> <c'' f''> <bes' e''> <a' f''> <g' bes'> | % bar 20
     <gis' b'> <a' c''> <c'' a''>
   }
-  << { \acciaccatura  d'''8 \hideNotes  c'''4 } \\ { \tuplet 3/2 { <ees'' c'''>8 <d'' bes''> <c'' a''>} } >>
+  << { \acciaccatura  d'''8 \hideNotes  c'''4 } \\ {\omit TupletNumber \tuplet 3/2 { <ees'' c'''>8 <d'' bes''> <c'' a''>} } >>
   \tuplet 3/2 { <bes' g''>8 <ees'' fis''> <d'' g''>}
-  << { \acciaccatura g''8 \hideNotes f''4 } \\  { \tuplet 3/2 { <c'' f''>8 <bes' ees''> <a' c''> } } >> | % bar 21
+  << { \acciaccatura g''8 \hideNotes f''4 } \\  {\omit TupletNumber \tuplet 3/2 { <c'' f''>8 <bes' ees''> <a' c''> } } >> | % bar 21
   \tuplet 3/2 { <gis' b'>8 <a' c''> <fis' a'> }
-  << { \acciaccatura f''8 \hideNotes ees''4 } \\ { \tuplet 3/2 { <c'' ees''>8 <bes' d''> <a' c''> } } >>
+  << { \acciaccatura f''8 \hideNotes ees''4 } \\ {\omit TupletNumber \tuplet 3/2 { <c'' ees''>8 <bes' d''> <a' c''> } } >>
   \tuplet 3/2 {
     bes'8 <c'' fis''> <d'' g''> <c'' fis'' a''> <bes' g'' bes''> <c'' a'' c'''> | % bar 22
     <cis'' ais'' cis'''> <d'' b''  d'''> <cis'' e''>
   }
-  << { \acciaccatura c'''8 \hideNotes b''4 } \\ { \tuplet 3/2 { <d'' b''>8 <c'' e''> <b' d''> } } >>
+  << { \acciaccatura c'''8 \hideNotes b''4 } \\ { \omit TupletNumber\tuplet 3/2 { <d'' b''>8 <c'' e''> <b' d''> } } >>
   \tuplet 3/2 {
     c''8 <f'' gis''> <e'' a''> <d'' g'' b''> <c'' a'' c'''> <cis'' ais'' cis'''> | % bar 23
     <cis'' ais'' cis'''> <d'' b'' d'''> <b' gis'' b''> <f'' d''' f'''> <e'' c''' e'''> <d'' b'' d'''>
@@ -144,14 +145,14 @@ rh_a = {
   }
   <<
     {
-      \omit TupletBracket \tupletSpan 4 \tuplet 3/2 {
+      \omit TupletBracket \omit TupletNumber\tupletSpan 4 \tuplet 3/2 {
         g''4 f'' ees'' d'' des'' c'' | % bar 27
         f'' ees'' des'' c'' ces'' bes' | % bar 28
         ees''8 ees'''4 fis''4 g''8 bes'8 bes''4 ees''4 ees'8
       }
     } \\
     {
-      \omit TupletBracket \tupletSpan 4 \tuplet 3/2 {
+      \omit TupletBracket \omit TupletNumber\tupletSpan 4 \tuplet 3/2 {
         g''8 <bes'' g'''> f'' <bes'' f'''> ees'' <bes'' ees'''> d'' <fis'' d'''> des'' <f'' des'''> c'' <f'' c'''> | % bar 27
         f'' <a'' f'''> ees'' <aes'' ees'''> des'' <aes'' des'''> c'' <e'' c'''> ces'' <ees'' ces'''> bes' <ees'' bes''> | % bar 28
         ees'' <g'' ees'''> d'' <ees'' fis''> a' <bes' g''> bes' <ees'' bes''> fis' <g' ees''> d' <ees' bes'>
@@ -164,9 +165,9 @@ rh_a = {
     <a' d''> <cis'' e''> <c'' fis''> <gis' g''> <a' fis''> <c'' f''> <b' e''> <c'' dis''> <gis' e''> <gis' g''> <a' fis''> <c'' f''>
   } | % bar 31
   <e' e''>4 \tuplet 3/2 { <c''' e'''>8 <b'' e'''> <gis'' e'''> <a'' e'''> <g'' e'''> <e'' e'''> <f'' e'''> <e'' e'''> c'' } | % bar 32
-  << {  \tuplet 3/2 { b'8 c'' cis''}} \\ { a'4 } >> \tuplet 3/2 { <b'' d'''>8 <a'' d'''> <f'' d'''> <g'' d'''> <f'' d'''> <d'' d'''> <e'' d'''> <d'' d'''> b'} | % bar 33
-  << { \tuplet 3/2 { a'8 b' c''} } \\ { g'4 } >> \tuplet 3/2 { <a'' c'''>8 <g'' c'''> <e'' c'''> <f'' c'''> <e'' c'''> <c'' c'''> <d'' c'''> <c'' c'''> a' } | % bar 34
-  << {\tupletSpan 4 \tuplet 3/2 { e''8 e'' r e'' e'' r e'' r r }  e'4 } \\ { \tupletSpan 4 \tuplet 3/2 { b'8 a' gis' g' fis' f' e' dis' d' cis' c' b}}>> | % bar 35
+  << {\omit TupletNumber  \tuplet 3/2 { b'8 c'' cis''}} \\ { a'4 } >> \tuplet 3/2 { <b'' d'''>8 <a'' d'''> <f'' d'''> <g'' d'''> <f'' d'''> <d'' d'''> <e'' d'''> <d'' d'''> b'} | % bar 33
+  << {\omit TupletNumber \tuplet 3/2 { a'8 b' c''} } \\ { g'4 } >> \tuplet 3/2 { <a'' c'''>8 <g'' c'''> <e'' c'''> <f'' c'''> <e'' c'''> <c'' c'''> <d'' c'''> <c'' c'''> a' } | % bar 34
+  << {\omit TupletNumber\omit TupletBracket \tupletSpan 4 \tuplet 3/2 { e''8 e'' r e'' e'' r e'' r r }  e'4 } \\ {\omit TupletNumber \tupletSpan 4 \tuplet 3/2 { b'8 a' gis' g' fis' f' e' dis' d' cis' c' b}}>> | % bar 35
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \tuplet 3/2 {
     <a' c''>8 <g' d''> <f' dis''> <e' e''> <c'' fis''> <b' gis''> <a' a''> <f'' b''> <e'' c'''> <d'' d'''> <a'' e'''> <g'' f'''> | % bar 36
@@ -174,7 +175,7 @@ rh_a = {
     <b' gis''> <dis'' a''> <d'' b''> <c'' e''> <b' d''> <e'' cis''' e'''> <b' d''> <a' c''> <e'' e'''> <g' b'> <ges' bes'> <f' a' f''> | % bar 38
     <gis' e''> <e' a'> <gis' e''> <dis' b'> <ais' dis''> <dis' a'>
   } <gis' e''>4
-  << { \tuplet 3/2 {  fis'8 g' gis' } } \\ { e'4 } >> | % bar 39
+  << {\omit TupletNumber \tuplet 3/2 {  fis'8 g' gis' } } \\ { e'4 } >> | % bar 39
   \tuplet 3/2 {
     <a' c''>8 <g' d''> <f' dis''> <e' e''> <c'' fis''> <b' gis''> <a' g'' a''> <f'' b''> <e'' c'''> <d'' d'''> <a'' e'''> <gis'' f'''> | % bar 40
     <a'' e'''> \ottava #1 <e''' c''''> <d''' b'''> <c''' a'''> \ottava #0 <a'' c'''> <gis'' f'''> <a'' f'''> <a'' e'''> <gis'' d'''> <a'' c'''> <d'' e''> <c'' fis''> |
@@ -182,8 +183,8 @@ rh_a = {
   } |
   <e'' e'''>8 r8  \tuplet 3/2 { <e' e''>8 <f' e''> <fis' e''> <f' e''> <fis' e''> <g' e''> <f' e''> <g' e''> <gis' e''> } |
   <<
-    { \tupletSpan 4 \tuplet 3/2 { e''8 e'' e'' e'' e'' e'' a'' a'' a'' a'' a'' a'' } } \\
-    { \tupletSpan 4 \tuplet 3/2 { <a' c''>8 <g' d''> <f' dis''> <e' e''> <c'' fis''> <b' gis''> <a' a''> <f'' b''> <e'' c'''> <d'' d'''> e''' <gis'' f'''> } }
+    { \omit TupletNumber\tupletSpan 4 \tuplet 3/2 { e''8 e'' e'' e'' e'' e'' a'' a'' a'' a'' a'' a'' } } \\
+    { \omit TupletNumber\tupletSpan 4 \tuplet 3/2 { <a' c''>8 <g' d''> <f' dis''> <e' e''> <c'' fis''> <b' gis''> <a' a''> <f'' b''> <e'' c'''> <d'' d'''> e''' <gis'' f'''> } }
   >> |
   \tuplet 3/2 {  <a'' e'''>8 \ottava #1  <e''' c''''> <d''' b'''> <c''' a'''> <g'' c'''> <gis'' e'''> }
   <<
@@ -193,7 +194,7 @@ rh_a = {
     }
     \\
     {
-      \tupletSpan 4 \tuplet 3/2 {
+      \omit TupletNumber\tupletSpan 4 \tuplet 3/2 {
         <a'' e'''>8 <e'' a''> <gis'' d'''> <a'' c'''> \ottava #0 <d'' e''> <c'' fis''>
         <b' gis''>8 <dis'' a''> <d'' b''> <e'' e'''> <c'' e''> <b' dis''> <b' d''> <a' c''> <e'' e'''> <g' b'> <ges' bes'>  <f' a' f''>
       }
@@ -202,9 +203,9 @@ rh_a = {
   >> |
 
   <<
-    { \tupletSpan 4 \tuplet 3/2 {  <gis' e''>8 [ <e' a'> <gis' e''> ] <dis' b'> [ <ais' dis''> <dis' a'> ] s8 s8  f'8 \noBeam fis' [ g' gis' ] } }
+    { \omit TupletNumber\tupletSpan 4 \tuplet 3/2 {  <gis' e''>8 [ <e' a'> <gis' e''> ] <dis' b'> [ <ais' dis''> <dis' a'> ] s8 s8  f'8 \noBeam fis' [ g' gis' ] } }
     \\
-    { s4 s4 \tupletSpan 4 \tuplet 3/2 { s8 s8 e'8-~}  e'4   }
+    { s4 s4 \omit TupletNumber\tupletSpan 4 \tuplet 3/2 { s8 s8 e'8-~}  e'4   }
     \\
     { s4 s4 <gis' e''>4 }
   >> |
@@ -215,7 +216,7 @@ rh_a = {
     }
     \\
     {
-      \tupletSpan 4 \tuplet 3/2 {
+      \omit TupletNumber\tupletSpan 4 \tuplet 3/2 {
         <a' c''>8 <g' d''> <f' dis''> <e' e''> <c'' fis''> <b' gis''> <a' a''> <gis'' b''> <e'' c'''> <d'' d'''> <a'' e'''> <gis'' f'''> |
         <a'' e'''> \ottava #1 <e''' c''''> <d''' b'''> <c''' a'''> <g'' c'''> <gis'' e'''> <a'' f'''> <a'' e'''> <gis'' d'''> <a'' c'''> <gis'' d'''> <g'' e'''>
       }
@@ -231,6 +232,7 @@ rh_a = {
     <d'' a''> <a' d''> <a' f''> <a' a''> <a' f''> <f' a'> <f' d''> <d' f'> <d' a'> <d' d''> <d' a'> <a f'>
   } |
   <cis' a' cis''>1
+\bar "|."
 }
 
 

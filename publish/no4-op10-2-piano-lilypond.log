@@ -101,7 +101,7 @@ PATH="/home/adams/devstuff/lilypond/lilypond-2.27.2/bin:/home/adams/devstuff/lil
 [/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/scm/lily/paper.scm]
 [/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/scm/lily/backend-library.scm]
 [/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/scm/lily/context.scm]
-(primitive-load-path lily): 0.17 seconds
+(primitive-load-path lily): 0.08 seconds
 Creating font configuration...
 Adding fontconfig configuration file: /home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/fonts/00-lilypond-fonts.conf
 Adding fontconfig configuration file: /etc/fonts/fonts.conf
@@ -126,10 +126,10 @@ Using `nederlands' note names...[/home/adams/devstuff/repos/Chopin-Etudes/no4-op
 Using `nederlands' note names...[/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily
 Found file in search path: ekmd-mezza.scm -> /home/adams/devstuff/repos-lib/esmuflily/ly/ekmd-mezza.scm][/home/adams/devstuff/repos/adam-common-lilypond/a4_cover_page.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/articulate.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/music-functions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/music-functions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/music-functions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/music-functions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/music-functions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/music-functions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/music-functions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/music-functions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/music-functions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/music-functions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/music-functions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/music-functions-init.ly][/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ly/music-functions-init.ly][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily][/home/adams/devstuff/repos-lib/esmuflily/ly/esmufl.ily]]
 Interpreting music...[8][16][24][32][40][48][56]
-elapsed time: 0.53 seconds
-Element count 18624 (spanners 1040) 
+elapsed time: 0.60 seconds
+Element count 18680 (spanners 1040) 
 Preprocessing graphical objects...
-Grob count 23346
+Grob count 23402
 [mezza_6.889]
 CFF name for font Mezza is the same.
 [mezza_4.871]
@@ -159,30 +159,29 @@ Track...
 Finding the ideal number of pages...
 Fitting music on 5 or 6 pages...
 Drawing systems...
-[mezza_5.468]
 [lilypond_serif_bold_italic_3.866]
 CFF name for font C059-BdIta is the same.
-Element count 23680
+[mezza_5.468]
+Element count 23736
 [mezza_28.873]
 [mezza_27.044]
 [mezza_28.88]
-[mezza_24.3955]
-[mezza_29.8545]
+[mezza_24.419]
+[mezza_27.043]
 [mezza_28.881]
-[mezza_24.721]
-[mezza_30.443]
-[mezza_32.396]
-[mezza_26.278]
 [mezza_24.785]
-[mezza_23.446]
-[mezza_30.676]
+[mezza_30.443]
+[mezza_31.317]
+[mezza_26.278]
+[mezza_23.698]
+[mezza_27.991]
 [mezza_27.254]
-[mezza_23.754]
-[mezza_30.865]
+[mezza_23.832]
+[mezza_28.888]
 [mezza_28.882]
-[mezza_29.573]
-[mezza_33.054]
-[mezza_26.503]
+[mezza_27.042]
+[mezza_30.114]
+[mezza_24.551]
 [mezza_29.685]
 [mezza_25.465]
 [mezza_29.177]
@@ -203,14 +202,14 @@ Found file in search path: music-drawing-routines.ps -> /home/adams/devstuff/lil
 Found file in search path: lilyponddefs.ps -> /home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/ps/lilyponddefs.ps
 Paper_outputter elapsed time: 0.25 seconds
 Converting to `no4-op10-2-piano.pdf'...
-Preparing Ghostscript command to `/tmp/lilypond-tmp-dba598': << /OutputFile (./lilypond-tmp-ad33b3.pdf) /CompatibilityLevel 1.4 /PageSize [595.28 841.89] /OutputDevice /pdfwrite >> setpagedevice /.setdefaultscreen where { pop .setdefaultscreen } { (Warning: .setdefaultscreen not available) print } ifelse newpath fill (/tmp/lilypond-tmp-ad33b3) (r) file .setsafe run
-Invoking `gs -dNODISPLAY -dNOSAFER -dNOPAUSE -dBATCH -dAutoRotatePages=/None -dPrinted=false /tmp/lilypond-tmp-dba598'...
+Preparing Ghostscript command to `/tmp/lilypond-tmp-848772': << /OutputFile (./lilypond-tmp-fbdf49.pdf) /CompatibilityLevel 1.4 /PageSize [595.28 841.89] /OutputDevice /pdfwrite >> setpagedevice /.setdefaultscreen where { pop .setdefaultscreen } { (Warning: .setdefaultscreen not available) print } ifelse newpath fill (/tmp/lilypond-tmp-fbdf49) (r) file .setsafe run
+Invoking `gs -dNODISPLAY -dNOSAFER -dNOPAUSE -dBATCH -dAutoRotatePages=/None -dPrinted=false /tmp/lilypond-tmp-848772'...
 
 GPL Ghostscript 10.06.0 (2025-09-09)
 Copyright (C) 2025 Artifex Software, Inc.  All rights reserved.
 This software is supplied under the GNU AGPLv3 and comes with NO WARRANTY:
 see the file COPYING for details.
-]/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/scm/lily/lily.scmfnarg: entereing make click. timesig (4 . 4) length 57 
-gc time taken: 0.408333405
-
+]fnarg: entereing make click. timesig (4 . 4) length 57 
+gc time taken: 0.522029047
+/home/adams/devstuff/lilypond/lilypond-2.27.2/share/lilypond/2.27.2/scm/lily/lily.scm
 Success: compilation successfully completed
