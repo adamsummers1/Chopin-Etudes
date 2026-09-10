@@ -1,5 +1,9 @@
-MNT_PREFIX=/home/adams
-#MNT_PREFIX=/mnt/c/Users/adams
+ifeq ($(NAME), Studio)
+	MNT_PREFIX=/mnt/c/Users/adams
+else
+	MNT_PREFIX=/home/adams
+endif
+
 LILYLIBS=$(MNT_PREFIX)/devstuff/repos-lib
 MAINREPODIR=$(MNT_PREFIX)/devstuff/repos
 PYTHONPATH=$(MAINREPODIR)
@@ -20,7 +24,7 @@ all: chopin-op10-1.pdf chopin-op10-1.midi chopin-op10-1.json\
 
 
 %.midi: %.ly
-	lilypond $(LILYFLAGS) -o $(OUTDIR)/$* $< 2>&1 | tee $(OUTDIR)/$*-lilypond.log
+	GUILE_LOAD_PATH=$(GUILE_LOAD_PATH) lilypond $(LILYFLAGS) -o $(OUTDIR)/$* $< 2>&1 | tee $(OUTDIR)/$*-lilypond.log
 
 %.json : %.midi
 	cd $(OUTDIR) && \

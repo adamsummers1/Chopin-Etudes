@@ -1,8 +1,15 @@
-LILYLIBS=/home/adams/devstuff/repos-lib
-MAINREPODIR=/home/adams/devstuff/repos
+ifeq ($(NAME), Studio)
+	MNT_PREFIX=/mnt/c/Users/adams
+else
+	MNT_PREFIX=/home/adams
+endif
+
+LILYLIBS=$(MNT_PREFIX)/devstuff/repos-lib
+MAINREPODIR=$(MNT_PREFIX)/devstuff/repos
 PYTHONPATH=$(MAINREPODIR)
 PLIBDIR=$(MAINREPODIR)/music-learn-library
-LILYFLAGS=--verbose --include=$(LILYLIBS)/esmuflily/ly  --include=$(LILYLIBS)/ekmelos/ly --include=$(MAINREPODIR)/adam-common-lilypond 
+GUILE_LOAD_PATH=$(MAINREPODIR)/adam-common-lilypond
+LILYFLAGS=--verbose --include=$(LILYLIBS)/esmuflily/ly  --include=$(MAINREPODIR)/adam-common-lilypond 
 OUTDIR=./publish
 
 all: chopin-op10-1.pdf chopin-op10-1.midi chopin-op10-1.json\
@@ -10,11 +17,11 @@ all: chopin-op10-1.pdf chopin-op10-1.midi chopin-op10-1.json\
  chopin-op10-7.pdf
 
 %.pdf: %.ly
-	lilypond $(LILYFLAGS) -o $(OUTDIR)/$* $< 2>&1 | tee $(OUTDIR)/$*-lilypond.log
+	GUILE_LOAD_PATH=$(GUILE_LOAD_PATH) lilypond $(LILYFLAGS) -o $(OUTDIR)/$* $< 2>&1 | tee $(OUTDIR)/$*-lilypond.log
 
 
 %.midi: %.ly
-	lilypond $(LILYFLAGS) -o $(OUTDIR)/$* $< 2>&1 | tee $(OUTDIR)/$*-lilypond.log
+	GUILE_LOAD_PATH=$(GUILE_LOAD_PATH) lilypond $(LILYFLAGS) -o $(OUTDIR)/$* $< 2>&1 | tee $(OUTDIR)/$*-lilypond.log
 
 %.json : %.midi
 	cd $(OUTDIR) && \
