@@ -31,24 +31,28 @@ rightHandUpper = {
   \global
   \tempo "Allegro" 4 = 144
   
-  a'16-4^\sempreLegato ais'-3 b'-4 c''-5  cis''-3 d''-4 dis''-3 e''-4  f''-5 fis''-3 g''-4 gis''-5  
-    a''-4 ais''-3 b''-4 c'''-3 |
+  a'16-4^\sempreLegato ais'-3 b'-4 c''-5  cis''-3 d''-4 dis''-3 e''-4  f''-5 fis''-3 g''-4 gis''-5  a''-4 ais''-3 b''-4 c'''-3 |
   cis'''16-3 d'''-4 dis'''-3 e'''-4  f'''-5 e'''-4 dis'''-3 d'''-4  cis'''-3 c'''-5 b''-4 bes''-3  a''-4 gis''-3 b''-5 a''-4 |
   gis''16-3 g''-5 fis''-3 f''-5  e''-4 dis''-3 f''-5 e''-4  dis''-3 d''-4 cis''-3 c''-4  b'-3 c''-4 d''-5 c''-4 |
   b'16-3 c''-4 b'-3 c''-4  b'-3 c''-4 b'-3 c''-4  b'-3 e''-5 dis''-4 d''-5  cis''-4 c''-5 b'-4 bes'-3 |
-  a'16^\sempreLegato ais' b' c''  cis'' d'' dis'' e''  f'' fis'' g'' gis''  a'' ais'' b'' c''' |
-  cis'''16 d''' dis''' e'''  f''' e''' dis''' d'''  cis''' c''' b'' bes''  a'' gis'' b''-5 a''-4 |
-  g''16-5 gis''-3 a''-4 ais''-3  b''-4 c'''-5 b''-4 ais''-5  a''-5 gis''-4 g''-5 fis''-4  
-    eis''-5 fis''-4 g''-5 fis''-4 |
+  a'16-4^\sempreLegato ais'-3 b'-4 c''-5  cis''-3 d''-4 dis''-3 e''-4  f''-5 fis''-3 g''-4 gis''-5  a''-4 ais''-3 b''-4 c'''-3 |
+  cis'''16-3 d'''-4 dis'''-3 e'''-4  f'''-5 e'''-4 dis'''-3 d'''-4  cis'''-3 c'''-5 b''-4 bes''-3  a''-4 gis''-3 b''-5 a''-4 |
+  g''16-5 gis''-3 a''-4 ais''-3  b''-4 c'''-5 b''-4 ais''-5  a''-5 gis''-4 g''-5 fis''-4  eis''-5 fis''-4 g''-5 fis''-4 |
   e''16-3 f''-5 dis''-3 e''-5  d''-4 e''-5 cis''-3 d''-5  c''-4 d''-5 b'-3 c''-5  b'-4 c''-5 ais'-3 b'-5 |
   
   \barNumberCheck 9
-  a'16 ais' b' c''  cis'' d'' dis'' e''  f'' fis'' g'' gis''  a'' ais'' b'' c''' |
-  cis'''16 d''' dis''' e'''  f''' e''' dis''' d'''  cis''' c''' b'' bes''  a'' gis'' b'' a'' |
-  gis''16^\sempreLegato g'' fis'' f''  e'' dis'' f'' e''  dis'' d'' cis'' c''  b' c'' d'' c'' |
-  b'16 c'' b' c''  b' c'' b' c''  b' e'' dis'' d''  cis'' c'' b' bes' |
-  a'16 ais' b' c''  cis'' d'' dis'' e''  f'' fis'' g'' gis''  a'' ais'' b'' c''' |
-  cis'''16 d''' dis''' e'''  f''' e''' dis''' d'''  cis''' c''' b'' bes''  a'' gis'' b'' a'' |
+  a'16-4^\sempreLegato ais'-3 b'-4 c''-5  cis''-3 d''-4 dis''-3 e''-4  f''-5 fis''-3 g''-4 gis''-5  a''-4 ais''-3 b''-4 c'''-3 |
+  cis'''16-3 d'''-4 dis'''-3 e'''-4  f'''-5 e'''-4 dis'''-3 d'''-4  cis'''-3 c'''-5 b''-4 bes''-3  a''-4 gis''-3 b''-5 a''-4 |
+  gis''16-3 g''-5 fis''-3 f''-5  e''-4 dis''-3 f''-5 e''-4  dis''-3 d''-4 cis''-3 c''-4  b'-3 c''-4 d''-5 c''-4 |
+  b'16-3 c''-4 b'-3 c''-4  b'-3 c''-4 b'-3 c''-4  b'-3 e''-5 dis''-4 d''-5  cis''-4 c''-5 b'-4 bes'-3 |
+  a'16-4^\sempreLegato ais'-3 b'-4 c''-5  cis''-3 d''-4 dis''-3 e''-4  f''-5 fis''-3 g''-4 gis''-5  a''-4 ais''-3 b''-4 c'''-3 |
+  cis'''16-3 d'''-4 dis'''-3 e'''-4  f'''-5 e'''-4 dis'''-3 d'''-4  cis'''-3 c'''-5 b''-4 bes''-3  a''-4 gis''-3 b''-5 a''-4 |
+  %a'16 ais' b' c''  cis'' d'' dis'' e''  f'' fis'' g'' gis''  a'' ais'' b'' c''' |
+  %cis'''16 d''' dis''' e'''  f''' e''' dis''' d'''  cis''' c''' b'' bes''  a'' gis'' b'' a'' |
+  %gis''16^\sempreLegato g'' fis'' f''  e'' dis'' f'' e''  dis'' d'' cis'' c''  b' c'' d'' c'' |
+  %b'16 c'' b' c''  b' c'' b' c''  b' e'' dis'' d''  cis'' c'' b' bes' |
+  %a'16 ais' b' c''  cis'' d'' dis'' e''  f'' fis'' g'' gis''  a'' ais'' b'' c''' |
+  %cis'''16 d''' dis''' e'''  f''' e''' dis''' d'''  cis''' c''' b'' bes''  a'' gis'' b'' a'' |
   bes''16-3 b''-4 c'''-5 cis'''-3  \ottava 1 d'''-4 dis'''-3 e'''-4 f'''-5  e'''-4 f'''-5 fis'''-3 g'''-5
     gis'''-3 a'''-4 ais'''-3 b'''-4 |
   a'''16-5 gis'''-4 g'''-5 fis'''-4  f'''-5 e'''-4 es'''-3 d'''-5  cis'''-4 c'''-5 b''-4 bes''-3
@@ -98,14 +102,20 @@ rightHandUpper = {
     >>
     a''16 b'' g'' a''  f'' g'' e'' f'' |
   d''16 e'' c'' d''  b' c'' a' b'  gis'^\sempreLegato f'-3 dis'-2 e'-3  f'-4 fis'-3 g'-4 gis'-3 |
-  a'16 ais' b' c''  cis'' d'' dis'' e''  f'' fis'' g'' gis''  a'' ais'' b'' c''' |
-  cis'''16 d''' dis''' e'''  f''' e''' dis''' d'''  cis''' c''' b'' bes''  a'' gis'' b'' a'' |
-  gis''16 g'' fis'' f''  e'' dis'' f'' e''  dis'' d'' cis'' c''  b' c'' d'' c'' |
-  b'16 c'' b' c''  b' c'' b' c''  b' e'' dis'' d''  cis'' c'' b' bes' |
-  a'16 ais' b' c''  cis'' d'' dis'' e''  f'' fis'' g'' gis''  a'' ais'' b'' c''' |
-  
+  a'16-4^\sempreLegato ais'-3 b'-4 c''-5  cis''-3 d''-4 dis''-3 e''-4  f''-5 fis''-3 g''-4 gis''-5  a''-4 ais''-3 b''-4 c'''-3 |
+  cis'''16-3 d'''-4 dis'''-3 e'''-4  f'''-5 e'''-4 dis'''-3 d'''-4  cis'''-3 c'''-5 b''-4 bes''-3  a''-4 gis''-3 b''-5 a''-4 |
+  gis''16-3 g''-5 fis''-3 f''-5  e''-4 dis''-3 f''-5 e''-4  dis''-3 d''-4 cis''-3 c''-4  b'-3 c''-4 d''-5 c''-4 |
+  b'16-3 c''-4 b'-3 c''-4  b'-3 c''-4 b'-3 c''-4  b'-3 e''-5 dis''-4 d''-5  cis''-4 c''-5 b'-4 bes'-3 |
+  a'16-4^\sempreLegato ais'-3 b'-4 c''-5  cis''-3 d''-4 dis''-3 e''-4  f''-5 fis''-3 g''-4 gis''-5  a''-4 ais''-3 b''-4 c'''-3 |
   \barNumberCheck 41
-  cis'''16 d''' dis''' e'''  f''' e''' dis''' d'''  cis''' c''' b'' bes''  a'' gis'' b'' a'' |
+  cis'''16-3 d'''-4 dis'''-3 e'''-4  f'''-5 e'''-4 dis'''-3 d'''-4  cis'''-3 c'''-5 b''-4 bes''-3  a''-4 gis''-3 b''-5 a''-4 |
+  %a'16 ais' b' c''  cis'' d'' dis'' e''  f'' fis'' g'' gis''  a'' ais'' b'' c''' |
+  %cis'''16 d''' dis''' e'''  f''' e''' dis''' d'''  cis''' c''' b'' bes''  a'' gis'' b'' a'' |
+  %gis''16 g'' fis'' f''  e'' dis'' f'' e''  dis'' d'' cis'' c''  b' c'' d'' c'' |
+  %b'16 c'' b' c''  b' c'' b' c''  b' e'' dis'' d''  cis'' c'' b' bes' |
+  %a'16 ais' b' c''  cis'' d'' dis'' e''  f'' fis'' g'' gis''  a'' ais'' b'' c''' |
+  
+  %cis'''16 d''' dis''' e'''  f''' e''' dis''' d'''  cis''' c''' b'' bes''  a'' gis'' b'' a'' |
   bes''16-3 b''-4 c'''-5 cis'''-3  \ottava 1 d'''-4 dis'''-3 e'''-4 f'''-5  e'''-4 f'''-5 fis'''-3 g'''-5
     gis'''-3 a'''-4 ais'''-3 b'''-4 |
   a'''16-5 gis'''-4 g'''-5 fis'''-4  f'''-5 e'''-4 es'''-3 d'''-5  \ottava 0 cis'''-4 c'''-5 b''-4 bes''-3
@@ -197,6 +207,7 @@ leftHand = {
   \global
   \clef bass
   
+  \stemNeutral\tieNeutral\slurNeutral
   a,8-. r <e a c'>-. r a,-. r <f a d'>-. r |
   <a,, a,>8-. r <e a c'>-. r <a c' e'>-. r r4 |
   e,8-. r <e b d'>-. r a,-. r <e a c'>-. r |

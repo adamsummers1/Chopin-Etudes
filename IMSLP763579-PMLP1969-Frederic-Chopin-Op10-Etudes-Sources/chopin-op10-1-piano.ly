@@ -1,4 +1,3 @@
-
 \version "2.27.2"
 \language "nederlands"
 \include "dev-tools.ly"
@@ -7,6 +6,20 @@
 #(load-from-path "laban-build.scm")
 
 #(load-from-path "click-track-tools.scm")
+
+#(define (note-with-fingering? m)
+   (and (music-is-of-type? m 'note-event)
+        (let ((arts (ly:music-property m 'articulations)))
+          (and arts
+               (any
+                (lambda (a)
+                  (music-is-of-type? a 'fingering-event))
+                arts)))))
+
+#(define (context-specifying-hand? m)
+    (and (music-is-of-type? m 'context-specification) 
+          (music-is-of-type? (ly:music-property m 'element) 'layout-instruction-event)
+          (eq? (ly:music-property (ly:music-property m 'element) 'symbol) 'hand)))
 
 legatoMark = {
   \once \override Score.RehearsalMark.outside-staff-priority = 900
@@ -28,56 +41,38 @@ rightHand = {
   \tempo "Allegro" 4 = 176
   
   \change Staff="lower" \stemUp r16 c-1 g-2 c'-4 \change Staff="upper" \stemNeutral e'->-5
-    c'-1 g'-2 c''-4  e''->-5 c'' g'' c'''  \ottava 1 e'''-> c''' g''' c'''' |
-  e''''16-> c'''' g''' c'''  \ottava 0 e'''-> c''' g'' c''  e''-> c'' g' c'  e'-> c' \change Staff="lower" g c |
-  \stemUp r16 c-1 a-2 c'-3  \change Staff="upper" \stemNeutral f'-5 c'-1 a'-2 c''-3  f'' c'' a'' c''' 
-    \ottava 1 f''' c''' a''' c'''' |
-  e''''16-5 c''''-4 a'''-2 c'''-1  \ottava 0 e'''-5 c''' a'' c''  e'' c'' a' c'  e' c' \change Staff="lower" a c |
-  \stemUp r16 b, g b-4 \change Staff="upper" \stemNeutral d'-5 b g' b'  d'' b' g'' b''
-    \ottava 1 d''' b'' g''' a''' |
-  d''''16-5 a'''-3 fis'''-2 c'''-1  \ottava 0 d'''-5 a''-3 fis''-2 c''-1  d'' a' fis' c'
-    \change Staff="lower" \stemUp d' a fis c |
-  r16 c-1 f-2 as-3  \change Staff="upper" \stemNeutral d'-5 c'-1 f' as'  d'' c'' f'' as''  
-    \ottava 1 d''' c''' f''' as''' |
-  d''''16-5 g'''-3 f'''-2 b''-1  \ottava 0 d'''-5 g'' f'' b'  d'' g' f' b  
-    \change Staff="lower" \stemUp dis'^> g f b, | 
+    c'-1 g'-2 c''-4  e''->-5 c''-1 g''-2 c'''-4  \ottava 1 e'''->-5 c'''-1 g'''-2 c''''-4 |
+  e''''16->-5 c''''-4 g'''-2 c'''-1  \ottava 0 e'''->-5 c'''-4 g''-2 c''-1  e''->-5 c''-4 g'-2 c'-1  e'->-5 c'-4 \change Staff="lower" g-2 c-1 |
+  \stemUp r16 c-1 a-2 c'-3  \change Staff="upper" \stemNeutral f'-5 c'-1 a'-2 c''-3  f''-5 c''-1 a''-2 c'''-3 \ottava 1 f'''-5 c'''-1 a'''-2 c''''-3 |
+  e''''16-5 c''''-4 a'''-2 c'''-1  \ottava 0 e'''-5 c'''-4 a''-2 c''-1  e''-5 c''-4 a'-2 c'-1  e'-5 c'-4 \change Staff="lower" a-2 c-1 |
+  \stemUp r16 b,-1 g-2 b-4 \change Staff="upper" \stemNeutral d'-5 b-1 g'-2 b'-4  d''-5 b'-1 g''-2 b''-4 \ottava 1 d'''-5 b''-1 g'''-2 a'''-4 |
+  d''''16-5 a'''-3 fis'''-2 c'''-1  \ottava 0 d'''-5 a''-3 fis''-2 c''-1  d''-5 a'-3 fis'-2 c'-1 \change Staff="lower" \stemUp d'-5 a-3 fis-2 c-1 |
+  r16 c-1 f-2 as-3  \change Staff="upper" \stemNeutral d'-5 c'-1 f'-2 as'-3  d''-5 c''-1 f''-2 as''-3  \ottava 1 d'''-5 c'''-1 f'''-2 as'''-3 |
+  d''''16-5 g'''-3 f'''-2 b''-1  \ottava 0 d'''-5 g''-3 f''-2 b'-1  d''-5 g'-3 f'-2 b-1  \change Staff="lower" \stemUp dis'^> g-5 f-3 b,-2 | 
     
   \barNumberCheck 9
-  r16 c g c'  \change Staff="upper" \stemNeutral e' c' g' c''  e'' c'' g'' c'''  \ottava 1 e''' c''' g''' c'''' |
-  e''''16 c'''' g''' c'''  \ottava 0 e''' c''' g'' c''  e'' c'' g' c'  e' c' \change Staff="lower" g c |
-  \stemUp r16 c-1 f-2 c'-4  \change Staff="upper" \stemNeutral f'-5 c'-1 f'-2 c''-4  f''-5 c'' f'' c'''
-    \ottava 1 f''' c''' f''' c'''' |
-  e''''16-5 c''''-4 fis'''-2 c'''-1  \ottava 0 e'''-5 c''' fis'' c''  e'' c'' fis' c'  
-    e' c' \change Staff="lower" fis c |
-  \stemUp r16 c-1 g-2 c'-4  \change Staff="upper" \stemNeutral d'-5 c' g' c''  d'' c'' g'' c'''
-    \ottava 1 d''' c''' g''' c'''' |
+  r16 c-1 g-2 c'-4  \change Staff="upper" \stemNeutral e'-5 c'-1 g'-2 c''-4  e''-5 c''-1 g''-2 c'''-4  \ottava 1 e'''-5 c'''-1 g'''-2 c''''-4 |
+  e''''16-5 c''''-4 g'''-2 c'''-1  \ottava 0 e'''-5 c'''-4 g''-2 c''-1  e''-5 c''-4 g'-2 c'-1  e'-5 c'-4 \change Staff="lower" g-2 c-1 |
+  \stemUp r16 c-1 f-2 c'-4  \change Staff="upper" \stemNeutral f'-5 c'-1 f'-2 c''-4  f''-5 c''-1 f''-2 c'''-4 \ottava 1 f'''-5 c'''-1 f'''-2 c''''-4 |
+  e''''16-5 c''''-4 fis'''-2 c'''-1  \ottava 0 e'''-5 c'''-4 fis''-2 c''-1  e''-5 c''-4 fis'-2 c'-1  e'-5 c'-4 \change Staff="lower" fis-2 c-1 |
+  \stemUp r16 c-1 g-2 c'-4  \change Staff="upper" \stemNeutral d'-5 c' g' c''  d'' c'' g'' c''' \ottava 1 d''' c''' g''' c'''' |
   d''''16 b''' g''' b''  \ottava 0 d''' b'' g'' b'  d'' b' g' b  d' b \change Staff="lower" g b, |
-  \stemUp r16 d-1 g-2 d'-4  \change Staff="upper" \stemNeutral e'-5 d' g' d''  e'' d'' g'' d'''
-    \ottava 1 e''' d''' g''' d'''' |
+  \stemUp r16 d-1 g-2 d'-4  \change Staff="upper" \stemNeutral e'-5 d' g' d''  e'' d'' g'' d''' \ottava 1 e''' d''' g''' d'''' |
   e''''16-5 c''''-4 g'''-2 c'''-1  \ottava 0 e'''-5 c''' g'' c''  e'' c'' g' c'  e' c' \change Staff="lower" g c |
   
   \barNumberCheck 17
-  \stemUp r16 e-1 c'-2 e'-4  \change Staff="upper" \stemNeutral f'-5 e' c'' e''  f'' e'' c''' e'''
-    \ottava 1 f''' e''' c'''' e'''' |
-  f''''16-5 d''''-4 b'''-2 d'''-1  \ottava 0 f'''-5 d''' b'' d''  f'' d'' b' d'  f' d' b \change Staff="lower" d
-  \stemUp r16 d-1 b-2 d'-4  \change Staff="upper" \stemNeutral e'-5 d'-1 b' d''  e'' d'' b'' d'''
+  \stemUp r16 e-1 c'-2 e'-4  \change Staff="upper" \stemNeutral f'-5 e' c'' e''  f'' e'' c''' e''' \ottava 1 f''' e''' c'''' e'''' |
+  f''''16-5 d''''-4 b'''-2 d'''-1  \ottava 0 f'''-5 d''' b'' d''  f'' d'' b' d'  f' d' b \change Staff="lower" d \stemUp r16 d-1 b-2 d'-4  \change Staff="upper" \stemNeutral e'-5 d'-1 b' d''  e'' d'' b'' d'''
     \ottava 1 e''' d''' b''' d'''' |
   e''''16-5 c''''-2 a'''-2 c'''-1  \ottava 0 e'''-5 c''' a'' c'' e'' c'' a' c'  e' c' \change Staff="lower" a c |
-  \stemUp r16 c-1 a-2 c'-4  \change Staff="upper" \stemNeutral e'-5 c'-1 a' c''  e'' c'' a'' c'''
-    \ottava 1 e''' c''' a''' c'''' |
-  dis''''16-5 b'''-3 a'''-2 b''-1  \ottava 0 dis'''-5 b''-3 a''-2 b'-1  dis'' b' a' b
-    \change Staff="lower" \stemUp dis' b a b,
-  r16 b,16-1 a-2 b-3  \change Staff="upper" \stemNeutral e'-5 b-1 a'-2 b'-3  e''-5 b' a'' b''  
+  \stemUp r16 c-1 a-2 c'-4  \change Staff="upper" \stemNeutral e'-5 c'-1 a' c''  e'' c'' a'' c''' \ottava 1 e''' c''' a''' c'''' |
+  dis''''16-5 b'''-3 a'''-2 b''-1  \ottava 0 dis'''-5 b''-3 a''-2 b'-1  dis'' b' a' b \change Staff="lower" \stemUp dis' b a b, r16 b,16-1 a-2 b-3  \change Staff="upper" \stemNeutral e'-5 b-1 a'-2 b'-3  e''-5 b' a'' b''  
     \ottava 1 e''' b'' a''' b''' |
-  e''''16-5 b'''-3 gis'''-2 b''-1  \ottava 0 e'''-5 b''-3 gis'' b'  e'' b' gis' b  
-    e' b \change Staff="lower" gis b, |
+  e''''16-5 b'''-3 gis'''-2 b''-1  \ottava 0 e'''-5 b''-3 gis'' b'  e'' b' gis' b  e' b \change Staff="lower" gis b, |
     
   \barNumberCheck 25
-  \stemUp r16 e-1 a-2 cis'-3  \change Staff="upper" \stemNeutral g'-1 e' a' cis''  g'' e'' a'' cis'''  
-    g''' cis''' a'' e'' |
-  g'''16-5 c'''-3 a''-2 e''-1  g'' c'' a' e'  g' c' \change Staff="lower" a e
-    \change Staff="upper" fis' c' \change Staff="lower" a d
-  \stemUp r16 d-1 g-2 c'-3  \change Staff="upper" \stemNeutral f'-5 d'-1 g'-2 c''-4  f''-5 d'' g'' c''' 
+  \stemUp r16 e-1 a-2 cis'-3  \change Staff="upper" \stemNeutral g'-5 e' a' cis''  g'' e'' a'' cis'''  g''' cis''' a'' e'' |
+  g'''16-5 c'''-3 a''-2 e''-1  g'' c'' a' e'  g' c' \change Staff="lower" a e \change Staff="upper" fis' c' \change Staff="lower" a d \stemUp r16 d-1 g-2 c'-3  \change Staff="upper" \stemNeutral f'-5 d'-1 g'-2 c''-4  f''-5 d'' g'' c''' 
     \ottava 1 f''' d''' g''' c'''' |
   f''''16-5 b'''-3 g'''-2 d'''-1  \ottava 0 f'''-5 b'' g'' d''  f'' b' g' d'  
     \change Staff="lower" \stemUp f' b g d |
@@ -151,7 +146,7 @@ rightHand = {
   \stemUp r16 b,-1 gis-2 b-3  \change Staff="upper" \stemNeutral e'-5 b-1 gis'-2 b'-3  
     e''-5 b' gis'' b''  \ottava 1 e''' b'' gis''' b''' |
   e''''16-5 b'''-3 gis'''-2 b''-1  \ottava 0 e''' b'' gis'' b'  e'' b' gis' b  e' b \change Staff="lower" gis b, |
-  \stemUp r16 d-1 a-2 c'-5  \change Staff="upper" \stemNeutral f'-5 d' a' c''  f'' d'' a'' c'''
+  \stemUp r16 d-1 a-2 c'-4  \change Staff="upper" \stemNeutral f'-5 d' a' c''  f'' d'' a'' c'''
     \ottava 1 f''' d''' a''' c'''' |
   f''''16-5 b'''-3 g'''-2 d'''-1  \ottava 0 f''' b'' g'' d''  f'' b' g' d'  f' b \change Staff="lower" g d |
   \stemUp r16 c-1 g-2 c'-4  \change Staff="upper" \stemNeutral e'-5 c'-1 g' c'' 
@@ -176,6 +171,7 @@ rightHand = {
   \change Staff="upper" R1\fermata |
   \bar "|."
 }
+
 
 leftHand = {
   \set Voice.hand = #'left
@@ -417,6 +413,75 @@ etude-one-header = \header {
   opus = "Opus 10 No 1"
   tagline = \date
 }
+
+rhca = #(ly:music-deep-copy rightHand)
+lrhca = #(split-long-notes (my-transform-voice 'right 5 rhca ))
+lrha = #(merge-n-voices-chords lrhca)
+rhcb = #(ly:music-deep-copy rightHand)
+lrhcb = #(split-long-notes (my-transform-voice 'right 1 rhcb ))
+lrhb = #(merge-n-voices-chords lrhcb)
+rhcc = #(ly:music-deep-copy rightHand)
+lrhc = #(merge-n-voices-chords (split-long-notes (my-transform-voice 'right 4 rhcc )))
+lrhd = #(merge-n-voices-chords (split-long-notes (my-transform-voice 'right 2 (ly:music-deep-copy rightHand) )))
+lrhe = #(merge-n-voices-chords (split-long-notes (my-transform-voice 'right 3 (ly:music-deep-copy rightHand) )))
+
+labRh = 
+  \new Staff = "lab_rh"  \with {
+%      %instrumentName = "lab_RH"
+      fontSize = #-2
+      \override StaffSymbol.staff-space = #(magstep -2)
+      \override Stem.stencil = ##f
+      \override Flag.stencil = ##f
+      \override BarLine.stencil = ##f
+      \override SpanBar.stencil = ##f
+      \override TimeSignature.stencil = ##f
+      \override Dots.stencil = ##f
+      \override TupletBracket.stencil = ##f
+      \override TupletNumber.stencil = ##f
+%      % This staff will NOT appear in MIDI
+%      %\consists "Staff_performer"
+      \remove "Staff_performer"
+      \consists #(make-performer)
+      \autoBeamOff
+\override Staff.displayHand = #'right
+    }
+<< {\global\slurUp \lrha } \\
+{\override NoteHead.color = cyan \override Slur.color = cyan \global\slurUp\lrhc } \\
+{\override NoteHead.color = red \override Slur.color = red \global\slurUp\lrhe } \\
+{\override NoteHead.color = green \override Slur.color = green \global\slurDown\lrhd } \\
+ {\global\slurDown \lrhb } >>
+
+%lhca = #(ly:music-deep-copy leftHand)
+%llhca = #(split-long-notes (my-transform-voice 'left 5 lhca ))
+%llha = #(merge-n-voices-chords llhca)
+%lhcb = #(ly:music-deep-copy leftHand)
+%llhcb = #(split-long-notes (my-transform-voice 'left 1 lhcb ))
+%llhb = #(merge-n-voices-chords llhcb)
+
+%labRh = 
+%  \new Staff = "lab_lh"  \with {
+%      fontSize = #-2
+%      \override StaffSymbol.staff-space = #(magstep -2)
+%      \override Stem.stencil = ##f
+%      \override Flag.stencil = ##f
+%      \override BarLine.stencil = ##f
+%      \override SpanBar.stencil = ##f
+%      \override TimeSignature.stencil = ##f
+%      \override Dots.stencil = ##f
+%      \override TupletBracket.stencil = ##f
+%      \override TupletNumber.stencil = ##f
+%%%      % This staff will NOT appear in MIDI
+%%      %\consists "Staff_performer"
+ %     \remove "Staff_performer"
+ %     \consists #(make-performer)
+ %     \autoBeamOff
+%\override Staff.displayHand = #'left
+%    }
+%<<
+%    \new Voice = "lablh" <<
+% {\global\slurUp \llhb } \\ {\global\slurDown \llha }
+%>>
+%>>
 
 etude-one-music = {
   \new PianoStaff <<

@@ -23,7 +23,7 @@ global = {
 
 rh_a = {
 \voiceOne\stemNeutral\slurNeutral
-  \tempo "Allego"  4 = 132
+  \tempo "Allegro"  4 = 132
   \clef "treble"
   \global
   \tupletSpan 4
@@ -46,102 +46,102 @@ rh_a = {
     <g' b'>-. <f' a'>-. <a' f''>-.
     |
     <gis' e''>-. <e' a'>-. <gis' e''>-.
-    <dis' b'>-. <a' dis''>-. <dis' a'>-.
+    <dis' b'>-. <ais' dis''>-. <dis' a'>-.
   }
   <gis' e''>4--
-  << {\omit TupletNumber \tuplet 3/2 { e'8 fis' gis' }} \\ { e'4 } >>
+  << {\omit TupletNumber \tuplet 3/2 { e'8 fis'-. gis'-. }} \\ { e'4-- } >>
   |
-  <<{\omit TupletNumber\tuplet 3/2 { c''8 <g' d''> <f' dis''>} } \\ { a'4} >>
+  <<{\omit TupletNumber\tuplet 3/2 { c''8-. <g' d''>-. <f' dis''>-. } } \\ { a'4-- } >>
 
   \tuplet 3/2 {
-    <e' e''>8 <c'' fis''> <b' gis''>
-    <a' a''> <f'' b''> <e'' c'''>
-    <d'' d'''> <a'' e'''> <gis'' f'''>
+    <e' e''>8-. <c'' fis''>-. <b' gis''>-.
+    <a' a''>-. <f'' b''>-. <e'' c'''>-.
+    <d'' d'''>-. <a'' e'''>-. <gis'' f'''>-.
     |
-    <a'' e'''> <e''' c''''> <d''' b'''>
-    <c''' a'''> <a'' c'''> <gis'' f'''>
-    <a'' e'''> <e'' a''> <gis'' d'''>
-    <a'' c'''> <c'' e''> <dis'' fis''>
+    <a'' e'''>-. <e''' c''''>-. <d''' b'''>-.
+    <c''' a'''>-. <a'' c'''>-. <gis'' f'''>-.
+    <a'' e'''>-. <e'' a''>-. <gis'' d'''>-.
+    <a'' c'''>-. <c'' e''>-. <dis'' fis''>-.
     |
-    <e'' g''> <b'' g'''> <a'' fis'''>
-    <g'' e'''> <dis'' fis''> <e'' g''>
-    <eis'' c'''> <fis'' b''> <a'' fis'''>
-    <cis'' g''> <d'' fis''> <dis'' b''>
+    <e'' g''>-. <b'' g'''>-. <a'' fis'''>-.
+    <g'' e'''>-. <dis'' fis''>-. <e'' g''>-.
+    <eis'' c'''>-. <fis'' b''>-. <a'' fis'''>-.
+    <cis'' g''>-. <d'' fis''>-. <dis'' b''>-.
   }
   | % bar 7
-  <e'' e'''>8 r8
+  <e'' e'''>8-. r8
   <<
-    { \omit TupletNumber \tupletSpan 4 \tuplet 3/2 { g'8 gis' b' gis' a' e'' e' <dis' fis'> <d' gis'> }}
+    { \omit TupletNumber \tupletSpan 4 \tuplet 3/2 { g'8-. gis'-. b'-. gis'-. a'-. e''-. e' <dis' fis'>-. <d' gis'>-. }}
     \\
-    { f'4 ( e') e' }
+    { f'4 ( e') e'-- }
   >>
   | % bar 8
-  << {\acciaccatura b'8 \hideNotes c''4 } \\ {\omit TupletNumber\tuplet 3/2 { <c'' a'>8 <g' d''> <f' dis''> }} >>
-  \tuplet 3/2 { <e' e''>8 <c'' fis''> <b' gis''>}
-  << { \acciaccatura gis''8 \hideNotes a''4 } \\ {\omit TupletNumber\tuplet 3/2 { <a'' a' >8 <f'' b''> <e'' c'''>}} >>
-  \tuplet 3/2 {   <d'' d'''>8 <a'' e'''> <gis'' f'''>}
+  << {\acciaccatura b'8 \hideNotes c''4 } \\ {\omit TupletNumber\tuplet 3/2 { <c'' a'>8-. <g' d''>-. <f' dis''>-. }} >>
+  \tuplet 3/2 { <e' e''>8-. <c'' fis''>-. <b' gis''>-. }
+  << { \acciaccatura gis''8 \hideNotes a''4 } \\ {\omit TupletNumber\tuplet 3/2 { <a'' a' >8-. <f'' b''>-. <e'' c'''>-. }} >>
+  \tuplet 3/2 {   <d'' d'''>8-. <a'' e'''>-. <gis'' f'''>-. }
   | % bar 9
-  << { \acciaccatura dis'''8 \hideNotes e'''4 } \\ { \omit TupletNumber\tuplet 3/2 { <e''' a'' >8 \ottava #1 <e''' c''''> <d''' b'''>}} >>
-  \tuplet 3/2 { <c''' a'''>8 \ottava #0 <a'' c'''> <gis'' f'''> }
-  << { \acciaccatura f'''8 \once\hideNotes e'''4 } \\ {\omit TupletNumber \tuplet 3/2 {<e''' a'' >8  <e'' a''> <gis'' d'''>}} >>
-  << { \acciaccatura d'''8 \hideNotes c'''4 } \\ {\omit TupletNumber \tuplet 3/2 {<c''' a'' >8 <c'' e''> <dis'' fis''>}} >>
+  << { \acciaccatura dis'''8 \hideNotes e'''4 } \\ { \omit TupletNumber\tuplet 3/2 { <e''' a'' >8-. \ottava #1 <e''' c''''>-. <d''' b'''>-. }} >>
+  \tuplet 3/2 { <c''' a'''>8-. \ottava #0 <a'' c'''>-. <gis'' f'''>-. }
+  << { \acciaccatura f'''8 \once\hideNotes e'''4 } \\ {\omit TupletNumber \tuplet 3/2 {<e''' a'' >8-.  <e'' a''>-. <gis'' d'''>-. }} >>
+  << { \acciaccatura d'''8 \hideNotes c'''4 } \\ {\omit TupletNumber \tuplet 3/2 {<c''' a'' >8-. <c'' e''>-. <dis'' fis''>-. }} >>
   | % bar 10
-  \tuplet 3/2 {   <e'' gis''>8 <dis'' a''> <d'' b''>}
-  << { \acciaccatura f''8\hideNotes e''4 } \\ {\omit TupletNumber \tuplet 3/2 { <e'' c'' >8 <b' d''> <e'' e'''>}} >>
-  \tuplet 3/2 {  <b' d''>8 <a' c''> <e'' e'''> }
-  << { \acciaccatura c''8 \hideNotes b'4 } \\ {\omit TupletNumber \tuplet 3/2 {<b' g' >8 <f' a'> <a' f''>}} >>
+  \tuplet 3/2 {   <e'' gis''>8-. <dis'' a''>-. <d'' b''>-. }
+  << { \acciaccatura f''8\hideNotes e''4 } \\ {\omit TupletNumber \tuplet 3/2 { <e'' c'' >8-. <b' d''>-. <e'' e'''>-.}} >>
+  \tuplet 3/2 {  <b' d''>8-. <a' c''>-. <e'' e'''>-. }
+  << { \acciaccatura c''8 \hideNotes b'4 } \\ {\omit TupletNumber \tuplet 3/2 {<b' g' >8-. <f' a'>-. <a' f''>-. }} >>
   | % bar 11
   \tuplet 3/2{
-    <gis' e''>8 <e' a'> <gis' e''>
-    <dis' b'> <a' dis''> <dis' a'>
+    <gis' e''>8-. <e' a'>-. <gis' e''>-.
+    <dis' b'>-. <a' dis''>-. <dis' ais'>-.
   }
-  < e'' gis' >4
-  <<{ \omit TupletNumber\tuplet 3/2 { e'8 fis' gis'}} \\ { \acciaccatura dis' e'4 }>> | % bar 12
-  << {\acciaccatura b'8 \hideNotes c''4 } \\ {\omit TupletNumber\tuplet 3/2 { <c'' a'>8 <g' d''> <f' dis''> }} >>
-  \tuplet 3/2 { <e' e''> <c'' fis''> <b' gis''> }
-  << { \acciaccatura gis''8 \hideNotes a''4 } \\ {\omit TupletNumber\tuplet 3/2 { <a'' a' >8 <f'' b''> <e'' c'''>}} >>
-  \tuplet 3/2 {   <d'' d'''>8 <a'' e'''> <gis'' f'''>} | % bar 13
-  << { \acciaccatura dis'''8 \hideNotes e'''4 } \\ {\omit TupletNumber \tuplet 3/2 { <e''' a'' >8 \ottava #1 <e''' c''''> <d''' b'''>}} >>
+  < e''-- gis' >4
+  <<{ \omit TupletNumber\tuplet 3/2 { e'8-. fis'-. gis'-.}} \\ { \acciaccatura dis' e'4 }>> | % bar 12
+  << {\acciaccatura b'8 \hideNotes c''4 } \\ {\omit TupletNumber\tuplet 3/2 { <c'' a'>8-. <g' d''>-. <f' dis''>-. }} >>
+  \tuplet 3/2 { <e' e''>-. <c'' fis''>-. <b' gis''>-. }
+  << { \acciaccatura gis''8 \hideNotes a''4 } \\ {\omit TupletNumber\tuplet 3/2 { <a'' a' >8-. <f'' b''>-. <e'' c'''>-. }} >>
+  \tuplet 3/2 {   <d'' d'''>8-. <a'' e'''>-. <gis'' f'''>-. } | % bar 13
+  << { \acciaccatura dis'''8 \hideNotes e'''4 } \\ {\omit TupletNumber \tuplet 3/2 { <e''' a'' >8-. \ottava #1 <e''' c''''>-. <d''' b'''>-. }} >>
   \tuplet 3/2 {
-    <c''' a'''>8 \ottava #0 <a'' c'''> <gis'' f'''>
-    <a'' e'''> \ottava #1 <dis''' fis'''> <d''' gis'''> <cis''' a'''> <gis''' b'''> <g''' cis''''>
+    <c''' a'''>8-. \ottava #0 <a'' c'''>-. <gis'' f'''>-.
+    <a'' e'''>-. \ottava #1 <dis''' fis'''>-. <d''' gis'''>-. <cis''' a'''>-. <gis''' b'''>-. <g''' cis''''>-.
   }  | % bar 14
   <<
-    { \omit TupletNumber\tupletSpan 4 \tuplet 3/2 { <f''' d''''>8 <bes''' d''''> <e'''' a'''> f'''' <f''' d''''> <d''' bes'''>  <b'' gis'''> <e''' gis'''> <dis''' a'''> b''' gis''' e'''} }
+    { \omit TupletNumber\tupletSpan 4 \tuplet 3/2 { <f''' d''''>8-. <bes''' d''''>-. <e'''' a'''>-. f''''-. <f''' d''''>-. <d''' bes'''>-.  <b'' gis'''>-. <e''' gis'''>-. <dis''' a'''>-. b'''-. gis'''-. e'''-.} }
     \\ { s4  gis'''4 s d'''}
   >> | % bar 15
   \tuplet 3/2 {
-    <e'''' e'''>8 <e''' c''''> <c''' e'''> <c''' a'''> <a'' c'''> <a'' e'''> <a'' a'''> <a'' e'''> <e'' a''> <e'' c'''> <c'' e''> <c'' a''>  \ottava #0 | % bar 16
-    <d'' bes''> <ges' a'> <f' bes'> <bes' f''> <a' cis''> <bes' d''>
-    <a' f'' a''> <e'' gis''> <dis'' a''> <e'' gis'' e'''> <a'' dis'''> <gis'' e'''> | % bar 17
-    <a'' c''' a'''> <a'' c'''> <a'' e'''> <e'' a''> <e'' c'''> <d'' b''>
-  } <c'' a''>4 r4 | % bar 18
+    <e'''' e'''>8-. <e''' c''''>-. <c''' e'''>-. <c''' a'''>-. <a'' c'''>-. <a'' e'''>-. <a'' a'''>-. <a'' e'''>-. <e'' a''>-. <e'' c'''>-. <c'' e''>-. <c'' a''>-.  \ottava #0 | % bar 16
+    <d'' bes''>-. <ges' a'>-. <f' bes'>-. <bes' f''>-. <a' cis''>-. <bes' d''>-.
+    <a' f'' a''>-. <e'' gis''>-. <dis'' a''>-. <e'' gis'' e'''>-. <a'' dis'''>-. <gis'' e'''>-. | % bar 17
+    <a'' c''' a'''>-. <a'' c'''>-. <a'' e'''>-. <e'' a''>-. <e'' c'''>-. <d'' b''>-.
+  } <c'' a''>4-- r4 | % bar 18
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \tuplet 3/2 {
-    <fis' a'>8 <g' bes'> <g' e''> <c'' a''> <bes' g''> <g' des''> <a' c''>
-    <dis'' d'''> <e'' des'''> <f'' c'''> <c'' a''> <bes' f''> | % bar 19
-    <fis' a'> <g' bes'> <g' e''> <bes' g''> <fis' des''> <g' c''>
-    <aes' aes''> <des'' e''> <c'' f''> <bes' e''> <a' f''> <g' bes'> | % bar 20
-    <gis' b'> <a' c''> <c'' a''>
+    <fis' a'>8-. <g' bes'>-. <g' e''>-. <c'' a''>-. <bes' g''>-. <g' des''>-. <a' c''>-.
+    <dis'' d'''>-. <e'' des'''>-. <f'' c'''>-. <c'' a''>-. <bes'? f''>-. | % bar 19
+    <fis' a'>-. <g' bes'>-. <g' e''>-. <bes' g''>-. <fis' des''>-. <g' c''>-.
+    <aes' aes''>-. <des'' e''>-. <c'' f''>-. <bes' e''>-. <aes' f''>-. <g' bes'?>-. | % bar 20
+    <gis' b'>-. <a' c''>-. <c'' a''>-.
   }
-  << { \acciaccatura  d'''8 \hideNotes  c'''4 } \\ {\omit TupletNumber \tuplet 3/2 { <ees'' c'''>8 <d'' bes''> <c'' a''>} } >>
-  \tuplet 3/2 { <bes' g''>8 <ees'' fis''> <d'' g''>}
-  << { \acciaccatura g''8 \hideNotes f''4 } \\  {\omit TupletNumber \tuplet 3/2 { <c'' f''>8 <bes' ees''> <a' c''> } } >> | % bar 21
-  \tuplet 3/2 { <gis' b'>8 <a' c''> <fis' a'> }
-  << { \acciaccatura f''8 \hideNotes ees''4 } \\ {\omit TupletNumber \tuplet 3/2 { <c'' ees''>8 <bes' d''> <a' c''> } } >>
+  << { \acciaccatura  d'''8 \hideNotes  c'''4 } \\ {\omit TupletNumber \tuplet 3/2 { <ees'' c'''>8-. <d'' bes''>-. <c'' a''>-. } } >>
+  \tuplet 3/2 { <bes' g''>8-. <ees'' fis''>-. <d'' g''>-. }
+  << { \acciaccatura g''8 \hideNotes f''4 } \\  {\omit TupletNumber \tuplet 3/2 { <c'' f''>8-. <bes' ees''>-. <a' c''>-. } } >> | % bar 21
+  \tuplet 3/2 { <gis' b'>8-. <a' c''>-. <fis' a'>-. }
+  << { \acciaccatura f''8 \hideNotes ees''4 } \\ {\omit TupletNumber \tuplet 3/2 { <c'' ees''>8-. <bes' d''>-. <a' c''>-. } } >>
   \tuplet 3/2 {
-    bes'8 <c'' fis''> <d'' g''> <c'' fis'' a''> <bes' g'' bes''> <c'' a'' c'''> | % bar 22
-    <cis'' ais'' cis'''> <d'' b''  d'''> <cis'' e''>
+    bes'8 <c'' fis''>-. <d'' g''>-. <c'' fis'' a''>-. <bes' g'' bes''>-. <c'' a'' c'''>-. | % bar 22
+    <cis'' ais'' cis'''>-. <d'' b''  d'''>-. <cis'' e''>-.
   }
-  << { \acciaccatura c'''8 \hideNotes b''4 } \\ { \omit TupletNumber\tuplet 3/2 { <d'' b''>8 <c'' e''> <b' d''> } } >>
+  << { \acciaccatura c'''8 \hideNotes b''4 } \\ { \omit TupletNumber\tuplet 3/2 { <d'' b''>8-. <c'' e''>-. <b' d''>-. } } >>
   \tuplet 3/2 {
-    c''8 <f'' gis''> <e'' a''> <d'' g'' b''> <c'' a'' c'''> <cis'' ais'' cis'''> | % bar 23
-    <cis'' ais'' cis'''> <d'' b'' d'''> <b' gis'' b''> <f'' d''' f'''> <e'' c''' e'''> <d'' b'' d'''>
-    <c'' a'' c'''> <g'' d'''> <f'' dis'''> <e'' e'''> <c''' f'''> <bes'' g'''> | % bar 24
-    \ottava #1 <a'' a'''> <c''' f'''> <a'' a'''> <ais'' ais'''> <d''' f'''> <ais'' ais'''>
-    <b'' b'''> <d''' f'''> <b'' b'''> \ottava #0  <c'' c'''> <d'' g''> <gis' gis''> | % bar 25
-    \ottava #1 <g'' g'''> <bes'' ees'''> <g'' g'''> <gis'' gis'''> <c''' ees'''>
-    <gis'' gis'''> <a'' a'''> <c''' ees'''> <a'' a'''> \ottava #0  <bes' bes''> <c'' f''> <fis' fis''> | % bar 26
+    c''8 <f'' gis''>-. <e'' a''>-. <d'' gis'' b''>-. <c'' a'' c'''>-. <cis'' ais'' cis'''>-. | % bar 23
+    <cis'' ais'' cis'''>-. <d'' b'' d'''>-. <b' gis'' b''>-. <f'' d''' f'''>-. <e'' c''' e'''>-. <d'' b'' d'''>-.
+    <c'' a'' c'''>-. <g'' d'''>-. <f'' dis'''>-. <e'' e'''>-. <c''' f'''>-. <bes'' g'''>-. | % bar 24
+    \ottava #1 <a'' a'''>-. <c''' f'''>-. <a'' a'''>-. <ais'' ais'''>-. <d''' f'''>-. <ais'' ais'''>-.
+    <b'' b'''>-. <d''' f'''>-. <b'' b'''>-. \ottava #0  <c'' c'''>-. <d'' g''>-. <gis' gis''>-. | % bar 25
+    \ottava #1 <g'' g'''>-. <bes'' ees'''>-. <g'' g'''>-. <gis'' gis'''>-. <c''' ees'''>-.
+    <gis'' gis'''>-. <a'' a'''>-. <c''' ees'''>-. <a'' a'''>-. \ottava #0  <bes' bes''>-. <c'' f''>-. <fis' fis''>-. | % bar 26
   }
   <<
     {
@@ -153,57 +153,58 @@ rh_a = {
     } \\
     {
       \omit TupletBracket \omit TupletNumber\tupletSpan 4 \tuplet 3/2 {
-        g''8 <bes'' g'''> f'' <bes'' f'''> ees'' <bes'' ees'''> d'' <fis'' d'''> des'' <f'' des'''> c'' <f'' c'''> | % bar 27
-        f'' <a'' f'''> ees'' <aes'' ees'''> des'' <aes'' des'''> c'' <e'' c'''> ces'' <ees'' ces'''> bes' <ees'' bes''> | % bar 28
-        ees'' <g'' ees'''> d'' <ees'' fis''> a' <bes' g''> bes' <ees'' bes''> fis' <g' ees''> d' <ees' bes'>
+        g''8 <bes'' g'''>-. f'' <bes'' f'''>-. ees'' <bes'' ees'''>-. d'' <fis'' d'''>-. des'' <f'' des'''>-. c'' <f'' c'''>-. | % bar 27
+        f'' <a'' f'''>-. ees'' <aes'' ees'''>-. des'' <aes'' des'''>-. c'' <e'' c'''>-. ces'' <ees'' ces'''>-. bes' <ees'' bes''>-. | % bar 28
+        ees'' <g'' ees'''>-. d'' <ees'' fis''>-. a' <bes' g''>-. bes' <ees'' bes''>-. fis' <g' ees''>-. d' <ees' bes'>-.
       }
     }
   >> | % bar 29
-  <d' d''>8 r \tuplet 3/2 {
-    <fis' f''!>8 <g' e''> <bes' ees''> <a' d''> <bes' cis''> <fis' d''> <fis' f''!> <g' e''> <bes' ees''>
+  <d' d''>8-. r \tuplet 3/2 {
+    <fis' f''!>8-. <g' e''>-. <bes' ees''>-. <a' d''>-. <bes' cis''>-. <fis' d''>-. <fis' f''!>-. <g' e''>-. <bes' ees''>-.
     | % bar 30
-    <a' d''> <cis'' e''> <c'' fis''> <gis' g''> <a' fis''> <c'' f''> <b' e''> <c'' dis''> <gis' e''> <gis' g''> <a' fis''> <c'' f''>
+    <a' d''>-. <cis'' e''>-. <c'' fis''>-. <gis' g''>-. <a' fis''>-. <c'' f''>-. <b' e''>-. <c'' dis''>-. <gis' e''>-. <gis' g''>-. <a' fis''>-. <c'' f''>-.
   } | % bar 31
-  <e' e''>4 \tuplet 3/2 { <c''' e'''>8 <b'' e'''> <gis'' e'''> <a'' e'''> <g'' e'''> <e'' e'''> <f'' e'''> <e'' e'''> c'' } | % bar 32
-  << {\omit TupletNumber  \tuplet 3/2 { b'8 c'' cis''}} \\ { a'4 } >> \tuplet 3/2 { <b'' d'''>8 <a'' d'''> <f'' d'''> <g'' d'''> <f'' d'''> <d'' d'''> <e'' d'''> <d'' d'''> b'} | % bar 33
-  << {\omit TupletNumber \tuplet 3/2 { a'8 b' c''} } \\ { g'4 } >> \tuplet 3/2 { <a'' c'''>8 <g'' c'''> <e'' c'''> <f'' c'''> <e'' c'''> <c'' c'''> <d'' c'''> <c'' c'''> a' } | % bar 34
+  <e' e''>4 \tuplet 3/2 { <c''' e'''>8-. <b'' e'''>-. <gis'' e'''>-. <a'' e'''>-. <g'' e'''>-. <e'' e'''>-. <f'' e'''>-. <e'' e'''>-. c'' } | % bar 32
+  << {\omit TupletNumber  \tuplet 3/2 { b'8 c'' cis''}} \\ { a'4 } >> \tuplet 3/2 { <b'' d'''>8-. <a'' d'''>-. <f'' d'''>-. <g'' d'''>-. <f'' d'''>-. <d'' d'''>-. <e'' d'''>-. <d'' d'''>-. b'} | % bar 33
+  << {\omit TupletNumber \tuplet 3/2 { a'8 b' c''} } \\ { g'4 } >> \tuplet 3/2 { <a'' c'''>8-. <g'' c'''>-. <e'' c'''>-. <f'' c'''>-. <e'' c'''>-. <c'' c'''>-. <d'' c'''>-. <c'' c'''>-. a' } | % bar 34
   << {\omit TupletNumber\omit TupletBracket \tupletSpan 4 \tuplet 3/2 { e''8 e'' r e'' e'' r e'' r r }  e'4 } \\ {\omit TupletNumber \tupletSpan 4 \tuplet 3/2 { b'8 a' gis' g' fis' f' e' dis' d' cis' c' b}}>> | % bar 35
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \tuplet 3/2 {
-    <a' c''>8 <g' d''> <f' dis''> <e' e''> <c'' fis''> <b' gis''> <a' a''> <f'' b''> <e'' c'''> <d'' d'''> <a'' e'''> <g'' f'''> | % bar 36
-    <a'' e'''> \ottava #1  <e''' c''''> <d''' b'''> <c''' a'''> \ottava #0  <a'' c'''> <gis'' e'''> <a'' e'''> <e'' a''> <gis'' d'''> <a'' c'''> <d'' e''> <c'' fis''> | % bar 37
-    <b' gis''> <dis'' a''> <d'' b''> <c'' e''> <b' d''> <e'' cis''' e'''> <b' d''> <a' c''> <e'' e'''> <g' b'> <ges' bes'> <f' a' f''> | % bar 38
-    <gis' e''> <e' a'> <gis' e''> <dis' b'> <ais' dis''> <dis' a'>
+    <a' c''>8-. <g' d''>-. <f' dis''>-. <e' e''>-. <c'' fis''>-. <b' gis''>-. <a' a''>-. <f'' b''>-. <e'' c'''>-. <d'' d'''>-. <a'' e'''>-. <gis'' f'''>-. | % bar 36
+    <a'' e'''>-. \ottava #1  <e''' c''''>-. <d''' b'''>-. <c''' a'''>-. \ottava #0  <a'' c'''>-. <gis'' e'''>-. <a'' e'''>-. <e'' a''>-. <gis'' d'''>-. <a'' c'''>-. <d'' e''>-. <c'' fis''>-. | % bar 37
+    <b' gis''>-. <dis'' a''>-. <d'' b''>-. <c'' e''>-. <b' d''>-. <e'' cis''' e'''>-. <b' d''>-. <a' c''>-. <e'' e'''>-. <g' b'>-. <ges' bes'>-. <f' a' f''>-. | % bar 38
+    <gis' e''>-. <e' a'>-. <gis' e''>-. <dis' b'>-. <ais' dis''>-. <dis' a'>-.
   } <gis' e''>4
   << {\omit TupletNumber \tuplet 3/2 {  fis'8 g' gis' } } \\ { e'4 } >> | % bar 39
   \tuplet 3/2 {
-    <a' c''>8 <g' d''> <f' dis''> <e' e''> <c'' fis''> <b' gis''> <a' g'' a''> <f'' b''> <e'' c'''> <d'' d'''> <a'' e'''> <gis'' f'''> | % bar 40
-    <a'' e'''> \ottava #1 <e''' c''''> <d''' b'''> <c''' a'''> \ottava #0 <a'' c'''> <gis'' f'''> <a'' f'''> <a'' e'''> <gis'' d'''> <a'' c'''> <d'' e''> <c'' fis''> |
-    <b' g''> <b'' g'''> <a'' fis'''> <g'' e'''> <dis'' fis''> <e'' g''> <e'' b''> <f'' b''> <fis'' b''> <a'' c'''> <fis'' c'''> <a'' b''>
+    <a' c''>8-. <g' d''>-. <f' dis''>-. <e' e''>-. <c'' fis''>-. <b' gis''>-. <a' g'' a''>-. <f'' b''>-. <e'' c'''>-. <d'' d'''>-. <a'' e'''>-. <gis'' f'''>-. | % bar 40
+    <a'' e'''>-. \ottava #1 <e''' c''''>-. <d''' b'''>-. <c''' a'''>-. \ottava #0 <a'' c'''>-. <gis'' f'''>-. <a'' f'''>-. <a'' e'''>-. <gis'' d'''>-. <a'' c'''>-. <d'' e''>-. <c'' fis''>-. |
+    <b' g''>-. <b'' g'''>-. <a'' fis'''>-. <g'' e'''>-. <dis'' fis''>-. <e'' g''>-. <e'' b''>-. <f'' b''>-. <fis'' b''>-. <a'' c'''>-. <fis'' c'''>-. <a'' b''>-.
   } |
-  <e'' e'''>8 r8  \tuplet 3/2 { <e' e''>8 <f' e''> <fis' e''> <f' e''> <fis' e''> <g' e''> <f' e''> <g' e''> <gis' e''> } |
+  <e'' e'''>8-. r8  \tuplet 3/2 { <e' e''>8-. <f' e''>-. <fis' e''>-. <f' e''>-. <fis' e''>-. <g' e''>-. <f' e''>-. <g' e''>-. <gis' e''>-. } |
   <<
     { \omit TupletNumber\tupletSpan 4 \tuplet 3/2 { e''8 e'' e'' e'' e'' e'' a'' a'' a'' a'' a'' a'' } } \\
-    { \omit TupletNumber\tupletSpan 4 \tuplet 3/2 { <a' c''>8 <g' d''> <f' dis''> <e' e''> <c'' fis''> <b' gis''> <a' a''> <f'' b''> <e'' c'''> <d'' d'''> e''' <gis'' f'''> } }
+    { \omit TupletNumber\tupletSpan 4 \tuplet 3/2 { <a' c''>8-. <g' d''>-. <f' dis''>-. <e' e''>-. <c'' fis''>-. <b' gis''>-. <a' a''>-. <f'' b''>-. <e'' c'''>-. <d'' d'''>-. e''' <gis'' f'''>-. } }
   >> |
-  \tuplet 3/2 {  <a'' e'''>8 \ottava #1  <e''' c''''> <d''' b'''> <c''' a'''> <g'' c'''> <gis'' e'''> }
+  \tuplet 3/2 {  <a'' e'''>8-. \ottava #1  <e''' c''''>-. <d''' b'''>-. <c''' a'''>-. <g'' c'''>-. <gis'' e'''>-. }
   <<
     {
+      \omit TupletNumber\omit TupletBracket
       \acciaccatura f'''8 \once\hideNotes e'''4 \acciaccatura d'''8 \once\hideNotes c'''4
       s4 \acciaccatura dis'''8 \once\hideNotes e'''4  \tuplet 3/2 { s8 s8 \acciaccatura dis'''8 \once\hideNotes e'''8 } s4
     }
     \\
     {
       \omit TupletNumber\tupletSpan 4 \tuplet 3/2 {
-        <a'' e'''>8 <e'' a''> <gis'' d'''> <a'' c'''> \ottava #0 <d'' e''> <c'' fis''>
-        <b' gis''>8 <dis'' a''> <d'' b''> <e'' e'''> <c'' e''> <b' dis''> <b' d''> <a' c''> <e'' e'''> <g' b'> <ges' bes'>  <f' a' f''>
+        <a'' e'''>8-. <e'' a''>-. <gis'' d'''>-. <a'' c'''>-. \ottava #0 <d'' e''>-. <c'' fis''>-.
+        <b' gis''>8-. <dis'' a''>-. <d'' b''>-. <e'' e'''>-. <c'' e''>-. <b' dis''>-. <b' d''>-. <a' c''>-. <e'' e'''>-. <g' b'>-. <ges' bes'>-.  <f' a' f''>-.
       }
     }
 
   >> |
 
   <<
-    { \omit TupletNumber\tupletSpan 4 \tuplet 3/2 {  <gis' e''>8 [ <e' a'> <gis' e''> ] <dis' b'> [ <ais' dis''> <dis' a'> ] s8 s8  f'8 \noBeam fis' [ g' gis' ] } }
+    { \omit TupletNumber\tupletSpan 4 \tuplet 3/2 {  <gis' e''>8-. [ <e' a'>-. <gis' e''>-. ] <dis' b'>-. [ <ais' dis''>-. <dis' a'>-. ] s8 s8  f'8 \noBeam fis' [ g' gis' ] } }
     \\
     { s4 s4 \omit TupletNumber\tupletSpan 4 \tuplet 3/2 { s8 s8 e'8-~}  e'4   }
     \\
@@ -217,19 +218,19 @@ rh_a = {
     \\
     {
       \omit TupletNumber\tupletSpan 4 \tuplet 3/2 {
-        <a' c''>8 <g' d''> <f' dis''> <e' e''> <c'' fis''> <b' gis''> <a' a''> <gis'' b''> <e'' c'''> <d'' d'''> <a'' e'''> <gis'' f'''> |
-        <a'' e'''> \ottava #1 <e''' c''''> <d''' b'''> <c''' a'''> <g'' c'''> <gis'' e'''> <a'' f'''> <a'' e'''> <gis'' d'''> <a'' c'''> <gis'' d'''> <g'' e'''>
+        <a' c''>8-. <g' d''>-. <f' dis''>-. <e' e''>-. <c'' fis''>-. <b' gis''>-. <a' a''>-. <gis'' b''>-. <e'' c'''>-. <d'' d'''>-. <a'' e'''>-. <gis'' f'''>-. |
+        <a'' e'''>-. \ottava #1 <e''' c''''>-. <d''' b'''>-. <c''' a'''>-. <g'' c'''>-. <gis'' e'''>-. <a'' f'''>-. <a'' e'''>-. <gis'' d'''>-. <a'' c'''>-. <gis'' d'''>-. <g'' e'''>-.
       }
     }
   >> |
   \tuplet 3/2 {
-    <bes'' g'''>8 <bes'' ges'''> <bes'' e'''> <bes'' f'''> <d''' gis'''> <c''' a'''> <cis''' c''''> <d''' b'''> <f''' ais'''> <e''' b'''> <e'''' fis'''> <e'''' g'''> |
-    <e'''' a'''> <e''' c''''> <c''' e'''> <c''' a'''> <a'' c'''> <a'' e'''> <a'' a'''> <a'' e'''> <e'' a''> <e'' c'''> <c'' e''> <c'' a''> \ottava #0 |
-    <d'' bes''> <a' f''> <f' bes'> <gis' g''> <a' ges''> <bes' f''> <a' f'' a''> <e'' gis''> <dis'' a''> <e'' e'''> <dis'' e''> <d'' e''> |
-    <c'' a''> r8 <e'' a''> <g'' a''> <f'' a''> <cis'' a''> <e'' a''> <d'' a''> <b'' e'''> <d''' e'''> <c''' e'''> <gis'' e'''> |
-    <b'' e'''> <a'' e'''> \ottava #1 <e''' a'''> <g''' a'''> <f''' a'''> <cis''' a'''> <e''' a'''> <d''' a'''> <e'''' b'''> <e'''' d''''> <e'''' c''''> <e'''' gis'''> |
-    <a'''' a'''> r8 r8  <d''' d''''> <d''' a'''> <a'' d'''> <a'' f'''> <f'' a''> <f'' d'''> <f'' f'''> <f'' d'''> <d'' f''> \ottava #0 |
-    <d'' a''> <a' d''> <a' f''> <a' a''> <a' f''> <f' a'> <f' d''> <d' f'> <d' a'> <d' d''> <d' a'> <a f'>
+    <bes'' g'''>8-. <bes'' ges'''>-. <bes'' e'''>-. <bes'' f'''>-. <d''' gis'''>-. <c''' a'''>-. <cis''' c''''>-. <d''' b'''>-. <f''' ais'''>-. <e''' b'''>-. <e'''' fis'''>-. <e'''' g'''>-. |
+    <e'''' a'''>-. <e''' c''''>-. <c''' e'''>-. <c''' a'''>-. <a'' c'''>-. <a'' e'''>-. <a'' a'''>-. <a'' e'''>-. <e'' a''>-. <e'' c'''>-. <c'' e''>-. <c'' a''>-. \ottava #0 |
+    <d'' bes''>-. <a' f''>-. <f' bes'>-. <gis' g''>-. <a' ges''>-. <bes' f''>-. <a' f'' a''>-. <e'' gis''>-. <dis'' a''>-. <e'' e'''>-. <dis'' e''>-. <d'' e''>-. |
+    <c'' a''>-. r8 <e'' a''>-. <g'' a''>-. <f'' a''>-. <cis'' a''>-. <e'' a''>-. <d'' a''>-. <b'' e'''>-. <d''' e'''>-. <c''' e'''>-. <gis'' e'''>-. |
+    <b'' e'''>-. <a'' e'''>-. \ottava #1 <e''' a'''>-. <g''' a'''>-. <f''' a'''>-. <cis''' a'''>-. <e''' a'''>-. <d''' a'''>-. <e'''' b'''>-. <e'''' d''''>-. <e'''' c''''>-. <e'''' gis'''>-. |
+    <a'''' a'''>-. r8 r8  <d''' d''''>-. <d''' a'''>-. <a'' d'''>-. <a'' f'''>-. <f'' a''>-. <f'' d'''>-. <f'' f'''>-. <f'' d'''>-. <d'' f''>-. \ottava #0 |
+    <d'' a''>-. <a' d''>-. <a' f''>-. <a' a''>-. <a' f''>-. <f' a'>-. <f' d''>-. <d' f'>-. <d' a'>-. <d' d''>-. <d' a'>-. <a f'>-.
   } |
   <cis' a' cis''>1
 \bar "|."

@@ -6,7 +6,6 @@ ekmFont = "Mezza#"
 \include "common-macros.ily"
 \include "dev-tools.ly"
 \include "articulate.ly"
-\include "color-voices.ily"
 
 \include "chopin-op10-1-piano.ly"
 
@@ -15,8 +14,11 @@ ekmFont = "Mezza#"
 \pageBreak
 
   \score {
+<<
+    \labRh
     \etude-one-music
-
+   % \labLh
+>>
     \layout {
       \context {
         \Voice
