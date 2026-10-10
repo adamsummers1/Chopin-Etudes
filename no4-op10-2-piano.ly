@@ -6,12 +6,32 @@ ekmFont = "Mezza#"
 \include "esmufl.ily"
 \include "a4_cover_page.ly"
 \include "articulate.ly"
+
+\include "dev-tools.ly"
+\include "laban-tools.ly"
+%\include "laban-voice-merge.ly"
+#(load-from-path "laban-processing.scm")
+#(load-from-path "laban-build.scm")
 #(load-from-path "click-track-tools.scm")
+#(define (note-with-fingering? m)
+   (and (music-is-of-type? m 'note-event)
+        (let ((arts (ly:music-property m 'articulations)))
+          (and arts
+               (any
+                (lambda (a)
+                  (music-is-of-type? a 'fingering-event))
+                arts)))))
+
+#(define (context-specifying-hand? m)
+    (and (music-is-of-type? m 'context-specification) 
+          (music-is-of-type? (ly:music-property m 'element) 'layout-instruction-event)
+          (eq? (ly:music-property (ly:music-property m 'element) 'symbol) 'hand)))
 
 \paper {
   %  max-systems-per-page = #4
 }
 
+#(load "rewrite-scaled-music.scm")
 #(load "chopin-macros.scm")
 
 multiRhythm = #(define-music-function (p-music) (ly:music?) (make-music 'SequentialMusic 'elements (structure-10-2-rhythm  (list p-music) #f)))
@@ -21,34 +41,39 @@ global = {
   \key a \minor
 }
 
-rh_a = {
-\voiceOne\stemNeutral\slurNeutral
-  \tempo "Allegro"  4 = 132
+rightHand = {
+  \set Staff.hand = #'right
+\voiceOne
+\stemNeutral\slurNeutral
   \clef "treble"
   \global
+  \tempo "Allegro"  4 = 132
+
   \tupletSpan 4
   \omit TupletNumber
   \omit TupletBracket
   \tuplet 3/2 {
-    <a' c''>8-. <g' d''>-. <f' dis''>-.
-    <e' e''>-. <c'' fis''>-. <b' gis''>-.
-    <a' a''>-. <f'' b''>-. <e'' c'''>-.
-    <d'' d'''>-. <a'' e'''>-. <gis'' f'''>-.
+  \set Staff.hand = #'right
+    <a' c''>8-. <g'-1 d''-5>-. <f'-1 dis''-5>-.
+    <e'-1 e''-5>-. %\breathe 
+    <c'' fis''>-. <b'-1 gis''>-.
+    <a'-1 a''-5>-. <f'' b''>-. <e''-1 c'''-5>-.
+    <d''-1 d'''-5>-. <a'' e'''>-. <gis''-1 f'''-5>-.
     |
-    <a'' e'''>-. \ottava #1 <e''' c''''>-. <d''' b'''>-.
-    <c''' a'''>-. \ottava #0 <a'' c'''>-. <gis'' f'''>-.
-    <a'' e'''>-. <e'' a''>-. <gis'' d'''>-.
-    <a'' c'''>-. <c'' e''>-. <dis'' fis''>-.
+    <a''-1 e'''>-. \ottava #1 <e''' c''''-5>-. <d'''-1 b'''>-.
+    <c'''-1 a'''>-. \ottava #0 <a'' c'''>-. <gis''-1 f'''-5>-.
+    <a'' e'''>-. <e''-1 a''>-. <gis'' d'''-5>-.
+    <a''-1 c'''>-. <c''-1 e''>-. <dis'' fis''>-.
     |
-    <e'' gis''>-. <dis'' a''>-. <d'' b''>-.
-    <c'' e''>-. <b' d''>-. <e'' e'''>-.
-    <b' d''>-. <a' c''>-. <e'' e'''>-.
-    <g' b'>-. <f' a'>-. <a' f''>-.
+    <e''-1 gis''>-. <dis'' a''>-. <d''-1 b''-5>-.
+    <c'' e''>-. <b'-1 d''>-. <e''-1 e'''-5>-.
+    <b' d''>-. <a'-1 c''>-. <e''-1 e'''-5>-.
+    <g' b'>-. <f'-1 a'>-. <a' f''-5>-.
     |
-    <gis' e''>-. <e' a'>-. <gis' e''>-.
-    <dis' b'>-. <ais' dis''>-. <dis' a'>-.
+    <gis' e''-5>-. <e'-1 a'>-. <gis' e''-5>-.
+    <dis'-1 b'>-. <ais' dis''-5>-. <dis'-1 a'>-.
   }
-  <gis' e''>4--
+  <gis'-1 e''-5>4--
   << {\omit TupletNumber \tuplet 3/2 { e'8 fis'-. gis'-. }} \\ { e'4-- } >>
   |
   <<{\omit TupletNumber\tuplet 3/2 { c''8-. <g' d''>-. <f' dis''>-. } } \\ { a'4-- } >>
@@ -69,7 +94,7 @@ rh_a = {
     <cis'' g''>-. <d'' fis''>-. <dis'' b''>-.
   }
   | % bar 7
-  <e'' e'''>8-. r8
+  <e''-1 e'''-5>8-. r8
   <<
     { \omit TupletNumber \tupletSpan 4 \tuplet 3/2 { g'8-. gis'-. b'-. gis'-. a'-. e''-. e' <dis' fis'>-. <d' gis'>-. }}
     \\
@@ -83,7 +108,7 @@ rh_a = {
   | % bar 9
   << { \acciaccatura dis'''8 \hideNotes e'''4 } \\ { \omit TupletNumber\tuplet 3/2 { <e''' a'' >8-. \ottava #1 <e''' c''''>-. <d''' b'''>-. }} >>
   \tuplet 3/2 { <c''' a'''>8-. \ottava #0 <a'' c'''>-. <gis'' f'''>-. }
-  << { \acciaccatura f'''8 \once\hideNotes e'''4 } \\ {\omit TupletNumber \tuplet 3/2 {<e''' a'' >8-.  <e'' a''>-. <gis'' d'''>-. }} >>
+  << { \acciaccatura f'''8-5 \once\hideNotes e'''4 } \\ {\omit TupletNumber \tuplet 3/2 {<e''' a'' >8-.  <e'' a''>-. <gis'' d'''>-. }} >>
   << { \acciaccatura d'''8 \hideNotes c'''4 } \\ {\omit TupletNumber \tuplet 3/2 {<c''' a'' >8-. <c'' e''>-. <dis'' fis''>-. }} >>
   | % bar 10
   \tuplet 3/2 {   <e'' gis''>8-. <dis'' a''>-. <d'' b''>-. }
@@ -239,7 +264,8 @@ rh_a = {
 
 
 lh_a = {
-\voiceOne
+\set Voice.hand = #'left
+\voiceThree
   \clef "bass"\global
   a16 ais b c' cis' d' dis' e' \clef "treble" f' fis' g' gis' a' ais' b' c''| % bar 1
   cis'' d'' dis'' e'' f'' e'' dis'' d'' cis'' c'' b' bes' a' gis' b' a'| % bar 2
@@ -390,10 +416,58 @@ lh_c = { \skip { \lh_b_a }
       a''16 ) s8.
 }
 
+lh_all =  << {\lh_a } \\ {\lh_b_a \lh_b_b } \\ {\lh_c }>> 
+
+%% laban work
+
+#(write-display-lily-music rightHand "tmp-rightHand.ly") #(write-display-music rightHand "tmp-rightHand.scm")
+
+lrhu_a = #(my-transform-voice 'right 5 (ly:music-deep-copy rightHand))
+#(write-display-music lrhu_a "tmp-lrhu_a.scm")
+lrhu_b = #(flatten-sequential lrhu_a)
+#(write-display-music lrhu_b "tmp-lrhu_b.scm")
+%lrhu_c = #(split-long-notes lrhu_b)
+%#(write-display-music lrhu_c "tmp-lrhu_c.scm")
+lrhu_d = #(merge-n-voices-chords lrhu_b)
+#(write-display-music lrhu_d "tmp-lrhu_d.scm")
+#(write-display-lily-music lrhu_d "tmp-lrhu_d.ly")
+
+lrhl_a = #(my-transform-voice 'right 1 (ly:music-deep-copy rightHand))
+#(write-display-music lrhl_a "tmp-lrhl_a.scm")
+lrhl_b = #(flatten-sequential lrhl_a)
+#(write-display-music lrhl_b "tmp-lrhl_b.scm")
+%lrhl_c = #(split-long-notes lrhl_b)
+%#(write-display-music lrhl_c "tmp-lrhl_c.scm")
+lrhl_d = #(merge-n-voices-chords lrhl_b)
+#(write-display-music lrhl_d "tmp-lrhl_d.scm")
+#(write-display-lily-music lrhl_d "tmp-lrhl_d.ly")
+
+%
+labRh = 
+  \new Staff = "lab_rh"  \with {
+      fontSize = #-2
+      \override StaffSymbol.staff-space = #(magstep -2)
+      \override Stem.stencil = ##f
+      \override Flag.stencil = ##f
+      \override BarLine.stencil = ##f
+      \override SpanBar.stencil = ##f
+      \override TimeSignature.stencil = ##f
+      \override Dots.stencil = ##f
+      \override TupletBracket.stencil = ##f
+      \override TupletNumber.stencil = ##f
+      \remove "Staff_performer"
+      \consists #(make-performer)
+      \autoBeamOff
+\override Staff.displayHand = #'right
+    }
+<<
+ {\global\slurUp \lrhu_d } \\ {\global\slurDown \lrhl_d }
+>>
+
 etude-four-music = {
   \new PianoStaff = "piano" <<
-    \context Staff = "right" { \rh_a }
-    \context Staff = "left" { << {\lh_a } \\ {\lh_b_a \lh_b_b } \\ {\lh_c }>> }
+    \context Staff = "right" { \rightHand }
+    \context Staff = "left" { \lh_all }
     %\new Dynamics = "breaks" \breaks
   >>
 }
@@ -407,7 +481,7 @@ clickTrack = #(make-click-track '( 4 . 4) barcount)
 
 etude-four-midi =
 <<
-  \new Staff = "right" { \rh_a }
+  \new Staff = "right" { \rightHand }
   \new Staff = "lefta" { \lh_a }
   \new Staff = "leftb" { \lh_b_a \lh_b_b }
   \new Staff = "leftc" { \lh_c }
@@ -416,7 +490,10 @@ etude-four-midi =
 
 \score {
   %  \set Staff.ottavationMarkups = #ottavation-ordinals
+  <<
+  \labRh
   \etude-four-music
+  >>
   \layout {
     \context {
       \Voice
@@ -470,3 +547,7 @@ etude-four-midi =
     }
   }
 }
+
+%#(write-display-lily-music lrhu_a "lrhu_a.ly") 
+%#(write-display-lily-music lrhu_b "lrhu_b.ly") 
+%#(write-display-lily-music lrhl_a "lrhl_a.ly")

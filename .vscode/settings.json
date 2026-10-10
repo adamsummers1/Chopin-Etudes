@@ -1,4 +1,6 @@
 {
     "vslilypond.midiPlayback.output": "3- Silent Piano-1",
-    "vslilypond.midiInput.input": "3- Silent Piano-1"
+    "vslilypond.midiInput.input": "3- Silent Piano-1",
+    "RainbowBrackets.forceUniqueOpeningColor": true,
+    "RainbowBrackets.showBracketsInGutter": true
 }

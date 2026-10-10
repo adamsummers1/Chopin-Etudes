@@ -7,3 +7,12 @@ lilypond-tmp-2935850
 lilypond-tmp-9949865
 op10/mdir
 no4-op10-2-piano.midi
+publish/tmp-*.*
+IMSLP763579-PMLP1969-Frederic-Chopin-Op10-Etudes-Sources/publish/*-lilypond.log
+x-laban-processing.scm
+rewrite-scaled-music.scm
+laban-transform-voice.scm
+IMSLP763579-PMLP1969-Frederic-Chopin-Op10-Etudes-Sources/publish/add-laban-slurs-last-run-entry.ly
+IMSLP763579-PMLP1969-Frederic-Chopin-Op10-Etudes-Sources/publish/add-laban-slurs-last-run-entry.ly
+IMSLP763579-PMLP1969-Frederic-Chopin-Op10-Etudes-Sources/publish/add-laban-slurs-last-run-exit.ly
+publish/no4-op10-2-piano-lilypond.log
