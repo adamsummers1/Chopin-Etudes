@@ -55,7 +55,7 @@ rightHand = {
   \tuplet 3/2 {
   \set Staff.hand = #'right
     <a' c''>8-. <g'-1 d''-5>-. <f'-1 dis''-5>-.
-    <e'-1 e''-5>-. %\breathe 
+    <e'-1 e''-5>-. \caesura
     <c'' fis''>-. <b'-1 gis''>-.
     <a'-1 a''-5>-. <f'' b''>-. <e''-1 c'''-5>-.
     <d''-1 d'''-5>-. <a'' e'''>-. <gis''-1 f'''-5>-.
