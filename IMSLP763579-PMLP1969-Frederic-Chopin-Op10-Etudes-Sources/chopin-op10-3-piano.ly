@@ -1,9 +1,6 @@
-%...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....
-
-\version "2.27.0"
+\version "2.27.3"
 \language "nederlands"
 
-\include "Global.ily"
 \include "articulate.ly"
 
 legato = \markup \larger \italic "legato"
@@ -329,10 +326,10 @@ leftHandUpper = {
   s2 * 6 |
   
   \barNumberCheck 73
-  gis16^\pp b gis b a c' a \staffUp \stemDown c' | \staffDown \stemUp
-  gis16 b gis b a c' a \staffUp \stemDown c' | \staffDown \stemUp
+  gis16^\pp b gis b a c' a \change Staff="upper" \stemDown c' | \change Staff="lower" \stemUp
+  gis16 b gis b a c' a \change Staff="upper" \stemDown c' | \change Staff="lower" \stemUp
   gis16 b gis b gis b gis b |
-  gis16^\smorz b gis b gis b gis \staffUp \stemDown b | \staffDown \stemUp
+  gis16^\smorz b gis b gis b gis \change Staff="upper" \stemDown b | \change Staff="lower" \stemUp
   \crossStaff { gis2 } |
 }
 
@@ -466,7 +463,7 @@ leftHandLower = {
   \override Beam.breakable = ##t
   <b,, b,>16^\f \clef treble <d' b'>[( <gis' f''>]) <f' d''>[( <b gis'>]) <c' a'>[( 
     <fis' dis''>]) <dis' c''>[( |
-  <a fis'>16]) <c' a'>[( <fis' dis''>]) <f' d''>[( <bgs'>]) <ais g'>[( <e' cis''>]) 
+  <a fis'>16]) <c' a'>[( <fis' dis''>]) <f' d''>[( <bis'>]) <ais g'>[( <e' cis''>]) 
     <dis' c''>[( |
   <a fis'>16]) <c' a'>[( <fis' dis''>]) <dis' c''>[( <a fis'>]) <b gis'>[( <f' d''>]) 
     <d' b'>[( |
@@ -531,29 +528,16 @@ etude-three-header = \header { }
 
 etude-three-music = {
   \keepWithTag #'layout
-  \new PianoStaff \with { instrumentName = \markup \huge "No. 3" } <<
+  \new PianoStaff <<
     \new Staff = "upper" \rightHand
     \new Staff = "lower" \leftHand
   >>
 }
 
-etude-three-midi = \book {
-  \bookOutputName "Fredric-Chopin-Etudes-Op10-No3"
-  \score { 
+etude-three-midi =  {
     \articulate \keepWithTag #'midi
     << 
       \new Staff = "upper" \rightHand
       \new Staff = "lower" \leftHand
     >>
-    \midi {
-      \context {
-        \Staff
-        \consists "Dynamic_performer"
-      }
-      \context {
-        \Voice
-        \remove "Dynamic_performer"
-      }    
-    }
-  }
 }
