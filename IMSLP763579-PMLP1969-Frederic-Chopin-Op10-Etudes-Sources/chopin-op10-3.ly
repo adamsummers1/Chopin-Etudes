@@ -10,7 +10,7 @@ ekmFont = "Mezza#"
 
 \etude-three-header
 
-\pageBreak
+%\pageBreak
 
   \score {
     \etude-three-music

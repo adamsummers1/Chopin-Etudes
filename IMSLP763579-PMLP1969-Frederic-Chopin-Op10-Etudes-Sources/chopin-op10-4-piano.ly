@@ -1,33 +1,11 @@
 %...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....
 
-\version "2.27.0"
+\version "2.27.3"
 \language "nederlands"
+\include "dev-tools.ly"
+#(load-from-path "laban-build.scm")
 
-\include "Global.ily"
-
-fConFuoco = \markup { \dynamic f \larger \italic "con fuoco" }
-conForza = \markup \larger \italic "con forza"
-ffConFuoco = \markup { \dynamic ff \larger \italic "con più fuoco possibile" }
-
-adjustConFuoco = \tweak X-offset -5.5 \etc
-adjustSustainOff = 
-  \tweak X-offset 2
-  \tweak Y-offset -8
-  \etc
-slurPositionA = \once \override Slur.positions = #'(4 . 3)
-slurShapeA = \shape #'(
-                        ((0 . 5) (0 . 5) (0 . 5) (0 . 5))
-                        ((0 . 5) (0 . 5) (0 . 5) (0 . 5))
-                      ) Slur 
-slurShapeB = \shape #'((-0.65 . 0) (-0.5 . 0) (-1.5 . 0) (0 . 0.5)) Slur
-slurShapeC = \shape #'(
-                        ((0 . 0) (0 . 0) (0 . 0) (0 . 0))
-                        ((0 . -1.5) (0 . -1) (0 . -1) (0 . -1))
-                      ) Slur
-slurShapeD = \shape #'((0 . 2) (0 . -2) (0 . -5) (0 . 0)) Slur
-slurShapeE = \shape #'((0 . 0) (0 . 1.5) (0 . -2) (0 . 0)) Slur
-dynamicPositionA = \once \override DynamicText.X-offset = 0
-dynamicPositionB = \once \override DynamicText.X-offset = -2
+#(load-from-path "click-track-tools.scm")
 
 global = {
   \time 4/4
@@ -41,7 +19,7 @@ rightHandUpper = {
   <cis'' cis'''>16-^ dis''( bis' cis''  dis'' e'' cis'' dis''  e'' fis'' dis'' e''  fis'' gis'' e'' fis'' |
   gis''16 a'' gis'' cis'''  fis'' gis'' fis'' cis'''  e'' fis'' e'' cis'''  dis'' e'' dis'' cis''') |
   \voiceOne s16 gis''8 s16 s fis''8 s16 s e''8 s16 s dis''8 s16 |
-  \oneVoice <cis'' cis'''>8^^ a'16[( a'']) gis'[( gis'']) \slurShapeB fisis'[( fisis'']) 
+  \oneVoice <cis'' cis'''>8^^ a'16[( a'']) gis'[( gis'']) fisis'[( fisis'']) 
     gis'[( gis'']) cis'[( cis'']) <cis' dis' fisis' ais' dis''>4->
   <b dis' gis' b'>8-. r <cis' dis' fisis'>-. r <b dis' gis'>-. r <cis' e' gis'>-. r |
   <b dis' gis'>8-. r <cis' e' gis'>-. r <dis' gis'>-. r <cis' dis' ais'>-. r |
@@ -53,7 +31,7 @@ rightHandUpper = {
   \oneVoice cis''16( dis'' bis' cis''  dis'' e'' cis'' dis''  e'' fis'' dis'' e''  fis'' gis'' e'' fis'' |
   gis''16 a'' gis'' cis''') fis''( gis'' fis'' cis''')  e''( fis'' e'' cis''')  dis''( e'' dis'' cis''') |
   \voiceOne s16 gis''8 s16 s fis''8 s16 s dis''8 s16 s cis''8 s16 |
-  \oneVoice a'16( cis'' a'' fis''-4  a''-1 cis''' a''' fis'''  cis''' a'' fis'' cis''  a' fis' d' a) |
+  \oneVoice a'16( cis'' a'' fis''  a'' cis''' a''' fis'''  cis''' a'' fis'' cis''  a' fis' d' a) |
   \voiceOne gis'4( fis' eis' fis')-> |
   gis'4( fis' eis' fis') |
   dis''( cis'' bis') cis''~( |
@@ -71,8 +49,8 @@ rightHandUpper = {
   <ces' f' as'>8-. r <bes es' ges'>-. r <bes des' f'>-. r <bes c' e'>-. r |
   
   \barNumberCheck 25
-  \voiceOne f'16(-2 ges'-4 e'-2 f'-3  ges'-4 as'-5 f'-2 ges'-3  g'-4 as'-5 fis'-2 g')-3
-    \oneVoice <as' as''>^^-5 bes'-4 g'-2 as'^~-3 |
+  \voiceOne f'16( ges' e' f'  ges' as' f' ges'  g' as' fis' g')
+    \oneVoice <as' as''>^^ bes' g' as'^~ |
   \voiceOne as'16( bes' g' as'  a' bes' gis' a'  ais' b' gisis' ais') \oneVoice <b' b''>-^ c'' ais' b'~ |
   \key cis \minor
   \voiceOne b'16( c'' ais' b'  c''-> des'' b' c''  cis''-> d'' bis' cis''  d''-> es'' cis'' d'' |
@@ -98,9 +76,9 @@ rightHandUpper = {
   \barNumberCheck 41
   dis'16( dis'' e'' dis''  cis'' b' ais' gis')  fisis'( gis' fisis' e'')  e'( fis' e' cis'') |
   dis'16( dis'' e'' dis'')  cis''( b' ais' gis')  gisis'( ais' gisis' fis'')  fis'( gis' fis' dis'') |
-  \slurShapeD eis'16( eis'' fis'' eis''  dis'' cis'' bis' ais')  b'( cis'' b' gis'')  gis'( ais' gis' eis'') |
+  eis'16( eis'' fis'' eis''  dis'' cis'' bis' ais')  b'( cis'' b' gis'')  gis'( ais' gis' eis'') |
   bis'16( cis'' bis' a'')  gisis'( ais' gisis' fis'')  cis''( dis'' cis'' ais'')  ais'( bis' ais' fisis'') |
-  \slurShapeE bis'16( dis'' fis'' a''  bis'' dis''' fis''' a'''  bis''' dis''' e''' gis'''  fis''' bis'' cis''' e''' |
+  bis'16( dis'' fis'' a''  bis'' dis''' fis''' a'''  bis''' dis''' e''' gis'''  fis''' bis'' cis''' e''' |
   dis'''16 fis'' gis'' b''  a'' bis' cis'' e''  dis'' fis' gis' b'  a' fis' d' cis') |
   <gis dis' fis' gis'>8-^ dis'16[( e']  eis' fis' eis' fis'  fisis' gis' fis' g'  gis' a' dis' e' |
   eis'16 fis' e' f'  fis' g' eis' fis'  fisis' gis' fis' g'  gis' a' dis' e') |
@@ -111,7 +89,7 @@ rightHandUpper = {
   cis''16 dis'' bis' cis''  dis'' e'' cis'' dis''  e'' fis'' dis'' e''  fis'' gis'' e'' fis'' |
   gis''16-> a'' gis'' cis''')  fis''->( gis'' fis'' cis''')  e''->( fis'' e'' cis''')  dis''->( e'' dis'' cis''') |
   \voiceOne s16 gis''8 s16 s fis''8 s16 s e''8 s16 s dis''8 s16 |
-  \oneVoice <cis'' cis'''>8-^ a'16[( a'']) gis'[( gis'']) \slurShapeB fisis'[( fisis'']) 
+  \oneVoice <cis'' cis'''>8-^ a'16[( a'']) gis'[( gis'']) fisis'[( fisis'']) 
     gis'[( gis'']) cis'[( cis'']) <cis' dis' fisis' ais' dis''>4->
   <b dis' gis' b'>8-. r <cis' dis' fisis'>-. r <b dis' gis'>-. r <cis' e' gis'>-. r |
   <b dis' gis'>8-. r <cis' e' gis'>-. r <dis' gis'>-. r <cis' dis' ais'>-. r |
@@ -144,13 +122,13 @@ rightHandUpper = {
   eis''16( fis'' eis'' d''')  e''( fis'' e'' cis''')  dis''( e'' dis'' bis'')  d''( es'' d'' b'') |
   cis''16( d'' cis'' ais'')  bis'( cis'' bis' a'')  b'( c'' b' gis'')  ais'( b' ais' g'') |
   a'16( bes' a' fis'')  gis'( a' gis' eis'')  g'( as' g' e'')  fis'( gis' fis' dis'') |
-  <e' cis''>8 gis16-2[( e'-5]  cis'-4 cis'-1 gis'-2 e''-5  cis''-4 cis''-1 gis'' e'''
+  <e' cis''>8 gis16[( e']  cis' cis' gis' e''  cis'' cis'' gis'' e'''
     \ottava 1 cis''' cis''' gis''' cis'''' |
-  e''''16-5 gis'''-2 cis'''-1 cis'''-4  \ottava 0 e'''-5 gis'' cis'' cis''  e'' gis' cis' cis'  
-    e' \staffDown gis cis cis_3) |
+  e''''16 gis''' cis''' cis'''  \ottava 0 e''' gis'' cis'' cis''  e'' gis' cis' cis'  
+    e' \change Staff = "lower" gis cis cis) |
     
   \barNumberCheck 81
-  \staffUp r2 <cis'' e'' gis'' cis''' >8 r r r16 \staffDown \voiceOne <cis cis'> |
+  \change Staff = "upper" r2 <cis'' e'' gis'' cis''' >8 r r r16 \change Staff = "lower" \voiceOne <cis cis'> |
   q1\fermata |
   \bar "|."
 }
@@ -158,8 +136,8 @@ rightHandUpper = {
 rightHandLower = {
   \partial 4 gis'4
   s1 * 2 |
-  cis''16^>^( gis'' e''' a'')  bis'^>^( fis'' dis''' gis'')  \insideSlur gis'^>^( e'' cis''' fis'')  
-    \insideSlur gis'^>^( dis'' bis'' e'') |
+  cis''16^>^( gis'' e''' a'')  bis'^>^( fis'' dis''' gis'')  \once \override Script.avoid-slur = #'inside gis'^>^( e'' cis''' fis'')  
+    \once \override Script.avoid-slur = #'inside gis'^>^( dis'' bis'' e'') |
   s1 * 4 |
   s8 e' dis' g' fis' a' gis' bis' |
   
@@ -185,7 +163,7 @@ rightHandLower = {
   ais'4 b' c'' cis'' |
   s4 b' e'' a' |
   d''4 g' c'' fis' |
-  \slurShapeA b'16^( c'' a' b'  a' b' g' a'  g' a' fis' g'  fis' g' e' fis' |
+  b'16^( c'' a' b'  a' b' g' a'  g' a' fis' g'  fis' g' e' fis' |
   e'16 fis' d' e'  d' e' c' d'  c' d' b c'  b c' a b) |
   
   \barNumberCheck 33
@@ -206,7 +184,7 @@ rightHandLower = {
   s1 * 2 |
   cis''16^( gis'' e''' a'')  bis'^( fis'' dis''' gis'')  a'^( dis'' cis''' e'')  gis'^( cis'' b'' d'') |
   s1 |
-  <b d'>2. \omitOneAccidental <a d'>4 |
+  <b d'>2. <a d'>4 |
   <b d'>2. cis'4 |
   
   \barNumberCheck 65
@@ -277,16 +255,16 @@ leftHand = {
   \clef treble <b fisis'>4 <b gis'> <b a'> <b ais'> |
   <b b'>4 g'16( fis' g' b) c'4 fis'16( eis' fis' a) |
   b4 \clef bass e'16 dis' e' g a4 dis'16( cisis' dis' fis) |
-  \slurShapeC g16->-2_( a-1 fis-3 g-1  fis->-2 g-1 e-3 fis-1  e-> fis d e  
+  g16->_( a fis g  fis-> g e fis  e-> fis d e  
     d-> e c d |
   c16-> d b, c  b,-> c a, b,  a,-> b, g, a,  g,-> a, fis, g,) |
   
   \barNumberCheck 33
-  eis,8 r cis16->-2 d-1 bis,-4 cis-3  cis->-2 d-1 bis,-4 cis-3  cis->-2 d-1 bis, cis |
+  eis,8 r cis16-> d bis, cis  cis-> d bis, cis  cis-> d bis, cis |
   cis16 d bis, cis  cis d bis, cis  cis d bis, cis  cis d bis, cis |
   d8 r \clef treble gis''16( d'' b' eis')  eis''( b' gis' d')  d''( gis' eis' b) |
   b'( eis' d' gis) \clef bass gis'( d' b eis)  eis'( b gis d)  d'( gis eis b,) |
-  fisis,8 r dis16->_2 e_1 cisis_4 dis_3  dis->_2 e_1 cisis_4 dis_3 dis->_2 e cisis dis |
+  fisis,8 r dis16-> e cisis dis  dis-> e cisis dis dis-> e cisis dis |
   dis16-> e cisis dis  dis-> e cisis dis  dis-> e cisis dis  dis-> e cisis dis |
   e8 r \clef treble fisis''16( cis'' ais' e')  e''( ais' fisis' cis')  cis''( fisis' e' ais) |
   ais'16( e' cis' fisis)  \clef bass fisis'( cis' ais e)  e'( ais fisis cis)
@@ -295,7 +273,7 @@ leftHand = {
   \barNumberCheck 41
   b,16( dis fisis gis  ais b cis' dis')  e'( ais fisis cis)  cis'( fisis e ais,) |
   b,16( dis fisis gis  ais b cis' dis')  fis'( bis gisis dis)  dis'( gisis fis bis,) |
-  cis16( eis gisis ais  bis cis'-4 dis' eis')  gis'( d' b eis)  eis'( b gis d) |
+  cis16( eis gisis ais  bis cis' dis' eis')  gis'( d' b eis)  eis'( b gis d) |
   a'16( dis' bis fis)  fis'( bis gisis dis)  ais'( e' cis' fisis)  fisis'( cis' ais e) |
   \clef treble << { a'4->( gis'8) } \\ { <gis dis' fis'>4~ q8 } >> r8 r4
     r16 bis'( cis'' e'' |
@@ -318,7 +296,7 @@ leftHand = {
   <<
     { s16 e8 s16 s e8 s16 s e8 s16 s e8 s16 }
     \\
-    { \slurPositionA gis,16^( e b dis  fisis, e ais dis  gis, e b dis  fisis, e ais dis) }
+    { gis,16^( e b dis  fisis, e ais dis  gis, e b dis  fisis, e ais dis) }
   >> |
   <gis, gis>8-. cis'[(-> b]) e'[(-> dis']) fis'[(-> e']) <gis dis' fis'>-> |
   <cis' e'>8-. r \clef treble <fis' a'>-. r <e' gis'>-. r <dis' fis'>-. r |
@@ -333,8 +311,8 @@ leftHand = {
   bis,16( cis aisis, bis,  cis dis bis, cis  dis e cis dis  e fis e fis) |
   bis,16( cis aisis, bis,  cis dis bis, cis  dis e cis dis  eis fis disis eis |
   fis16 gis eis fis  gis a fis gis  a b gis a  bis cis' aisis bis) |
-  cis'16_( dis' bis cis'  \voiceTwo \staffUp dis' e' cis' dis'  e' fis' dis' e'  fis' gis' e' fis' |
-  gis'16 a' gis' fis'  e' dis' cis' b  \oneVoice \staffDown a gis fis e  dis cis b, a, |
+  cis'16_( dis' bis cis'  \voiceTwo \change Staff = "upper" dis' e' cis' dis'  e' fis' dis' e'  fis' gis' e' fis' |
+  gis'16 a' gis' fis'  e' dis' cis' b  \oneVoice \change Staff = "lower" a gis fis e  dis cis b, a, |
   gis,16 fis, e, dis,  cis, b,, a,, gis,,  <fis,, fis,>4) <gis,, gis,> |
   <cis,, cis,>8 r <gis, gis>->[ cis,] <ais, ais>->[ cis,] <a, a>->[ cis,] |
   <gis, gis>8->[ cis,] <gis,! g>->[ cis,] <gis, fis>->[ cis,] <gis, dis>->[ cis,] |
@@ -351,14 +329,14 @@ leftHand = {
   
   \barNumberCheck 81
   cis,8 r r4 <cis gis e'>8 r r r16 \voiceFour <cis,, cis,> |
-  q1\fermata\adjustSustainOff\sustainOff |
+  q1\fermata\sustainOff |
 }
 
 dynamics = {
   \override DynamicTextSpanner.style = #'none
   \override TextScript.Y-offset = -0.5
 
-  \partial 4 s4\adjustConFuoco -\fConFuoco  s4\fp s\cresc s2 |
+  \partial 4 s4-\markup { \dynamic f \italic "con fuoco" } s4\fp s\cresc s2 |
   s1 * 2 |
   s1\f |
   s1 * 3 |
@@ -408,7 +386,7 @@ dynamics = {
   \repeat unfold 3 { s8.\< s16\! s4\cresc s8.\> s16\! s8.\> s16\! | }
   s1\cresc |
   s1\ff |
-  s2-\conForza s8.\< s16\! s4 |
+  s2-\markup \italic "con forza" s8.\< s16\! s4 |
   s8\sf s\p\< s2 s8. s16\! |
   s2.\< s8. s16\! |
   
@@ -438,8 +416,8 @@ dynamics = {
   s1 |
   s4 s2\< s8. s16\! |
   s2 s2\ff\< |
-  \dynamicPositionA s1\fff |
-  s4\sf s2.-\ffConFuoco |
+  s1\fff |
+  s4\sf s2.-\markup { \dynamic ff \italic "con più fuoco possibile" } |
   s1 |
   
   \barNumberCheck 73
@@ -450,45 +428,32 @@ dynamics = {
   s1 |
   
   \barNumberCheck 81
-  s2. s8. \dynamicPositionB s16\ff |
+  s2. s8. s16\ff |
   s1 |
 }
-
-% The music has two decrescendi on top of crescendi, which causes these 
-% warnings.  They can be ignored.
-#(ly:expect-warning "conflict with event: `decrescendo-event'")
-#(ly:expect-warning "discarding event: `crescendo-event'")
-#(ly:expect-warning "conflict with event: `decrescendo-event'")
-#(ly:expect-warning "discarding event: `crescendo-event'")
 
 etude-four-header = \header { }
 
 etude-four-music = {
   \keepWithTag #'layout
-  \new PianoStaff \with { instrumentName = \markup \huge "No. 4" } <<
+  \new PianoStaff <<
     \new Staff = "upper" \rightHand
     \new Dynamics = "dynamics" \dynamics
     \new Staff = "lower" \leftHand
   >>
 }
 
-etude-four-midi = \book {
-  \bookOutputName "Fredric-Chopin-Etudes-Op10-No4"
-  \score { 
+barcount = #(moment->whole-notes ((ly:music-property etude-four-music 'length-callback) etude-four-music))
+
+myPartial = #(find-leading-partial etude-four-music)
+
+clickTrack = #(make-click-track '( 4 . 4) barcount)
+
+etude-four-midi = {
     \keepWithTag #'midi
     << 
       \new Staff = "upper" << \rightHand \dynamics >>
       \new Staff = "lower" << \leftHand \dynamics >>
+      \new DrumStaff = "click" { \clickTrack }
     >>
-    \midi {
-      \context {
-        \Staff
-        \consists "Dynamic_performer"
-      }
-      \context {
-        \Voice
-        \remove "Dynamic_performer"
-      }   
-    }
-  }
 }

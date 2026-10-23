@@ -31,7 +31,6 @@ ekmFont = "Mezza#"
   %  max-systems-per-page = #4
 }
 
-#(load "rewrite-scaled-music.scm")
 #(load "chopin-macros.scm")
 
 multiRhythm = #(define-music-function (p-music) (ly:music?) (make-music 'SequentialMusic 'elements (structure-10-2-rhythm  (list p-music) #f)))
@@ -420,7 +419,7 @@ lh_all =  << {\lh_a } \\ {\lh_b_a \lh_b_b } \\ {\lh_c }>>
 
 %% laban work
 
-#(write-display-lily-music rightHand "tmp-rightHand.ly") #(write-display-music rightHand "tmp-rightHand.scm")
+%#(write-display-lily-music rightHand "tmp-rightHand.ly") #(write-display-music rightHand "tmp-rightHand.scm")
 
 lrhu_a = #(my-transform-voice 'right 5 (ly:music-deep-copy rightHand))
 #(write-display-music lrhu_a "tmp-lrhu_a.scm")
