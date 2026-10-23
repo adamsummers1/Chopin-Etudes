@@ -447,7 +447,7 @@ barcount = #(moment->whole-notes ((ly:music-property etude-four-music 'length-ca
 
 myPartial = #(find-leading-partial etude-four-music)
 
-clickTrack = #(make-click-track '( 4 . 4) barcount)
+clickTrack = #(make-click-track-with-partial '( 4 . 4) barcount myPartial)
 
 etude-four-midi = {
     \keepWithTag #'midi
