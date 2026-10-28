@@ -1,4 +1,6 @@
-include global.mk
+include ly-global.mk
+
+#LILYLOGLEVEL=DEBUG
 
 current-item: no4-op10-2-piano.pdf
 
